@@ -3,6 +3,7 @@ yuvs = {"BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1024_50.yuv","Bas
 
 f=10
 homepath = "/home/grellert"
+yuvpath = "/workareas/share/video_sequences"
 
 file = open("run_hm_server.sh","w")
 for yuv in yuvs:
@@ -19,6 +20,6 @@ for yuv in yuvs:
 				nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
 			w,h = pix.split("x")
 			#print w,h,f,fr,qp
-			linha = "%s/HM-16.9/bin/TAppEncoderStatic -c %s/HM-16.9/cfg/encoder_randomaccess_main.cfg --InputFile=%s/origCfP/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --n_taps=%s --BitstreamFile=%s/testesHEVC/Bin/%s_%st_hm.bin  > %s/testesHEVC/Out/%s_qp%s_%st_hm_out" %(homepath,homepath,homepath,yuv,h,w,f,fr,qp,taps,homepath,nome,taps,homepath,yuv,qp,taps)
+			linha = "%s/HM-16.9/bin/TAppEncoderStatic -c %s/HM-16.9/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --n_taps=%s --BitstreamFile=%s/testesHEVC/bin/%s_%st_hm.bin  > %s/testesHEVC/out/%s_qp%s_%st_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,nome,taps,homepath,yuv,qp,taps)
 			print >> file, linha
 			file.close

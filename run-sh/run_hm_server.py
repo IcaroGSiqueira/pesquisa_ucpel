@@ -20,6 +20,6 @@ for yuv in yuvs:
 				nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
 			w,h = pix.split("x")
 			#print w,h,f,fr,qp
-			linha = "%s/HM-16.9/bin/TAppEncoderStatic -c %s/HM-16.9/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --n_taps=%s --BitstreamFile=%s/testesHEVC/bin/%s_%st_%dfr_hm.bin  > %s/testesHEVC/out/%s_qp%s_%st_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,nome,taps,f,homepath,yuv,qp,taps,f)
+			linha = "%s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/TAppEncoderStatic -c %s/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --n_taps=%s --BitstreamFile=%s/testesHEVC/bin/%s_%st_%dfr_hm.bin  > %s/testesHEVC/out/%s_qp%s_%st_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,nome,taps,f,homepath,yuv,qp,taps,f)
 			print >> file, linha
 			file.close

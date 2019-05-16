@@ -1,2 +1,1 @@
-SERVERS="twins1,twins2"
-parallel -j 4 --eta -S $SERVERS run_vtm_server.sh :::
+parallel -j4 --eta -S "twins1,twins2" ::: run_vtm_server.sh 

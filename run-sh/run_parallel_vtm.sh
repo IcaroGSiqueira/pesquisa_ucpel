@@ -1,1 +1,1 @@
-parallel -j4 --eta -S "twins1,twins2" ::: run_vtm_server.sh 
+parallel --delay 1 -j4 --progress -S "twins1,twins2" :::: run_vtm_server.sh 

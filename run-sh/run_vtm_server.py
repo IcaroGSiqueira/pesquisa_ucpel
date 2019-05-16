@@ -20,6 +20,6 @@ for yuv in yuvs:
 			nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
 		w,h = pix.split("x")
 		#print w,h,f,fr,qp
-		linha = "%s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_%sfr_vtm.bin  > %s/testesVVC/out/%s_qp%s_%sfr_vtm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,f,homepath,yuv,qp,f)
+		linha = "{ time %s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_%sfr_vtm.bin ; } &> %s/testesVVC/out/%s_qp%s_%sfr_vtm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,f,homepath,yuv,qp,f)
 		print >> file, linha
 		file.close

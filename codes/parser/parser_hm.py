@@ -4,6 +4,8 @@ pathin = "/grellert/testesHEVC/out"
 out = open("/home%s/hm-noSIMD.csv"%pathout,"w")
 yuvs = sorted(os.listdir("/home/%s"%pathin))
 for yuv in yuvs:
+	if "10fr" in yuv:
+		continue
 	file = open("/home%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
 	line = lines[-21]

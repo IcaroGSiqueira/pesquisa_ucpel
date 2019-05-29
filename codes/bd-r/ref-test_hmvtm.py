@@ -37,7 +37,7 @@ for x in xrange(0,tam):
 		nome32t,y32t,u32t,v32t,yuv32t,b32t,t32t = tlines[x].split(",")
 		y32t,u32t,v32t,yuv32t,b32t,t32t = map(float,[y32t,u32t,v32t,yuv32t,b32t,t32t])
 	if "qp37" in tlines[x]:
-      nome37t,y37t,u37t,v37t,yuv37t,b37t,t37t = tlines[x].split(",")
+		nome37t,y37t,u37t,v37t,yuv37t,b37t,t37t = tlines[x].split(",")
 		y37t,u37t,v37t,yuv37t,b37t,t37t = map(float,[y37t,u37t,v37t,yuv37t,b37t,t37t])
 			 
 	if (x%4)==3:

@@ -6,6 +6,7 @@ for yuv in yuvs:
 	file = open("/home%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
 	line = lines[-5]
+	print line
 	a,time = line.split(":")
 	s,time,q = time.split("]")
 	t,s = time.split("sec")

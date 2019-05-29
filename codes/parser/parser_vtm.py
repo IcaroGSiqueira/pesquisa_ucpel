@@ -1,7 +1,6 @@
 import os
-pathout = "/grellert/testesVVC"
 pathin = "/grellert/testesVVC/out"
-out = open("/home%s/vtm-noSIMD.csv"%pathout,"w")
+out = open("/home/grellert/testesVVC/vtm-noSIMD.csv","w")
 yuvs = sorted(os.listdir("/home/%s"%pathin))
 for yuv in yuvs:
 	file = open("/home%s/%s"%(pathin,yuv),"r")
@@ -15,7 +14,7 @@ for yuv in yuvs:
 	f,r = line.split("a")
 	r = r.strip(" ")
 	br,y,u,v,yuvv = r.split("   ")
-	yuvv = yuvv[:-5]
+	yuvv = yuvv[:-1]
 	linha = "%s,%s,%s,%s,%s,%s,%s"%(yuv,y,u,v,yuvv,br,t)
 	print >> out, linha
 	out.close

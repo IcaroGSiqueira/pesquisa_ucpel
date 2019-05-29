@@ -1,0 +1,11 @@
+dec.yuv
+rec.yuv
+str.bin
+
+/lib/
+core
+deploy
+*.sdf
+*.suo
+.vs/
+.vscode/

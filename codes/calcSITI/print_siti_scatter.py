@@ -1,6 +1,7 @@
 import pandas as pd
 from StringIO import StringIO
 import  matplotlib.pyplot as plt
+
 sstr = StringIO("""YUVS	SI	TI
 BasketballDrill_832x480_50.yuv	7.47616625288784	39.7026043777981
 BasketballDrive_1920x1080_50.yuv	5.53605638081235	39.3533488924529

@@ -82,6 +82,8 @@ for v in videos:
 		continue
 	if '10bit' in v:
 		continue
+	if 'Bosphorus' in v:
+		continue
 	video = open('/workareas/share/video_sequences/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1].split('.')[0])

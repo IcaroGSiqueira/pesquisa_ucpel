@@ -80,6 +80,8 @@ for v in videos:
 		continue
 	if '.csv' in v:
 		continue
+	if '10bit' in v:
+		continue
 	video = open('./' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1])

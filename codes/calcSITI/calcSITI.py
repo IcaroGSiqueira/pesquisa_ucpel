@@ -82,7 +82,7 @@ for v in videos:
 		continue
 	if '10bit' in v:
 		continue
-	if 'Bosphorus' in v:
+	if '2160.yuv' in v:
 		continue
 	video = open('/workareas/share/video_sequences/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])

@@ -5,7 +5,7 @@ simd=0
 
 #yuvs = {"BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1024_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","Kimono_1920x1080_24.yuv","BlowingBubbles_416x240_50.yuv","ParkScene_1920x1080_24.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","Traffic_2560x1600_30_crop.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"}
 
-yuvs = {"SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"}
+yuvs = {"Traffic_2560x1600_30_crop.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"}
 
 homepath = "/home/grellert"
 yuvpath = "/workareas/share/video_sequences"
@@ -13,8 +13,6 @@ yuvpath = "/workareas/share/video_sequences"
 #yuvs = os.listdir("%s" %yuvpath)
 file = open("run_vtm_server.sh","w")
 for yuv in yuvs:
-#	if "416" not in yuv:
-#		continue
 	for qp in [37,32,27,22]:
 		if "bit" in yuv:
 			continue
@@ -28,8 +26,8 @@ for yuv in yuvs:
 		w,h = pix.split("x")
 		#print w,h,f,fr,qp
 		if simd == 1:
-			linha = "%s/vtm_5.0/bin/EncoderAppStatic -c %s/vtm_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_vtmSIMD.bin  > %s/testesVVC/out/%s_qp%s_vtmSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
+			linha = "%s/vtm_5.0/bin/EncoderAppStatic -c %s/vtm_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/pesquisa_ucpel/testesVVC/bin/%s_vtmSIMD.bin  > %s/pesquisa_ucpel/testesVVC/out/%s_qp%s_vtmSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
 		else:
-			linha = "%s/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_vtmNoSIMD.bin  > %s/testesVVC/out/%s_qp%s_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
+			linha = "%s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/pesquisa_ucpel/testesVVC/bin/%s_vtmNoSIMD.bin  > %s/pesquisa_ucpel/testesVVC/out/%s_qp%s_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
 		print >> file, linha
 		file.close

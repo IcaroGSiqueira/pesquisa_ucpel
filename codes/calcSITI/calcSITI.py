@@ -106,6 +106,6 @@ for v in videos:
 
 	print >> outFile, v,';SI;TI'
 	for si, ti in zip(vetSI,vetTI):
-	print >> outFile,';',si,';',ti
+		print >> outFile,';',si,';',ti
 	print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
 	outFile.close()

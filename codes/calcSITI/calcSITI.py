@@ -82,7 +82,7 @@ for v in videos:
 		continue
 	if '10bit' in v:
 		continue
-	video = open('./' + v,'rb')
+	video = open('/workareas/share/video_sequences/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1])
 	outFile = open(v.split('_')[0]+'.csv','w')
@@ -106,6 +106,6 @@ for v in videos:
 
 	print >> outFile, v,';SI;TI'
 	for si, ti in zip(vetSI,vetTI):
-		print >> outFile,';',si,';',ti
+	print >> outFile,';',si,';',ti
 	print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
 	outFile.close()

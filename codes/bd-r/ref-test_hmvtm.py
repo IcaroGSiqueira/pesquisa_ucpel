@@ -1,8 +1,8 @@
 from bjontegaardhmvtm import bdbr,bdpsnr,plotRDCurves
 
 csv_test = open('/home/icaro/testesHEVC/hm-noSIMD.csv','rb')
-csv_ref = open('/home/icaro/testesVVC/vtm-noSIMD.csv','rb')
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_noSIMD.csv","w")
+csv_ref = open('/home/icaro/testesVVC/vtm-SIMD.csv','rb')
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_SIMD.csv","w")
 
 lines = csv_ref.readlines()
 tlines = csv_test.readlines()

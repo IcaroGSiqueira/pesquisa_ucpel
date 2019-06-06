@@ -22,8 +22,8 @@ for yuv in yuvs:
 			w,h = pix.split("x")
 			#print w,h,f,fr,qp
 			if clip == 0: #original
-				linha = "{ time %s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/TAppEncoderStatic -c %s/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --clip_before=%s --BitstreamFile=%s/testesHEVC/bin/%s_orig_%dfr_hm.bin ; } &> %s/testesHEVC/out/%s_qp%s_orig_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,clip,homepath,nome,f,homepath,yuv,qp,f)
+				linha = "{ time %s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/TAppEncoderStatic -c %s/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --clip_before=%s --BitstreamFile=%s/pesquisa_ucpel/testesHEVC/bin/%s_orig_%dfr_hm.bin ; } &> %s/pesquisa_ucpel/testesHEVC/out/%s_qp%s_orig_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,clip,homepath,nome,f,homepath,yuv,qp,f)
 			else:
-				linha = "{ time %s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/TAppEncoderStatic -c %s/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --clip_before=%s --BitstreamFile=%s/testesHEVC/bin/%s_clip%s_%dfr_hm.bin ; } &> %s/testesHEVC/out/%s_qp%s_clip%s_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,clip,homepath,nome,clip,f,homepath,yuv,qp,clip,f)
+				linha = "{ time %s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/TAppEncoderStatic -c %s/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --clip_before=%s --BitstreamFile=%s/pesquisa_ucpel/testesHEVC/bin/%s_clip%s_%dfr_hm.bin ; } &> %s/pesquisa_ucpel/testesHEVC/out/%s_qp%s_clip%s_%dfr_hm_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,clip,homepath,nome,clip,f,homepath,yuv,qp,clip,f)
 			print >> file, linha
 			file.close

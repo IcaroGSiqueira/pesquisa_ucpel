@@ -26,8 +26,8 @@ for yuv in yuvs:
 		w,h = pix.split("x")
 		#print w,h,f,fr,qp
 		if simd == 1:
-			linha = "%s/vtm_5.0/bin/EncoderAppStatic -c %s/vtm_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_vtmSIMD.bin  > %s/testesVVC/out/%s_qp%s_vtmSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
+			linha = "%s/vtm_5.0/bin/EncoderAppStatic -c %s/vtm_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/pesquisa_ucpel/testesVVC/bin/%s_vtmSIMD.bin  > %s/pesquisa_ucpel/testesVVC/out/%s_qp%s_vtmSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
 		else:
-			linha = "%s/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_vtmNoSIMD.bin  > %s/testesVVC/out/%s_qp%s_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
+			linha = "%s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/pesquisa_ucpel/testesVVC/bin/%s_vtmNoSIMD.bin  > %s/pesquisa_ucpel/testesVVC/out/%s_qp%s_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp)
 		print >> file, linha
 		file.close

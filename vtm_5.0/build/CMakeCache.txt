@@ -106,7 +106,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_INSTALL_PREFIX:PATH=/home/icaro/pesquisa_ucpel/vtm_5.0/install
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/usr/bin
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
@@ -222,16 +222,16 @@ NextSoftware_BINARY_DIR:STATIC=/home/icaro/pesquisa_ucpel/vtm_5.0/build
 NextSoftware_SOURCE_DIR:STATIC=/home/icaro/pesquisa_ucpel/vtm_5.0
 
 //CXX compiler flags for OpenMP parallelization
-OpenMP_CXX_FLAGS:STRING=-fopenmp
+OpenMP_CXX_FLAGS:STRING=
 
 //CXX compiler libraries for OpenMP parallelization
-OpenMP_CXX_LIB_NAMES:STRING=gomp;pthread
+OpenMP_CXX_LIB_NAMES:STRING=
 
 //C compiler flags for OpenMP parallelization
-OpenMP_C_FLAGS:STRING=-fopenmp
+OpenMP_C_FLAGS:STRING=
 
 //C compiler libraries for OpenMP parallelization
-OpenMP_C_LIB_NAMES:STRING=gomp;pthread
+OpenMP_C_LIB_NAMES:STRING=
 
 //Path to the gomp library for OpenMP
 OpenMP_gomp_LIBRARY:FILEPATH=/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so
@@ -352,6 +352,8 @@ CMAKE_HOME_DIRECTORY:INTERNAL=/home/icaro/pesquisa_ucpel/vtm_5.0
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: CMAKE_LINKER
+CMAKE_LINKER-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -409,11 +411,11 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v4.5()]
 //Details about finding OpenMP_C
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v4.5()]
 //Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v4.5()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Result of TRY_COMPILE
@@ -422,14 +424,22 @@ OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 OpenMP_COMPILE_RESULT_C_fopenmp:INTERNAL=TRUE
 //ADVANCED property for variable: OpenMP_CXX_FLAGS
 OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: OpenMP_CXX_FLAGS
+OpenMP_CXX_FLAGS-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
 OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: OpenMP_CXX_LIB_NAMES
+OpenMP_CXX_LIB_NAMES-MODIFIED:INTERNAL=ON
 //CXX compiler's OpenMP specification date
 OpenMP_CXX_SPEC_DATE:INTERNAL=201511
 //ADVANCED property for variable: OpenMP_C_FLAGS
 OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: OpenMP_C_FLAGS
+OpenMP_C_FLAGS-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: OpenMP_C_LIB_NAMES
 OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: OpenMP_C_LIB_NAMES
+OpenMP_C_LIB_NAMES-MODIFIED:INTERNAL=ON
 //C compiler's OpenMP specification date
 OpenMP_C_SPEC_DATE:INTERNAL=201511
 //Result of TRY_COMPILE

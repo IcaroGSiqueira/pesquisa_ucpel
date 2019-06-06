@@ -78,7 +78,7 @@ const TFilterCoeff TComInterpolationFilter::m_lumaFilter[LUMA_INTERPOLATION_FILT
     {  0, 0,   0, 17, 58,   0, 0,  0 } } , // 4 taps
 };
 
-const TFilterCoeff TComInterpolationFilter::m_lumaFilter_4taps[LUMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS][NTAPS_LUMA] =
+const TFilterCoeff TComInterpolationFilter::m_lumaFilter_aprox[LUMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS][NTAPS_LUMA] =
 {
   {  0, 0,   0, 64,  0,   0, 0,  0 },
   {  0, 0,  -7, 58, 17,  -4,  0,  0 },	
@@ -194,7 +194,7 @@ Void TComInterpolationFilter::filterCopy(Int bitDepth, const Pel *src, Int srcSt
  * \param  coeff      Pointer to filter taps
  */
 template<Int N, Bool isVertical, Bool isFirst, Bool isLast>
-Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, TFilterCoeff const *coeff)
+Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, TFilterCoeff const *coeff, Bool isFME)
 {
   Int row, col;
 
@@ -265,6 +265,14 @@ Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride
         sum += src[ col + 6 * cStride] * c[6];
         sum += src[ col + 7 * cStride] * c[7];
       }
+      
+      if (offset == 32 && TComContadores::rounddown && isFME){
+        offset = 0;
+        printf("TESTE:%d\n",offset);
+      }
+      else if (offset == 32)
+        printf("TESTE:%d %d %d\n",offset, TComContadores::rounddown , isFME);
+              
 
       Pel val = ( sum + offset ) >> shift;
       if ( isLast  ||  TComContadores::clip_before )
@@ -272,7 +280,8 @@ Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride
         val = ( val < 0 ) ? 0 : val;
         val = ( val > maxVal ) ? maxVal : val;
       }
-      dst[col] = val;
+    dst[col] = val;
+    
     }
 
     src += srcStride;
@@ -295,15 +304,15 @@ Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride
  * \param  coeff      Pointer to filter taps
  */
 template<Int N>
-Void TComInterpolationFilter::filterHor(Int bitDepth, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Bool isLast, TFilterCoeff const *coeff)
+Void TComInterpolationFilter::filterHor(Int bitDepth, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Bool isLast, TFilterCoeff const *coeff, Bool isFME)
 {
   if ( isLast )
   {
-    filter<N, false, true, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, false, true, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
   else
   {
-    filter<N, false, true, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, false, true, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
 }
 
@@ -323,23 +332,23 @@ Void TComInterpolationFilter::filterHor(Int bitDepth, Pel *src, Int srcStride, P
  * \param  coeff      Pointer to filter taps
  */
 template<Int N>
-Void TComInterpolationFilter::filterVer(Int bitDepth, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Bool isFirst, Bool isLast, TFilterCoeff const *coeff)
+Void TComInterpolationFilter::filterVer(Int bitDepth, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Bool isFirst, Bool isLast, TFilterCoeff const *coeff, Bool isFME)
 {
   if ( isFirst && isLast )
   {
-    filter<N, true, true, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, true, true, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
   else if ( isFirst && !isLast )
   {
-    filter<N, true, true, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, true, true, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
   else if ( !isFirst && isLast )
   {
-    filter<N, true, false, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, true, false, true>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
   else
   {
-    filter<N, true, false, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff);
+    filter<N, true, false, false>(bitDepth, src, srcStride, dst, dstStride, width, height, coeff, isFME);
   }
 }
 
@@ -365,7 +374,7 @@ Void TComInterpolationFilter::filterVer(Int bitDepth, Pel *src, Int srcStride, P
 Void TComInterpolationFilter::filterHor_aprox(const ComponentID compID, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Int frac, Bool isLast, const ChromaFormat fmt, const Int bitDepth )
 {
         
-   int tap_idx =  4-TComContadores::n_taps/2; // 0 - 8 taps, 1 - 6 taps, 2 - 4 taps, 3 - 2 taps
+  int tap_idx =  4-TComContadores::n_taps/2; // 0 - 8 taps, 1 - 6 taps, 2 - 4 taps, 3 - 2 taps
 
   if ( frac == 0 )
   {
@@ -374,7 +383,7 @@ Void TComInterpolationFilter::filterHor_aprox(const ComponentID compID, Pel *src
   else if (isLuma(compID))
   {
     assert(frac >= 0 && frac < LUMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS);
-    filterHor<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isLast, m_lumaFilter[frac][tap_idx]);
+    filterHor<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isLast, m_lumaFilter[frac][tap_idx], true);
     //filterHor<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isLast, m_lumaFilter_4taps[frac]);
   }
   else
@@ -423,7 +432,7 @@ Void TComInterpolationFilter::filterHor(const ComponentID compID, Pel *src, Int 
  */
 Void TComInterpolationFilter::filterVer_aprox(const ComponentID compID, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Int frac, Bool isFirst, Bool isLast, const ChromaFormat fmt, const Int bitDepth )
 {
-       int tap_idx =  4-TComContadores::n_taps/2; // 0 - 8 taps, 1 - 6 taps, 2 - 4 taps, 3 - 2 taps
+  int tap_idx =  4-TComContadores::n_taps/2; // 0 - 8 taps, 1 - 6 taps, 2 - 4 taps, 3 - 2 taps
 
   if ( frac == 0 )
   {
@@ -432,7 +441,7 @@ Void TComInterpolationFilter::filterVer_aprox(const ComponentID compID, Pel *src
   else if (isLuma(compID))
   {
     assert(frac >= 0 && frac < LUMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS);
-    filterVer<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isFirst, isLast, m_lumaFilter[frac][tap_idx]);
+    filterVer<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isFirst, isLast, m_lumaFilter[frac][tap_idx], true);
     //filterVer<NTAPS_LUMA>(bitDepth, src, srcStride, dst, dstStride, width, height, isFirst, isLast, m_lumaFilter_4taps[frac]);
   }
   else

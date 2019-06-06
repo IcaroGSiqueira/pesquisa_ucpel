@@ -661,7 +661,8 @@ Bool TAppEncCfg::parseCfg( Int argc, TChar* argv[] )
   ("WarnUnknowParameter,w",                           warnUnknowParameter,                                  0, "warn for unknown configuration parameters instead of failing")
 
   // File, I/O and source parameters
-  ("clip_before",                                     TComContadores::clip_before,                         0 , "number of TAPS for approximate FME")
+  ("rounddown",                                   TComContadores::rounddown,                           0 , "deactivate sum with 32 bits")
+  ("clip_before",                                     TComContadores::clip_before,                         0 , "clipping after or before")
   ("n_taps",                                          TComContadores::n_taps,                              8 , "number of TAPS for approximate FME")
   ("InputFile,i",                                     m_inputFileName,                             string(""), "Original YUV input file name")
   ("BitstreamFile,b",                                 m_bitstreamFileName,                         string(""), "Bitstream output file name")

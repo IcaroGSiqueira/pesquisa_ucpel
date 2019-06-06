@@ -18,6 +18,7 @@
 std::map<std::string, long long> TComContadores::contador_interpolador;
 int TComContadores::n_taps;
 int TComContadores::clip_before;
+int TComContadores::rounddown;
 
 
 void TComContadores::contabilizaInterpolacaoPU(int w, int h){

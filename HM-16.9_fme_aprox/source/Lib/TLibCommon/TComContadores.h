@@ -25,6 +25,7 @@ class TComContadores {
 public:
     static std::map<std::string, long long> contador_interpolador;
     static int n_taps;
+    static int rounddown;
     static int clip_before;
     static void  printReport();
     static void contabilizaInterpolacaoPU(int, int);

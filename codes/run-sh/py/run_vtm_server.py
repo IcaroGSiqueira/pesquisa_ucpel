@@ -31,6 +31,6 @@ for yuv in yuvs:
 		if simd == 1:
 			linha = "{ time %s/pesquisa_ucpel/vtm_5.0/bin/EncoderAppStatic -c %s/pesquisa_ucpel/vtm_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_%sfr_vtmSIMD.bin ; } &> %s/testesVVC/out/%s_qp%s_%sfr_vtmSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,f,homepath,yuv,qp,f)
 		else:
-			linha = "{ time %s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/pesquisa_ucpel/testesVVC/bin/%s_%sfr_vtmNoSIMD.bin ; }  &> %s/pesquisa_ucpel/testesVVC/out/%s_qp%s_%sfr_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,f,homepath,yuv,qp,f)
+			linha = "{ time %s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0_noSIMD/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bin/%s_%sfr_vtmNoSIMD.bin ; }  &> %s/testesVVC/out/%s_qp%s_%sfr_vtmNoSIMD_out" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,f,homepath,yuv,qp,f)
 		print >> file, linha
 		file.close

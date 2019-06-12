@@ -1,8 +1,8 @@
 from bjontegaardhmvtm import bdbr,bdpsnr,plotRDCurves
 
-csv_test = open('/home/icaro/testesHEVC/hm-noSIMD.csv','rb')
-csv_ref = open('/home/icaro/testesVVC/vtm-SIMD.csv','rb')
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_SIMD.csv","w")
+csv_test = open('/home/icaro/pesquisa_ucpel/hm-noSIMD.csv','rb')
+csv_ref = open('/home/icaro/pesquisa_ucpel/vtm-noSIMD.csv','rb')
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_noSIMD.csv","w")
 
 lines = csv_ref.readlines()
 tlines = csv_test.readlines()
@@ -67,5 +67,5 @@ for x in xrange(0,tam):
 		bdbyuv = bdbr(ref,test,4)
 		bdp = bdpsnr(ref,test,1) 
 		bdpyuv = bdpsnr(ref,test,4) 
-		plotRDCurves(ref,test,1,"./curvas/Curva%s.pdf"%n,n)
+		plotRDCurves(ref,test,1,"/home/icaro/pesquisa_ucpel/bd-rate/curvas/Curva_HM-VTM_noSIMD%s.pdf"%n,n)
 		print >> out,nome,bdb,bdbyuv,bdp,bdpyuv,dt

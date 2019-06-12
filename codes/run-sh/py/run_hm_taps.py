@@ -1,7 +1,7 @@
 import os
 yuvs = os.listdir("../../Videos")
 f=50
-file = open("run_hm_taps.sh","w")
+file = open("../run_hm_taps.sh","w")
 for yuv in yuvs:
 	for bina in ["2h","4h3q","6h5q"]:
 		for qp in [37,32,27,22]:

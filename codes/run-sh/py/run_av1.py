@@ -1,7 +1,7 @@
 import os
 yuvs = os.listdir("/home/icaro/origCfP")
 f=50
-file = open("run_av1.sh","w")
+file = open("../run_av1.sh","w")
 for qp in [19,24,29,34]:
 	for yuv in yuvs:
 		if ".py" in yuv:

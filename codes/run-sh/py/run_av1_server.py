@@ -8,7 +8,7 @@ homepath = "/home/grellert"
 yuvpath = "/workareas/share/video_sequences"
 #yuvpath = "/home/icaro/origCfP"
 
-file = open("run_av1_server.sh","w")
+file = open("../run_av1_server.sh","w")
 for qp in [19,24,29,34]:
 	for yuv in yuvs:
 		if ".py" in yuv:

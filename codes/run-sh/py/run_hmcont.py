@@ -1,7 +1,7 @@
 import os
 yuvs = os.listdir("../hm")
 f=50
-file = open("run_hm.sh","w")
+file = open("../run_hm.sh","w")
 for qp in [22,27,32,37]:
 	for yuv in yuvs:
 		if ".py" in yuv:

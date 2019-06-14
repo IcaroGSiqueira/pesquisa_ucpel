@@ -15,17 +15,18 @@ def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
 	xa, ya = HEVC[:,0], HEVC[:,yuv_sel]
 	xb, yb = VVC[:,0], VVC[:,yuv_sel]
 
-	plt.plot(xa,ya,label='HEVC', marker = 's', color='k')
-	plt.plot(xb,yb,label='VVC', marker = '^', color='red')
+	plt.plot(xa,ya,label='HEVC', marker = 'o', color='#006000')
+	plt.plot(xb,yb,label='VVC', marker = '^', color='#0c00b5')
 	plt.legend()
-	plt.xlabel('bitrate (kbps)\n %s'%n)
+	plt.title('%s\n'%n)
+	plt.xlabel('Bitrate (kbps)')
 	if yuv_sel == 1:
 		plt.ylabel('Y-PSNR (dB)')
 	else:
 		plt.ylabel('YUV-PSNR (dB)')
 
 	plt.tight_layout()
-	plt.savefig(title, dpi=300)
+	plt.savefig(title, dpi=500)
 	plt.close()
 
 def bdbr(HEVC,VVC,  yuv_sel):

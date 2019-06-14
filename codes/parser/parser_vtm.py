@@ -3,7 +3,7 @@ pathin = "/grellert/testesVVC/out"
 out = open("/home/grellert/testesVVC/vtm-SIMD.csv","w")
 yuvs = sorted(os.listdir("/home/%s"%pathin))
 for yuv in yuvs:
-	if "SIMD" not in yuv:
+	if "vtmSIMD" not in yuv:
 		continue
 	file = open("/home%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()

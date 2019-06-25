@@ -1,9 +1,11 @@
 import os
 pathin = "/grellert/testesVVC/out"
-out = open("/home/grellert/testesVVC/vtm-SIMD.csv","w")
+out = open("/home/grellert/testesVVC/vtm-noSIMD.csv","w")
+#out = open("/home/grellert/testesVVC/vtm-SIMD.csv","w")
 yuvs = sorted(os.listdir("/home/%s"%pathin))
 for yuv in yuvs:
-	if "vtmSIMD" not in yuv:
+	if "vtmSIMD" in yuv:
+	#if "vtmSIMD" not in yuv:
 		continue
 	file = open("/home%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()

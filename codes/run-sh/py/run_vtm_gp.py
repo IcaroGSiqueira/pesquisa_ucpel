@@ -8,10 +8,11 @@ f=5
 yuvs = {"BQSquare_416x240_60.yuv"}
 
 homepath = "/home/grellert"
+#homepath = "/home/icaro"
 yuvpath = "/workareas/share/video_sequences"
 #yuvpath = "/home/icaro/origCfP"
 
-file = open("../run_hm_gp.sh","w")
+file = open("../run_vtm_gp.sh","w")
 for yuv in yuvs:
 	for qp in [22,27,32,37]:
 		if "crop" in yuv:
@@ -27,8 +28,6 @@ for yuv in yuvs:
 			continue
 		w,h = pix.split("x")
 		#print w,h,f,fr,qp
-		#linha = " %s/pesquisa_ucpel/HM_16.9/bin/hm_16_9_gprof -c ../cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=/home/icaro/Documents/TesteHEVC/%s.bin  > /home/icaro/Documents/TesteHEVC/%s_qp%s_hm_out && gprof hm_16_9_gprof gmon.out > /home/icaro/Documents/TesteHEVC/GprofHM/gprof_%s_qp%s_hm.txt" %(homepath,yuvpath,yuv,h,w,f,fr,qp,nome,yuv,qp,yuv,qp)
-
-		linha = "/home/icaro/pesquisa_ucpel/HM-16.9_fme_aprox/bin/hm_16_9_gprof -c /home/icaro/pesquisa_ucpel/HM-16.9_fme_aprox/cfg/encoder_randomaccess_main.cfg --InputFile=/home/icaro/origCfP/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=/home/icaro/testesHEVC/%s.bin  > /home/icaro/testesHEVC/%s_qp%s_hm_out && gprof /home/icaro/pesquisa_ucpel/HM-16.9_fme_aprox/bin/hm_16_9_gprof /home/icaro/pesquisa_ucpel/codes/run-sh/gmon.out > /home/icaro/testesHEVC/gprof_%s_qp%s_hm.txt" %(yuv,h,w,f,fr,qp,nome,yuv,qp,yuv,qp)
+		linha = "%s/pesquisa_ucpel/VTM_5.0/bin/EncoderAppStatic -c %s/pesquisa_ucpel/VTM_5.0/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/gbin/%s.bin  > %s/testesVVC/gpout/%s_qp%s_vtm_out && gprof %s/pesquisa_ucpel/VTM_5.0/bin/EncoderAppStatic %s/pesquisa_ucpel/codes/run-sh/gmon.out > %s/testesHEVC/gprof_%s_qp%s_vtm.txt" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp,homepath,homepath,homepath,yuv,qp)
 		print >> file, linha
 		file.close

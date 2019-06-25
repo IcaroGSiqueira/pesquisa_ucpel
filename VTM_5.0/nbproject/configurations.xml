@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="source" name="0">
+      <df name="App">
+        <df name="DecoderApp">
+          <in>DecApp.cpp</in>
+          <in>DecAppCfg.cpp</in>
+          <in>decmain.cpp</in>
+        </df>
+        <df name="EncoderApp">
+          <in>EncApp.cpp</in>
+          <in>EncAppCfg.cpp</in>
+          <in>encmain.cpp</in>
+        </df>
+        <df name="Parcat">
+          <in>parcat.cpp</in>
+        </df>
+        <df name="SEIRemovalApp">
+          <in>SEIRemovalApp.cpp</in>
+          <in>SEIRemovalAppCfg.cpp</in>
+          <in>seiremovalmain.cpp</in>
+        </df>
+      </df>
+      <df name="Lib">
+        <df name="CommonLib">
+          <df name="x86">
+            <df name="avx">
+              <in>AdaptiveLoopFilter_avx.cpp</in>
+              <in>AffineGradientSearch_avx.cpp</in>
+              <in>Buffer_avx.cpp</in>
+              <in>InterpolationFilter_avx.cpp</in>
+              <in>RdCost_avx.cpp</in>
+            </df>
+            <df name="avx2">
+              <in>AdaptiveLoopFilter_avx2.cpp</in>
+              <in>AffineGradientSearch_avx2.cpp</in>
+              <in>Buffer_avx2.cpp</in>
+              <in>InterpolationFilter_avx2.cpp</in>
+              <in>RdCost_avx2.cpp</in>
+            </df>
+            <df name="sse41">
+              <in>AdaptiveLoopFilter_sse41.cpp</in>
+              <in>AffineGradientSearch_sse41.cpp</in>
+              <in>Buffer_sse41.cpp</in>
+              <in>InterpolationFilter_sse41.cpp</in>
+              <in>RdCost_sse41.cpp</in>
+            </df>
+            <df name="sse42">
+              <in>IbcHashmap_sse42.cpp</in>
+            </df>
+            <in>CommonDefX86.cpp</in>
+            <in>InitX86.cpp</in>
+          </df>
+          <in>AdaptiveLoopFilter.cpp</in>
+          <in>AffineGradientSearch.cpp</in>
+          <in>BitStream.cpp</in>
+          <in>Buffer.cpp</in>
+          <in>CacheModel.cpp</in>
+          <in>ChromaFormat.cpp</in>
+          <in>CodingStructure.cpp</in>
+          <in>ContextModelling.cpp</in>
+          <in>Contexts.cpp</in>
+          <in>CrossCompPrediction.cpp</in>
+          <in>DepQuant.cpp</in>
+          <in>Hash.cpp</in>
+          <in>IbcHashMap.cpp</in>
+          <in>InterPrediction.cpp</in>
+          <in>InterpolationFilter.cpp</in>
+          <in>IntraPrediction.cpp</in>
+          <in>LoopFilter.cpp</in>
+          <in>MCTS.cpp</in>
+          <in>MatrixIntraPrediction.cpp</in>
+          <in>Mv.cpp</in>
+          <in>PicYuvMD5.cpp</in>
+          <in>Picture.cpp</in>
+          <in>Quant.cpp</in>
+          <in>QuantRDOQ.cpp</in>
+          <in>RdCost.cpp</in>
+          <in>RdCostWeightPrediction.cpp</in>
+          <in>Reshape.cpp</in>
+          <in>Rom.cpp</in>
+          <in>RomLFNST.cpp</in>
+          <in>RomTr.cpp</in>
+          <in>SEI.cpp</in>
+          <in>SampleAdaptiveOffset.cpp</in>
+          <in>Slice.cpp</in>
+          <in>TrQuant.cpp</in>
+          <in>TrQuant_EMT.cpp</in>
+          <in>Unit.cpp</in>
+          <in>UnitPartitioner.cpp</in>
+          <in>UnitTools.cpp</in>
+          <in>WeightPrediction.cpp</in>
+          <in>dtrace.cpp</in>
+          <in>dtrace_blockstatistics.cpp</in>
+        </df>
+        <df name="DecoderLib">
+          <in>AnnexBread.cpp</in>
+          <in>BinDecoder.cpp</in>
+          <in>CABACReader.cpp</in>
+          <in>DecCu.cpp</in>
+          <in>DecLib.cpp</in>
+          <in>DecSlice.cpp</in>
+          <in>NALread.cpp</in>
+          <in>SEIread.cpp</in>
+          <in>VLCReader.cpp</in>
+        </df>
+        <df name="EncoderLib">
+          <in>AQp.cpp</in>
+          <in>BinEncoder.cpp</in>
+          <in>CABACWriter.cpp</in>
+          <in>EncAdaptiveLoopFilter.cpp</in>
+          <in>EncCu.cpp</in>
+          <in>EncGOP.cpp</in>
+          <in>EncLib.cpp</in>
+          <in>EncModeCtrl.cpp</in>
+          <in>EncReshape.cpp</in>
+          <in>EncSampleAdaptiveOffset.cpp</in>
+          <in>EncSlice.cpp</in>
+          <in>InterSearch.cpp</in>
+          <in>IntraSearch.cpp</in>
+          <in>NALwrite.cpp</in>
+          <in>RateCtrl.cpp</in>
+          <in>SEIEncoder.cpp</in>
+          <in>SEIwrite.cpp</in>
+          <in>VLCWriter.cpp</in>
+          <in>WeightPredAnalysis.cpp</in>
+        </df>
+        <df name="libmd5">
+          <in>libmd5.cpp</in>
+        </df>
+        <df name="Utilities">
+          <in>ColourRemapping.cpp</in>
+          <in>VideoIOYuv.cpp</in>
+          <in>program_options_lite.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>build/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>source</Elem>
+  </sourceRootList>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-fopenmp -fPIC -msse4.1 -std=gnu++11"/>
+        <element flagsID="1" commonFlags="-fopenmp -fPIC -msse4.1 -std=gnu++11 -mavx"/>
+        <element flagsID="2" commonFlags="-fopenmp -fPIC -msse4.1 -std=gnu++11 -mavx2"/>
+        <element flagsID="3"
+                 commonFlags="-fopenmp -fPIC -msse4.1 -std=gnu++11 -msse4.1"/>
+        <element flagsID="4"
+                 commonFlags="-fopenmp -fPIC -msse4.1 -std=gnu++11 -msse4.2"/>
+        <element flagsID="5" commonFlags="-fopenmp -fPIE -msse4.1 -std=gnu++11"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile -j2</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>build</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>build</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/App/DecoderApp">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/DecoderAnalyserApp</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/DecoderLib</pElem>
+            <pElem>source/Lib/Utilities</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_BIT_STATISTICS=1</Elem>
+            <Elem>RExt__DECODER_DEBUG_TOOL_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/App/EncoderApp">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/EncoderApp</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/EncoderLib</pElem>
+            <pElem>source/Lib/DecoderLib</pElem>
+            <pElem>source/Lib/Utilities</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/App/Parcat">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/Parcat</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/App/SEIRemovalApp">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/SEIRemovalApp</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/DecoderLib</pElem>
+            <pElem>source/Lib/Utilities</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/CommonLib">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/CommonAnalyserLib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_TOOL_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/CommonLib/x86/avx">
+        <ccTool>
+          <preprocessorList>
+            <Elem>USE_AVX</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/CommonLib/x86/avx2">
+        <ccTool>
+          <preprocessorList>
+            <Elem>USE_AVX2</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/CommonLib/x86/sse41">
+        <ccTool>
+          <preprocessorList>
+            <Elem>USE_SSE41</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/CommonLib/x86/sse42">
+        <ccTool>
+          <preprocessorList>
+            <Elem>USE_SSE42</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/DecoderLib">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/DecoderLib</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/DecoderAnalyserLib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_BIT_STATISTICS=1</Elem>
+            <Elem>RExt__DECODER_DEBUG_TOOL_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/EncoderLib">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/EncoderLib</pElem>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/Utilities">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/Utilities</pElem>
+            <pElem>source/Lib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Lib/libmd5">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/CommonLib</pElem>
+            <pElem>source/Lib</pElem>
+            <pElem>source/Lib/CommonLib/x86</pElem>
+            <pElem>source/Lib/libmd5</pElem>
+            <pElem>source/Lib/CommonAnalyserLib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_TOOL_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <item path="source/App/DecoderApp/DecApp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/DecoderApp/DecAppCfg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/DecoderApp/decmain.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/EncoderApp/EncApp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/EncoderApp/EncAppCfg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/EncoderApp/encmain.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/Parcat/parcat.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/SEIRemovalApp/SEIRemovalApp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/SEIRemovalApp/SEIRemovalAppCfg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/App/SEIRemovalApp/seiremovalmain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="5">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/AdaptiveLoopFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/AffineGradientSearch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/BitStream.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Buffer.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/CacheModel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/ChromaFormat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/CodingStructure.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/ContextModelling.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Contexts.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/CrossCompPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/DepQuant.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Hash.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/IbcHashMap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/InterPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/InterpolationFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/IntraPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/LoopFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/MCTS.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/MatrixIntraPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Mv.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/PicYuvMD5.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Picture.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Quant.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/QuantRDOQ.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/RdCost.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/RdCostWeightPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Reshape.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Rom.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/RomLFNST.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/RomTr.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/SEI.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/SampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Slice.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/TrQuant.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/TrQuant_EMT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/Unit.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/UnitPartitioner.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/UnitTools.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/WeightPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/dtrace.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/dtrace_blockstatistics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/CommonDefX86.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/InitX86.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx/AdaptiveLoopFilter_avx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx/AffineGradientSearch_avx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx/Buffer_avx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx/InterpolationFilter_avx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx/RdCost_avx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx2/AdaptiveLoopFilter_avx2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx2/AffineGradientSearch_avx2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx2/Buffer_avx2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx2/InterpolationFilter_avx2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/avx2/RdCost_avx2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse41/AdaptiveLoopFilter_sse41.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse41/AffineGradientSearch_sse41.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse41/Buffer_sse41.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse41/InterpolationFilter_sse41.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse41/RdCost_sse41.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="source/Lib/CommonLib/x86/sse42/IbcHashmap_sse42.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="4">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/AnnexBread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/BinDecoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/CABACReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/DecCu.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/DecLib.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/DecSlice.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/NALread.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/SEIread.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/DecoderLib/VLCReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/AQp.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/BinEncoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/CABACWriter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncAdaptiveLoopFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncCu.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncGOP.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncLib.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncModeCtrl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncReshape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncSampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/EncSlice.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/InterSearch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/IntraSearch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/NALwrite.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/RateCtrl.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/SEIEncoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/SEIwrite.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/VLCWriter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/EncoderLib/WeightPredAnalysis.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/Utilities/ColourRemapping.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/Utilities/VideoIOYuv.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/Utilities/program_options_lite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/libmd5/libmd5.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -26,21 +26,18 @@ for yuv in yuvs:
 		#print w,h,fr,qp,nome
 		linhaH = "cd %s/pesquisa_ucpel/HM-16.9_fme_aprox/bin/ && valgrind --tool=callgrind --callgrind-out-file=%s/testesHEVC/%s_hm_valg  ./hm_16_9_valgrind -c ../cfg/encoder_randomaccess_main.cfg  --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s " %(homepath,homepath,nome,yuvpath,yuv,h,w,f,fr,qp)
 		print >> file, linhaH
-	for qp in [37,32,27,22]:
-		if "crop" in yuv:
-			vid,pix,fr,y = yuv.split("_")
-			nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
-		else:
-			vid,pix,fps = yuv.split("_")
-			fr,y = fps.split(".")
-			nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
-		if simd == 1:
-			linhaV = "cd %s/pesquisa_ucpel/VTM_5.0/bin/ && valgrind --tool=callgrind --callgrind-out-file=%s/testesVVC/%s_vtm_valg ./EncoderAppStatic -c ../cfg/encoder_randomaccess_vtm.cfg   --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s " %(homepath,homepath,nome,yuvpath,yuv,h,w,f,fr,qp)
-		else:
-			linhaV = "cd %s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/ && valgrind --tool=callgrind --callgrind-out-file=%s/testesVVC/%s_vtm_valg ./EncoderAppStatic -c ../cfg/encoder_randomaccess_vtm.cfg   --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s " %(homepath,homepath,nome,yuvpath,yuv,h,w,f,fr,qp)
-		
-		print >> file, linhaV
-	#for qp in [37,32,27,22]:
-	#	linhaA = "cd /home/icaro/aom/build/ 	        && valgrind --tool=callgrind --callgrind-out-file=/home/icaro/Documents/valgrindTests/%s_aom_valg ./aomenc -p 1 -t 1 --psnr -v --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --good --tune=psnr --lag-in-frames=0 --end-usage=q --min-gf-interval=16 --max-gf-interval=16 -b 8 /home/icaro/origCfP/%s" %(nome,fr,w,h,qp-3,qp+5,f,yuv)
-	#	print >> file, linhaA
+
+	# for qp in [37,32,27,22]:
+	# 	if "crop" in yuv:
+	# 		vid,pix,fr,y = yuv.split("_")
+	# 		nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
+	# 	else:
+	# 		vid,pix,fps = yuv.split("_")
+	# 		fr,y = fps.split(".")
+	# 		nome = vid+"_"+pix+"_"+fr+"_qp%s_"%(qp)+y
+	# 	if simd == 1:
+	# 		linhaV = "cd %s/pesquisa_ucpel/VTM_5.0/bin/ && valgrind --tool=callgrind --callgrind-out-file=%s/testesVVC/%s_vtm_valg ./EncoderAppStatic -c ../cfg/encoder_randomaccess_vtm.cfg   --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s " %(homepath,homepath,nome,yuvpath,yuv,h,w,f,fr,qp)
+	# 	else:
+	# 		linhaV = "cd %s/pesquisa_ucpel/VTM_5.0_noSIMD/bin/ && valgrind --tool=callgrind --callgrind-out-file=%s/testesVVC/%s_vtm_valg ./EncoderAppStatic -c ../cfg/encoder_randomaccess_vtm.cfg   --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s " %(homepath,homepath,nome,yuvpath,yuv,h,w,f,fr,qp)
+	# 	print >> file, linhaV
 file.close

@@ -15,8 +15,8 @@ def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
 	xa, ya = HEVC[:,0], HEVC[:,yuv_sel]
 	xb, yb = VVC[:,0], VVC[:,yuv_sel]
 
-	plt.plot(xa,ya,label='HEVC', marker = 'o', color='#006000')
-	plt.plot(xb,yb,label='VVC', marker = '^', color='#0c00b5')
+	plt.plot(xa,ya,label='VVC', marker = 'o', color='#006000')
+	plt.plot(xb,yb,label='HEVC', marker = '^', color='#0c00b5')
 	plt.legend()
 	plt.title('%s\n'%n)
 	plt.xlabel('Bitrate (kbps)')

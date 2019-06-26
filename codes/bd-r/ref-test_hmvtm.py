@@ -1,12 +1,14 @@
 from bjontegaardhmvtm import bdbr,bdpsnr,plotRDCurves
 
 csv_test = open('/home/icaro/pesquisa_ucpel/hm-noSIMD.csv','rb')
-csv_ref = open('/home/icaro/pesquisa_ucpel/vtm-SIMD.csv','rb')
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_SIMD.csv","w")
+csv_ref = open('/home/icaro/pesquisa_ucpel/vtm-noSIMD.csv','rb')
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_noSIMD.csv","w")
 
 lines = csv_ref.readlines()
 tlines = csv_test.readlines()
 tam = len(lines)
+
+#print >> out,"YUV","BD-BR_Y","BD-BR_YUV","BD-PSNR_Y","BD-PSNR_YUV","DIF_TIME"
 
 for x in xrange(0,tam):
 	if "qp22" in lines[x]:
@@ -68,4 +70,4 @@ for x in xrange(0,tam):
 		bdp = bdpsnr(ref,test,1) 
 		bdpyuv = bdpsnr(ref,test,4) 
 		plotRDCurves(ref,test,1,"/home/icaro/pesquisa_ucpel/bd-rate/curvas/Curva_HM-VTM_SIMD_%s.pdf"%n,nome)
-		print >> out,nome,bdb,bdbyuv,bdp,bdpyuv,dt
+		#print >> out,nome,bdb,bdbyuv,bdp,bdpyuv,dt

@@ -3,8 +3,44 @@ from scipy import interpolate
 import scipy.integrate as integrate
 import math
 import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 12})
 
-def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
+
+def plotGroupedRDCurves(group, yuv_sel, title = 'rd_curve.pdf'):
+	colors = ['red','green', 'blue', 'orange']
+	i =0
+	for HEVC,VVC, n in group[:4]:
+		HEVC = np.asarray(HEVC)
+		VVC = np.asarray(VVC)
+
+		HEVC = HEVC[HEVC[:,0].argsort()]
+		VVC = VVC[VVC[:,0].argsort()]
+		xa, ya = np.log10(HEVC[:,0]), HEVC[:,yuv_sel]
+		xb, yb = np.log10(VVC[:,0]), VVC[:,yuv_sel]
+		xa, ya = HEVC[:,0], HEVC[:,yuv_sel]
+		xb, yb = VVC[:,0], VVC[:,yuv_sel]
+
+		seqname, seqres, seqfps = n.replace('.yuv','').split('_')
+		plt.plot(xa,ya,label='%s(HEVC)' % seqname, marker = 'o', linestyle = '--', lw = 0.75, color=colors[i])
+		plt.plot(xb,yb,label='%s(VVC)'% seqname, marker = '^',lw = 0.75, color=colors[i])
+		i += 1
+
+	plt.legend(loc="lower right", ncol = 2,frameon = False, labelspacing = 0.1, columnspacing = 0.15, )
+
+	plt.xlabel('Bitrate (kbps)')
+	if yuv_sel == 1:
+		plt.ylabel('Y-PSNR (dB)')
+	else:
+		plt.ylabel('YUV-PSNR (dB)')
+
+	plt.tight_layout()
+
+	plt.savefig(title, dpi=500)
+	plt.close()
+
+
+def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' ', save = True):
 	HEVC = np.asarray(HEVC)
 	VVC = np.asarray(VVC)
 
@@ -15,10 +51,12 @@ def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
 	xa, ya = HEVC[:,0], HEVC[:,yuv_sel]
 	xb, yb = VVC[:,0], VVC[:,yuv_sel]
 
-	plt.plot(xa,ya,label='VVC', marker = 'o', color='#006000')
-	plt.plot(xb,yb,label='HEVC', marker = '^', color='#0c00b5')
+	plt.plot(xa,ya,label='HEVC', marker = 'o', color='#006000')
+	plt.plot(xb,yb,label='VVC', marker = '^', color='#0c00b5')
 	plt.legend()
-	plt.title('%s\n'%n)
+	seqname, seqres, seqfps = n.replace('.yuv','').split('_')
+	figtitle = '%s (%s@%s)' % (seqname, seqres, seqfps)
+	plt.title('%s\n' % (figtitle))
 	plt.xlabel('Bitrate (kbps)')
 	if yuv_sel == 1:
 		plt.ylabel('Y-PSNR (dB)')

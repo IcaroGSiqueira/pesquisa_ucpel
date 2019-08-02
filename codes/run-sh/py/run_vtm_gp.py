@@ -8,7 +8,7 @@ yuvs = ["BasketballPass_416x240_50.yuv"]
 
 homepath = "/home/grellert"
 #homepath = "/home/icaro"
-yuvpath = "/workareas/share/video_sequences"
+yuvpath = "/videos"
 #yuvpath = "/home/icaro/origCfP"
 
 file = open("../run_vtm_gp.sh","w")

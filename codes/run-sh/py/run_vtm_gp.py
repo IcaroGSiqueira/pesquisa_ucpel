@@ -6,7 +6,7 @@ f=5
 
 yuvs = ["BasketballPass_416x240_50.yuv"]
 
-homepath = "/home/grellert/pesquisa_ucpel"
+homepath = "/home/grellert"
 #homepath = "/home/icaro"
 yuvpath = "/videos"
 #yuvpath = "/home/icaro/origCfP"
@@ -28,6 +28,6 @@ for yuv in yuvs:
 		w,h = pix.split("x")
 		#print w,h,f,fr,qp
 
-		linha = "%s/VTM_5.0_SIMD_GProf/bin/EncoderAppStaticd -c %s/VTM_5.0_SIMD_GProf/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bingp/%s.bin  > %s/testesVVC/outgp/%s_qp%s_vtm_out && gprof %s/VTM_5.0_SIMD_GProf/bin/EncoderAppStaticd %s/pesquisa_ucpel/codes/run-sh/gmon.out > %s/testesVVC/gprof/gprof_%s_qp%s_vtm.txt" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp,homepath,homepath,homepath,yuv,qp)
+		linha = "%s/pesquisa_ucpel/VTM_5.0_SIMD_GProf/bin/EncoderAppStaticd -c %s/pesquisa_ucpel/VTM_5.0_SIMD_GProf/cfg/encoder_randomaccess_vtm.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/testesVVC/bingp/%s.bin  > %s/testesVVC/outgp/%s_qp%s_vtm_out && gprof %s/pesquisa_ucpel/VTM_5.0_SIMD_GProf/bin/EncoderAppStaticd %s/pesquisa_ucpel/codes/run-sh/gmon.out > %s/testesVVC/gprof/gprof_%s_qp%s_vtm.txt" %(homepath,homepath,yuvpath,yuv,h,w,f,fr,qp,homepath,nome,homepath,yuv,qp,homepath,homepath,homepath,yuv,qp)
 		print >> file, linha
 		file.close

@@ -40,6 +40,10 @@ stdio.h
 setjmp.h
 -
 
+..//aom/internal/aom_image_internal.h
+aom/aom_image.h
+../aom/internal/aom/aom_image.h
+
 ..//aom_mem/aom_mem.h
 aom/aom_integer.h
 ../aom_mem/aom/aom_integer.h
@@ -74,29 +78,29 @@ aom/aom_frame_buffer.h
 aom/aom_codec.h
 ../aom/aom/aom_codec.h
 
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_codec.c
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_codec.c
 stdarg.h
 -
 stdlib.h
 -
 config/aom_config.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/config/aom_config.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/config/aom_config.h
 config/aom_version.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/config/aom_version.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/config/aom_version.h
 aom/aom_integer.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/aom_integer.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/aom_integer.h
 aom/internal/aom_codec_internal.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/internal/aom_codec_internal.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/internal/aom_codec_internal.h
 
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_decoder.c
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_decoder.c
 string.h
 -
 aom/internal/aom_codec_internal.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/internal/aom_codec_internal.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/internal/aom_codec_internal.h
 
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_encoder.c
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_encoder.c
 config/aom_config.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/config/aom_config.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/config/aom_config.h
 fenv.h
 -
 limits.h
@@ -104,31 +108,33 @@ limits.h
 string.h
 -
 aom/internal/aom_codec_internal.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/internal/aom_codec_internal.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/internal/aom_codec_internal.h
 aom_ports/x86.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_ports/x86.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_ports/x86.h
 
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_image.c
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_image.c
 stdlib.h
 -
 string.h
 -
 aom/aom_image.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/aom_image.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/aom_image.h
 aom/aom_integer.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/aom_integer.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/aom_integer.h
+aom/internal/aom_image_internal.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/internal/aom_image_internal.h
 aom_mem/aom_mem.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_mem/aom_mem.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_mem/aom_mem.h
 
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom_integer.c
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom_integer.c
 assert.h
 -
 aom/aom_integer.h
-/home/icaro/pesquisa_ucpel/aom/aom/src/aom/aom_integer.h
+/home/icaro/pesquisa_ucpel/aom_1.0/aom/src/aom/aom_integer.h
 
-/home/icaro/pesquisa_ucpel/aom/build/config/aom_config.c
+/home/icaro/pesquisa_ucpel/aom_1.0/build/config/aom_config.c
 aom/aom_codec.h
-/home/icaro/pesquisa_ucpel/aom/build/config/aom/aom_codec.h
+/home/icaro/pesquisa_ucpel/aom_1.0/build/config/aom/aom_codec.h
 
 config/aom_config.h
 

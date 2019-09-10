@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/build/gen_src/usage_exit.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/test_intra_pred_speed.dir/gen_src/usage_exit.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/gen_src/usage_exit.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/test_intra_pred_speed.dir/gen_src/usage_exit.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../third_party/libwebm"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/icaro/pesquisa_ucpel/aom/test/test_intra_pred_speed.cc" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/test_intra_pred_speed.dir/test/test_intra_pred_speed.cc.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/test/test_intra_pred_speed.cc" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/test_intra_pred_speed.dir/test/test_intra_pred_speed.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -43,8 +43,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom.dir/DependInfo.cmake"
-  "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_gtest.dir/DependInfo.cmake"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom.dir/DependInfo.cmake"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -27,6 +27,9 @@ extern "C" {
 // Bits Per MB at different Q (Multiplied by 512)
 #define BPER_MB_NORMBITS 9
 
+// Use this macro to turn on/off use of alt-refs in one-pass mode.
+#define USE_ALTREF_FOR_ONE_PASS 1
+
 // Threshold used to define if a KF group is static (e.g. a slide show).
 // Essentially, this means that no frame in the group has more than 1% of MBs
 // that are not marked as coded with 0,0 motion in the first pass.
@@ -59,6 +62,17 @@ enum {
   RATE_FACTOR_LEVELS
 } UENUM1BYTE(RATE_FACTOR_LEVEL);
 
+enum {
+  KF_UPDATE,
+  LF_UPDATE,
+  GF_UPDATE,
+  ARF_UPDATE,
+  OVERLAY_UPDATE,
+  INTNL_OVERLAY_UPDATE,  // Internal Overlay Frame
+  INTNL_ARF_UPDATE,      // Internal Altref Frame
+  FRAME_UPDATE_TYPES
+} UENUM1BYTE(FRAME_UPDATE_TYPE);
+
 typedef struct {
   // Rate targetting variables
   int base_frame_target;  // A baseline frame target before adjustment
@@ -89,7 +103,6 @@ typedef struct {
   int source_alt_ref_pending;
   int source_alt_ref_active;
   int is_src_frame_alt_ref;
-  int is_src_frame_internal_arf;
   int sframe_due;
 
   int avg_frame_bandwidth;  // Average frame size target for clip
@@ -142,6 +155,7 @@ typedef struct {
   float_t arf_boost_factor;
   // Q index used for ALT frame
   int arf_q;
+  int active_worst_quality;
 } RATE_CONTROL;
 
 struct AV1_COMP;
@@ -166,8 +180,6 @@ int av1_rc_get_default_max_gf_interval(double framerate, int min_gf_interval);
 // Generally at the high level, the following flow is expected
 // to be enforced for rate control:
 // First call per frame, one of:
-//   av1_rc_get_one_pass_vbr_params()
-//   av1_rc_get_one_pass_cbr_params()
 //   av1_rc_get_first_pass_params()
 //   av1_rc_get_second_pass_params()
 // depending on the usage to set the rate control encode parameters desired.
@@ -187,12 +199,6 @@ int av1_rc_get_default_max_gf_interval(double framerate, int min_gf_interval);
 // Functions to set parameters for encoding before the actual
 // encode_frame_to_data_rate() function.
 struct EncodeFrameParams;
-void av1_rc_get_one_pass_vbr_params(
-    struct AV1_COMP *cpi, uint8_t *const frame_update_type,
-    struct EncodeFrameParams *const frame_params, unsigned int frame_flags);
-void av1_rc_get_one_pass_cbr_params(
-    struct AV1_COMP *cpi, uint8_t *const frame_update_type,
-    struct EncodeFrameParams *const frame_params, unsigned int frame_flags);
 
 // Post encode update of the rate control parameters based
 // on bytes used
@@ -217,7 +223,7 @@ void av1_rc_compute_frame_size_bounds(const struct AV1_COMP *cpi,
 
 // Picks q and q bounds given the target for bits
 int av1_rc_pick_q_and_bounds(struct AV1_COMP *cpi, int width, int height,
-                             int *bottom_index, int *top_index);
+                             int gf_index, int *bottom_index, int *top_index);
 
 // Estimates q to achieve a target bits per frame
 int av1_rc_regulate_q(const struct AV1_COMP *cpi, int target_bits_per_frame,
@@ -263,11 +269,22 @@ void av1_set_target_rate(struct AV1_COMP *cpi, int width, int height);
 
 int av1_resize_one_pass_cbr(struct AV1_COMP *cpi);
 
-int av1_get_q_and_bounds_constant_quality_two_pass(const struct AV1_COMP *cpi,
-                                                   int width, int height,
-                                                   int *bottom_index,
-                                                   int *top_index, int *arf_q,
-                                                   int gf_index);
+void av1_rc_set_frame_target(struct AV1_COMP *cpi, int target, int width,
+                             int height);
+
+int av1_calc_pframe_target_size_one_pass_vbr(
+    const struct AV1_COMP *const cpi, FRAME_UPDATE_TYPE frame_update_type);
+
+int av1_calc_iframe_target_size_one_pass_vbr(const struct AV1_COMP *const cpi);
+
+int av1_calc_pframe_target_size_one_pass_cbr(
+    const struct AV1_COMP *cpi, FRAME_UPDATE_TYPE frame_update_type);
+
+int av1_calc_iframe_target_size_one_pass_cbr(const struct AV1_COMP *cpi);
+
+void av1_get_one_pass_rt_params(struct AV1_COMP *cpi,
+                                struct EncodeFrameParams *const frame_params,
+                                unsigned int frame_flags);
 
 #ifdef __cplusplus
 }  // extern "C"

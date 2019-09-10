@@ -4,21 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/adaptive_quantize_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/adaptive_quantize_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/highbd_quantize_intrin_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_quantize_intrin_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/highbd_variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_variance_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/masked_sad_intrin_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/masked_sad_intrin_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/obmc_sad_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_sad_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/obmc_variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_variance_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sad4d_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad4d_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sad_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sad_highbd_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_highbd_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sad_impl_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_impl_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sse_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sse_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/subtract_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/subtract_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/sum_squares_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sum_squares_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_avx2.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/x86/variance_impl_avx2.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_impl_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/adaptive_quantize_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/adaptive_quantize_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/highbd_adaptive_quantize_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_adaptive_quantize_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/highbd_quantize_intrin_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_quantize_intrin_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/highbd_variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_variance_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/masked_sad_intrin_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/masked_sad_intrin_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/obmc_sad_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_sad_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/obmc_variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_variance_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sad4d_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad4d_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sad_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sad_highbd_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_highbd_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sad_impl_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_impl_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sse_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sse_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/subtract_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/subtract_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/sum_squares_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sum_squares_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/variance_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_avx2.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/x86/variance_impl_avx2.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_impl_avx2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

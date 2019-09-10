@@ -1,4 +1,4 @@
-# Install script for directory: /home/icaro/pesquisa_ucpel/aom
+# Install script for directory: /home/icaro/pesquisa_ucpel/aom_1.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -47,16 +47,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local/include/aom" TYPE FILE FILES
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_codec.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_frame_buffer.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_image.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_integer.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_decoder.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aomdx.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aomcx.h"
-    "/home/icaro/pesquisa_ucpel/aom/aom/aom_encoder.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_codec.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_frame_buffer.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_image.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_integer.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_decoder.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aomdx.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aomcx.h"
+    "/home/icaro/pesquisa_ucpel/aom_1.0/aom/aom_encoder.h"
     )
 endif()
 
@@ -69,7 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/icaro/pesquisa_ucpel/aom/build/aom.pc")
+file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/icaro/pesquisa_ucpel/aom_1.0/build/aom.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -81,7 +81,55 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/home/icaro/pesquisa_ucpel/aom/build/libaom.a")
+file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/home/icaro/pesquisa_ucpel/aom_1.0/build/libaom.a")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/usr/local/bin/aomdec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/aomdec")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/usr/local/bin/aomdec"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/usr/local/bin/aomdec")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/home/icaro/pesquisa_ucpel/aom_1.0/build/aomdec")
+  if(EXISTS "$ENV{DESTDIR}/usr/local/bin/aomdec" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/aomdec")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/bin/aomdec")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/usr/local/bin/aomenc" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/aomenc")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/usr/local/bin/aomenc"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/usr/local/bin/aomenc")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/home/icaro/pesquisa_ucpel/aom_1.0/build/aomenc")
+  if(EXISTS "$ENV{DESTDIR}/usr/local/bin/aomenc" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/aomenc")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/bin/aomenc")
+    endif()
+  endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -92,5 +140,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/icaro/pesquisa_ucpel/aom/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/icaro/pesquisa_ucpel/aom_1.0/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

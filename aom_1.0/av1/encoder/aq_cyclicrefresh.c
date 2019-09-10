@@ -19,46 +19,6 @@
 #include "aom_dsp/aom_dsp_common.h"
 #include "aom_ports/system_state.h"
 
-struct CYCLIC_REFRESH {
-  // Percentage of blocks per frame that are targeted as candidates
-  // for cyclic refresh.
-  int percent_refresh;
-  // Maximum q-delta as percentage of base q.
-  int max_qdelta_perc;
-  // Superblock starting index for cycling through the frame.
-  int sb_index;
-  // Controls how long block will need to wait to be refreshed again, in
-  // excess of the cycle time, i.e., in the case of all zero motion, block
-  // will be refreshed every (100/percent_refresh + time_for_refresh) frames.
-  int time_for_refresh;
-  // Target number of (4x4) blocks that are set for delta-q.
-  int target_num_seg_blocks;
-  // Actual number of (4x4) blocks that were applied delta-q.
-  int actual_num_seg1_blocks;
-  int actual_num_seg2_blocks;
-  // RD mult. parameters for segment 1.
-  int rdmult;
-  // Cyclic refresh map.
-  int8_t *map;
-  // Map of the last q a block was coded at.
-  uint8_t *last_coded_q_map;
-  // Thresholds applied to the projected rate/distortion of the coding block,
-  // when deciding whether block should be refreshed.
-  int64_t thresh_rate_sb;
-  int64_t thresh_dist_sb;
-  // Threshold applied to the motion vector (in units of 1/8 pel) of the
-  // coding block, when deciding whether block should be refreshed.
-  int16_t motion_thresh;
-  // Rate target ratio to set q delta.
-  double rate_ratio_qdelta;
-  // Boost factor for rate target ratio, for segment CR_SEGMENT_ID_BOOST2.
-  int rate_boost_fac;
-  double low_content_avg;
-  int qindex_delta[3];
-  double weight_segment;
-  int apply_cyclic_refresh;
-};
-
 CYCLIC_REFRESH *av1_cyclic_refresh_alloc(int mi_rows, int mi_cols) {
   size_t last_coded_q_map_size;
   CYCLIC_REFRESH *const cr = aom_calloc(1, sizeof(*cr));
@@ -273,9 +233,9 @@ void av1_cyclic_refresh_set_golden_update(AV1_COMP *const cpi) {
   // period. Depending on past encoding stats, GF flag may be reset and update
   // may not occur until next baseline_gf_interval.
   if (cr->percent_refresh > 0)
-    rc->baseline_gf_interval = 4 * (100 / cr->percent_refresh);
+    rc->baseline_gf_interval = 2 * (100 / cr->percent_refresh);
   else
-    rc->baseline_gf_interval = 40;
+    rc->baseline_gf_interval = 20;
 }
 
 // Update the segmentation map, and related quantities: cyclic refresh map,
@@ -365,6 +325,7 @@ void av1_cyclic_refresh_update_parameters(AV1_COMP *const cpi) {
   int qp_thresh = AOMMIN(20, rc->best_quality << 1);
   cr->apply_cyclic_refresh = 1;
   if (frame_is_intra_only(cm) || is_lossless_requested(&cpi->oxcf) ||
+      cpi->svc.temporal_layer_id > 0 ||
       rc->avg_frame_qindex[INTER_FRAME] < qp_thresh) {
     cr->apply_cyclic_refresh = 0;
     return;
@@ -429,13 +390,7 @@ void av1_cyclic_refresh_setup(AV1_COMP *const cpi) {
   int resolution_change =
       cm->prev_frame && (cm->width != cm->prev_frame->width ||
                          cm->height != cm->prev_frame->height);
-  if (resolution_change) {
-    memset(cpi->segmentation_map, 0, cm->mi_rows * cm->mi_cols);
-    av1_clearall_segfeatures(seg);
-    aom_clear_system_state();
-    av1_disable_segmentation(seg);
-    return;
-  }
+  if (resolution_change) av1_cyclic_refresh_reset_resize(cpi);
   if (cm->current_frame.frame_number == 0) cr->low_content_avg = 0.0;
   if (!cr->apply_cyclic_refresh) {
     // Set segmentation map to 0 and disable.

@@ -38,6 +38,7 @@ test/av1_encoder_parms_get_to_decoder.cc
 test/av1_ext_tile_test.cc
 test/binary_codes_test.cc
 test/boolcoder_test.cc
+test/cnn_test.cc
 test/coding_path_sync.cc
 test/decode_multithreaded_test.cc
 test/divu_small_test.cc
@@ -61,7 +62,6 @@ test/ivf_video_source.h
 test/av1_highbd_iht_test.cc
 test/av1_quantize_test.cc
 test/corner_match_test.cc
-test/quantize_func_test.cc
 test/simd_cmp_sse4.cc
 test/active_map_test.cc
 test/altref_test.cc
@@ -69,6 +69,8 @@ test/aq_segment_test.cc
 test/borders_test.cc
 test/cpu_speed_test.cc
 test/datarate_test.cc
+test/datarate_test.h
+test/svc_datarate_test.cc
 test/encode_api_test.cc
 test/encode_test_driver.cc
 test/encode_test_driver.h
@@ -103,6 +105,7 @@ test/av1_round_shift_array_test.cc
 test/av1_txfm_test.cc
 test/av1_txfm_test.h
 test/av1_wedge_utils_test.cc
+test/avg_test.cc
 test/blend_a64_mask_1d_test.cc
 test/blend_a64_mask_test.cc
 test/comp_avg_pred_test.cc
@@ -113,6 +116,7 @@ test/encodetxb_test.cc
 test/error_block_test.cc
 test/fft_test.cc
 test/fwht4x4_test.cc
+test/hadamard_test.cc
 test/horver_correlation_test.cc
 test/masked_sad_test.cc
 test/masked_variance_test.cc
@@ -121,6 +125,7 @@ test/noise_model_test.cc
 test/obmc_sad_test.cc
 test/obmc_variance_test.cc
 test/pickrst_test.cc
+test/quantize_func_test.cc
 test/sad_test.cc
 test/subtract_test.cc
 test/reconinter_test.cc
@@ -137,11 +142,3 @@ test/intra_edge_test.cc
 test/hash_test.cc
 test/webm_video_source.h
 test/test_libaom.cc
--c
---c++
---ec++
--c
--Aa
--D__CLASSIC_C__
-1
-1

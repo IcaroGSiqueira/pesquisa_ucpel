@@ -5,9 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/common/ivfdec.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_decoder_app_util.dir/common/ivfdec.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/obudec.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_decoder_app_util.dir/common/obudec.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/video_reader.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_decoder_app_util.dir/common/video_reader.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/ivfdec.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_decoder_app_util.dir/common/ivfdec.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/obudec.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_decoder_app_util.dir/common/obudec.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/video_reader.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_decoder_app_util.dir/common/video_reader.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -25,7 +25,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../third_party/libwebm"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/icaro/pesquisa_ucpel/aom/common/webmdec.cc" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_decoder_app_util.dir/common/webmdec.cc.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/webmdec.cc" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_decoder_app_util.dir/common/webmdec.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -9,7 +9,7 @@ homepath = "/home/grellert"
 yuvpath = "/workareas/share/video_sequences"
 #yuvpath = "/home/icaro/origCfP"
 
-file = open("../run_hm_server.sh","w")
+file = open("../hm/run_hm_server.sh","w")
 for yuv in yuvs:
 	for clip in [0]:
 		for qp in [37,32,27,22]:

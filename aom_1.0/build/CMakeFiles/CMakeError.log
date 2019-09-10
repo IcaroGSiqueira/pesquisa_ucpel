@@ -1,24 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_440ae/fast"
-/usr/bin/make -f CMakeFiles/cmTC_440ae.dir/build.make CMakeFiles/cmTC_440ae.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_440ae.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_440ae.dir/CheckSymbolExists.c.o   -c /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_440ae
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_440ae.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_440ae.dir/CheckSymbolExists.c.o  -o cmTC_440ae 
-CMakeFiles/cmTC_440ae.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+Run Build Command:"/usr/bin/make" "cmTC_8ea0c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ea0c.dir/build.make CMakeFiles/cmTC_8ea0c.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ea0c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8ea0c.dir/CheckSymbolExists.c.o   -c /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8ea0c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ea0c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8ea0c.dir/CheckSymbolExists.c.o  -o cmTC_8ea0c 
+/usr/bin/ld: CMakeFiles/cmTC_8ea0c.dir/CheckSymbolExists.c.o: na função "main":
+CheckSymbolExists.c:(.text+0x1b): referência não definida para "pthread_create"
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_440ae.dir/build.make:97: recipe for target 'cmTC_440ae' failed
-make[1]: *** [cmTC_440ae] Error 1
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_440ae/fast' failed
-make: *** [cmTC_440ae/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_8ea0c.dir/build.make:87: cmTC_8ea0c] Error 1
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8ea0c/fast] Error 2
 
-File /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,89 +32,81 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7cf9c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7cf9c.dir/build.make CMakeFiles/cmTC_7cf9c.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7cf9c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7cf9c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7cf9c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cf9c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7cf9c.dir/CheckFunctionExists.c.o  -o cmTC_7cf9c -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
+Run Build Command:"/usr/bin/make" "cmTC_90371/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90371.dir/build.make CMakeFiles/cmTC_90371.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90371.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_90371.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_90371
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90371.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_90371.dir/CheckFunctionExists.c.o  -o cmTC_90371 -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7cf9c.dir/build.make:97: recipe for target 'cmTC_7cf9c' failed
-make[1]: *** [cmTC_7cf9c] Error 1
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7cf9c/fast' failed
-make: *** [cmTC_7cf9c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_90371.dir/build.make:87: cmTC_90371] Error 1
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_90371/fast] Error 2
 
 
 Performing C++ SOURCE FILE Test CXX_FLAG_SUPPORTED failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a02d2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a02d2.dir/build.make CMakeFiles/cmTC_a02d2.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a02d2.dir/src.cxx.o
-/usr/bin/c++    -DCXX_FLAG_SUPPORTED   -Wimplicit-function-declaration -o CMakeFiles/cmTC_a02d2.dir/src.cxx.o -c /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/src.cxx
+Run Build Command:"/usr/bin/make" "cmTC_5a57b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5a57b.dir/build.make CMakeFiles/cmTC_5a57b.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5a57b.dir/src.cxx.o
+/usr/bin/c++    -DCXX_FLAG_SUPPORTED   -Wimplicit-function-declaration -o CMakeFiles/cmTC_5a57b.dir/src.cxx.o -c /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/src.cxx
 cc1plus: warning: command line option '-Wimplicit-function-declaration' is valid for C/ObjC but not for C++
-Linking CXX executable cmTC_a02d2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a02d2.dir/link.txt --verbose=1
-/usr/bin/c++   -DCXX_FLAG_SUPPORTED    CMakeFiles/cmTC_a02d2.dir/src.cxx.o  -o cmTC_a02d2 -lm 
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
+Linking CXX executable cmTC_5a57b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a57b.dir/link.txt --verbose=1
+/usr/bin/c++   -DCXX_FLAG_SUPPORTED    CMakeFiles/cmTC_5a57b.dir/src.cxx.o  -o cmTC_5a57b -lm 
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
 Performing C SOURCE FILE Test C_FLAG_SUPPORTED failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_25569/fast"
-/usr/bin/make -f CMakeFiles/cmTC_25569.dir/build.make CMakeFiles/cmTC_25569.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_25569.dir/src.c.o
-/usr/bin/cc   -DC_FLAG_SUPPORTED   -Wstring-conversion -o CMakeFiles/cmTC_25569.dir/src.c.o   -c /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_74231/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74231.dir/build.make CMakeFiles/cmTC_74231.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74231.dir/src.c.o
+/usr/bin/cc   -DC_FLAG_SUPPORTED   -Wstring-conversion -o CMakeFiles/cmTC_74231.dir/src.c.o   -c /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command line option '-Wstring-conversion'; did you mean '-Wint-conversion'?
-CMakeFiles/cmTC_25569.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_25569.dir/src.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_25569.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_25569/fast' failed
-make: *** [cmTC_25569/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_74231.dir/build.make:66: CMakeFiles/cmTC_74231.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_74231/fast] Error 2
 
 Source file was:
 int main(void) { return 0; }
 Performing C++ SOURCE FILE Test CXX_FLAG_SUPPORTED failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_19a64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_19a64.dir/build.make CMakeFiles/cmTC_19a64.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_19a64.dir/src.cxx.o
-/usr/bin/c++    -DCXX_FLAG_SUPPORTED   -Wstring-conversion -o CMakeFiles/cmTC_19a64.dir/src.cxx.o -c /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/src.cxx
+Run Build Command:"/usr/bin/make" "cmTC_f7eff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7eff.dir/build.make CMakeFiles/cmTC_f7eff.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7eff.dir/src.cxx.o
+/usr/bin/c++    -DCXX_FLAG_SUPPORTED   -Wstring-conversion -o CMakeFiles/cmTC_f7eff.dir/src.cxx.o -c /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/src.cxx
 c++: error: unrecognized command line option '-Wstring-conversion'; did you mean '-Wint-conversion'?
-CMakeFiles/cmTC_19a64.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_19a64.dir/src.cxx.o' failed
-make[1]: *** [CMakeFiles/cmTC_19a64.dir/src.cxx.o] Error 1
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_19a64/fast' failed
-make: *** [cmTC_19a64/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_f7eff.dir/build.make:66: CMakeFiles/cmTC_f7eff.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f7eff/fast] Error 2
 
 Source file was:
 int main() { return 0; }
 Performing C SOURCE FILE Test C_FLAG_SUPPORTED failed with the following output:
-Change Dir: /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp
+Change Dir: /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b537d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b537d.dir/build.make CMakeFiles/cmTC_b537d.dir/build
-make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b537d.dir/src.c.o
-/usr/bin/cc   -DC_FLAG_SUPPORTED   -Wshorten-64-to-32 -o CMakeFiles/cmTC_b537d.dir/src.c.o   -c /home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command:"/usr/bin/make" "cmTC_e62ea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e62ea.dir/build.make CMakeFiles/cmTC_e62ea.dir/build
+make[1]: Entering directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e62ea.dir/src.c.o
+/usr/bin/cc   -DC_FLAG_SUPPORTED   -Wshorten-64-to-32 -o CMakeFiles/cmTC_e62ea.dir/src.c.o   -c /home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command line option '-Wshorten-64-to-32'
-CMakeFiles/cmTC_b537d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b537d.dir/src.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_b537d.dir/src.c.o] Error 1
-make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b537d/fast' failed
-make: *** [cmTC_b537d/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_e62ea.dir/build.make:66: CMakeFiles/cmTC_e62ea.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e62ea/fast] Error 2
 
 Source file was:
 int main(void) { return 0; }

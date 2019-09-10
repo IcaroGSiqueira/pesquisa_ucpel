@@ -266,6 +266,8 @@ static void inverse_transform_inter_block(const AV1_COMMON *const cm,
   BLOCK_SIZE bsize = txsize_to_bsize[tx_size];
   int blk_w = block_size_wide[bsize];
   int blk_h = block_size_high[bsize];
+  const int mi_row = -xd->mb_to_top_edge >> (3 + MI_SIZE_LOG2);
+  const int mi_col = -xd->mb_to_left_edge >> (3 + MI_SIZE_LOG2);
   mi_to_pixel_loc(&pixel_c, &pixel_r, mi_col, mi_row, blk_col, blk_row,
                   pd->subsampling_x, pd->subsampling_y);
   mismatch_check_block_tx(dst, pd->dst.stride, cm->current_frame.order_hint,
@@ -338,11 +340,10 @@ static void set_offsets(AV1_COMMON *const cm, MACROBLOCKD *const xd,
                         int bh, int x_mis, int y_mis) {
   const int num_planes = av1_num_planes(cm);
 
-  const int offset = mi_row * cm->mi_stride + mi_col;
   const TileInfo *const tile = &xd->tile;
 
-  xd->mi = cm->mi_grid_visible + offset;
-  xd->mi[0] = &cm->mi[offset];
+  xd->mi = cm->mi_grid_base + get_mi_grid_idx(cm, mi_row, mi_col);
+  xd->mi[0] = &cm->mi[get_alloc_mi_idx(cm, mi_row, mi_col)];
   // TODO(slavarnway): Generate sb_type based on bwl and bhl, instead of
   // passing bsize from decode_partition().
   xd->mi[0]->sb_type = bsize;
@@ -1470,7 +1471,7 @@ static void set_offsets_for_pred_and_recon(AV1Decoder *const pbi,
   const int offset = mi_row * cm->mi_stride + mi_col;
   const TileInfo *const tile = &xd->tile;
 
-  xd->mi = cm->mi_grid_visible + offset;
+  xd->mi = cm->mi_grid_base + offset;
   xd->cfl.mi_row = mi_row;
   xd->cfl.mi_col = mi_col;
 
@@ -1998,8 +1999,7 @@ static void setup_cdef(AV1_COMMON *cm, struct aom_read_bit_buffer *rb) {
   CdefInfo *const cdef_info = &cm->cdef_info;
 
   if (cm->allow_intrabc) return;
-  cdef_info->cdef_pri_damping = aom_rb_read_literal(rb, 2) + 3;
-  cdef_info->cdef_sec_damping = cdef_info->cdef_pri_damping;
+  cdef_info->cdef_damping = aom_rb_read_literal(rb, 2) + 3;
   cdef_info->cdef_bits = aom_rb_read_literal(rb, 2);
   cdef_info->nb_cdef_strengths = 1 << cdef_info->cdef_bits;
   for (int i = 0; i < cdef_info->nb_cdef_strengths; i++) {
@@ -2152,7 +2152,7 @@ static void resize_context_buffers(AV1_COMMON *cm, int width, int height) {
                            "Failed to allocate context buffers");
       }
     } else {
-      av1_set_mb_mi(cm, width, height);
+      cm->set_mb_mi(cm, width, height);
     }
     av1_init_context_buffers(cm);
     cm->width = width;
@@ -2600,7 +2600,7 @@ static void get_tile_buffer(const uint8_t *const data_end,
   if (!is_last) {
     if (!read_is_valid(*data, tile_size_bytes, data_end))
       aom_internal_error(error_info, AOM_CODEC_CORRUPT_FRAME,
-                         "Truncated packet or corrupt tile length");
+                         "Not enough data to read tile size");
 
     size = mem_get_varsize(*data, tile_size_bytes) + AV1_MIN_TILE_SIZE_BYTES;
     *data += tile_size_bytes;
@@ -2626,7 +2626,6 @@ static void get_tile_buffers(AV1Decoder *pbi, const uint8_t *data,
   const int tile_cols = cm->tile_cols;
   const int tile_rows = cm->tile_rows;
   int tc = 0;
-  int first_tile_in_tg = 0;
 
   for (int r = 0; r < tile_rows; ++r) {
     for (int c = 0; c < tile_cols; ++c, ++tc) {
@@ -2640,7 +2639,6 @@ static void get_tile_buffers(AV1Decoder *pbi, const uint8_t *data,
       if (data + hdr_offset >= data_end)
         aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
                            "Data ended before all tiles were read.");
-      first_tile_in_tg += tc == first_tile_in_tg ? pbi->tg_size : 0;
       data += hdr_offset;
       get_tile_buffer(data_end, pbi->tile_size_bytes, is_last,
                       &pbi->common.error, &data, buf);
@@ -4322,8 +4320,8 @@ void av1_read_op_parameters_info(AV1_COMMON *const cm,
   cm->op_params[op_num].low_delay_mode_flag = aom_rb_read_bit(rb);
 }
 
-static void av1_read_temporal_point_info(AV1_COMMON *const cm,
-                                         struct aom_read_bit_buffer *rb) {
+static void read_temporal_point_info(AV1_COMMON *const cm,
+                                     struct aom_read_bit_buffer *rb) {
   cm->frame_presentation_time = aom_rb_read_unsigned_literal(
       rb, cm->buffer_model.frame_presentation_time_length);
 }
@@ -4569,7 +4567,6 @@ static void generate_next_ref_frame_map(AV1Decoder *const pbi) {
 // If the refresh_frame_flags bitmask is set, update reference frame id values
 // and mark frames as valid for reference.
 static void update_ref_frame_id(AV1_COMMON *const cm, int frame_id) {
-  assert(cm->seq_params.frame_id_numbers_present_flag);
   int refresh_frame_flags = cm->current_frame.refresh_frame_flags;
   for (int i = 0; i < REF_FRAMES; i++) {
     if ((refresh_frame_flags >> i) & 1) {
@@ -4600,10 +4597,8 @@ static void show_existing_frame_reset(AV1Decoder *const pbi,
 
   // Note that the displayed frame must be valid for referencing in order to
   // have been selected.
-  if (cm->seq_params.frame_id_numbers_present_flag) {
-    cm->current_frame_id = cm->ref_frame_id[existing_frame_idx];
-    update_ref_frame_id(cm, cm->current_frame_id);
-  }
+  cm->current_frame_id = cm->ref_frame_id[existing_frame_idx];
+  update_ref_frame_id(cm, cm->current_frame_id);
 
   cm->refresh_frame_context = REFRESH_FRAME_CONTEXT_DISABLED;
 
@@ -4687,7 +4682,7 @@ static int read_uncompressed_header(AV1Decoder *pbi,
       }
       if (seq_params->decoder_model_info_present_flag &&
           cm->timing_info.equal_picture_interval == 0) {
-        av1_read_temporal_point_info(cm, rb);
+        read_temporal_point_info(cm, rb);
       }
       if (seq_params->frame_id_numbers_present_flag) {
         int frame_id_length = seq_params->frame_id_length;
@@ -4719,9 +4714,17 @@ static int read_uncompressed_header(AV1Decoder *pbi,
       cm->lf.filter_level[1] = 0;
       cm->show_frame = 1;
 
+      // Section 6.8.2: It is a requirement of bitstream conformance that when
+      // show_existing_frame is used to show a previous frame, that the value
+      // of showable_frame for the previous frame was equal to 1.
       if (!frame_to_show->showable_frame) {
-        aom_merge_corrupted_flag(&xd->corrupted, 1);
+        aom_internal_error(&cm->error, AOM_CODEC_UNSUP_BITSTREAM,
+                           "Buffer does not contain a showable frame");
       }
+      // Section 6.8.2: It is a requirement of bitstream conformance that when
+      // show_existing_frame is used to show a previous frame with
+      // RefFrameType[ frame_to_show_map_idx ] equal to KEY_FRAME, that the
+      // frame is output via the show_existing_frame mechanism at most once.
       if (pbi->reset_decoder_state) frame_to_show->showable_frame = 0;
 
       cm->film_grain_params = frame_to_show->film_grain_params;
@@ -4758,7 +4761,7 @@ static int read_uncompressed_header(AV1Decoder *pbi,
     if (cm->show_frame) {
       if (seq_params->decoder_model_info_present_flag &&
           cm->timing_info.equal_picture_interval == 0)
-        av1_read_temporal_point_info(cm, rb);
+        read_temporal_point_info(cm, rb);
     } else {
       // See if this frame can be used as show_existing_frame in future
       cm->showable_frame = aom_rb_read_bit(rb);
@@ -4771,6 +4774,12 @@ static int read_uncompressed_header(AV1Decoder *pbi,
             : aom_rb_read_bit(rb);
   }
 
+  if (current_frame->frame_type == KEY_FRAME && cm->show_frame) {
+    /* All frames need to be marked as not valid for referencing */
+    for (int i = 0; i < REF_FRAMES; i++) {
+      cm->valid_for_referencing[i] = 0;
+    }
+  }
   cm->disable_cdf_update = aom_rb_read_bit(rb);
   if (seq_params->force_screen_content_tools == 2) {
     cm->allow_screen_content_tools = aom_rb_read_bit(rb);
@@ -4822,9 +4831,7 @@ static int read_uncompressed_header(AV1Decoder *pbi,
       }
       /* Check if some frames need to be marked as not valid for referencing */
       for (int i = 0; i < REF_FRAMES; i++) {
-        if (current_frame->frame_type == KEY_FRAME && cm->show_frame) {
-          cm->valid_for_referencing[i] = 0;
-        } else if (cm->current_frame_id - (1 << diff_len) > 0) {
+        if (cm->current_frame_id - (1 << diff_len) > 0) {
           if (cm->ref_frame_id[i] > cm->current_frame_id ||
               cm->ref_frame_id[i] < cm->current_frame_id - (1 << diff_len))
             cm->valid_for_referencing[i] = 0;
@@ -4919,9 +4926,12 @@ static int read_uncompressed_header(AV1Decoder *pbi,
             lock_buffer_pool(pool);
             decrease_ref_count(buf, pool);
             unlock_buffer_pool(pool);
+            cm->ref_frame_map[ref_idx] = NULL;
           }
           // If no corresponding buffer exists, allocate a new buffer with all
           // pixels set to neutral grey.
+          // TODO(https://crbug.com/aomedia/2420): The spec seems to say we
+          // just need to set cm->valid_for_referencing[ref_idx] to 0.
           int buf_idx = get_free_fb(cm);
           if (buf_idx == INVALID_IDX) {
             aom_internal_error(&cm->error, AOM_CODEC_MEM_ERROR,
@@ -5016,6 +5026,10 @@ static int read_uncompressed_header(AV1Decoder *pbi,
         } else {
           ref = cm->remapped_ref_idx[i];
         }
+        // Check valid for referencing
+        if (cm->valid_for_referencing[ref] == 0)
+          aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
+                             "Reference frame not valid for referencing");
 
         cm->ref_frame_sign_bias[LAST_FRAME + i] = 0;
 
@@ -5028,9 +5042,8 @@ static int read_uncompressed_header(AV1Decoder *pbi,
                 (1 << frame_id_length)) %
                (1 << frame_id_length));
           // Compare values derived from delta_frame_id_minus_1 and
-          // refresh_frame_flags. Also, check valid for referencing
-          if (ref_frame_id != cm->ref_frame_id[ref] ||
-              cm->valid_for_referencing[ref] == 0)
+          // refresh_frame_flags.
+          if (ref_frame_id != cm->ref_frame_id[ref])
             aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
                                "Reference buffer frame ID mismatch");
         }
@@ -5086,9 +5099,7 @@ static int read_uncompressed_header(AV1Decoder *pbi,
 
   cm->cur_frame->frame_type = current_frame->frame_type;
 
-  if (seq_params->frame_id_numbers_present_flag) {
-    update_ref_frame_id(cm, cm->current_frame_id);
-  }
+  update_ref_frame_id(cm, cm->current_frame_id);
 
   const int might_bwd_adapt =
       !(seq_params->reduced_still_picture_hdr) && !(cm->disable_cdf_update);
@@ -5276,9 +5287,7 @@ static void superres_post_decode(AV1Decoder *pbi) {
   if (!av1_superres_scaled(cm)) return;
   assert(!cm->all_lossless);
 
-  lock_buffer_pool(pool);
   av1_superres_upscale(cm, pool);
-  unlock_buffer_pool(pool);
 }
 
 uint32_t av1_decode_frame_headers_and_setup(AV1Decoder *pbi,

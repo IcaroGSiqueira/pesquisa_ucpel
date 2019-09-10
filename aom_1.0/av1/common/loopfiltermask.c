@@ -518,6 +518,7 @@ static void filter_selectively_vert_row2(
   }
 }
 
+#if CONFIG_AV1_HIGHBITDEPTH
 static void highbd_filter_selectively_vert_row2(
     int subsampling_factor, uint16_t *s, int pitch, int plane,
     uint64_t mask_16x16_0, uint64_t mask_8x8_0, uint64_t mask_4x4_0,
@@ -607,6 +608,7 @@ static void highbd_filter_selectively_vert_row2(
     mask_4x4_1 >>= step;
   }
 }
+#endif  // CONFIG_AV1_HIGHBITDEPTH
 
 static void filter_selectively_horiz(uint8_t *s, int pitch, int plane,
                                      int subsampling, uint64_t mask_16x16,
@@ -691,6 +693,7 @@ static void filter_selectively_horiz(uint8_t *s, int pitch, int plane,
   }
 }
 
+#if CONFIG_AV1_HIGHBITDEPTH
 static void highbd_filter_selectively_horiz(
     uint16_t *s, int pitch, int plane, int subsampling, uint64_t mask_16x16,
     uint64_t mask_8x8, uint64_t mask_4x4, const loop_filter_info_n *lfi_n,
@@ -771,20 +774,20 @@ static void highbd_filter_selectively_horiz(
     offset += step * count;
   }
 }
+#endif  // CONFIG_AV1_HIGHBITDEPTH
 
 void av1_build_bitmask_vert_info(
     AV1_COMMON *const cm, const struct macroblockd_plane *const plane_ptr,
     int plane) {
   const int subsampling_x = plane_ptr->subsampling_x;
   const int subsampling_y = plane_ptr->subsampling_y;
-  const int row_step = (MI_SIZE >> MI_SIZE_LOG2);
   const int is_uv = plane > 0;
   TX_SIZE tx_size = TX_16X16, prev_tx_size = TX_16X16;
   uint8_t level, prev_level = 1;
   uint64_t skip, prev_skip = 0;
   uint64_t is_coding_block_border;
 
-  for (int r = 0; (r << MI_SIZE_LOG2) < plane_ptr->dst.height; r += row_step) {
+  for (int r = 0; (r << MI_SIZE_LOG2) < plane_ptr->dst.height; r++) {
     const int mi_row = r << subsampling_y;
     const int row = mi_row % MI_SIZE_64X64;
     const int row_uv = row | subsampling_y;
@@ -856,14 +859,13 @@ void av1_build_bitmask_horz_info(
     int plane) {
   const int subsampling_x = plane_ptr->subsampling_x;
   const int subsampling_y = plane_ptr->subsampling_y;
-  const int col_step = (MI_SIZE >> MI_SIZE_LOG2);
   const int is_uv = plane > 0;
   TX_SIZE tx_size = TX_16X16, prev_tx_size = TX_16X16;
   uint8_t level, prev_level = 1;
   uint64_t skip, prev_skip = 0;
   uint64_t is_coding_block_border;
 
-  for (int c = 0; (c << MI_SIZE_LOG2) < plane_ptr->dst.width; c += col_step) {
+  for (int c = 0; (c << MI_SIZE_LOG2) < plane_ptr->dst.width; c++) {
     const int mi_col = c << subsampling_x;
     const int col = mi_col % MI_SIZE_64X64;
     const int col_uv = col | subsampling_x;
@@ -999,6 +1001,7 @@ void av1_filter_block_plane_bitmask_vert(
       mask_4x4_1 = 0;
     }
 
+#if CONFIG_AV1_HIGHBITDEPTH
     if (cm->seq_params.use_highbitdepth)
       highbd_filter_selectively_vert_row2(
           ssx, CONVERT_TO_SHORTPTR(dst->buf), dst->stride, pl, mask_16x16_0,
@@ -1008,6 +1011,11 @@ void av1_filter_block_plane_bitmask_vert(
       filter_selectively_vert_row2(
           ssx, dst->buf, dst->stride, pl, mask_16x16_0, mask_8x8_0, mask_4x4_0,
           mask_16x16_1, mask_8x8_1, mask_4x4_1, &cm->lf_info, lfl, lfl2);
+#else
+    filter_selectively_vert_row2(
+        ssx, dst->buf, dst->stride, pl, mask_16x16_0, mask_8x8_0, mask_4x4_0,
+        mask_16x16_1, mask_8x8_1, mask_4x4_1, &cm->lf_info, lfl, lfl2);
+#endif
     dst->buf += two_row_stride;
   }
   // reset buf pointer for horizontal filtering
@@ -1066,6 +1074,7 @@ void av1_filter_block_plane_bitmask_horz(
     mask_8x8 = (mask_8x8 >> shift) & mask_cutoff;
     mask_4x4 = (mask_4x4 >> shift) & mask_cutoff;
 
+#if CONFIG_AV1_HIGHBITDEPTH
     if (cm->seq_params.use_highbitdepth)
       highbd_filter_selectively_horiz(
           CONVERT_TO_SHORTPTR(dst->buf), dst->stride, pl, ssx, mask_16x16,
@@ -1073,6 +1082,10 @@ void av1_filter_block_plane_bitmask_horz(
     else
       filter_selectively_horiz(dst->buf, dst->stride, pl, ssx, mask_16x16,
                                mask_8x8, mask_4x4, &cm->lf_info, lfl);
+#else
+    filter_selectively_horiz(dst->buf, dst->stride, pl, ssx, mask_16x16,
+                             mask_8x8, mask_4x4, &cm->lf_info, lfl);
+#endif
     dst->buf += row_stride;
   }
   // reset buf pointer for next block
@@ -1145,6 +1158,7 @@ void av1_filter_block_plane_ver(AV1_COMMON *const cm,
       uint64_t mask_8x8_1 = (mask_8x8 >> shift_next) & mask_cutoff;
       uint64_t mask_4x4_1 = (mask_4x4 >> shift_next) & mask_cutoff;
 
+#if CONFIG_AV1_HIGHBITDEPTH
       if (cm->seq_params.use_highbitdepth)
         highbd_filter_selectively_vert_row2(
             ssx, CONVERT_TO_SHORTPTR(dst->buf), dst->stride, pl, mask_16x16_0,
@@ -1155,6 +1169,11 @@ void av1_filter_block_plane_ver(AV1_COMMON *const cm,
                                      mask_16x16_0, mask_8x8_0, mask_4x4_0,
                                      mask_16x16_1, mask_8x8_1, mask_4x4_1,
                                      &cm->lf_info, lfl, lfl2);
+#else
+      filter_selectively_vert_row2(
+          ssx, dst->buf, dst->stride, pl, mask_16x16_0, mask_8x8_0, mask_4x4_0,
+          mask_16x16_1, mask_8x8_1, mask_4x4_1, &cm->lf_info, lfl, lfl2);
+#endif
       dst->buf -= ((c << MI_SIZE_LOG2) >> ssx);
     }
     dst->buf += 2 * MI_SIZE * dst->stride;
@@ -1215,6 +1234,7 @@ void av1_filter_block_plane_hor(AV1_COMMON *const cm,
       mask_8x8 = (mask_8x8 >> shift) & mask_cutoff;
       mask_4x4 = (mask_4x4 >> shift) & mask_cutoff;
 
+#if CONFIG_AV1_HIGHBITDEPTH
       if (cm->seq_params.use_highbitdepth)
         highbd_filter_selectively_horiz(CONVERT_TO_SHORTPTR(dst->buf),
                                         dst->stride, pl, ssx, mask_16x16,
@@ -1223,6 +1243,10 @@ void av1_filter_block_plane_hor(AV1_COMMON *const cm,
       else
         filter_selectively_horiz(dst->buf, dst->stride, pl, ssx, mask_16x16,
                                  mask_8x8, mask_4x4, &cm->lf_info, lfl);
+#else
+      filter_selectively_horiz(dst->buf, dst->stride, pl, ssx, mask_16x16,
+                               mask_8x8, mask_4x4, &cm->lf_info, lfl);
+#endif
       dst->buf -= ((c << MI_SIZE_LOG2) >> ssx);
     }
     dst->buf += MI_SIZE * dst->stride;

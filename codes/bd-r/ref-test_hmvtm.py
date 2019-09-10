@@ -5,13 +5,11 @@ bdpyuv_m=0;
 dt_m=0;
 tim=0;
 
-
-
 from bjontegaardhmvtm import bdbr,bdpsnr,plotRDCurves, plotGroupedRDCurves
 
-csv_ref = open('/home/icaro/pesquisa_ucpel/hm-noSIMD.csv','rb')
-csv_test = open('/home/icaro/pesquisa_ucpel/vtm-SIMD.csv','rb')
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-vtm_SIMD.csv","w")
+csv_ref = open('/home/icaro/pesquisa_ucpel/hm0919.csv','rb')
+csv_test = open('/home/icaro/pesquisa_ucpel/hmtap60919.csv','rb')
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-hmtaps60919.csv","w")
 
 lines = csv_ref.readlines()
 tlines = csv_test.readlines()
@@ -44,28 +42,28 @@ for x in xrange(0,tam):
 		if "crop" in nome22:
 			n,n1,n2,n3,n4,n5,n6,n7,n8 = nome22.split("_")
 		else:
-			n,n1,n2,n3,n4,n5,n6,n7 = nome22.split("_")
+			n,n1,n2,n3,n4 = nome22.split("_")
 		y22,u22,v22,yuv22,b22,t22 = map(float,[y22,u22,v22,yuv22,b22,t22])
 	if "qp27" in lines[x]:
 		nome27,y27,u27,v27,yuv27,b27,t27 = lines[x].split(",")
 		if "crop" in nome27:
 			n,n1,n2,n3,n4,n5,n6,n7,n8 = nome27.split("_")
 		else:
-			n,n1,n2,n3,n4,n5,n6,n7 = nome27.split("_")
+			n,n1,n2,n3,n4 = nome27.split("_")
 		y27,u27,v27,yuv27,b27,t27 = map(float,[y27,u27,v27,yuv27,b27,t27])
 	if "qp32" in lines[x]:
 		nome32,y32,u32,v32,yuv32,b32,t32 = lines[x].split(",")
 		if "crop" in nome32:
 			n,n1,n2,n3,n4,n5,n6,n7,n8 = nome32.split("_")
 		else:
-			n,n1,n2,n3,n4,n5,n6,n7 = nome32.split("_")
+			n,n1,n2,n3,n4 = nome32.split("_")
 		y32,u32,v32,yuv32,b32,t32 = map(float,[y32,u32,v32,yuv32,b32,t32])
 	if "qp37" in lines[x]:
 		nome37,y37,u37,v37,yuv37,b37,t37 = lines[x].split(",")
 		if "crop" in nome37:
 			n,n1,n2,n3,n4,n5,n6,n7,n8 = nome37.split("_")
 		else:
-			n,n1,n2,n3,n4,n5,n6,n7 = nome37.split("_")
+			n,n1,n2,n3,n4 = nome37.split("_")
 		y37,u37,v37,yuv37,b37,t37 = map(float,[y37,u37,v37,yuv37,b37,t37])
 
 	if "qp22" in tlines[x]:
@@ -118,7 +116,7 @@ for x in xrange(0,tam):
 
 		print >> out,nome,bdb,bdbyuv,bdp,bdpyuv,dt
 
-		plotRDCurves(ref,test,1,"/home/icaro/pesquisa_ucpel/bd-rate/curvas/Curvas_%s.pdf"% n,nome)
+		plotRDCurves(ref,test,1,"/home/icaro/pesquisa_ucpel/bd-rate/curvas/Curvas_%s_0919.pdf"% n,nome)
 
 		bdb_m = bdb_m + bdb
 		bdbyuv_m = bdbyuv_m + bdbyuv

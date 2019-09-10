@@ -14,7 +14,7 @@ if simd==1:
 	sd="SIMD"
 else:
 	sd="noSIMD"
-file = open("../run_vtm_%s_server.sh"%sd,"w")
+file = open("../vtm/run_vtm_%s_server.sh"%sd,"w")
 for yuv in yuvs:
 	for qp in [37,32,27,22]:
 		if "bit" in yuv:

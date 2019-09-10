@@ -300,11 +300,26 @@ static int32_t read_tile_group_header(AV1Decoder *pbi,
     *start_tile = aom_rb_read_literal(rb, tile_bits);
     *end_tile = aom_rb_read_literal(rb, tile_bits);
   }
-  if (*start_tile > *end_tile) {
+  if (*start_tile != pbi->next_start_tile) {
     aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
-                       "tg_end must be greater than or equal to tg_start");
+                       "tg_start (%d) must be equal to %d", *start_tile,
+                       pbi->next_start_tile);
     return -1;
   }
+  if (*start_tile > *end_tile) {
+    aom_internal_error(
+        &cm->error, AOM_CODEC_CORRUPT_FRAME,
+        "tg_end (%d) must be greater than or equal to tg_start (%d)", *end_tile,
+        *start_tile);
+    return -1;
+  }
+  if (*end_tile >= num_tiles) {
+    aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
+                       "tg_end (%d) must be less than NumTiles (%d)", *end_tile,
+                       num_tiles);
+    return -1;
+  }
+  pbi->next_start_tile = (*end_tile == num_tiles - 1) ? 0 : *end_tile + 1;
 
   return ((rb->bit_offset - saved_bit_offset + 7) >> 3);
 }
@@ -331,7 +346,6 @@ static uint32_t read_one_tile_group_obu(
 
   tg_payload_size = (uint32_t)(*p_data_end - data);
 
-  // TODO(shan):  For now, assume all tile groups received in order
   *is_last_tg = end_tile == cm->tile_rows * cm->tile_cols - 1;
   return header_size + tg_payload_size;
 }
@@ -533,13 +547,32 @@ static uint32_t read_and_decode_one_tile_list(AV1Decoder *pbi,
   return tile_list_payload_size;
 }
 
-static void read_metadata_itut_t35(struct aom_read_bit_buffer *rb) {
-  const int itu_t_t35_country_code = aom_rb_read_literal(rb, 8);
-  if (itu_t_t35_country_code == 0xFF) {
-    aom_rb_read_literal(rb, 8);
+// Reads the country code as specified in Recommendation ITU-T T.35. On
+// success, returns the number of bytes read from 'data'. On failure, calls
+// aom_internal_error() and does not return.
+//
+// Note: This function does not read itu_t_t35_payload_bytes because the exact
+// syntax of itu_t_t35_payload_bytes is not defined in the spec.
+static size_t read_metadata_itut_t35(AV1_COMMON *const cm, const uint8_t *data,
+                                     size_t sz) {
+  size_t i = 0;
+  // itu_t_t35_country_code f(8)
+  if (i >= sz) {
+    aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
+                       "itu_t_t35_country_code is missing");
   }
-  // Ignore itu_t_t35_payload_bytes, whose exact syntax is not defined in the
-  // spec.
+  const int itu_t_t35_country_code = data[i];
+  ++i;
+  if (itu_t_t35_country_code == 0xFF) {
+    // itu_t_t35_country_code_extension_byte f(8)
+    if (i >= sz) {
+      aom_internal_error(&cm->error, AOM_CODEC_CORRUPT_FRAME,
+                         "itu_t_t35_country_code_extension_byte is missing");
+    }
+    ++i;
+  }
+  // itu_t_t35_payload_bytes
+  return i;
 }
 
 static void read_metadata_hdr_cll(struct aom_read_bit_buffer *rb) {
@@ -632,33 +665,80 @@ static void read_metadata_timecode(struct aom_read_bit_buffer *rb) {
   }
 }
 
+// Returns the last nonzero byte in 'data'. If there is no nonzero byte in
+// 'data', returns 0.
+//
+// Call this function to check the following requirement in the spec:
+//   This implies that when any payload data is present for this OBU type, at
+//   least one byte of the payload data (including the trailing bit) shall not
+//   be equal to 0.
+static uint8_t get_last_nonzero_byte(const uint8_t *data, size_t sz) {
+  // Scan backward and return on the first nonzero byte.
+  size_t i = sz;
+  while (i != 0) {
+    --i;
+    if (data[i] != 0) return data[i];
+  }
+  return 0;
+}
+
 // Checks the metadata for correct syntax but ignores the parsed metadata.
 //
-// On success, returns sz. On failure, sets pbi->common.error.error_code and
-// returns 0, or calls aom_internal_error() and does not return.
+// On success, returns the number of bytes read from 'data'. On failure, sets
+// pbi->common.error.error_code and returns 0, or calls aom_internal_error()
+// and does not return.
 static size_t read_metadata(AV1Decoder *pbi, const uint8_t *data, size_t sz) {
+  AV1_COMMON *const cm = &pbi->common;
   size_t type_length;
   uint64_t type_value;
   if (aom_uleb_decode(data, sz, &type_value, &type_length) < 0) {
-    pbi->common.error.error_code = AOM_CODEC_CORRUPT_FRAME;
+    cm->error.error_code = AOM_CODEC_CORRUPT_FRAME;
     return 0;
+  }
+  const OBU_METADATA_TYPE metadata_type = (OBU_METADATA_TYPE)type_value;
+  if (metadata_type == 0 || metadata_type >= 6) {
+    // If metadata_type is reserved for future use or a user private value,
+    // ignore the entire OBU and just check trailing bits.
+    if (get_last_nonzero_byte(data + type_length, sz - type_length) == 0) {
+      pbi->common.error.error_code = AOM_CODEC_CORRUPT_FRAME;
+      return 0;
+    }
+    return sz;
+  }
+  if (metadata_type == OBU_METADATA_TYPE_ITUT_T35) {
+    size_t bytes_read =
+        type_length +
+        read_metadata_itut_t35(cm, data + type_length, sz - type_length);
+    // Ignore itu_t_t35_payload_bytes and check trailing bits. Section 6.7.2
+    // of the spec says:
+    //   itu_t_t35_payload_bytes shall be bytes containing data registered as
+    //   specified in Recommendation ITU-T T.35.
+    // Therefore itu_t_t35_payload_bytes is byte aligned and the first
+    // trailing byte should be 0x80.
+    if (get_last_nonzero_byte(data + bytes_read, sz - bytes_read) != 0x80) {
+      pbi->common.error.error_code = AOM_CODEC_CORRUPT_FRAME;
+      return 0;
+    }
+    return sz;
   }
   struct aom_read_bit_buffer rb;
   av1_init_read_bit_buffer(pbi, &rb, data + type_length, data + sz);
-  const OBU_METADATA_TYPE metadata_type = (OBU_METADATA_TYPE)type_value;
-  if (metadata_type == OBU_METADATA_TYPE_ITUT_T35) {
-    read_metadata_itut_t35(&rb);
-  } else if (metadata_type == OBU_METADATA_TYPE_HDR_CLL) {
+  if (metadata_type == OBU_METADATA_TYPE_HDR_CLL) {
     read_metadata_hdr_cll(&rb);
   } else if (metadata_type == OBU_METADATA_TYPE_HDR_MDCV) {
     read_metadata_hdr_mdcv(&rb);
   } else if (metadata_type == OBU_METADATA_TYPE_SCALABILITY) {
     read_metadata_scalability(&rb);
-  } else if (metadata_type == OBU_METADATA_TYPE_TIMECODE) {
+  } else {
+    assert(metadata_type == OBU_METADATA_TYPE_TIMECODE);
     read_metadata_timecode(&rb);
   }
-
-  return sz;
+  if (av1_check_trailing_bits(pbi, &rb) != 0) {
+    // cm->error.error_code is already set.
+    return 0;
+  }
+  assert((rb.bit_offset & 7) == 0);
+  return type_length + (rb.bit_offset >> 3);
 }
 
 // On success, returns a boolean that indicates whether the decoding of the
@@ -674,6 +754,7 @@ int aom_decode_frame_from_obus(struct AV1Decoder *pbi, const uint8_t *data,
   ObuHeader obu_header;
   memset(&obu_header, 0, sizeof(obu_header));
   pbi->seen_frame_header = 0;
+  pbi->next_start_tile = 0;
 
   if (data_end < data) {
     cm->error.error_code = AOM_CODEC_CORRUPT_FRAME;
@@ -739,6 +820,7 @@ int aom_decode_frame_from_obus(struct AV1Decoder *pbi, const uint8_t *data,
       case OBU_TEMPORAL_DELIMITER:
         decoded_payload_size = read_temporal_delimiter_obu();
         pbi->seen_frame_header = 0;
+        pbi->next_start_tile = 0;
         break;
       case OBU_SEQUENCE_HEADER:
         decoded_payload_size = read_sequence_header_obu(pbi, &rb);
@@ -851,8 +933,16 @@ int aom_decode_frame_from_obus(struct AV1Decoder *pbi, const uint8_t *data,
         if (cm->error.error_code != AOM_CODEC_OK) return -1;
         break;
       case OBU_PADDING:
+        // TODO(wtc): Check trailing bits.
+        decoded_payload_size = payload_size;
+        break;
       default:
         // Skip unrecognized OBUs
+        if (payload_size > 0 &&
+            get_last_nonzero_byte(data, payload_size) == 0) {
+          cm->error.error_code = AOM_CODEC_CORRUPT_FRAME;
+          return -1;
+        }
         decoded_payload_size = payload_size;
         break;
     }

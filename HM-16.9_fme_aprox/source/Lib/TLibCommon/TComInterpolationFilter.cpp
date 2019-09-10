@@ -47,7 +47,6 @@
 #include "TComChromaFormat.h"
 #include "TComContadores.h"
 
-
 //! \ingroup TLibCommon
 //! \{
 
@@ -75,16 +74,30 @@ const TFilterCoeff TComInterpolationFilter::m_lumaFilter[LUMA_INTERPOLATION_FILT
   { {  0, 0,   0, 64,  0,   0, 0,  0 },
     {  0, 0,   0, 58, 17,   0, 0,  0 },
     {  0, 0,   0, 40, 40,   0, 0,  0 },
-    {  0, 0,   0, 17, 58,   0, 0,  0 } } , // 4 taps
+    {  0, 0,   0, 17, 58,   0, 0,  0 } } , // 2 taps
 };
+//{
+//  { {  0, 0,   0, 64,  0,   0, 0,  0 },
+//    { -1, 4, -10, 58, 17,  -5, 1,  0 },
+//    { -1, 4, -11, 40, 40, -11, 4, -1 },
+//    {  0, 1,  -5, 17, 58, -10, 4, -1 } } ,  // 8 taps
+//  
+//  { {  0, 0,   0, 64,  0,   0, 0,  0 },
+//    {  0, 3, -10, 58, 17,  -5, 1,  0 },
+//    {  0, 3, -11, 40, 40, -11, 3,  0 },
+//    {  0, 1,  -5, 17, 58, -10, 3,  0 } } , // 6 taps
+//  
+//  { {  0, 0,   0, 64,  0,   0, 0,  0 },
+//    {  0, 0, -7, 58, 17,  -4, 0,  0 },
+//    {  0, 0, -8, 40, 40, -8, 0,  0 },
+//    {  0, 0,  -4, 17, 58, -7, 0,  0 } } , // 4 taps
+//  
+//  { {  0, 0,   0, 64,  0,   0, 0,  0 },
+//    {  0, 0,   0, 51, 13,   0, 0,  0 },
+//    {  0, 0,   0, 32, 32,   0, 0,  0 },
+//    {  0, 0,   0, 13, 51,   0, 0,  0 } } , // 2 taps
+//};
 
-const TFilterCoeff TComInterpolationFilter::m_lumaFilter_aprox[LUMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS][NTAPS_LUMA] =
-{
-  {  0, 0,   0, 64,  0,   0, 0,  0 },
-  {  0, 0,  -7, 58, 17,  -4,  0,  0 },	
-  {  0, 0,  -8, 40, 40,  -8,  0,  0 },
-  {  0, 0,  -4, 17, 58,  -7,  0,  0 }
-};
 
 const TFilterCoeff TComInterpolationFilter::m_chromaFilter[CHROMA_INTERPOLATION_FILTER_SUB_SAMPLE_POSITIONS][NTAPS_CHROMA] =
 {
@@ -266,22 +279,21 @@ Void TComInterpolationFilter::filter(Int bitDepth, Pel const *src, Int srcStride
         sum += src[ col + 7 * cStride] * c[7];
       }
       
-      if (offset == 32 && TComContadores::rounddown && isFME){
-        offset = 0;
-        printf("TESTE:%d\n",offset);
-      }
-      else if (offset == 32)
-        printf("TESTE:%d %d %d\n",offset, TComContadores::rounddown , isFME);
+      //if (offset == 32 && TComContadores::rounddown && isFME){
+      //  offset = 0;
+      //  printf("TESTE:%d\n",offset);
+      //}
+      //else if (offset == 32)
+      //  printf("TESTE:%d %d %d\n",offset, TComContadores::rounddown , isFME);
               
 
       Pel val = ( sum + offset ) >> shift;
-      if ( isLast  ||  TComContadores::clip_before )
+      if ( isLast )
       {
         val = ( val < 0 ) ? 0 : val;
         val = ( val > maxVal ) ? maxVal : val;
       }
-    dst[col] = val;
-    
+      dst[col] = val;    
     }
 
     src += srcStride;
@@ -430,6 +442,7 @@ Void TComInterpolationFilter::filterHor(const ComponentID compID, Pel *src, Int 
  * \param  fmt        Chroma format
  * \param  bitDepth   Bit depth
  */
+
 Void TComInterpolationFilter::filterVer_aprox(const ComponentID compID, Pel *src, Int srcStride, Pel *dst, Int dstStride, Int width, Int height, Int frac, Bool isFirst, Bool isLast, const ChromaFormat fmt, const Int bitDepth )
 {
   int tap_idx =  4-TComContadores::n_taps/2; // 0 - 8 taps, 1 - 6 taps, 2 - 4 taps, 3 - 2 taps

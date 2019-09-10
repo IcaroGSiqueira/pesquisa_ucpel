@@ -27,6 +27,14 @@ static void accumulate_rd_opt(ThreadData *td, ThreadData *td_t) {
   td->rd_counts.compound_ref_used_flag |=
       td_t->rd_counts.compound_ref_used_flag;
   td->rd_counts.skip_mode_used_flag |= td_t->rd_counts.skip_mode_used_flag;
+
+  for (int i = 0; i < FRAME_UPDATE_TYPES; i++) {
+    for (int j = 0; j < TX_SIZES_ALL; j++) {
+      for (int k = 0; k < TX_TYPES; k++)
+        td->rd_counts.tx_type_used[i][j][k] +=
+            td_t->rd_counts.tx_type_used[i][j][k];
+    }
+  }
 }
 
 static void update_delta_lf_for_row_mt(AV1_COMP *cpi) {
@@ -46,7 +54,7 @@ static void update_delta_lf_for_row_mt(AV1_COMP *cpi) {
         for (int mi_col = tile_info->mi_col_start;
              mi_col < tile_info->mi_col_end; mi_col += mib_size) {
           const int idx_str = cm->mi_stride * mi_row + mi_col;
-          MB_MODE_INFO **mi = cm->mi_grid_visible + idx_str;
+          MB_MODE_INFO **mi = cm->mi_grid_base + idx_str;
           MB_MODE_INFO *mbmi = mi[0];
           if (mbmi->skip == 1 && (mbmi->sb_type == cm->seq_params.sb_size)) {
             for (int lf_id = 0; lf_id < frame_lf_count; ++lf_id)
@@ -377,6 +385,7 @@ static int enc_worker_hook(void *arg1, void *unused) {
 static void create_enc_workers(AV1_COMP *cpi, int num_workers) {
   AV1_COMMON *const cm = &cpi->common;
   const AVxWorkerInterface *const winterface = aom_get_worker_interface();
+  int sb_mi_size = av1_get_sb_mi_size(cm);
 
   CHECK_MEM_ERROR(cm, cpi->workers,
                   aom_malloc(num_workers * sizeof(*cpi->workers)));
@@ -385,7 +394,7 @@ static void create_enc_workers(AV1_COMP *cpi, int num_workers) {
                   aom_calloc(num_workers, sizeof(*cpi->tile_thr_data)));
 
 #if CONFIG_MULTITHREAD
-  if (cpi->row_mt == 1) {
+  if (cpi->oxcf.row_mt == 1) {
     if (cpi->row_mt_mutex_ == NULL) {
       CHECK_MEM_ERROR(cm, cpi->row_mt_mutex_,
                       aom_malloc(sizeof(*(cpi->row_mt_mutex_))));
@@ -454,6 +463,8 @@ static void create_enc_workers(AV1_COMP *cpi, int num_workers) {
           cm, thread_data->td->palette_buffer,
           aom_memalign(16, sizeof(*thread_data->td->palette_buffer)));
 
+      av1_alloc_compound_type_rd_buffers(cm, &thread_data->td->comp_rd_buffer);
+
       CHECK_MEM_ERROR(
           cm, thread_data->td->tmp_conv_dst,
           aom_memalign(32, MAX_SB_SIZE * MAX_SB_SIZE *
@@ -465,6 +476,10 @@ static void create_enc_workers(AV1_COMP *cpi, int num_workers) {
                                  sizeof(*thread_data->td->tmp_obmc_bufs[j])));
       }
 
+      CHECK_MEM_ERROR(
+          cm, thread_data->td->mbmi_ext,
+          aom_calloc(sb_mi_size, sizeof(*thread_data->td->mbmi_ext)));
+
       // Create threads
       if (!winterface->reset(worker))
         aom_internal_error(&cm->error, AOM_CODEC_ERROR,
@@ -473,7 +488,7 @@ static void create_enc_workers(AV1_COMP *cpi, int num_workers) {
       // Main thread acts as a worker and uses the thread data in cpi.
       thread_data->td = &cpi->td;
     }
-    if (cpi->row_mt == 1)
+    if (cpi->oxcf.row_mt == 1)
       CHECK_MEM_ERROR(
           cm, thread_data->td->tctx,
           (FRAME_CONTEXT *)aom_memalign(16, sizeof(*thread_data->td->tctx)));
@@ -518,6 +533,8 @@ static void accumulate_counters_enc_workers(AV1_COMP *cpi, int num_workers) {
     AVxWorker *const worker = &cpi->workers[i];
     EncWorkerData *const thread_data = (EncWorkerData *)worker->data1;
     cpi->intrabc_used |= thread_data->td->intrabc_used;
+    cpi->deltaq_used |= thread_data->td->deltaq_used;
+
     // Accumulate counters.
     if (i > 0) {
       av1_accumulate_frame_counts(&cpi->counts, thread_data->td->counts);
@@ -541,6 +558,7 @@ static void prepare_enc_workers(AV1_COMP *cpi, AVxWorkerHook hook,
     worker->data2 = NULL;
 
     thread_data->td->intrabc_used = 0;
+    thread_data->td->deltaq_used = 0;
 
     // Before encoding a frame, copy the thread data from cpi.
     if (thread_data->td != &cpi->td) {
@@ -562,6 +580,7 @@ static void prepare_enc_workers(AV1_COMP *cpi, AVxWorkerHook hook,
         }
       }
       thread_data->td->mb.mask_buf = thread_data->td->mask_buf;
+      thread_data->td->mb.mbmi_ext = thread_data->td->mbmi_ext;
     }
     if (thread_data->td->counts != &cpi->counts) {
       memcpy(thread_data->td->counts, &cpi->counts, sizeof(cpi->counts));
@@ -569,6 +588,7 @@ static void prepare_enc_workers(AV1_COMP *cpi, AVxWorkerHook hook,
 
     if (i > 0) {
       thread_data->td->mb.palette_buffer = thread_data->td->palette_buffer;
+      thread_data->td->mb.comp_rd_buffer = thread_data->td->comp_rd_buffer;
       thread_data->td->mb.tmp_conv_dst = thread_data->td->tmp_conv_dst;
       for (int j = 0; j < 2; ++j) {
         thread_data->td->mb.tmp_obmc_bufs[j] =

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/icaro/pesquisa_ucpel/aom/build/gen_src/usage_exit.cc" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/dump_obu.dir/gen_src/usage_exit.cc.o"
-  "/home/icaro/pesquisa_ucpel/aom/tools/dump_obu.cc" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/dump_obu.dir/tools/dump_obu.cc.o"
-  "/home/icaro/pesquisa_ucpel/aom/tools/obu_parser.cc" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/dump_obu.dir/tools/obu_parser.cc.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/gen_src/usage_exit.cc" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/dump_obu.dir/gen_src/usage_exit.cc.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/tools/dump_obu.cc" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/dump_obu.dir/tools/dump_obu.cc.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/tools/obu_parser.cc" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/dump_obu.dir/tools/obu_parser.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -26,7 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom.dir/DependInfo.cmake"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

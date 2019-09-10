@@ -295,6 +295,8 @@ if(CONFIG_AV1_DECODER)
               "av1-1-b10-00-quantizer-62.ivf.md5"
               "av1-1-b10-00-quantizer-63.ivf"
               "av1-1-b10-00-quantizer-63.ivf.md5"
+              "av1-1-b10-23-film_grain-50.ivf"
+              "av1-1-b10-23-film_grain-50.ivf.md5"
               "av1-1-b8-01-size-16x16.ivf"
               "av1-1-b8-01-size-16x16.ivf.md5"
               "av1-1-b8-01-size-16x18.ivf"
@@ -513,6 +515,8 @@ if(CONFIG_AV1_DECODER)
               "av1-1-b8-22-svc-L1T2.ivf.md5"
               "av1-1-b8-22-svc-L2T2.ivf"
               "av1-1-b8-22-svc-L2T2.ivf.md5"
+              "av1-1-b8-23-film_grain-50.ivf"
+              "av1-1-b8-23-film_grain-50.ivf.md5"
               "invalid-bug-1814.ivf"
               "invalid-bug-1814.ivf.res"
               "invalid-chromium-906381.ivf"
@@ -537,8 +541,12 @@ if(CONFIG_AV1_DECODER)
               "invalid-oss-fuzz-11477.ivf.res"
               "invalid-oss-fuzz-11479.ivf"
               "invalid-oss-fuzz-11479.ivf.res"
+              "invalid-oss-fuzz-11479.ivf.res.2"
               "invalid-oss-fuzz-11523.ivf"
               "invalid-oss-fuzz-11523.ivf.res"
+              "invalid-oss-fuzz-11523.ivf.res.2"
+              "invalid-oss-fuzz-15363.ivf"
+              "invalid-oss-fuzz-15363.ivf.res"
               "invalid-oss-fuzz-9288.ivf"
               "invalid-oss-fuzz-9288.ivf.res"
               "invalid-oss-fuzz-9463.ivf"
@@ -626,7 +634,7 @@ endfunction()
 # writes it to $local_path.
 function(download_test_file file_url file_checksum local_path)
   message("Downloading ${file_url} ...")
-  file(DOWNLOAD "${file_url}" "${local_path}" SHOW_PROGRESS
-       EXPECTED_HASH SHA1=${file_checksum})
+  file(DOWNLOAD "${file_url}" "${local_path}" SHOW_PROGRESS EXPECTED_HASH
+                                              SHA1=${file_checksum})
   message("Download of ${file_url} complete.")
 endfunction()

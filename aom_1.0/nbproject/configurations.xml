@@ -1,0 +1,2763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="aom">
+        <df name="src">
+          <in>aom_codec.c</in>
+          <in>aom_decoder.c</in>
+          <in>aom_encoder.c</in>
+          <in>aom_image.c</in>
+          <in>aom_integer.c</in>
+        </df>
+      </df>
+      <df name="aom_dsp">
+        <df name="x86">
+          <in>adaptive_quantize_avx2.c</in>
+          <in>adaptive_quantize_sse2.c</in>
+          <in>aom_asm_stubs.c</in>
+          <in>aom_subpixel_8t_intrin_avx2.c</in>
+          <in>aom_subpixel_8t_intrin_sse2.c</in>
+          <in>aom_subpixel_8t_intrin_ssse3.c</in>
+          <in>avg_intrin_avx2.c</in>
+          <in>avg_intrin_sse2.c</in>
+          <in>blend_a64_hmask_sse4.c</in>
+          <in>blend_a64_mask_avx2.c</in>
+          <in>blend_a64_mask_sse4.c</in>
+          <in>blend_a64_vmask_sse4.c</in>
+          <in>fft_avx2.c</in>
+          <in>fft_sse2.c</in>
+          <in>fwd_txfm_sse2.c</in>
+          <in>highbd_adaptive_quantize_avx2.c</in>
+          <in>highbd_adaptive_quantize_sse2.c</in>
+          <in>highbd_convolve_avx2.c</in>
+          <in>highbd_convolve_sse2.c</in>
+          <in>highbd_convolve_ssse3.c</in>
+          <in>highbd_intrapred_sse2.c</in>
+          <in>highbd_loopfilter_avx2.c</in>
+          <in>highbd_loopfilter_sse2.c</in>
+          <in>highbd_quantize_intrin_avx2.c</in>
+          <in>highbd_quantize_intrin_sse2.c</in>
+          <in>highbd_subtract_sse2.c</in>
+          <in>highbd_variance_avx2.c</in>
+          <in>highbd_variance_sse2.c</in>
+          <in>highbd_variance_sse4.c</in>
+          <in>intrapred_avx2.c</in>
+          <in>intrapred_sse2.c</in>
+          <in>intrapred_ssse3.c</in>
+          <in>jnt_sad_ssse3.c</in>
+          <in>jnt_variance_ssse3.c</in>
+          <in>loopfilter_sse2.c</in>
+          <in>masked_sad_intrin_avx2.c</in>
+          <in>masked_sad_intrin_ssse3.c</in>
+          <in>masked_variance_intrin_ssse3.c</in>
+          <in>obmc_sad_avx2.c</in>
+          <in>obmc_sad_sse4.c</in>
+          <in>obmc_variance_avx2.c</in>
+          <in>obmc_variance_sse4.c</in>
+          <in>quantize_sse2.c</in>
+          <in>quantize_ssse3.c</in>
+          <in>sad4d_avx2.c</in>
+          <in>sad_avx2.c</in>
+          <in>sad_highbd_avx2.c</in>
+          <in>sad_impl_avx2.c</in>
+          <in>sse_avx2.c</in>
+          <in>sse_sse4.c</in>
+          <in>subtract_avx2.c</in>
+          <in>sum_squares_avx2.c</in>
+          <in>sum_squares_sse2.c</in>
+          <in>variance_avx2.c</in>
+          <in>variance_impl_avx2.c</in>
+          <in>variance_impl_ssse3.c</in>
+          <in>variance_sse2.c</in>
+        </df>
+        <in>aom_convolve.c</in>
+        <in>aom_dsp_rtcd.c</in>
+        <in>avg.c</in>
+        <in>binary_codes_reader.c</in>
+        <in>binary_codes_writer.c</in>
+        <in>bitreader_buffer.c</in>
+        <in>bitwriter_buffer.c</in>
+        <in>blend_a64_hmask.c</in>
+        <in>blend_a64_mask.c</in>
+        <in>blend_a64_vmask.c</in>
+        <in>daalaboolreader.c</in>
+        <in>daalaboolwriter.c</in>
+        <in>entcode.c</in>
+        <in>entdec.c</in>
+        <in>entenc.c</in>
+        <in>fft.c</in>
+        <in>fwd_txfm.c</in>
+        <in>grain_synthesis.c</in>
+        <in>grain_table.c</in>
+        <in>intrapred.c</in>
+        <in>loopfilter.c</in>
+        <in>noise_model.c</in>
+        <in>noise_util.c</in>
+        <in>psnr.c</in>
+        <in>quantize.c</in>
+        <in>sad.c</in>
+        <in>sad_av1.c</in>
+        <in>sse.c</in>
+        <in>subtract.c</in>
+        <in>sum_squares.c</in>
+        <in>variance.c</in>
+      </df>
+      <df name="aom_mem">
+        <in>aom_mem.c</in>
+      </df>
+      <df name="aom_scale">
+        <df name="generic">
+          <in>aom_scale.c</in>
+          <in>gen_scalers.c</in>
+          <in>yv12config.c</in>
+          <in>yv12extend.c</in>
+        </df>
+        <in>aom_scale_rtcd.c</in>
+      </df>
+      <df name="aom_util">
+        <in>aom_thread.c</in>
+        <in>debug_util.c</in>
+      </df>
+      <df name="apps">
+        <in>aomdec.c</in>
+        <in>aomenc.c</in>
+      </df>
+      <df name="av1">
+        <df name="common">
+          <df name="x86">
+            <in>av1_convolve_horiz_rs_sse4.c</in>
+            <in>av1_convolve_scale_sse4.c</in>
+            <in>av1_inv_txfm_avx2.c</in>
+            <in>av1_inv_txfm_ssse3.c</in>
+            <in>av1_txfm_sse4.c</in>
+            <in>cfl_avx2.c</in>
+            <in>cfl_sse2.c</in>
+            <in>cfl_ssse3.c</in>
+            <in>convolve_2d_avx2.c</in>
+            <in>convolve_2d_sse2.c</in>
+            <in>convolve_avx2.c</in>
+            <in>convolve_sse2.c</in>
+            <in>filterintra_sse4.c</in>
+            <in>highbd_convolve_2d_avx2.c</in>
+            <in>highbd_convolve_2d_sse2.c</in>
+            <in>highbd_convolve_2d_sse4.c</in>
+            <in>highbd_convolve_2d_ssse3.c</in>
+            <in>highbd_inv_txfm_avx2.c</in>
+            <in>highbd_inv_txfm_sse4.c</in>
+            <in>highbd_jnt_convolve_avx2.c</in>
+            <in>highbd_jnt_convolve_sse4.c</in>
+            <in>highbd_warp_plane_sse4.c</in>
+            <in>highbd_wiener_convolve_avx2.c</in>
+            <in>highbd_wiener_convolve_ssse3.c</in>
+            <in>intra_edge_sse4.c</in>
+            <in>jnt_convolve_avx2.c</in>
+            <in>jnt_convolve_sse2.c</in>
+            <in>jnt_convolve_ssse3.c</in>
+            <in>reconinter_avx2.c</in>
+            <in>reconinter_sse4.c</in>
+            <in>reconinter_ssse3.c</in>
+            <in>selfguided_avx2.c</in>
+            <in>selfguided_sse4.c</in>
+            <in>warp_plane_avx2.c</in>
+            <in>warp_plane_sse2.c</in>
+            <in>warp_plane_sse4.c</in>
+            <in>wiener_convolve_avx2.c</in>
+            <in>wiener_convolve_sse2.c</in>
+          </df>
+          <in>alloccommon.c</in>
+          <in>av1_inv_txfm1d.c</in>
+          <in>av1_inv_txfm2d.c</in>
+          <in>av1_loopfilter.c</in>
+          <in>av1_rtcd.c</in>
+          <in>av1_txfm.c</in>
+          <in>blockd.c</in>
+          <in>cdef.c</in>
+          <in>cdef_block.c</in>
+          <in>cdef_block_avx2.c</in>
+          <in>cdef_block_sse2.c</in>
+          <in>cdef_block_sse4.c</in>
+          <in>cdef_block_ssse3.c</in>
+          <in>cfl.c</in>
+          <in>convolve.c</in>
+          <in>debugmodes.c</in>
+          <in>entropy.c</in>
+          <in>entropymode.c</in>
+          <in>entropymv.c</in>
+          <in>frame_buffers.c</in>
+          <in>idct.c</in>
+          <in>mvref_common.c</in>
+          <in>obu_util.c</in>
+          <in>odintrin.c</in>
+          <in>pred_common.c</in>
+          <in>quant_common.c</in>
+          <in>reconinter.c</in>
+          <in>reconintra.c</in>
+          <in>resize.c</in>
+          <in>restoration.c</in>
+          <in>scale.c</in>
+          <in>scan.c</in>
+          <in>seg_common.c</in>
+          <in>thread_common.c</in>
+          <in>tile_common.c</in>
+          <in>timing.c</in>
+          <in>txb_common.c</in>
+          <in>warped_motion.c</in>
+        </df>
+        <df name="decoder">
+          <in>decodeframe.c</in>
+          <in>decodemv.c</in>
+          <in>decoder.c</in>
+          <in>decodetxb.c</in>
+          <in>detokenize.c</in>
+          <in>obu.c</in>
+        </df>
+        <df name="encoder">
+          <df name="x86">
+            <in>av1_fwd_txfm1d_sse4.c</in>
+            <in>av1_fwd_txfm2d_avx2.c</in>
+            <in>av1_fwd_txfm2d_sse4.c</in>
+            <in>av1_fwd_txfm_sse2.c</in>
+            <in>av1_highbd_quantize_avx2.c</in>
+            <in>av1_highbd_quantize_sse4.c</in>
+            <in>av1_quantize_avx2.c</in>
+            <in>av1_quantize_sse2.c</in>
+            <in>corner_match_avx2.c</in>
+            <in>corner_match_sse4.c</in>
+            <in>encodetxb_avx2.c</in>
+            <in>encodetxb_sse2.c</in>
+            <in>encodetxb_sse4.c</in>
+            <in>error_intrin_avx2.c</in>
+            <in>hash_sse42.c</in>
+            <in>highbd_block_error_intrin_avx2.c</in>
+            <in>highbd_block_error_intrin_sse2.c</in>
+            <in>highbd_fwd_txfm_avx2.c</in>
+            <in>highbd_fwd_txfm_sse4.c</in>
+            <in>highbd_temporal_filter_sse4.c</in>
+            <in>ml_sse3.c</in>
+            <in>pickrst_avx2.c</in>
+            <in>pickrst_sse4.c</in>
+            <in>rdopt_avx2.c</in>
+            <in>rdopt_sse4.c</in>
+            <in>temporal_filter_sse4.c</in>
+            <in>wedge_utils_avx2.c</in>
+            <in>wedge_utils_sse2.c</in>
+          </df>
+          <in>aq_complexity.c</in>
+          <in>aq_cyclicrefresh.c</in>
+          <in>aq_variance.c</in>
+          <in>av1_fwd_txfm1d.c</in>
+          <in>av1_fwd_txfm2d.c</in>
+          <in>av1_multi_thread.c</in>
+          <in>av1_quantize.c</in>
+          <in>bitstream.c</in>
+          <in>cnn.c</in>
+          <in>context_tree.c</in>
+          <in>corner_detect.c</in>
+          <in>corner_match.c</in>
+          <in>cost.c</in>
+          <in>dwt.c</in>
+          <in>encode_strategy.c</in>
+          <in>encodeframe.c</in>
+          <in>encodemb.c</in>
+          <in>encodemv.c</in>
+          <in>encoder.c</in>
+          <in>encodetxb.c</in>
+          <in>ethread.c</in>
+          <in>extend.c</in>
+          <in>firstpass.c</in>
+          <in>global_motion.c</in>
+          <in>gop_structure.c</in>
+          <in>hash.c</in>
+          <in>hash_motion.c</in>
+          <in>hybrid_fwd_txfm.c</in>
+          <in>level.c</in>
+          <in>lookahead.c</in>
+          <in>mbgraph.c</in>
+          <in>mcomp.c</in>
+          <in>ml.c</in>
+          <in>nonrd_pickmode.c</in>
+          <in>palette.c</in>
+          <in>partition_strategy.c</in>
+          <in>pass2_strategy.c</in>
+          <in>pickcdef.c</in>
+          <in>picklpf.c</in>
+          <in>pickrst.c</in>
+          <in>ransac.c</in>
+          <in>ratectrl.c</in>
+          <in>rd.c</in>
+          <in>rdopt.c</in>
+          <in>reconinter_enc.c</in>
+          <in>segmentation.c</in>
+          <in>speed_features.c</in>
+          <in>svc_layercontext.c</in>
+          <in>temporal_filter.c</in>
+          <in>tokenize.c</in>
+          <in>tpl_model.c</in>
+          <in>var_based_part.c</in>
+          <in>wedge_utils.c</in>
+        </df>
+        <in>av1_cx_iface.c</in>
+        <in>av1_dx_iface.c</in>
+      </df>
+      <df name="common">
+        <in>args.c</in>
+        <in>av1_config.c</in>
+        <in>ivfdec.c</in>
+        <in>ivfenc.c</in>
+        <in>md5_utils.c</in>
+        <in>obudec.c</in>
+        <in>rawenc.c</in>
+        <in>tools_common.c</in>
+        <in>video_reader.c</in>
+        <in>video_writer.c</in>
+        <in>warnings.c</in>
+        <in>webmdec.cc</in>
+        <in>webmenc.cc</in>
+        <in>y4menc.c</in>
+        <in>y4minput.c</in>
+      </df>
+      <df name="examples">
+        <in>aom_cx_set_ref.c</in>
+        <in>decode_to_md5.c</in>
+        <in>decode_with_drops.c</in>
+        <in>encoder_util.c</in>
+        <in>lightfield_bitstream_parsing.c</in>
+        <in>lightfield_decoder.c</in>
+        <in>lightfield_encoder.c</in>
+        <in>lightfield_tile_list_decoder.c</in>
+        <in>lossless_encoder.c</in>
+        <in>noise_model.c</in>
+        <in>resize_util.c</in>
+        <in>scalable_decoder.c</in>
+        <in>scalable_encoder.c</in>
+        <in>set_maps.c</in>
+        <in>simple_decoder.c</in>
+        <in>simple_encoder.c</in>
+        <in>svc_encoder_rtc.c</in>
+        <in>twopass_encoder.c</in>
+      </df>
+      <df name="nbbuild">
+        <df name="config">
+          <in>aom_config.c</in>
+        </df>
+        <df name="gen_src">
+          <in>aom_av1_dummy.c</in>
+          <in>aom_av1_encoder_sse2_dummy.c</in>
+          <in>aom_av1_encoder_ssse3_dummy.c</in>
+          <in>aom_dsp_common_sse2_dummy.c</in>
+          <in>aom_dsp_common_ssse3_dummy.c</in>
+          <in>aom_dsp_dummy.c</in>
+          <in>aom_dsp_encoder_avx_dummy.c</in>
+          <in>aom_dsp_encoder_sse2_dummy.c</in>
+          <in>aom_dsp_encoder_ssse3_dummy.c</in>
+          <in>aom_pc_dummy.c</in>
+          <in>aom_ports_dummy.c</in>
+          <in>aom_version_dummy.c</in>
+          <in>usage_exit.c</in>
+          <in>usage_exit.cc</in>
+        </df>
+      </df>
+      <df name="stats">
+        <in>aomstats.c</in>
+        <in>rate_hist.c</in>
+      </df>
+      <df name="test">
+        <in>active_map_test.cc</in>
+        <in>altref_test.cc</in>
+        <in>aom_integer_test.cc</in>
+        <in>aq_segment_test.cc</in>
+        <in>arf_freq_test.cc</in>
+        <in>av1_config_test.cc</in>
+        <in>av1_convolve_2d_test.cc</in>
+        <in>av1_convolve_2d_test_util.cc</in>
+        <in>av1_convolve_scale_test.cc</in>
+        <in>av1_encoder_parms_get_to_decoder.cc</in>
+        <in>av1_ext_tile_test.cc</in>
+        <in>av1_fwd_txfm1d_test.cc</in>
+        <in>av1_fwd_txfm2d_test.cc</in>
+        <in>av1_highbd_iht_test.cc</in>
+        <in>av1_horz_only_frame_superres_test.cc</in>
+        <in>av1_inv_txfm1d_test.cc</in>
+        <in>av1_inv_txfm2d_test.cc</in>
+        <in>av1_nn_predict_test.cc</in>
+        <in>av1_quantize_test.cc</in>
+        <in>av1_round_shift_array_test.cc</in>
+        <in>av1_txfm_test.cc</in>
+        <in>av1_wedge_utils_test.cc</in>
+        <in>avg_test.cc</in>
+        <in>binary_codes_test.cc</in>
+        <in>blend_a64_mask_1d_test.cc</in>
+        <in>blend_a64_mask_test.cc</in>
+        <in>blockd_test.cc</in>
+        <in>boolcoder_test.cc</in>
+        <in>borders_test.cc</in>
+        <in>cdef_test.cc</in>
+        <in>cfl_test.cc</in>
+        <in>cnn_test.cc</in>
+        <in>coding_path_sync.cc</in>
+        <in>comp_avg_pred_test.cc</in>
+        <in>comp_mask_variance_test.cc</in>
+        <in>convolve_test.cc</in>
+        <in>corner_match_test.cc</in>
+        <in>cpu_speed_test.cc</in>
+        <in>datarate_test.cc</in>
+        <in>decode_api_test.cc</in>
+        <in>decode_multithreaded_test.cc</in>
+        <in>decode_test_driver.cc</in>
+        <in>divu_small_test.cc</in>
+        <in>dr_prediction_test.cc</in>
+        <in>ec_test.cc</in>
+        <in>edge_detect_test.cc</in>
+        <in>encode_api_test.cc</in>
+        <in>encode_test_driver.cc</in>
+        <in>encodetxb_test.cc</in>
+        <in>end_to_end_test.cc</in>
+        <in>error_block_test.cc</in>
+        <in>error_resilience_test.cc</in>
+        <in>ethread_test.cc</in>
+        <in>external_frame_buffer_test.cc</in>
+        <in>fft_test.cc</in>
+        <in>film_grain_table_test.cc</in>
+        <in>filterintra_test.cc</in>
+        <in>frame_error_test.cc</in>
+        <in>frame_size_tests.cc</in>
+        <in>fwd_kf_test.cc</in>
+        <in>fwht4x4_test.cc</in>
+        <in>gf_max_pyr_height_test.cc</in>
+        <in>hadamard_test.cc</in>
+        <in>hash_test.cc</in>
+        <in>hiprec_convolve_test.cc</in>
+        <in>hiprec_convolve_test_util.cc</in>
+        <in>horver_correlation_test.cc</in>
+        <in>horz_superres_test.cc</in>
+        <in>intra_edge_test.cc</in>
+        <in>intrabc_test.cc</in>
+        <in>intrapred_test.cc</in>
+        <in>invalid_file_test.cc</in>
+        <in>level_test.cc</in>
+        <in>log2_test.cc</in>
+        <in>lossless_test.cc</in>
+        <in>lpf_test.cc</in>
+        <in>masked_sad_test.cc</in>
+        <in>masked_variance_test.cc</in>
+        <in>monochrome_test.cc</in>
+        <in>motion_vector_test.cc</in>
+        <in>noise_model_test.cc</in>
+        <in>obmc_sad_test.cc</in>
+        <in>obmc_variance_test.cc</in>
+        <in>onyxc_int_test.cc</in>
+        <in>pickrst_test.cc</in>
+        <in>qm_test.cc</in>
+        <in>quantize_func_test.cc</in>
+        <in>reconinter_test.cc</in>
+        <in>resize_test.cc</in>
+        <in>rt_end_to_end_test.cc</in>
+        <in>sad_test.cc</in>
+        <in>scalability_test.cc</in>
+        <in>scan_test.cc</in>
+        <in>segment_binarization_sync.cc</in>
+        <in>selfguided_filter_test.cc</in>
+        <in>simd_avx2_test.cc</in>
+        <in>simd_cmp_avx2.cc</in>
+        <in>simd_cmp_sse2.cc</in>
+        <in>simd_cmp_sse4.cc</in>
+        <in>simd_cmp_ssse3.cc</in>
+        <in>simd_sse2_test.cc</in>
+        <in>simd_ssse3_test.cc</in>
+        <in>subtract_test.cc</in>
+        <in>sum_squares_test.cc</in>
+        <in>superframe_test.cc</in>
+        <in>svc_datarate_test.cc</in>
+        <in>test_intra_pred_speed.cc</in>
+        <in>test_libaom.cc</in>
+        <in>test_vector_test.cc</in>
+        <in>test_vectors.cc</in>
+        <in>tile_independence_test.cc</in>
+        <in>time_stamp_test.cc</in>
+        <in>variance_test.cc</in>
+        <in>warp_filter_test.cc</in>
+        <in>warp_filter_test_util.cc</in>
+        <in>wiener_test.cc</in>
+        <in>y4m_test.cc</in>
+        <in>yuv_temporal_filter_test.cc</in>
+      </df>
+      <df name="third_party">
+        <df name="fastfeat">
+          <in>fast.c</in>
+          <in>fast_9.c</in>
+          <in>nonmax.c</in>
+        </df>
+        <df name="googletest">
+          <df name="src">
+            <df name="googletest">
+              <df name="src">
+                <in>gtest-all.cc</in>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="libwebm">
+          <df name="common">
+            <in>hdr_util.cc</in>
+          </df>
+          <df name="mkvmuxer">
+            <in>mkvmuxer.cc</in>
+            <in>mkvmuxerutil.cc</in>
+            <in>mkvwriter.cc</in>
+          </df>
+          <df name="mkvparser">
+            <in>mkvparser.cc</in>
+            <in>mkvreader.cc</in>
+          </df>
+        </df>
+        <df name="libyuv">
+          <df name="source">
+            <in>cpu_id.cc</in>
+            <in>planar_functions.cc</in>
+            <in>row_any.cc</in>
+            <in>row_common.cc</in>
+            <in>row_gcc.cc</in>
+            <in>row_mips.cc</in>
+            <in>row_neon.cc</in>
+            <in>row_neon64.cc</in>
+            <in>row_win.cc</in>
+            <in>scale.cc</in>
+            <in>scale_any.cc</in>
+            <in>scale_common.cc</in>
+            <in>scale_gcc.cc</in>
+            <in>scale_mips.cc</in>
+            <in>scale_neon.cc</in>
+            <in>scale_neon64.cc</in>
+            <in>scale_win.cc</in>
+          </df>
+        </df>
+        <df name="vector">
+          <in>vector.c</in>
+        </df>
+      </df>
+      <df name="tools">
+        <in>dump_obu.cc</in>
+        <in>obu_parser.cc</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>nbbuild/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>nbbuild/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11 -Wvla"/>
+        <element flagsID="1" commonFlags="-std=c++11 -Wvla -mavx2"/>
+        <element flagsID="2" commonFlags="-std=c++11 -Wvla -msse4.1"/>
+        <element flagsID="3" commonFlags="-std=c++11 -Wvla -mssse3"/>
+        <element flagsID="4" commonFlags="-std=c99"/>
+        <element flagsID="5" commonFlags="-std=c99 -mavx2"/>
+        <element flagsID="6" commonFlags="-std=c99 -msse3"/>
+        <element flagsID="7" commonFlags="-std=c99 -msse4.1"/>
+        <element flagsID="8" commonFlags="-std=c99 -msse4.2"/>
+        <element flagsID="9" commonFlags="-std=c99 -mssse3"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>nbbuild</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile -j3</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>third_party/googletest/src/googletest/include</pElem>
+              <pElem>third_party/googletest/src/googletest</pElem>
+              <pElem>.</pElem>
+              <pElem>nbbuild</pElem>
+              <pElem>apps</pElem>
+              <pElem>common</pElem>
+              <pElem>examples</pElem>
+              <pElem>stats</pElem>
+              <pElem>third_party/libyuv/include</pElem>
+              <pElem>third_party/libwebm</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>_FILE_OFFSET_BITS=64</Elem>
+              <Elem>_LARGEFILE_SOURCE</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>third_party/googletest/src/googletest/include</pElem>
+              <pElem>third_party/googletest/src/googletest</pElem>
+              <pElem>.</pElem>
+              <pElem>nbbuild</pElem>
+              <pElem>apps</pElem>
+              <pElem>common</pElem>
+              <pElem>examples</pElem>
+              <pElem>stats</pElem>
+              <pElem>third_party/libyuv/include</pElem>
+              <pElem>third_party/libwebm</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>_FILE_OFFSET_BITS=64</Elem>
+              <Elem>_LARGEFILE_SOURCE</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>nbbuild</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="aom/src/aom_codec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom/src/aom_decoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom/src/aom_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom/src/aom_image.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom/src/aom_integer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/aom_convolve.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/aom_dsp_rtcd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/avg.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/binary_codes_reader.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/binary_codes_writer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/bitreader_buffer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/bitwriter_buffer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/blend_a64_hmask.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/blend_a64_mask.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/blend_a64_vmask.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/daalaboolreader.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/daalaboolwriter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/entcode.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/entdec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/entenc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/fft.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/fwd_txfm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/grain_synthesis.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/grain_table.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/intrapred.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/loopfilter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/noise_model.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/noise_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/psnr.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/quantize.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/sad.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/sad_av1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/sse.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/subtract.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/sum_squares.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/variance.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/adaptive_quantize_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/adaptive_quantize_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/aom_asm_stubs.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/aom_subpixel_8t_intrin_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/aom_subpixel_8t_intrin_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/aom_subpixel_8t_intrin_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/avg_intrin_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/avg_intrin_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/blend_a64_hmask_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/blend_a64_mask_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/blend_a64_mask_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/blend_a64_vmask_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/fft_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/fft_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/fwd_txfm_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_adaptive_quantize_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_adaptive_quantize_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_convolve_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_convolve_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_convolve_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_intrapred_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_loopfilter_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_loopfilter_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_quantize_intrin_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_quantize_intrin_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_subtract_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_variance_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_variance_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/highbd_variance_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/intrapred_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/intrapred_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/intrapred_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/jnt_sad_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/jnt_variance_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/loopfilter_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/masked_sad_intrin_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/masked_sad_intrin_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/masked_variance_intrin_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/obmc_sad_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/obmc_sad_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/obmc_variance_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/obmc_variance_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/quantize_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/quantize_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sad4d_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sad_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sad_highbd_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sad_impl_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sse_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sse_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/subtract_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sum_squares_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/sum_squares_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/variance_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/variance_impl_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/variance_impl_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="aom_dsp/x86/variance_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_mem/aom_mem.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_scale/aom_scale_rtcd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_scale/generic/aom_scale.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_scale/generic/gen_scalers.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_scale/generic/yv12config.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_scale/generic/yv12extend.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_util/aom_thread.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="aom_util/debug_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="apps/aomdec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="apps/aomenc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/av1_cx_iface.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/av1_dx_iface.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/alloccommon.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/av1_inv_txfm1d.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/av1_inv_txfm2d.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/av1_loopfilter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/av1_rtcd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/av1_txfm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/blockd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef_block.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef_block_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef_block_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef_block_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/cdef_block_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/cfl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/convolve.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/debugmodes.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/entropy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/entropymode.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/entropymv.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/frame_buffers.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/idct.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/mvref_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/obu_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/odintrin.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/pred_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/quant_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/reconinter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/reconintra.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/resize.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/restoration.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/scale.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/scan.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/seg_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/thread_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/tile_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/timing.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/txb_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/warped_motion.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/av1_convolve_horiz_rs_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/av1_convolve_scale_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/av1_inv_txfm_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/av1_inv_txfm_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/av1_txfm_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/cfl_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/cfl_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/cfl_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/convolve_2d_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/convolve_2d_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/convolve_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/convolve_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/filterintra_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_convolve_2d_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_convolve_2d_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_convolve_2d_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_convolve_2d_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_inv_txfm_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_inv_txfm_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_jnt_convolve_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_jnt_convolve_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_warp_plane_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_wiener_convolve_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/highbd_wiener_convolve_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/intra_edge_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/jnt_convolve_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/jnt_convolve_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/jnt_convolve_ssse3.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/reconinter_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/reconinter_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/reconinter_ssse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="9">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/selfguided_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/selfguided_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/warp_plane_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/warp_plane_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/warp_plane_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/wiener_convolve_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/common/x86/wiener_convolve_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/decodeframe.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/decodemv.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/decoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/decodetxb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/detokenize.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/decoder/obu.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/aq_complexity.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/aq_cyclicrefresh.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/aq_variance.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/av1_fwd_txfm1d.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/av1_fwd_txfm2d.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/av1_multi_thread.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/av1_quantize.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/bitstream.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/cnn.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/context_tree.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/corner_detect.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/corner_match.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/cost.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/dwt.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encode_strategy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encodeframe.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encodemb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encodemv.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/encodetxb.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/ethread.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/extend.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/firstpass.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/global_motion.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/gop_structure.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/hash.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/hash_motion.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/hybrid_fwd_txfm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/level.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/lookahead.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/mbgraph.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/mcomp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/ml.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/nonrd_pickmode.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/palette.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/partition_strategy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/pass2_strategy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/pickcdef.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/picklpf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/pickrst.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/ransac.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/ratectrl.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/rd.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/rdopt.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/reconinter_enc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/segmentation.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/speed_features.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/svc_layercontext.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/temporal_filter.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/tokenize.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/tpl_model.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/var_based_part.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/wedge_utils.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_fwd_txfm1d_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_fwd_txfm2d_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_fwd_txfm2d_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_fwd_txfm_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_highbd_quantize_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_highbd_quantize_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_quantize_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/av1_quantize_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/corner_match_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/corner_match_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/encodetxb_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/encodetxb_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/encodetxb_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/error_intrin_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/hash_sse42.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="8">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/highbd_block_error_intrin_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/highbd_block_error_intrin_sse2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/highbd_fwd_txfm_avx2.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/highbd_fwd_txfm_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/highbd_temporal_filter_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/ml_sse3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="6">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/pickrst_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/pickrst_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/rdopt_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/rdopt_sse4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/temporal_filter_sse4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="7">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/wedge_utils_avx2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="5">
+        </cTool>
+      </item>
+      <item path="av1/encoder/x86/wedge_utils_sse2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/args.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/av1_config.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/ivfdec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/ivfenc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/md5_utils.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/obudec.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/rawenc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/tools_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/video_reader.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/video_writer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/warnings.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/webmdec.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="common/webmenc.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="common/y4menc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="common/y4minput.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/aom_cx_set_ref.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/decode_to_md5.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/decode_with_drops.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/encoder_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/lightfield_bitstream_parsing.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/lightfield_decoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/lightfield_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/lightfield_tile_list_decoder.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/lossless_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/noise_model.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/resize_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/scalable_decoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/scalable_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/set_maps.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/simple_decoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/simple_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/svc_encoder_rtc.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="examples/twopass_encoder.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <folder path="0/third_party/googletest">
+        <ccTool>
+          <preprocessorList>
+            <Elem>GTEST_HAS_PTHREAD=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/third_party/libwebm">
+        <ccTool>
+          <preprocessorList>
+            <Elem>__STDC_CONSTANT_MACROS</Elem>
+            <Elem>__STDC_LIMIT_MACROS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <item path="nbbuild/config/aom_config.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_av1_dummy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_av1_encoder_sse2_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_av1_encoder_ssse3_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_common_sse2_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_common_ssse3_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_dummy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_encoder_avx_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_encoder_sse2_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_dsp_encoder_ssse3_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_pc_dummy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_ports_dummy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/aom_version_dummy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/usage_exit.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="nbbuild/gen_src/usage_exit.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="stats/aomstats.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="stats/rate_hist.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="test/active_map_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/altref_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/aom_integer_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/aq_segment_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/arf_freq_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_config_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_convolve_2d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_convolve_2d_test_util.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_convolve_scale_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_encoder_parms_get_to_decoder.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_ext_tile_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_fwd_txfm1d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_fwd_txfm2d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_highbd_iht_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="test/av1_horz_only_frame_superres_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_inv_txfm1d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_inv_txfm2d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_nn_predict_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_quantize_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="test/av1_round_shift_array_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_txfm_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/av1_wedge_utils_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/avg_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/binary_codes_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/blend_a64_mask_1d_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/blend_a64_mask_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/blockd_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/boolcoder_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/borders_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/cdef_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/cfl_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/cnn_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/coding_path_sync.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/comp_avg_pred_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/comp_mask_variance_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/convolve_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/corner_match_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="test/cpu_speed_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/datarate_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/decode_api_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/decode_multithreaded_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/decode_test_driver.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/divu_small_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/dr_prediction_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/ec_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/edge_detect_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/encode_api_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/encode_test_driver.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/encodetxb_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/end_to_end_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/error_block_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/error_resilience_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/ethread_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/external_frame_buffer_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/fft_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/film_grain_table_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/filterintra_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/frame_error_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/frame_size_tests.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/fwd_kf_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/fwht4x4_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/gf_max_pyr_height_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/hadamard_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/hash_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/hiprec_convolve_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/hiprec_convolve_test_util.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/horver_correlation_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/horz_superres_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/intra_edge_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/intrabc_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/intrapred_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/invalid_file_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/level_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/log2_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/lossless_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/lpf_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/masked_sad_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/masked_variance_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/monochrome_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/motion_vector_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/noise_model_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/obmc_sad_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/obmc_variance_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/onyxc_int_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/pickrst_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/qm_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/quantize_func_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/reconinter_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/resize_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/rt_end_to_end_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/sad_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/scalability_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/scan_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/segment_binarization_sync.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/selfguided_filter_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/simd_avx2_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/simd_cmp_avx2.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="1">
+        </ccTool>
+      </item>
+      <item path="test/simd_cmp_sse2.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/simd_cmp_sse4.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="2">
+        </ccTool>
+      </item>
+      <item path="test/simd_cmp_ssse3.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="3">
+        </ccTool>
+      </item>
+      <item path="test/simd_sse2_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/simd_ssse3_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/subtract_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/sum_squares_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/superframe_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/svc_datarate_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/test_intra_pred_speed.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/test_libaom.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/test_vector_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/test_vectors.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/tile_independence_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/time_stamp_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/variance_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/warp_filter_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/warp_filter_test_util.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/wiener_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/y4m_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="test/yuv_temporal_filter_test.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/fastfeat/fast.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="third_party/fastfeat/fast_9.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="third_party/fastfeat/nonmax.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="third_party/googletest/src/googletest/src/gtest-all.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/common/hdr_util.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/mkvmuxer/mkvmuxer.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/mkvmuxer/mkvmuxerutil.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/mkvmuxer/mkvwriter.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/mkvparser/mkvparser.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libwebm/mkvparser/mkvreader.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/cpu_id.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/planar_functions.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_any.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_common.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_gcc.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_mips.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_neon.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_neon64.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/row_win.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_any.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_common.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_gcc.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_mips.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_neon.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_neon64.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/libyuv/source/scale_win.cc"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="third_party/vector/vector.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="4">
+        </cTool>
+      </item>
+      <item path="tools/dump_obu.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="tools/obu_parser.cc" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

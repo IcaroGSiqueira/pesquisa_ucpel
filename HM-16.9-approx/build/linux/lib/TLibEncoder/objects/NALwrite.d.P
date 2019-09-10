@@ -1,0 +1,15 @@
+objects/NALwrite.d.o: \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h \
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h :
+ /home/icaro/pesquisa_ucpel/HM-16.9-approx/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :

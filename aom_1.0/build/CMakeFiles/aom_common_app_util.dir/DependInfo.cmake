@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/common/args.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/args.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/av1_config.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/av1_config.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/md5_utils.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/md5_utils.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/rawenc.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/rawenc.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/tools_common.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/tools_common.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/common/y4menc.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_common_app_util.dir/common/y4menc.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/args.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/args.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/av1_config.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/av1_config.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/md5_utils.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/md5_utils.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/rawenc.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/rawenc.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/tools_common.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/tools_common.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/common/y4menc.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_common_app_util.dir/common/y4menc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

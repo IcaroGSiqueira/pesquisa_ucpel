@@ -4,29 +4,33 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/aom_convolve.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/aom_convolve.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/avg.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/avg.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/bitreader_buffer.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/bitreader_buffer.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/bitwriter_buffer.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/bitwriter_buffer.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/blend_a64_hmask.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_hmask.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/blend_a64_mask.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_mask.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/blend_a64_vmask.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_vmask.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/entcode.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/entcode.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/fft.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/fft.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/intrapred.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/intrapred.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/loopfilter.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/loopfilter.c.o"
-  "/home/icaro/pesquisa_ucpel/aom/aom_dsp/subtract.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/subtract.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/aom_convolve.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/aom_convolve.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/avg.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/avg.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/bitreader_buffer.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/bitreader_buffer.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/bitwriter_buffer.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/bitwriter_buffer.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/blend_a64_hmask.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_hmask.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/blend_a64_mask.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_mask.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/blend_a64_vmask.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_vmask.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/entcode.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/entcode.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/fft.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/fft.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/intrapred.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/intrapred.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/loopfilter.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/loopfilter.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/aom_dsp/subtract.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom_dsp_common.dir/aom_dsp/subtract.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../third_party/googletest/src/googletest/include"
+  "../third_party/googletest/src/googletest"
   "../"
   "."
   "../apps"
   "../common"
   "../examples"
   "../stats"
+  "../third_party/libyuv/include"
+  "../third_party/libwebm"
   )
 
 # Targets to which this target links.

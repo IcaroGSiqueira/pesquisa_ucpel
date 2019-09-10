@@ -100,9 +100,9 @@ aom/aom_integer.h
 config/aom_config.h
 ../aom_ports/config/aom_config.h
 
-/home/icaro/pesquisa_ucpel/aom/build/gen_src/usage_exit.cc
+/home/icaro/pesquisa_ucpel/aom_1.0/build/gen_src/usage_exit.cc
 
-/home/icaro/pesquisa_ucpel/aom/tools/dump_obu.cc
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/dump_obu.cc
 stdlib.h
 -
 string.h
@@ -112,19 +112,19 @@ memory
 string
 -
 config/aom_config.h
-/home/icaro/pesquisa_ucpel/aom/tools/config/aom_config.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/config/aom_config.h
 common/ivfdec.h
-/home/icaro/pesquisa_ucpel/aom/tools/common/ivfdec.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/common/ivfdec.h
 common/obudec.h
-/home/icaro/pesquisa_ucpel/aom/tools/common/obudec.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/common/obudec.h
 common/tools_common.h
-/home/icaro/pesquisa_ucpel/aom/tools/common/tools_common.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/common/tools_common.h
 common/webmdec.h
-/home/icaro/pesquisa_ucpel/aom/tools/common/webmdec.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/common/webmdec.h
 tools/obu_parser.h
-/home/icaro/pesquisa_ucpel/aom/tools/tools/obu_parser.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/tools/obu_parser.h
 
-/home/icaro/pesquisa_ucpel/aom/tools/obu_parser.cc
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/obu_parser.cc
 string.h
 -
 cstdio
@@ -132,15 +132,15 @@ cstdio
 string
 -
 aom/aom_codec.h
-/home/icaro/pesquisa_ucpel/aom/tools/aom/aom_codec.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/aom/aom_codec.h
 aom/aom_integer.h
-/home/icaro/pesquisa_ucpel/aom/tools/aom/aom_integer.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/aom/aom_integer.h
 aom_ports/mem_ops.h
-/home/icaro/pesquisa_ucpel/aom/tools/aom_ports/mem_ops.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/aom_ports/mem_ops.h
 av1/common/obu_util.h
-/home/icaro/pesquisa_ucpel/aom/tools/av1/common/obu_util.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/av1/common/obu_util.h
 tools/obu_parser.h
-/home/icaro/pesquisa_ucpel/aom/tools/tools/obu_parser.h
+/home/icaro/pesquisa_ucpel/aom_1.0/tools/tools/obu_parser.h
 
 config/aom_config.h
 

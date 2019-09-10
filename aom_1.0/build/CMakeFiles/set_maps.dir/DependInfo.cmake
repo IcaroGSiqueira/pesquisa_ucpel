@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/icaro/pesquisa_ucpel/aom/examples/set_maps.c" "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/set_maps.dir/examples/set_maps.c.o"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/examples/set_maps.c" "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/set_maps.dir/examples/set_maps.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -24,7 +24,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/icaro/pesquisa_ucpel/aom/build/CMakeFiles/aom.dir/DependInfo.cmake"
+  "/home/icaro/pesquisa_ucpel/aom_1.0/build/CMakeFiles/aom.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

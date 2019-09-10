@@ -45,7 +45,8 @@
 #include "TAppEncCfg.h"
 #include "TAppCommon/program_options_lite.h"
 #include "TLibEncoder/TEncRateCtrl.h"
-#include "TLibCommon/TComContadores.h"
+#include "TLibCommon/TCom
+Contadores.h"
 #ifdef WIN32
 #define strdup _strdup
 #endif

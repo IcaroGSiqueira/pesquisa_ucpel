@@ -38,6 +38,7 @@ av1/common/x86/highbd_convolve_2d_sse2.c
 av1/common/x86/jnt_convolve_sse2.c
 av1/common/x86/wiener_convolve_sse2.c
 av1/common/x86/av1_txfm_sse2.h
+av1/common/x86/warp_plane_sse2.c
 av1/common/cdef_block_sse4.c
 av1/common/x86/av1_convolve_horiz_rs_sse4.c
 av1/common/x86/av1_convolve_scale_sse4.c
@@ -167,6 +168,7 @@ av1/encoder/mips/msa/error_msa.c
 av1/encoder/mips/msa/fdct4x4_msa.c
 av1/encoder/mips/msa/temporal_filter_msa.c
 av1/encoder/arm/neon/quantize_neon.c
+av1/encoder/arm/neon/av1_error_neon.c
 av1/encoder/x86/av1_fwd_txfm_sse2.c
 av1/encoder/x86/av1_fwd_txfm_sse2.h
 av1/encoder/x86/av1_quantize_sse2.c
@@ -193,6 +195,7 @@ av1/encoder/aq_cyclicrefresh.c
 av1/encoder/aq_cyclicrefresh.h
 av1/encoder/aq_variance.c
 av1/encoder/aq_variance.h
+av1/encoder/enc_enums.h
 av1/encoder/av1_fwd_txfm1d.c
 av1/encoder/av1_fwd_txfm1d.h
 av1/encoder/av1_fwd_txfm1d_cfg.h
@@ -204,6 +207,8 @@ av1/encoder/av1_quantize.h
 av1/encoder/bitstream.c
 av1/encoder/bitstream.h
 av1/encoder/block.h
+av1/encoder/cnn.c
+av1/encoder/cnn.h
 av1/encoder/context_tree.c
 av1/encoder/context_tree.h
 av1/encoder/corner_detect.c
@@ -277,6 +282,8 @@ av1/encoder/segmentation.c
 av1/encoder/segmentation.h
 av1/encoder/speed_features.c
 av1/encoder/speed_features.h
+av1/encoder/svc_layercontext.c
+av1/encoder/svc_layercontext.h
 av1/encoder/temporal_filter.c
 av1/encoder/temporal_filter.h
 av1/encoder/tokenize.c
@@ -420,6 +427,7 @@ aom_dsp/x86/masked_sad_intrin_avx2.c
 aom_dsp/x86/subtract_avx2.c
 aom_dsp/x86/highbd_quantize_intrin_avx2.c
 aom_dsp/x86/adaptive_quantize_avx2.c
+aom_dsp/x86/highbd_adaptive_quantize_avx2.c
 aom_dsp/x86/sad4d_avx2.c
 aom_dsp/x86/sad_avx2.c
 aom_dsp/x86/sad_highbd_avx2.c
@@ -439,6 +447,8 @@ aom_dsp/arm/sad4d_neon.c
 aom_dsp/arm/sad_neon.c
 aom_dsp/arm/subpel_variance_neon.c
 aom_dsp/arm/variance_neon.c
+aom_dsp/arm/hadamard_neon.c
+aom_dsp/arm/avg_neon.c
 aom_dsp/x86/fwd_txfm_impl_sse2.h
 aom_dsp/x86/fwd_txfm_sse2.c
 aom_dsp/x86/fwd_txfm_sse2.h
@@ -447,6 +457,7 @@ aom_dsp/x86/highbd_subtract_sse2.c
 aom_dsp/x86/highbd_variance_sse2.c
 aom_dsp/x86/quantize_sse2.c
 aom_dsp/x86/adaptive_quantize_sse2.c
+aom_dsp/x86/highbd_adaptive_quantize_sse2.c
 aom_dsp/x86/quantize_x86.h
 aom_dsp/x86/sum_squares_sse2.c
 aom_dsp/x86/variance_sse2.c
@@ -517,6 +528,7 @@ aom/aom_integer.h
 aom/aomcx.h
 aom/aomdx.h
 aom/internal/aom_codec_internal.h
+aom/internal/aom_image_internal.h
 aom/src/aom_codec.c
 aom/src/aom_decoder.c
 aom/src/aom_encoder.c

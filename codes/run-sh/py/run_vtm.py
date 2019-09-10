@@ -1,7 +1,7 @@
 import os
 yuvs = os.listdir("/home/icaro/origCfP")
 f=50
-file = open("../run_vtm.sh","w")
+file = open("../vtm/run_vtm.sh","w")
 for qp in [22,27,37]:
 	for yuv in yuvs:
 		if ".py" in yuv:

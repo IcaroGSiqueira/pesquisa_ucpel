@@ -64,7 +64,7 @@ static const int use_inter_ext_tx_for_txsize[EXT_TX_SETS_INTER]
                                               { 1, 1, 1, 1 },  // unused
                                               { 1, 1, 0, 0 },
                                               { 0, 0, 1, 0 },
-                                              { 0, 0, 0, 1 },
+                                              { 0, 1, 1, 1 },
                                             };
 
 static const int av1_ext_tx_set_idx_to_type[2][AOMMAX(EXT_TX_SETS_INTRA,
@@ -348,7 +348,7 @@ static const int rd_frame_type_factor[FRAME_UPDATE_TYPES] = { 128, 144, 128,
                                                               128 };
 
 int av1_compute_rd_mult_based_on_qindex(const AV1_COMP *cpi, int qindex) {
-  const int q = av1_dc_quant_Q3(qindex, 0, cpi->common.seq_params.bit_depth);
+  const int q = av1_dc_quant_QTX(qindex, 0, cpi->common.seq_params.bit_depth);
   int rdmult = q * q;
   rdmult = rdmult * 3 + (rdmult * 2 / 3);
   switch (cpi->common.seq_params.bit_depth) {
@@ -366,7 +366,7 @@ int av1_compute_rd_mult(const AV1_COMP *cpi, int qindex) {
   int64_t rdmult = av1_compute_rd_mult_based_on_qindex(cpi, qindex);
   if (cpi->oxcf.pass == 2 &&
       (cpi->common.current_frame.frame_type != KEY_FRAME)) {
-    const GF_GROUP *const gf_group = &cpi->twopass.gf_group;
+    const GF_GROUP *const gf_group = &cpi->gf_group;
     const FRAME_UPDATE_TYPE frame_type = gf_group->update_type[gf_group->index];
     const int boost_index = AOMMIN(15, (cpi->rc.gfu_boost / 100));
 
@@ -376,10 +376,30 @@ int av1_compute_rd_mult(const AV1_COMP *cpi, int qindex) {
   return (int)rdmult;
 }
 
+int av1_get_deltaq_offset(const AV1_COMP *cpi, int qindex, double beta) {
+  assert(beta > 0.0);
+  int q = av1_dc_quant_QTX(qindex, 0, cpi->common.seq_params.bit_depth);
+  int newq = (int)rint(q / sqrt(beta));
+  int orig_qindex = qindex;
+  if (newq < q) {
+    do {
+      qindex--;
+      q = av1_dc_quant_QTX(qindex, 0, cpi->common.seq_params.bit_depth);
+    } while (newq < q && qindex > 0);
+  } else {
+    do {
+      qindex++;
+      q = av1_dc_quant_QTX(qindex, 0, cpi->common.seq_params.bit_depth);
+    } while (newq > q && qindex < MAXQ);
+  }
+  return qindex - orig_qindex;
+}
+
 int av1_get_adaptive_rdmult(const AV1_COMP *cpi, double beta) {
+  assert(beta > 0.0);
   const AV1_COMMON *cm = &cpi->common;
   int64_t q =
-      av1_dc_quant_Q3(cm->base_qindex, 0, cpi->common.seq_params.bit_depth);
+      av1_dc_quant_QTX(cm->base_qindex, 0, cpi->common.seq_params.bit_depth);
   int64_t rdmult = 0;
 
   switch (cpi->common.seq_params.bit_depth) {
@@ -395,7 +415,7 @@ int av1_get_adaptive_rdmult(const AV1_COMP *cpi, double beta) {
 
   if (cpi->oxcf.pass == 2 &&
       (cpi->common.current_frame.frame_type != KEY_FRAME)) {
-    const GF_GROUP *const gf_group = &cpi->twopass.gf_group;
+    const GF_GROUP *const gf_group = &cpi->gf_group;
     const FRAME_UPDATE_TYPE frame_type = gf_group->update_type[gf_group->index];
     const int boost_index = AOMMIN(15, (cpi->rc.gfu_boost / 100));
 
@@ -409,9 +429,13 @@ int av1_get_adaptive_rdmult(const AV1_COMP *cpi, double beta) {
 static int compute_rd_thresh_factor(int qindex, aom_bit_depth_t bit_depth) {
   double q;
   switch (bit_depth) {
-    case AOM_BITS_8: q = av1_dc_quant_Q3(qindex, 0, AOM_BITS_8) / 4.0; break;
-    case AOM_BITS_10: q = av1_dc_quant_Q3(qindex, 0, AOM_BITS_10) / 16.0; break;
-    case AOM_BITS_12: q = av1_dc_quant_Q3(qindex, 0, AOM_BITS_12) / 64.0; break;
+    case AOM_BITS_8: q = av1_dc_quant_QTX(qindex, 0, AOM_BITS_8) / 4.0; break;
+    case AOM_BITS_10:
+      q = av1_dc_quant_QTX(qindex, 0, AOM_BITS_10) / 16.0;
+      break;
+    case AOM_BITS_12:
+      q = av1_dc_quant_QTX(qindex, 0, AOM_BITS_12) / 64.0;
+      break;
     default:
       assert(0 && "bit_depth should be AOM_BITS_8, AOM_BITS_10 or AOM_BITS_12");
       return -1;
@@ -525,8 +549,9 @@ void av1_fill_coeff_costs(MACROBLOCK *x, FRAME_CONTEXT *fc,
         int br_rate[BR_CDF_SIZE];
         int prev_cost = 0;
         int i, j;
-        av1_cost_tokens_from_cdf(br_rate, fc->coeff_br_cdf[tx_size][plane][ctx],
-                                 NULL);
+        av1_cost_tokens_from_cdf(
+            br_rate, fc->coeff_br_cdf[AOMMIN(tx_size, TX_32X32)][plane][ctx],
+            NULL);
         // printf("br_rate: ");
         // for(j = 0; j < BR_CDF_SIZE; j++)
         //  printf("%4d ", br_rate[j]);
@@ -580,7 +605,9 @@ void av1_initialize_rd_consts(AV1_COMP *cpi) {
 
   set_block_thresholds(cm, rd);
 
-  av1_initialize_cost_tables(cm, x);
+  if (!cpi->sf.use_nonrd_pick_mode || frame_is_intra_only(cm) ||
+      (cm->current_frame.frame_number & 0x07) == 1)
+    av1_initialize_cost_tables(cm, x);
 
   if (frame_is_intra_only(cm) && cm->allow_screen_content_tools &&
       cpi->oxcf.pass != 1) {
@@ -966,45 +993,42 @@ void av1_get_entropy_contexts(BLOCK_SIZE bsize,
 
 void av1_mv_pred(const AV1_COMP *cpi, MACROBLOCK *x, uint8_t *ref_y_buffer,
                  int ref_y_stride, int ref_frame, BLOCK_SIZE block_size) {
-  int i;
-  int zero_seen = 0;
-  int best_sad = INT_MAX;
-  int this_sad = INT_MAX;
-  int max_mv = 0;
-  uint8_t *src_y_ptr = x->plane[0].src.buf;
-  uint8_t *ref_y_ptr;
-  MV pred_mv[MAX_MV_REF_CANDIDATES + 1];
-  int num_mv_refs = 0;
   const MV_REFERENCE_FRAME ref_frames[2] = { ref_frame, NONE_FRAME };
   const int_mv ref_mv =
       av1_get_ref_mv_from_stack(0, ref_frames, 0, x->mbmi_ext);
   const int_mv ref_mv1 =
       av1_get_ref_mv_from_stack(0, ref_frames, 1, x->mbmi_ext);
-
+  MV pred_mv[MAX_MV_REF_CANDIDATES + 1];
+  int num_mv_refs = 0;
   pred_mv[num_mv_refs++] = ref_mv.as_mv;
   if (ref_mv.as_int != ref_mv1.as_int) {
     pred_mv[num_mv_refs++] = ref_mv1.as_mv;
   }
-  if (cpi->sf.adaptive_motion_search && block_size < x->max_partition_size)
+  if (cpi->sf.adaptive_motion_search && block_size < x->max_partition_size) {
     pred_mv[num_mv_refs++] = x->pred_mv[ref_frame];
+  }
 
   assert(num_mv_refs <= (int)(sizeof(pred_mv) / sizeof(pred_mv[0])));
 
+  const uint8_t *const src_y_ptr = x->plane[0].src.buf;
+  int zero_seen = 0;
+  int best_sad = INT_MAX;
+  int max_mv = 0;
   // Get the sad for each candidate reference mv.
-  for (i = 0; i < num_mv_refs; ++i) {
+  for (int i = 0; i < num_mv_refs; ++i) {
     const MV *this_mv = &pred_mv[i];
-    int fp_row, fp_col;
-    fp_row = (this_mv->row + 3 + (this_mv->row >= 0)) >> 3;
-    fp_col = (this_mv->col + 3 + (this_mv->col >= 0)) >> 3;
+    const int fp_row = (this_mv->row + 3 + (this_mv->row >= 0)) >> 3;
+    const int fp_col = (this_mv->col + 3 + (this_mv->col >= 0)) >> 3;
     max_mv = AOMMAX(max_mv, AOMMAX(abs(this_mv->row), abs(this_mv->col)) >> 3);
 
     if (fp_row == 0 && fp_col == 0 && zero_seen) continue;
     zero_seen |= (fp_row == 0 && fp_col == 0);
 
-    ref_y_ptr = &ref_y_buffer[ref_y_stride * fp_row + fp_col];
+    const uint8_t *const ref_y_ptr =
+        &ref_y_buffer[ref_y_stride * fp_row + fp_col];
     // Find sad for current vector.
-    this_sad = cpi->fn_ptr[block_size].sdf(src_y_ptr, x->plane[0].src.stride,
-                                           ref_y_ptr, ref_y_stride);
+    const int this_sad = cpi->fn_ptr[block_size].sdf(
+        src_y_ptr, x->plane[0].src.stride, ref_y_ptr, ref_y_stride);
     // Note if it is the best so far.
     if (this_sad < best_sad) {
       best_sad = this_sad;
@@ -1299,10 +1323,18 @@ void av1_update_rd_thresh_fact(const AV1_COMMON *const cm,
   if (rd_thresh > 0) {
     const int top_mode = MAX_MODES;
     int mode;
+    BLOCK_SIZE min_size;
+    BLOCK_SIZE max_size;
+    if (bsize <= cm->seq_params.sb_size) {
+      min_size = AOMMAX(bsize - 1, BLOCK_4X4);
+      max_size = AOMMIN(bsize + 2, (int)cm->seq_params.sb_size);
+    } else {
+      // This part handles block sizes with 1:4 and 4:1 aspect ratios
+      // TODO(any): Experiment with threshold update for parent/child blocks
+      min_size = bsize;
+      max_size = bsize;
+    }
     for (mode = 0; mode < top_mode; ++mode) {
-      const BLOCK_SIZE min_size = AOMMAX(bsize - 1, BLOCK_4X4);
-      const BLOCK_SIZE max_size =
-          AOMMIN(bsize + 2, (int)cm->seq_params.sb_size);
       BLOCK_SIZE bs;
       for (bs = min_size; bs <= max_size; ++bs) {
         int *const fact = &factor_buf[bs][mode];
@@ -1318,7 +1350,7 @@ void av1_update_rd_thresh_fact(const AV1_COMMON *const cm,
 
 int av1_get_intra_cost_penalty(int qindex, int qdelta,
                                aom_bit_depth_t bit_depth) {
-  const int q = av1_dc_quant_Q3(qindex, qdelta, bit_depth);
+  const int q = av1_dc_quant_QTX(qindex, qdelta, bit_depth);
   switch (bit_depth) {
     case AOM_BITS_8: return 20 * q;
     case AOM_BITS_10: return 5 * q;

@@ -125,6 +125,27 @@ typedef enum ATTRIBUTE_PACKED {
 // 4X4, 8X8, 16X16, 32X32, 64X64, 128X128
 #define SQR_BLOCK_SIZES 6
 
+//  Partition types.  R: Recursive
+//
+//  NONE          HORZ          VERT          SPLIT
+//  +-------+     +-------+     +---+---+     +---+---+
+//  |       |     |       |     |   |   |     | R | R |
+//  |       |     +-------+     |   |   |     +---+---+
+//  |       |     |       |     |   |   |     | R | R |
+//  +-------+     +-------+     +---+---+     +---+---+
+//
+//  HORZ_A        HORZ_B        VERT_A        VERT_B
+//  +---+---+     +-------+     +---+---+     +---+---+
+//  |   |   |     |       |     |   |   |     |   |   |
+//  +---+---+     +---+---+     +---+   |     |   +---+
+//  |       |     |   |   |     |   |   |     |   |   |
+//  +-------+     +---+---+     +---+---+     +---+---+
+//
+//  HORZ_4        VERT_4
+//  +-----+       +-+-+-+
+//  +-----+       | | | |
+//  +-----+       | | | |
+//  +-----+       +-+-+-+
 enum {
   PARTITION_NONE,
   PARTITION_HORZ,
@@ -532,6 +553,7 @@ enum {
 #define MAX_MV_REF_CANDIDATES 2
 
 #define MAX_REF_MV_STACK_SIZE 8
+#define USABLE_REF_MV_STACK_SIZE 4
 #define REF_CAT_LEVEL 640
 
 #define INTRA_INTER_CONTEXTS 4

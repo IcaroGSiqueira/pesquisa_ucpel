@@ -104,8 +104,9 @@ set_aom_config_var(CONFIG_FILEOPTIONS 1 NUMBER
 set_aom_config_var(CONFIG_INSPECTION 0 NUMBER "Enables bitstream inspection.")
 set_aom_config_var(CONFIG_INTERNAL_STATS 0 NUMBER
                    "Enables internal encoder stats.")
-set_aom_config_var(CONFIG_LOWBITDEPTH 1 NUMBER
-                   "Enables 8-bit optimized pipeline.")
+set_aom_config_var(FORCE_HIGHBITDEPTH_DECODING 0 NUMBER
+                   "Force high bitdepth decoding pipeline on 8-bit input.")
+mark_as_advanced(FORCE_HIGHBITDEPTH_DECODING)
 set_aom_config_var(CONFIG_MAX_DECODE_PROFILE 2 NUMBER
                    "Max profile to support decoding.")
 set_aom_config_var(CONFIG_NORMAL_TILE_MODE 0 NUMBER
@@ -133,6 +134,14 @@ set_aom_config_var(CONFIG_LPF_MASK 0 NUMBER
                    "Enable the use loop filter bitmasks for optimizations.")
 set_aom_config_var(CONFIG_HTB_TRELLIS 0 NUMBER
                    "Enable the use of hash table for trellis optimizations.")
+set_aom_config_var(CONFIG_REALTIME_ONLY 0 NUMBER
+                   "Build for RTC-only to reduce binary size.")
+set_aom_config_var(CONFIG_AV1_HIGHBITDEPTH 1 NUMBER
+                   "Build with high bitdepth support.")
+set_aom_config_var(CONFIG_NN_V2 0 NUMBER "Fully-connected neural nets ver.2.")
+set_aom_config_var(CONFIG_SUPERRES_IN_RECODE 1 NUMBER
+                   "Enable encoding both full-res and superres in recode loop"
+                   "when SUPERRES_AUTO mode is used.")
 #
 # Variables in this section control optional features of the build system.
 #
@@ -171,10 +180,10 @@ set_aom_option_var(ENABLE_VSX "Enables VSX optimizations on PowerPC targets."
                    ON)
 
 # x86/x86_64 assembly/intrinsics flags.
-set_aom_option_var(ENABLE_MMX
-                   "Enables MMX optimizations on x86/x86_64 targets." ON)
-set_aom_option_var(ENABLE_SSE
-                   "Enables SSE optimizations on x86/x86_64 targets." ON)
+set_aom_option_var(ENABLE_MMX "Enables MMX optimizations on x86/x86_64 targets."
+                   ON)
+set_aom_option_var(ENABLE_SSE "Enables SSE optimizations on x86/x86_64 targets."
+                   ON)
 set_aom_option_var(ENABLE_SSE2
                    "Enables SSE2 optimizations on x86/x86_64 targets." ON)
 set_aom_option_var(ENABLE_SSE3
@@ -185,7 +194,7 @@ set_aom_option_var(ENABLE_SSE4_1
                    "Enables SSE4_1 optimizations on x86/x86_64 targets." ON)
 set_aom_option_var(ENABLE_SSE4_2
                    "Enables SSE4_2 optimizations on x86/x86_64 targets." ON)
-set_aom_option_var(ENABLE_AVX
-                   "Enables AVX optimizations on x86/x86_64 targets." ON)
+set_aom_option_var(ENABLE_AVX "Enables AVX optimizations on x86/x86_64 targets."
+                   ON)
 set_aom_option_var(ENABLE_AVX2
                    "Enables AVX2 optimizations on x86/x86_64 targets." ON)

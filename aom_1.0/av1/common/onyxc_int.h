@@ -129,6 +129,13 @@ typedef struct RefCntBuffer {
   unsigned int order_hint;
   unsigned int ref_order_hints[INTER_REFS_PER_FRAME];
 
+  // These variables are used only in encoder and compare the absolute
+  // display order hint to compute the relative distance and overcome
+  // the limitation of get_relative_dist() which returns incorrect
+  // distance when a very old frame is used as a reference.
+  unsigned int display_order_hint;
+  unsigned int ref_display_order_hint[INTER_REFS_PER_FRAME];
+
   MV_REF *mvs;
   uint8_t *seg_map;
   struct segmentation seg;
@@ -183,8 +190,7 @@ typedef struct BufferPool {
 } BufferPool;
 
 typedef struct {
-  int cdef_pri_damping;
-  int cdef_sec_damping;
+  int cdef_damping;
   int nb_cdef_strengths;
   int cdef_strengths[CDEF_MAX_STRENGTHS];
   int cdef_uv_strengths[CDEF_MAX_STRENGTHS];
@@ -295,6 +301,7 @@ typedef struct {
   REFERENCE_MODE reference_mode;
 
   unsigned int order_hint;
+  unsigned int display_order_hint;
   unsigned int frame_number;
   SkipModeInfo skip_mode_info;
   int refresh_frame_flags;  // Which ref frames are overwritten by this frame
@@ -373,7 +380,7 @@ typedef struct AV1Common {
   int allow_warped_motion;
 
   // MBs, mb_rows/cols is in 16-pixel units; mi_rows/cols is in
-  // MB_MODE_INFO (8-pixel) units.
+  // MB_MODE_INFO (4-pixel) units.
   int MBs;
   int mb_rows, mi_rows;
   int mb_cols, mi_cols;
@@ -420,26 +427,25 @@ typedef struct AV1Common {
 
   /* We allocate a MB_MODE_INFO struct for each macroblock, together with
      an extra row on top and column on the left to simplify prediction. */
-  int mi_alloc_size;
-  MB_MODE_INFO *mip; /* Base of allocated array */
+  int mi_alloc_size, mi_grid_size;
   MB_MODE_INFO *mi;  /* Corresponds to upper left visible macroblock */
 
-  // TODO(agrange): Move prev_mi into encoder structure.
-  // prev_mip and prev_mi will only be allocated in encoder.
-  MB_MODE_INFO *prev_mip; /* MB_MODE_INFO array 'mip' from last decoded frame */
-  MB_MODE_INFO *prev_mi;  /* 'mi' from last frame (points into prev_mip) */
+  // The minimum size each allocated mi can correspond to.
+  // For decoder, this is always BLOCK_4X4.
+  // For encoder, this is currently set to BLOCK_4X4 for resolution below 4k,
+  // and BLOCK_8X8 for resolution above 4k
+  BLOCK_SIZE mi_alloc_bsize;
+  int mi_alloc_rows, mi_alloc_cols, mi_alloc_stride;
 
   // Separate mi functions between encoder and decoder.
-  int (*alloc_mi)(struct AV1Common *cm, int mi_size);
+  int (*alloc_mi)(struct AV1Common *cm);
   void (*free_mi)(struct AV1Common *cm);
   void (*setup_mi)(struct AV1Common *cm);
+  void (*set_mb_mi)(struct AV1Common *cm, int height, int width);
 
-  // Grid of pointers to 8x8 MB_MODE_INFO structs.  Any 8x8 not in the visible
+  // Grid of pointers to 4x4 MB_MODE_INFO structs. Any 4x4 not in the visible
   // area will be NULL.
   MB_MODE_INFO **mi_grid_base;
-  MB_MODE_INFO **mi_grid_visible;
-  MB_MODE_INFO **prev_mi_grid_base;
-  MB_MODE_INFO **prev_mi_grid_visible;
 
   // Whether to use previous frames' motion vectors for prediction.
   int allow_ref_frame_mvs;
@@ -1188,6 +1194,29 @@ static INLINE void set_txfm_ctxs(TX_SIZE tx_size, int n4_w, int n4_h, int skip,
   set_txfm_ctx(xd->left_txfm_context, bh, n4_h);
 }
 
+static INLINE int get_mi_grid_idx(const AV1_COMMON *cm, int mi_row,
+                                  int mi_col) {
+  return mi_row * cm->mi_stride + mi_col;
+}
+
+static INLINE int get_alloc_mi_idx(const AV1_COMMON *cm, int mi_row,
+                                   int mi_col) {
+  const int mi_alloc_size_1d = mi_size_wide[cm->mi_alloc_bsize];
+  const int mi_alloc_row = mi_row / mi_alloc_size_1d;
+  const int mi_alloc_col = mi_col / mi_alloc_size_1d;
+
+  return mi_alloc_row * cm->mi_alloc_stride + mi_alloc_col;
+}
+
+static INLINE int get_mi_ext_idx(const AV1_COMMON *cm, int mi_row,
+                                 int mi_col) {
+  const int mi_alloc_size_1d = mi_size_wide[cm->mi_alloc_bsize];
+  const int mi_alloc_row = mi_row / mi_alloc_size_1d;
+  const int mi_alloc_col = mi_col / mi_alloc_size_1d;
+
+  return mi_alloc_row * cm->mi_alloc_cols + mi_alloc_col;
+}
+
 static INLINE void txfm_partition_update(TXFM_CONTEXT *above_ctx,
                                          TXFM_CONTEXT *left_ctx,
                                          TX_SIZE tx_size, TX_SIZE txb_size) {
@@ -1283,7 +1312,7 @@ static INLINE PARTITION_TYPE get_partition(const AV1_COMMON *const cm,
   if (mi_row >= cm->mi_rows || mi_col >= cm->mi_cols) return PARTITION_INVALID;
 
   const int offset = mi_row * cm->mi_stride + mi_col;
-  MB_MODE_INFO **mi = cm->mi_grid_visible + offset;
+  MB_MODE_INFO **mi = cm->mi_grid_base + offset;
   const BLOCK_SIZE subsize = mi[0]->sb_type;
 
   if (subsize == bsize) return PARTITION_NONE;

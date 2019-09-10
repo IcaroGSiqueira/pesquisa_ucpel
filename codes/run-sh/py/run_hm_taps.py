@@ -1,9 +1,9 @@
 import os
 yuvs = os.listdir("../../Videos")
 f=50
-file = open("../run_hm_taps.sh","w")
+file = open("../hm/run_hm_taps.sh","w")
 for yuv in yuvs:
-	for bina in ["2h","4h3q","6h5q"]:
+	for taps in [2,4,6]:
 		for qp in [37,32,27,22]:
 			if ".py" in yuv:
 				continue

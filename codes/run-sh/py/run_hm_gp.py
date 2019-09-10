@@ -11,7 +11,7 @@ homepath = "/home/icaro"
 #yuvpath = "/workareas/share/video_sequences"
 yuvpath = "/home/icaro/origCfP"
 
-file = open("../run_hm_gp.sh","w")
+file = open("../hm/run_hm_gp.sh","w")
 for yuv in yuvs:
 	for qp in [22,27,32,37]:
 		if "crop" in yuv:

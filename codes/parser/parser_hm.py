@@ -1,17 +1,17 @@
 import os
-pathin = "/grellert/testesHEVC/out"
-out = open("/home/grellert/testesHEVC/hm-noSIMD.csv","w")
-yuvs = sorted(os.listdir("/home/%s"%pathin))
+pathin = "/home/icaro/pesquisa_ucpel/HM-16.9-approx/OUTPUT"
+out = open("/home/icaro/pesquisa_ucpel/hmtaps0919.csv","w")
+yuvs = sorted(os.listdir("%s"%pathin))
 for yuv in yuvs:
-	if "10fr" in yuv:
+	if "bin" in yuv:
 		continue
-	file = open("/home%s/%s"%(pathin,yuv),"r")
+	file = open("%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
-	line = lines[-25]
+	line = lines[-1]
 	a,time = line.split(":")
 	t,s = time.split("s")
 	t = t.strip(" ")
-	line = lines[-45]
+	line = lines[-21]
 	f,r = line.split("a")
 	r = r.strip(" ")
 	br,y,u,v,yuvv = r.split("   ")

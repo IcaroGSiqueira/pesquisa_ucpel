@@ -16,8 +16,8 @@ homepath = "/home/grellert"
 yuvpath = "/videos"
 #yuvpath = "/home/icaro/origCfP"
 
-binout = "testesHEVC/0919"
-out = "testesHEVC/0919"
+binout = "testesHEVC/bin/0919"
+out = "testesHEVC/out/0919"
 
 #yuvs = os.listdir("%s"%yuvpath)
 file = open("../hm/run_hm.sh","w")

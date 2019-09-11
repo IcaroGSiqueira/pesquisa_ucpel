@@ -5,15 +5,16 @@ f=50
 clip=0
 gprof=0
 
-#yuvs = {"BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","Kimono_1920x1080_24.yuv","BlowingBubbles_416x240_50.yuv","ParkScene_1920x1080_24.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","Traffic_2560x1600_30_crop.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"}
+yuvs = {"BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","BlowingBubbles_416x240_50.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","Kimono_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv","Traffic_2560x1600_30_crop.yuv"}
 
-yuvs = {"BQSquare_416x240_60.yuv"}
+#yuvs = {"BQSquare_416x240_60.yuv"}
 
-encpath = "pesquisa_ucpel/HM-16.9-approx"
-homepath = "/home/icaro"
-#homepath = "/home/grellert"
-#yuvpath = "/workareas/share/video_sequences"
-yuvpath = "/home/icaro/origCfP"
+#encpath = "pesquisa_ucpel/HM-16.9-approx"
+encpath = "hm-16.9_approx_ucpel"
+#homepath = "/home/icaro"
+homepath = "/home/grellert"
+yuvpath = "/videos"
+#yuvpath = "/home/icaro/origCfP"
 
 binout = "testesHEVC/0919"
 out = "testesHEVC/0919"
@@ -21,8 +22,8 @@ out = "testesHEVC/0919"
 #yuvs = os.listdir("%s"%yuvpath)
 file = open("../hm/run_hm.sh","w")
 
-for yuv in yuvs:
-	for taps in [4,2,6,8]:
+for taps in [4,2,6,8]:
+	for yuv in yuvs:
 		for qp in [22,27,32,37]:
 			if ".py" in yuv:
 				continue

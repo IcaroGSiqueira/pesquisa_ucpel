@@ -1,1 +1,1 @@
-parallel --delay 1 -j4 --progress -S "twins1,twins2" :::: run_hm.sh 
+parallel --delay 1 -j6 --progress -S "twins1" :::: run_hm.sh 

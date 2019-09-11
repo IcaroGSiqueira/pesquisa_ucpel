@@ -1,21 +1,50 @@
 import os
-pathin = "/home/icaro/pesquisa_ucpel/HM-16.9-approx/OUTPUT"
-out = open("/home/icaro/pesquisa_ucpel/hmtaps0919.csv","w")
+
+#homepath = "/home/icaro"
+homepath = "/home/grellert"
+
+pathin = "%s/testesHEVC/out/0919"%homepath
+out = open("%s/testesHEVC/hm0919.csv"%homepath,"w")
+
+out6t = open("%s/testesHEVC/hm6t0919.csv"%homepath,"w")
+out4t = open("%s/testesHEVC/hm4t0919.csv"%homepath,"w")
+out2t = open("%s/testesHEVC/hm2t0919.csv"%homepath,"w")
+
 yuvs = sorted(os.listdir("%s"%pathin))
+
+linha = "YUV,Bitrate,Y-PSNR,U-PSNR,V-PSNR,YUV-PSNR,Time"
+print >> out, linha
+print >> out4t, linha
+print >> out2t, linha
+print >> out6t, linha
+
 for yuv in yuvs:
 	if "bin" in yuv:
 		continue
 	file = open("%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
-	line = lines[-1]
+	line = lines[-5]
 	a,time = line.split(":")
 	t,s = time.split("s")
 	t = t.strip(" ")
-	line = lines[-21]
+	line = lines[-25]
 	f,r = line.split("a")
 	r = r.strip(" ")
-	br,y,u,v,yuvv = r.split("   ")
-	yuvv = yuvv[:-1]
-	linha = "%s,%s,%s,%s,%s,%s,%s"%(yuv,y,u,v,yuvv,br,t)
-	print >> out, linha
+	br,yp,up,vp,yuvp = r.split("   ")
+	yuvp = yuvp[:-1]
+
+	linha = "%s,%s,%s,%s,%s,%s,%s"%(yuv,br,yp,up,vp,yuvp,t)
+
+	if "4taps" in yuv:
+		print >> out4t, linha
+	elif "6taps" in yuv:
+		print >> out6t, linha
+	elif "2taps" in yuv:
+		print >> out2t, linha
+	else:
+		print >> out, linha
+
 	out.close
+	out2t.close
+	out4t.close
+	out6t.close

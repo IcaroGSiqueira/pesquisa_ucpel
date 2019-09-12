@@ -62,7 +62,7 @@ for x in xrange(0,tam):
 
 	if "37qp" in tlines[x]:
 
-      	nome37t,b37t,y37t,u37t,v37t,yuv37t,t37t = tlines[x].split(",")
+		nome37t,b37t,y37t,u37t,v37t,yuv37t,t37t = tlines[x].split(",")
 		b37t,y37t,u37t,v37t,yuv37t,t37t = map(float,[b37t,y37t,u37t,v37t,yuv37t,t37t])
 
 		n,n1,n2,n3,n4,n5,n6,n7 = nome37.split("_")

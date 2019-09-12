@@ -4,19 +4,19 @@ import scipy.integrate as integrate
 import math
 import matplotlib.pyplot as plt
 
-def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
-	HEVC = np.asarray(HEVC)
-	VVC = np.asarray(VVC)
+def plotRDCurves(ref,test, yuv_sel, title = 'rd_curve.pdf',n = ' '):
+	ref = np.asarray(ref)
+	test = np.asarray(test)
 
-	HEVC = HEVC[HEVC[:,0].argsort()]
-	VVC = VVC[VVC[:,0].argsort()]
-	xa, ya = np.log10(HEVC[:,0]), HEVC[:,yuv_sel]
-	xb, yb = np.log10(VVC[:,0]), VVC[:,yuv_sel]
-	xa, ya = HEVC[:,0], HEVC[:,yuv_sel]
-	xb, yb = VVC[:,0], VVC[:,yuv_sel]
+	ref = ref[ref[:,0].argsort()]
+	test = test[test[:,0].argsort()]
+	xa, ya = np.log10(ref[:,0]), ref[:,yuv_sel]
+	xb, yb = np.log10(test[:,0]), test[:,yuv_sel]
+	xa, ya = ref[:,0], ref[:,yuv_sel]
+	xb, yb = test[:,0], test[:,yuv_sel]
 
-	plt.plot(xa,ya,label='HEVC', marker = 's', color='k')
-	plt.plot(xb,yb,label='VVC', marker = '^', color='red')
+	plt.plot(xa,ya,label='Ref', marker = 's', color='k')
+	plt.plot(xb,yb,label='Test', marker = '^', color='red')
 	plt.legend()
 	plt.xlabel('bitrate (kbps)\n %s'%n)
 	if yuv_sel == 1:
@@ -28,15 +28,15 @@ def plotRDCurves(HEVC,VVC, yuv_sel, title = 'rd_curve.pdf',n = ' '):
 	plt.savefig(title, dpi=300)
 	plt.close()
 
-def bdbr(HEVC,VVC,  yuv_sel):
-	HEVC = np.asarray(HEVC)
-	VVC = np.asarray(VVC)
+def bdbr(ref,test,  yuv_sel):
+	ref = np.asarray(ref)
+	test = np.asarray(test)
 	
-	HEVC = HEVC[HEVC[:,0].argsort()]
-	VVC = VVC[VVC[:,0].argsort()]
+	ref = ref[ref[:,0].argsort()]
+	test = test[test[:,0].argsort()]
 
-	xa, ya = np.log10(HEVC[:,0]), HEVC[:,yuv_sel]
-	xb, yb = np.log10(VVC[:,0]), VVC[:,yuv_sel]
+	xa, ya = np.log10(ref[:,0]), ref[:,yuv_sel]
+	xb, yb = np.log10(test[:,0]), test[:,yuv_sel]
 	
 	max_i = len(ya)
 	i = 1
@@ -65,15 +65,15 @@ def bdbr(HEVC,VVC,  yuv_sel):
 	return bdbr
 
 
-def bdpsnr(HEVC,VVC, yuv_sel):
-	HEVC = np.asarray(HEVC)
-	VVC = np.asarray(VVC)
+def bdpsnr(ref,test, yuv_sel):
+	ref = np.asarray(ref)
+	test = np.asarray(test)
 	
-	HEVC = HEVC[HEVC[:,0].argsort()]
-	VVC = VVC[VVC[:,0].argsort()]
+	ref = ref[ref[:,0].argsort()]
+	test = test[test[:,0].argsort()]
 	
-	xa, ya = np.log10(HEVC[:,0]), HEVC[:,yuv_sel]
-	xb, yb = np.log10(VVC[:,0]), VVC[:,yuv_sel]
+	xa, ya = np.log10(ref[:,0]), ref[:,yuv_sel]
+	xb, yb = np.log10(test[:,0]), test[:,yuv_sel]
 
 	x_interp = [max(min(xa), min(xb)), min(max(xa),max(xb))]
 	y_interp = [max(min(ya), min(yb)), min(max(ya),max(yb))]

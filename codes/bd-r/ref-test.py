@@ -1,4 +1,4 @@
-from bjontegaardhmvtm import bdbr,bdpsnr,plotRDCurves
+from bjontegaard import bdbr,bdpsnr,plotRDCurves
 
 homepath = "home/grellert"
 #homepath = "home/icaro"

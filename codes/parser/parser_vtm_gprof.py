@@ -2,17 +2,18 @@ import os
 import re
 
 pathin = "/home/icaro/testesVVC/gprof"
-#pathin = "/home/grellert/testesHEVC/gprof"
-#out = open("/home/grellert/testesHEVC/gprof.csv","w")
-out = open("/home/icaro/testesVVC/gprof/vtm_gprof.csv","w")
+#pathin = "/home/icaro/testesHEVC/gprof"
+#out = open("/home/icaro/testesHEVC/gprof.csv","w")
+out = open("/home/icaro/testesVVC/vtm_gprof.csv","w")
 files = sorted(os.listdir("%s"%pathin))
 
-linha = "YUV,FME-Interp.,INT-S.,AMVP,IME-S.,FME-S.,Filter,Merge,I.Quant,I.Transf,MC,Quant,Transf,Affine,Bio,SUM,TOTAL,%"
+#linha = "YUV,I.Quant,FME-Interp.,FME-S.,I.Transf,Transf,ENTPY,Bio,AMVP,IME-S.,Merge,Filter,Affine,Quant,INT-S.,MC,SUM,TOTAL,%"
+linha = "YUV,FME-Interp.,FME-S.,Bio,IME-S.,Affine,I.Transf,Transf,I.Quant,Quant,Filter,INT-S.,ENTPY,AMVP,T/IT,ME,Q/IQ,MC,Merge,FME,SUM,TOTAL,%"
 print >> out, linha
 
 for file in files:
-	if "SIMD" in file:
-		continue
+	#if "SIMD" in file:
+	#	continue
 	if ".csv" in file:
 		continue
 
@@ -23,6 +24,7 @@ for file in files:
 	FMEINT=0
 	Bio=0
 	Affine=0
+	ENTPY=0
 	INTS=0
 	AMVP=0
 	IMES=0
@@ -125,7 +127,7 @@ for file in files:
 			temp = temp + selff + called
 			INTS = INTS - temp
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterPrediction::motionCompensation',line)
+		linha = re.match(r'\[\d+\][ \d \.]+InterPrediction::motionCompensation\(PredictionUnit&, UnitBuf<short>&, RefPicList const&, bool, bool, UnitBuf<short>',line)
 		if linha != None:
 			pt1 = re.findall(r'\d*\.\d*',line)
 			p1,selff,called = pt1
@@ -303,12 +305,26 @@ for file in files:
 			called = float(called)
 			FLT = FLT + selff + called
 
+		linha = re.match(r'\[\d+\][ \d \.]+CABACWriter::residual_coding\(',line)
+		if linha != None:
+			pt1 = re.findall(r'\d*\.\d*',line)
+			p1,selff,called = pt1
+			selff = float(selff)
+			called = float(called)
+			ENTPY = ENTPY + selff + called
+
 	SOMA = FMEINT + INTS + AMVP + IMES + FMES + FLT + MRG + IQ + IT + MC + Q + T + Affine
 	PORC = SOMA/TOTAL*100
-	linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"%(yuv,FMEINT,INTS,AMVP,IMES,FMES,FLT,MRG,IQ,IT,MC,Q,T,Affine,Bio,SOMA,TOTAL,PORC)
+
+	QIQ = Q + IQ
+	TIT = T + IT
+	FME = FMES + FMEINT
+	ME = Bio + IMES + Affine
+
+	linha = "%s,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf"%(yuv,FMEINT,FMES,Bio,IMES,Affine,IT,T,IQ,Q,FLT,INTS,ENTPY,AMVP,TIT,ME,QIQ,MC,MRG,FME,SOMA,TOTAL,PORC)
 	print >> out, linha
 	out.close
 
-#linha = "Average,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"%(yuv,FMEINT,INTS,AMVP,IMES,FMES,FLT,MRG,IQ,IT,MC,Q,T,SOMA,TOTAL,PORC)
+#linha = "Average,%s,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f"%(yuv,FMEINT,INTS,AMVP,IMES,FMES,FLT,MRG,IQ,IT,MC,Q,T,SOMA,TOTAL,PORC)
 #print out, linha
 #out.close

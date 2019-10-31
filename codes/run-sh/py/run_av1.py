@@ -2,22 +2,27 @@ import os
 
 f=30
 
-server=0
-OPT=0
+server=0 # local = 0 ; servidor = 1
+
+OPT=0 # optimizacoes ligadas = 1
 gprof=1
 
+shpath = "pesquisa_ucpel/codes/run-sh/aom"
+filename = "run_av1.sh"
 #yuvs = os.listdir("/home/icaro/origCfP")
 
 if server == 1:	
 	homepath = "/home/grellert"
 	yuvpath = "/videos"
-	out = "pesquisa_ucpel/output_AV1/server"
+	outpath = "pesquisa_ucpel/output_AV1/server"
+	binpath = "aom/build" #partindo da homepath
 
 	yuvs = ["BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","Kimono_1920x1080_24.yuv","BlowingBubbles_416x240_50.yuv","ParkScene_1920x1080_24.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","Traffic_2560x1600_30_crop.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"] 
 else:
 	homepath = "/home/icaro"
 	yuvpath = "/home/icaro/origCfP"
-	out = "pesquisa_ucpel/output_AV1/local"
+	outpath = "pesquisa_ucpel/output_AV1/local"
+	binpath = "aom/build" #partindo da homepath
 
 	yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"]
 
@@ -36,7 +41,27 @@ else:
 		bina = "aomenc_gprof_noOPT"
 		inf = "gprof_noOPT"
 
-file = open("../aom/run2_av1.sh","w")
+file = open("%s/%s/%s"%(homepath,shpath,filename),"w")
+
+try:
+	os.system("mkdir %s/%s/bin"%(homepath,outpath))
+except:
+	pass
+try:
+	os.system("mkdir %s/%s/out"%(homepath,outpath))
+except:
+	pass
+
+if gprof == 1:
+	try:
+		os.system("mkdir %s/%s/gprof"%(homepath,outpath))
+	except:
+		pass
+	try:
+		os.system("mkdir %s/%s/gmon"%(homepath,outpath))
+	except:
+		pass
+
 for qp in [34,29,24,19]:
 	for yuv in yuvs:
 
@@ -47,7 +72,7 @@ for qp in [34,29,24,19]:
 
 		if "crop" in yuv:
 			vid,pix,fr,y = yuv.split("_")
-			nome = vid+"_"+pix+"_"+fr+"_qp%s"%(qp+3)
+			nome = vid+"_"+pix+"_"+fr
 		else:
 			vid,pix,fps = yuv.split("_")
 			fr,y = fps.split(".")
@@ -59,13 +84,13 @@ for qp in [34,29,24,19]:
 		#qp = map(float,qp) !!--end-usage=q!!--AVALIAR
 
 		if gprof == 1:
-			linha = "%s/aom/build/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s 2> %s/%s/out/%s_%s"%(homepath,bina,fr,w,h,qp,qp+8,f,homepath,out,nome,info,yuvpath,yuv,homepath,out,nome,info)
-			linha2 = "mv %s/pesquisa_ucpel/codes/run-sh/aom/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,homepath,out,nome,info)
-			linha3 = "gprof %s/aom/build/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,bina,homepath,out,nome,info,homepath,out,nome,info)
+			linha = "%s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp,qp+8,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
+			linha2 = "mv %s/%s/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,shpath,homepath,outpath,nome,info)
+			linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
 			#linha4 =  "echo %s_%s DONE!"%(nome,info)
 			print >> file, linha + " && " + linha2 + " && " + linha3# + linha4
 		else:
-			linha = "{ time %s/aom/build/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s ; } 2> %s/%s/out/%s_%s"%(homepath,bina,fr,w,h,qp,qp+8,f,homepath,out,nome,info,yuvpath,yuv,homepath,out,nome,info)
+			linha = "{ time %s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s ; } 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp,qp+8,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
 			print >> file, linha
 
 		print >> file, ""

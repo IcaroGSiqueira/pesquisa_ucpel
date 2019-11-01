@@ -110,8 +110,8 @@ for yuv in yuvs:
 			linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
 			if gitpull == 1:
 				linha3 = linha3 + " && cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
-			#linha4 =  "echo %s_%s DONE!"%(nome,info)
-			print >> file, linha + " && " + linha2 + " && " + linha3# + linha4
+			linha4 =  " && echo \"%s_%s DONE!\""%(nome,info)
+			print >> file, linha + " && " + linha2 + " && " + linha3 + linha4
 		else:
 			linha = "{ time %s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s ; } 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp-3,qp+5,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
 			if gitpull == 1:

@@ -66,81 +66,6 @@ for file in files:
 
 #########################################################################################
 
-		linha = re.match(r'\[\d+\] [ \d \.\d]+TEncSearch::estIntraPredLumaQT',line)
-		if linha != None:
-			j=i
-			while "---" not in line:
-				j+=1
-				line = lines[j]
-				if "xGetHADs" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					INTS = INTS + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xPatternSearch',line)
-		if linha != None:
-			if "Frac" in line:
-				continue
-			else:
-				pt1 = re.findall(r'\d*\.\d*',line)
-				p1,selff,called = pt1
-				selff = float(selff)
-				called = float(called)
-				IMES = IMES + selff + called
-
-		#linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xPatternSearchFast',line)
-		#if linha != None:
-		#	if "Help" in line:
-		#		continue
-		#	else:
-		#		pt1 = re.findall(r'\d*\.\d*',line)
-		#		p1,selff,called = pt1
-		#		selff = float(selff)
-		#		called = float(called)
-		#		IMES = IMES + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xPatternRefinement',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMES = FMES + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xExtDIFUpSamplingQ',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMEINT = FMEINT + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xExtDIFUpSamplingH',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMEINT = FMEINT + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xEstimateMvPredAMVP',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			AMVP = AMVP + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::motionCompensation',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			MC = MC + selff + called
-
 		linha = re.match(r'\[\d+\] [ \d \.\d]+[A-Za-z]+::xCheckRDCostMerge2Nx2N',line)
 		if linha != None:
 			j=i
@@ -163,14 +88,6 @@ for file in files:
 			called = float(called)
 			Q = Q + selff + called
 
-		linha = re.match(r'\[\d+\] [ \d \.\d]+TComTrQuant::xDeQuant',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			IQ = IQ + selff + called
-
 		linha = re.match(r'\[\d+\] [ \d \.\d]+search_txk_type',line)
 		if linha != None:
 			pt1 = re.findall(r'\d*\.\d*',line)
@@ -178,38 +95,6 @@ for file in files:
 			selff = float(selff)
 			called = float(called)
 			T = T + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+TComTrQuant::xIT',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			IT = IT + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\+]+[A-Za-z]+::estimateBit',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			Entpy = Entpy + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\d]+TEncSampleAdaptiveOffset::SAOProcess',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FLT = FLT + selff + called
-
-		linha = re.match(r'\[\d+\] [ \d \.\+]+[A-Za-z]+::xDeblockCU',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FLT = FLT + selff + called
 
 #########################################################################################
 

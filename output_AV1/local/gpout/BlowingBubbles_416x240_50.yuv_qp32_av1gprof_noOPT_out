@@ -1,45 +1,0 @@
-Codec: AOMedia Project AV1 Encoder 1.0.0-2588-g6db32805e
-Source file: /home/icaro/origCfP/BlowingBubbles_416x240_50.yuv File Type: RAW Format: I420
-Destination file: /home/icaro/pesquisa_ucpel/output_AV1/local/gpbin/BlowingBubbles_416x240_50_qp32.bin
-Coding path: LBD
-Encoder parameters:
-    g_usage                      = 1
-    g_threads                    = 1
-    g_profile                    = 0
-    g_w                          = 416
-    g_h                          = 240
-    g_bit_depth                  = 8
-    g_input_bit_depth            = 8
-    g_timebase.num               = 1
-    g_timebase.den               = 50
-    g_error_resilient            = 0
-    g_pass                       = 0
-    g_lag_in_frames              = 0
-    large_scale_tile             = 0
-    rc_dropframe_thresh          = 0
-    rc_resize_mode               = 0
-    rc_resize_denominator        = 8
-    rc_resize_kf_denominator     = 8
-    rc_superres_mode             = 0
-    rc_superres_denominator      = 8
-    rc_superres_kf_denominator   = 8
-    rc_superres_qthresh          = 63
-    rc_superres_kf_qthresh       = 32
-    rc_end_usage                 = 3
-    rc_target_bitrate            = 256
-    rc_min_quantizer             = 29
-    rc_max_quantizer             = 37
-    rc_undershoot_pct            = 25
-    rc_overshoot_pct             = 25
-    rc_buf_sz                    = 6000
-    rc_buf_initial_sz            = 4000
-    rc_buf_optimal_sz            = 5000
-    rc_2pass_vbr_bias_pct        = 50
-    rc_2pass_vbr_minsection_pct  = 0
-    rc_2pass_vbr_maxsection_pct  = 2000
-    fwd_kf_enabled               = 0
-    kf_mode                      = 1
-    kf_min_dist                  = 0
-    kf_max_dist                  = 9999
-Pass 1/1 frame    1/0          0B       0 us 0.00 fpm [ETA  unknown] 37.247 36.397 38.927 40.657   11816F[KPass 1/1 frame    2/1      11816B  207615 ms 0.58 fpm [ETA  2:00:50] 36.974 36.059 38.904 40.734    2333F[KPass 1/1 frame    3/2      14149B  344965 ms 0.52 fpm [ETA  1:56:40] 37.034 36.123 38.919 40.818    2770F[KPass 1/1 frame    4/3      16919B  642325 ms 0.37 fpm [ETA  1:52:30] 37.039 36.127 38.949 40.793    2879F[KPass 1/1 frame    5/4      19798B 1140580 ms 0.26 fpm [ETA  2:24:26] 36.946 36.032 38.905 40.656    2443F[KPass 1/1 frame    6/5      22241B 1886005 ms 0.19 fpm [ETA  3:28:20] 36.938 36.034 38.850 40.589    2411F[KPass 1/1 frame    7/6      24652B 2817058 ms 0.15 fpm [ETA  3:20:00] 36.987 36.087 38.895 40.612    2396F[KPass 1/1 frame    8/7      27048B 4086502 ms 0.12 fpm [ETA  6:23:20] 37.037 36.129 38.961 40.724    2139F[KPass 1/1 frame    9/8      29187B 5578362 ms 0.10 fpm [ETA  6:06:40] 37.075 36.163 39.014 40.788    2251F[KPass 1/1 frame   10/9      31438B 7050513 ms 0.09 fpm [ETA  5:50:00] 37.075 36.165 38.996 40.799    2367F[KPass 1/1 frame   11/10     33805B 8571630 ms 0.08 fpm [ETA  5:33:20] 37.093 36.187 38.960 40.839    2432F[KPass 1/1 frame   12/11     36237B 10094641 ms 0.07 fpm [ETA  5:16:40] 37.121 36.210 39.036 40.854    2413F[KPass 1/1 frame   13/12     38650B 11611090 ms 0.07 fpm [ETA  5:00:00] 37.130 36.218 39.042 40.882    2492F[KPass 1/1 frame   14/13     41142B 13080318 ms 0.06 fpm [ETA  unknown] 37.112 36.209 38.987 40.810    2576F[KPass 1/1 frame   15/14     43718B 14574484 ms 0.06 fpm [ETA  unknown] 37.102 36.186 39.028 40.880    2730F[KPass 1/1 frame   16/15     46448B 16064428 ms 0.06 fpm [ETA  unknown] 37.067 36.137 39.080 40.869    2765F[KPass 1/1 frame   17/16     49213B 17572716 ms 0.06 fpm [ETA  unknown] 37.071 36.156 38.962 40.891    2429F[KPass 1/1 frame   18/17     51642B 19320166 ms 0.06 fpm [ETA  unknown] 37.069 36.148 39.008 40.889    2577F[KPass 1/1 frame   19/18     54219B 20460479 ms 0.06 fpm [ETA  unknown] 37.059 36.139 39.023 40.835    2658F[KPass 1/1 frame   20/19     56877B 21574183 ms 0.06 fpm [ETA  unknown] 37.042 36.119 39.030 40.809    2759F[KPass 1/1 frame   21/20     59636B 22930605 ms 0.05 fpm [ETA  unknown] 37.028 36.106 39.007 40.796    2796F[KPass 1/1 frame   22/21     62432B 24316544 ms 0.05 fpm [ETA  unknown] 37.024 36.089 39.005 40.950    2664F[KPass 1/1 frame   23/22     65096B 25724521 ms 0.05 fpm [ETA  unknown] 37.071 36.155 38.968 40.896    2613F[KPass 1/1 frame   24/23     67709B 27102798 ms 0.05 fpm [ETA  unknown] 37.169 36.216 39.362 40.996    2654F[KPass 1/1 frame   25/24     70363B 28685524 ms 0.05 fpm [ETA  unknown] 37.228 36.257 39.665 40.924    3167F[KPass 1/1 frame   26/25     73530B 30306879 ms 0.05 fpm [ETA  unknown] 37.382 36.425 39.704 41.055    3083F[KPass 1/1 frame   27/26     76613B 31804721 ms 0.05 fpm [ETA  unknown] 37.416 36.470 39.719 41.006    3382F[KPass 1/1 frame   28/27     79995B 33295216 ms 0.05 fpm [ETA  unknown] 37.459 36.516 39.762 41.014    3643F[KPass 1/1 frame   29/28     83638B 34847028 ms 0.05 fpm [ETA  unknown] 37.461 36.529 39.745 40.925    3851F[KPass 1/1 frame   30/29     87489B 36381241 ms 0.05 fpm [ETA  unknown] 37.380 36.415 39.908 40.881    4168F[K[KPass 1/1 frame   30/30     91657B   24441b/f 1222050b/s 37975875 ms (0.00 fps)[K
-Stream 0 PSNR (Overall/Avg/Y/U/V) 37.125 37.128 36.207 39.144 40.839 1222093 bps 37975875 ms

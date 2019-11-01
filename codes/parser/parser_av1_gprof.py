@@ -64,6 +64,8 @@ for file in files:
 				TOTAL = called
 				print TOTAL
 
+#########################################################################################
+
 		linha = re.match(r'\[\d+\] [ \d \.\d]+TEncSearch::estIntraPredLumaQT',line)
 		if linha != None:
 			j=i
@@ -169,7 +171,7 @@ for file in files:
 			called = float(called)
 			IQ = IQ + selff + called
 
-		linha = re.match(r'\[\d+\] [ \d \.\d]+TComTrQuant::xT',line)
+		linha = re.match(r'\[\d+\] [ \d \.\d]+search_txk_type',line)
 		if linha != None:
 			pt1 = re.findall(r'\d*\.\d*',line)
 			p1,selff,called = pt1
@@ -208,6 +210,8 @@ for file in files:
 			selff = float(selff)
 			called = float(called)
 			FLT = FLT + selff + called
+
+#########################################################################################
 
 	SOMA = FMEINT + INTS + AMVP + IMES + FMES + FLT + MRG + IQ + IT + MC + Q + T
 	PORC = SOMA/TOTAL*100

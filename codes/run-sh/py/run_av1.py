@@ -6,16 +6,17 @@ gitpull = 1
 
 server = 0 # local = 0 ; servidor = 1
 
-#qps = [37,32,27,22]
+#[37,32,27,22]
 
 qps = [27,22]
 
 OPT = 0 # optimizacoes ligadas = 1
 gprof = 1
 
-threads = 1 # numero de processos em parelelo
+threads = 4 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
+gitscript = "git_upl"
 
 shpath = "pesquisa_ucpel/codes/run-sh/aom"
 filename = "run_av1.sh"
@@ -24,11 +25,11 @@ yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPas
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 
-#yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv"] 														#ClasseD
-#yuvs = ["RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv"] 																#ClasseC
-#yuvs = ["FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","SlideEditing_1280x720_30.yuv"] 																							#ClasseE e F
-#yuvs = ["Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"] 	#ClasseB
-#yuvs = ["PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] 																										#ClasseA
+#["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv"] 														#ClasseD
+#["RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv"] 															#ClasseC
+#["FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","SlideEditing_1280x720_30.yuv"] 																						#ClasseE e F
+#["Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"] 	#ClasseB
+#["PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] 																										#ClasseA
 
 if server == 1:	
 	homepath = "/home/grellert"
@@ -108,30 +109,43 @@ for yuv in yuvs:
 			linha2 = "mv %s/%s/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,shpath,homepath,outpath,nome,info)
 			linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
 			if gitpull == 1:
-				linha3 = linha3 + " && cd %s/%s && sh git_upl.sh"%(homepath,gitpath)
+				linha3 = linha3 + " && cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
 			#linha4 =  "echo %s_%s DONE!"%(nome,info)
 			print >> file, linha + " && " + linha2 + " && " + linha3# + linha4
 		else:
 			linha = "{ time %s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s ; } 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp-3,qp+5,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
 			if gitpull == 1:
-				linha1 = linha1 + " && cd %s/%s && sh git_upl.sh"%(homepath,gitpath)
+				linha1 = linha1 + " && cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
 			print >> file, linha
 
 		#print >> file, ""
 		file.close
 
 if threads != 1:
+
 	file = open("%s/%s/%s"%(homepath,shpath,filename),"r")
 	lines = file.readlines()
 	tam = len(lines)
+	nqp = len(qps)
+
 	for x in range(threads):
 		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
-		i = x*4
+		i = x*nqp
+		j=0
+
 		while i < tam:
 			line = lines[i]
 			print >> file2, line
 			i = i+1
-			if ((i-1)%4) == 3:
-				i = i+threads*3
+
+			if nqp == 4:
+				if ((i-1)%4) == 3:
+					i = i+threads*(3)
+			else:
+				j = j+1
+				div = tam/threads
+				if j == div:
+					i = i+threads*div
+					j=0
 	file2.close
 file.close

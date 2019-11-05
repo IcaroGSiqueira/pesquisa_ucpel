@@ -8,7 +8,7 @@ server = 0 # local = 0 ; servidor = 1
 
 #[37,32,27,22]
 
-qps = [27,22]
+qps = [22]
 
 OPT = 0 # optimizacoes ligadas = 1
 gprof = 1

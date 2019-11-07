@@ -28,3 +28,20 @@ POC   24 TId: 1 ( B-SLICE, QP 35 )      38960 bits [Y 35.2074 dB    U 40.0800 dB
 POC   20 TId: 2 ( B-SLICE, QP 38 )      11672 bits [Y 34.9396 dB    U 40.1872 dB    V 41.2652 dB] [ET    98 ] [L0 16 8 ] [L1 24 16 ]
 POC   18 TId: 3 ( B-SLICE, QP 40 )       5208 bits [Y 35.0540 dB    U 40.2981 dB    V 41.3478 dB] [ET    65 ] [L0 16 8 ] [L1 20 24 ]
 POC   17 TId: 4 ( B-SLICE, QP 41 )       2296 bits [Y 35.2665 dB    U 40.3306 dB    V 41.5048 dB] [ET    33 ] [L0 16 18 ] [L1 18 20 ]
+POC   19 TId: 4 ( B-SLICE, QP 41 )       2144 bits [Y 34.7563 dB    U 40.2734 dB    V 41.3630 dB] [ET    34 ] [L0 18 16 ] [L1 20 24 ]
+POC   22 TId: 3 ( B-SLICE, QP 40 )       5600 bits [Y 34.4701 dB    U 40.1151 dB    V 40.8629 dB] [ET    67 ] [L0 20 16 ] [L1 24 20 ]
+POC   21 TId: 4 ( B-SLICE, QP 41 )       2544 bits [Y 34.4573 dB    U 40.1714 dB    V 41.0420 dB] [ET    40 ] [L0 20 16 ] [L1 22 24 ]
+POC   23 TId: 4 ( B-SLICE, QP 41 )       2704 bits [Y 34.5039 dB    U 40.0594 dB    V 40.8018 dB] [ET    37 ] [L0 22 20 ] [L1 24 22 ]
+POC   28 TId: 2 ( B-SLICE, QP 38 )      22416 bits [Y 33.7935 dB    U 39.6143 dB    V 40.2619 dB] [ET   117 ] [L0 24 16 ] [L1 24 16 ]
+POC   26 TId: 3 ( B-SLICE, QP 40 )       6936 bits [Y 33.9534 dB    U 39.8466 dB    V 40.5774 dB] [ET    76 ] [L0 24 16 ] [L1 28 24 ]
+POC   25 TId: 4 ( B-SLICE, QP 41 )       2672 bits [Y 34.2032 dB    U 40.0371 dB    V 40.8060 dB] [ET    45 ] [L0 24 16 ] [L1 26 28 ]
+POC   27 TId: 4 ( B-SLICE, QP 41 )       3560 bits [Y 33.6741 dB    U 39.7742 dB    V 40.3710 dB] [ET    44 ] [L0 26 24 ] [L1 28 26 ]
+POC   30 TId: 3 ( B-SLICE, QP 40 )      12320 bits [Y 33.0251 dB    U 39.2965 dB    V 39.7225 dB] [ET    87 ] [L0 28 24 ] [L1 28 24 ]
+POC   29 TId: 4 ( B-SLICE, QP 41 )       4024 bits [Y 33.2932 dB    U 39.3983 dB    V 39.9328 dB] [ET    55 ] [L0 28 24 ] [L1 30 28 ]
+POC   31 TId: 4 ( B-SLICE, QP 41 )       6864 bits [Y 32.6668 dB    U 39.1694 dB    V 39.3436 dB] [ET    65 ] [L0 30 28 ] [L1 30 28 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       32    a     941.1000   35.0719   40.3176   41.3270   36.1555
+
+ finished @ Thu Nov  7 20:17:19 2019
+ Total Time:     2089.884 sec. [user]     2091.550 sec. [elapsed]

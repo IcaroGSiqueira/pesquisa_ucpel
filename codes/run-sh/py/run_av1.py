@@ -8,7 +8,7 @@ server = 0 # local = 0 ; servidor = 1
 
 #[37,32,27,22]
 
-qps = [22]
+qps = [22,27,32,37]
 
 OPT = 0 # optimizacoes ligadas = 1
 gprof = 1
@@ -21,7 +21,7 @@ gitscript = "git_upl"
 shpath = "pesquisa_ucpel/codes/run-sh/aom"
 filename = "run_av1.sh"
 
-yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv"]
+yuvs = ["RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv"] 
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 

@@ -67,10 +67,10 @@ def getYFrame(video,w,h):
 
 # --- M A I N ------------------------------------------------
 
-#yuvs = {"BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1024_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","Kimono_1920x1080_24.yuv","BlowingBubbles_416x240_50.yuv","ParkScene_1920x1080_24.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","Traffic_2560x1600_30_crop.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv"}
+videos = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
 
 
-videos = os.listdir("/workareas/share/video_sequences/")
+#videos = os.listdir("/home/icaro/origCfP/")
 
 for v in videos:
 #	if v not in yuvs:
@@ -84,10 +84,10 @@ for v in videos:
 		continue
 	if '2160.yuv' in v:
 		continue
-	video = open('/workareas/share/video_sequences/' + v,'rb')
+	video = open('/home/icaro/origCfP/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1].split('.')[0])
-	outFile = open(v.split('_')[0]+'.csv','w')
+	outFile = open(v+'.csv','w')
 	frame = getYFrame(video,w,h)
 	prevFrame = frame
 	vetSI = [std(sobel(frame))]
@@ -102,7 +102,7 @@ for v in videos:
 			print "\tFrame #:",frameIdx
 		frameIdx += 1
 		frame = getYFrame(video,w,h)
-		if frameIdx > 50:
+		if frameIdx > 32:
 			break
 	video.close()
 

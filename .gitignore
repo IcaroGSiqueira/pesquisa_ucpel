@@ -6,3 +6,17 @@
 /aom_1.0/build/*
 /aom_1.0_noSIMD/nbbuild/*
 /aom_1.0_noSIMD/build/*
+/codes/run-sh/*/rec.yuv
+/codes/run-sh/hm/rec.yuv
+/codes/run-sh/vtm/rec.yuv
+/codes/run-sh/rec.yuv
+rec.yuv
+/*/rec.yuv
+/*/*/rec.yuv
+/*/*/*/rec.yuv
+/*/*/*/*/rec.yuv
+/*/*/*/*/*/rec.yuv
+/*/*/*/*/*/*/rec.yuv
+/HM-16.9_fme_aprox
+/VTM_5.0_noSIMD
+/VTM_5.0_SIMD_GProf

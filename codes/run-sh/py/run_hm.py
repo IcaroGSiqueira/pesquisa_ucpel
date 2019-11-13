@@ -9,6 +9,10 @@ gitpull = 1
 
 server = 0 # local = 0 ; servidor = 1
 
+confs = ["encoder_randomaccess_main.cfg","encoder_lowdelay_main.cfg","encoder_intra_main.cfg"]
+
+conf = "encoder_randomaccess_main.cfg"
+
 #[37,32,27,22]
 
 qps = [22,27,32,37]
@@ -21,7 +25,7 @@ gitscript = "git_upl"
 shpath = "pesquisa_ucpel/codes/run-sh/hm"
 filename = "run_hm.sh"
 
-yuvs = ["BlowingBubbles_416x240_50.yuv","BasketballPass_416x240_50.yuv","BQSquare_416x240_60.yuv","RaceHorses_416x240_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","RaceHorses_832x480_30.yuv","PartyScene_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","Tennis_1920x1080_24.yuv","SlideEditing_1280x720_30.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] #SERVIDOR
+yuvs = ["BlowingBubbles_416x240_50.yuv","BasketballPass_416x240_50.yuv","BQSquare_416x240_60.yuv","RaceHorses_416x240_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","RaceHorses_832x480_30.yuv","PartyScene_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","Kimono1_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","Tennis_1920x1080_24.yuv","SlideEditing_1280x720_30.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] #SERVIDOR
 
 #yuvs = ["BasketballDrill_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BasketballPass_416x240_50.yuv","Kimono_1920x1080_24.yuv","BlowingBubbles_416x240_50.yuv","ParkScene_1920x1080_24.yuv","BQMall_832x480_60.yuv","BQSquare_416x240_60.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","PartyScene_832x480_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","RaceHorses_832x480_30.yuv","RaceHorses_416x240_30.yuv","Traffic_2560x1600_30_crop.yuv"] #UCPEL_PC
 
@@ -34,7 +38,7 @@ if server == 1:
 	binpath = "hm/bin" #partindo da homepath
 	confpath = "hm/cfg"
 
-	yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"]
+	#yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","FourPeople_1280x720_60.yuv","Johnny_1280x720_60.yuv","SlideEditing_1280x720_30.yuv","Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"]
 
 else:
 	homepath = "/home/icaro"
@@ -47,12 +51,17 @@ else:
 
 if gprof == 0:
 	bina = "TAppEncoderStatic"
+	inf = ""
 else:
 	bina = "TAppEncoderStaticd"
 	inf = "gprof"
 
 file = open("%s/%s/%s"%(homepath,shpath,filename),"w")
 
+try:
+	os.system("mkdir %s/%s/"%(homepath,outpath))
+except:
+	pass
 try:
 	os.system("mkdir %s/%s/bin"%(homepath,outpath))
 except:
@@ -103,7 +112,7 @@ for taps in [8,6,4,2]:
 			#print w,h,f,fr,qp
 
 			if gprof == 1:
-				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --fme_filter_ntaps=%s -b 8 %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,taps,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
+				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --fme_filter_ntaps=%s -b 8 --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,taps,homepath,outpath,nome,info,homepath,outpath,nome,info)
 
 				linha2 = "mv %s/%s/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,shpath,homepath,outpath,nome,info)
 
@@ -116,7 +125,7 @@ for taps in [8,6,4,2]:
 					test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
 					tlines = test.readlines()
 					tline = tlines[-1]
-					if "Total Time" in tline:
+					if "Total Time" not in tline:
 						if gitpull == 1:
 							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
 							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
@@ -130,7 +139,7 @@ for taps in [8,6,4,2]:
 						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				
 			else:
-				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --fme_filter_ntaps=%s -b 8 %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,taps,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
+				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --fme_filter_ntaps=%s -b 8 --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,taps,homepath,outpath,nome,info,homepath,outpath,nome,info)
 				
 				linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
 
@@ -138,7 +147,7 @@ for taps in [8,6,4,2]:
 					test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
 					tlines = test.readlines()
 					tline = tlines[-1]
-					if "Total Time" in tline:
+					if "Total Time" not in tline:
 						if gitpull == 1:
 							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
 							print >> file, linha + " && " + linha4 + " && " + linhag
@@ -151,18 +160,37 @@ for taps in [8,6,4,2]:
 					else:
 						print >> file, linha + " && " + linha4
 
+	if threads == 1:
+		if gitpull == 1:
+	 		linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
+	 		print >> file, linhag
+	file.close
 
+i=0
+if threads != 1:
 
-			if gprof == 0:
-				if taps == 8:
-					linha = "{ time %s/%s/bin/TAppEncoderStatic -c %s/%s/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --fme_filter_ntaps=%s --BitstreamFile=%s/%s/%s_%df.bin ; } &> %s/%s/%s_%dqp_%df_hm_out" %(homepath,encpath,homepath,encpath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,binout,nome,f,homepath,out,yuv,qp,f)
-				else:
-					linha = "{ time %s/%s/bin/TAppEncoderStatic -c %s/%s/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --fme_filter_ntaps=%s --BitstreamFile=%s/%s/%s_%df_%dtaps.bin ; } &> %s/%s/%s_%dqp_%df_%dtaps_hm_out" %(homepath,encpath,homepath,encpath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,binout,nome,f,taps,homepath,out,yuv,qp,f,taps)
-			if gprof == 1:
-				if taps == 8:
-					linha = "%s/%s/bin/TAppEncoderStaticd -c %s/%s/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --BitstreamFile=%s/%s/%s_%df.bin  > %s/%s/%s_%dqp_%df_hm_out && mv ./gmon.out %s/pesquisa_ucpel/codes/run-sh/hm/gmon_%s.out && gprof %s/%s/bin/TAppEncoderStaticd %s/pesquisa_ucpel/codes/run-sh/hm/gmon_%s.out > %s/testesHEVC/gprof/gprof_%s_%dqp_%df_hm.txt" %(homepath,encpath,homepath,encpath,yuvpath,yuv,h,w,f,fr,qp,homepath,binout,nome,f,homepath,out,yuv,qp,f,homepath,nome,homepath,encpath,homepath,nome,homepath,yuv,qp,f)
-				else:
-					linha = "%s/%s/bin/TAppEncoderStaticd -c %s/%s/cfg/encoder_randomaccess_main.cfg --InputFile=%s/%s --SourceHeight=%s --SourceWidth=%s -f %s -fr %s -q %s --fme_filter_ntaps=%s --BitstreamFile=%s/%s/%s_%df_%dtaps.bin  > %s/%s/%s_%dqp_%df_%dtaps_hm_out && mv ./gmon.out %s/pesquisa_ucpel/codes/run-sh/hm/gmon_%s_%staps.out && gprof %s/%s/bin/TAppEncoderStaticd %s/pesquisa_ucpel/codes/run-sh/hm/gmon_%s_%staps.out > %s/testesHEVC/gprof/gprof_%s_%dqp_%df_%staps_hm.txt" %(homepath,encpath,homepath,encpath,yuvpath,yuv,h,w,f,fr,qp,taps,homepath,binout,nome,f,taps,homepath,out,yuv,qp,f,taps,homepath,nome,taps,homepath,encpath,homepath,nome,taps,homepath,yuv,qp,f,taps)
+	file = open("%s/%s/%s"%(homepath,shpath,filename),"r")
+	lines = file.readlines()
+	tam = len(lines)
+	nqp = len(qps)
+	nconf = len(confs)
 
-			print >> file, linha
-			file.close
+	for x in range(threads):
+
+		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
+		j=0
+
+		while i < tam:
+
+			line = lines[i]
+			print >> file2, line
+			i=i+1
+			j=j+1
+			if j >= (tam/threads):
+				break
+
+		if gitpull == 1:
+			linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
+			print >> file2, linhag
+	file2.close
+file.close

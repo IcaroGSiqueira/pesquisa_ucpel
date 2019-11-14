@@ -3,7 +3,7 @@ HM software: Encoder Version [16.9] (including RExt)[Linux][GCC 7.4.0][64 bit]
 
 
 Input          File                    : /home/icaro/origCfP/BasketballDrive_1920x1080_50.yuv
-Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/BasketballDrive_1920x1080_50_8taps_22qp_200fframes_RA_.bin
+Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/BasketballDrive_1920x1080_50_2taps_22qp_200fframes_RA_.bin
 Reconstruction File                    : rec.yuv
 Real     Format                        : 1920x1080 50Hz
 Internal Format                        : 1920x1080 50Hz
@@ -65,17 +65,6 @@ Non-environment-variable-controlled macros set as follows:
        Output (internal) ChromaFormatIDC =   4:2:0
 
 POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    1340352 bits [Y 41.9094 dB    U 45.4895 dB    V 47.0721 dB] [ET    13 ] [L0 ] [L1 ]
-POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )     787440 bits [Y 40.9454 dB    U 45.2416 dB    V 46.7318 dB] [ET    54 ] [L0 0 ] [L1 0 ]
-POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )     363800 bits [Y 40.1199 dB    U 44.8615 dB    V 46.2342 dB] [ET    46 ] [L0 0 8 ] [L1 8 0 ]
-POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     219032 bits [Y 39.8298 dB    U 44.7381 dB    V 45.9684 dB] [ET    42 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 3 ( B-SLICE, nQP 26 QP 26 )      73672 bits [Y 39.2136 dB    U 44.5598 dB    V 45.3734 dB] [ET    31 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 3 ( B-SLICE, nQP 26 QP 26 )      68808 bits [Y 39.1849 dB    U 44.3779 dB    V 45.2209 dB] [ET    34 ] [L0 2 0 ] [L1 4 8 ]
-POC    6 TId: 2 ( B-SLICE, nQP 25 QP 25 )     233216 bits [Y 39.7649 dB    U 44.7116 dB    V 45.8617 dB] [ET    42 ] [L0 4 0 ] [L1 8 4 ]
-POC    5 TId: 3 ( B-SLICE, nQP 26 QP 26 )      76144 bits [Y 39.0792 dB    U 44.3872 dB    V 45.2276 dB] [ET    35 ] [L0 4 0 ] [L1 6 8 ]
-POC    7 TId: 3 ( B-SLICE, nQP 26 QP 26 )      76896 bits [Y 39.1139 dB    U 44.5421 dB    V 45.3952 dB] [ET    31 ] [L0 6 4 ] [L1 8 6 ]
-POC   16 TId: 0 ( B-SLICE, nQP 23 QP 23 )     711816 bits [Y 40.9812 dB    U 45.2486 dB    V 46.8243 dB] [ET    62 ] [L0 8 0 ] [L1 8 0 ]
-POC   12 TId: 1 ( B-SLICE, nQP 24 QP 24 )     330968 bits [Y 40.1464 dB    U 44.8948 dB    V 46.2971 dB] [ET    49 ] [L0 8 4 ] [L1 16 8 ]
-POC   10 TId: 2 ( B-SLICE, nQP 25 QP 25 )     208104 bits [Y 39.7803 dB    U 44.7479 dB    V 45.9984 dB] [ET    46 ] [L0 8 4 ] [L1 12 16 ]
-POC    9 TId: 3 ( B-SLICE, nQP 26 QP 26 )      74104 bits [Y 39.1301 dB    U 44.4943 dB    V 45.4197 dB] [ET    32 ] [L0 8 10 ] [L1 10 12 ]
-POC   11 TId: 3 ( B-SLICE, nQP 26 QP 26 )      58824 bits [Y 39.2073 dB    U 44.4797 dB    V 45.5300 dB] [ET    34 ] [L0 10 8 ] [L1 12 16 ]
-POC   14 TId: 2 ( B-SLICE, nQP 25 QP 25 )     179200 bits [Y 39.8726 dB    U 44.7467 dB    V 46.0513 dB] [ET    39 ] [L0 12 8 ] [L1 16 12 ]
+POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )     796488 bits [Y 40.9488 dB    U 45.2145 dB    V 46.7191 dB] [ET    54 ] [L0 0 ] [L1 0 ]
+POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )     362760 bits [Y 40.1171 dB    U 44.8604 dB    V 46.2418 dB] [ET    46 ] [L0 0 8 ] [L1 8 0 ]
+POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     220696 bits [Y 39.8248 dB    U 44.7304 dB    V 45.9571 dB] [ET    42 ] [L0 0 4 ] [L1 4 8 ]

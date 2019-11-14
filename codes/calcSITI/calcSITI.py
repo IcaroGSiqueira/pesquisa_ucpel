@@ -100,6 +100,7 @@ for v in videos:
 
 	try:
 		outFile = open(v+'.csv','r')
+
 	except:
 		siavg=0
 		tiavg=0
@@ -129,7 +130,6 @@ for v in videos:
 			tiavg=tiavg+ti
 		print >> outFile, 'MAX;', max(vetSI), ';', max(vetTI)
 		print >> outFile, 'AVG;', siavg/numf, ';', tiavg/numf
-		#print >> outAvgFile, v, ';', siavg/numf, ';', tiavg/numf
 		outFile.close()
 
 # --- P A R S E ------------------------------------------------

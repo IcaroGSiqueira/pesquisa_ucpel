@@ -3,7 +3,7 @@ HM software: Encoder Version [16.9] (including RExt)[Linux][GCC 7.4.0][64 bit]
 
 
 Input          File                    : /home/icaro/origCfP/ParkScene_1920x1080_24.yuv
-Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/ParkScene_1920x1080_24_6taps_22qp_200fframes_RA_.bin
+Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/ParkScene_1920x1080_24_2taps_22qp_200fframes_RA_.bin
 Reconstruction File                    : rec.yuv
 Real     Format                        : 1920x1080 24Hz
 Internal Format                        : 1920x1080 24Hz
@@ -64,9 +64,7 @@ Non-environment-variable-controlled macros set as follows:
                    Input ChromaFormatIDC =   4:2:0
        Output (internal) ChromaFormatIDC =   4:2:0
 
-POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    2299600 bits [Y 42.0976 dB    U 43.5914 dB    V 44.7585 dB] [ET    15 ] [L0 ] [L1 ]
-POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    1158360 bits [Y 41.2422 dB    U 42.8388 dB    V 44.2581 dB] [ET    53 ] [L0 0 ] [L1 0 ]
-POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )     410888 bits [Y 40.3126 dB    U 42.2393 dB    V 44.0017 dB] [ET    41 ] [L0 0 8 ] [L1 8 0 ]
-POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     206992 bits [Y 40.0752 dB    U 42.1464 dB    V 44.0465 dB] [ET    37 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 3 ( B-SLICE, nQP 26 QP 26 )      40776 bits [Y 39.5902 dB    U 42.1474 dB    V 44.0265 dB] [ET    26 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 3 ( B-SLICE, nQP 26 QP 26 )      39000 bits [Y 39.4903 dB    U 42.0529 dB    V 43.8495 dB] [ET    28 ] [L0 2 0 ] [L1 4 8 ]
+POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    2299600 bits [Y 42.0976 dB    U 43.5914 dB    V 44.7585 dB] [ET    14 ] [L0 ] [L1 ]
+POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    1164248 bits [Y 41.2317 dB    U 42.8433 dB    V 44.2507 dB] [ET    53 ] [L0 0 ] [L1 0 ]
+POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )     413632 bits [Y 40.3116 dB    U 42.2538 dB    V 43.9997 dB] [ET    40 ] [L0 0 8 ] [L1 8 0 ]
+POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     204896 bits [Y 40.0669 dB    U 42.1589 dB    V 44.0587 dB] [ET    36 ] [L0 0 4 ] [L1 4 8 ]

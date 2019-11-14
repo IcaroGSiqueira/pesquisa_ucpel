@@ -67,7 +67,7 @@ def getYFrame(video,w,h):
 
 # --- M A I N ------------------------------------------------
 
-videos = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
+videos = ["BasketballPass_416x240_50.yuv","BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
 
 
 #videos = os.listdir("/home/icaro/origCfP/")
@@ -87,27 +87,31 @@ for v in videos:
 	video = open('/home/icaro/origCfP/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1].split('.')[0])
-	outFile = open(v+'.csv','w')
-	frame = getYFrame(video,w,h)
-	prevFrame = frame
-	vetSI = [std(sobel(frame))]
-	vetTI = []
-	frameIdx = 1
 	
-	while frame:
-		vetSI.append(std(sobel(frame)))
-		vetTI.append(std(diff(prevFrame,frame)))
-		prevFrame = frame
-		if frameIdx % 10 == 0:
-			print "\tFrame #:",frameIdx
-		frameIdx += 1
+	try:
+		outFile = open(v+'.csv','r')
+	except:
+		outFile = open(v+'.csv','w')
 		frame = getYFrame(video,w,h)
-		if frameIdx > 32:
-			break
-	video.close()
+		prevFrame = frame
+		vetSI = [std(sobel(frame))]
+		vetTI = []
+		frameIdx = 1
+		
+		while frame:
+			vetSI.append(std(sobel(frame)))
+			vetTI.append(std(diff(prevFrame,frame)))
+			prevFrame = frame
+			if frameIdx % 10 == 0:
+				print "\tFrame #:",frameIdx
+			frameIdx += 1
+			frame = getYFrame(video,w,h)
+			if frameIdx > 32:
+				break
+		video.close()
 
-	print >> outFile, v,';SI;TI'
-	for si, ti in zip(vetSI,vetTI):
-		print >> outFile,';',si,';',ti
-	print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
-	outFile.close()
+		print >> outFile, v,';SI;TI'
+		for si, ti in zip(vetSI,vetTI):
+			print >> outFile,';',si,';',ti
+		print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
+		outFile.close()

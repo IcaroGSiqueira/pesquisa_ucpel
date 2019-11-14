@@ -247,3 +247,6 @@ POC  178 TId: 2 ( B-SLICE, nQP 25 QP 25 )     174336 bits [Y 40.1020 dB    U 42.
 POC  177 TId: 3 ( B-SLICE, nQP 26 QP 26 )      42216 bits [Y 39.6905 dB    U 42.3283 dB    V 43.6782 dB] [ET    26 ] [L0 176 178 ] [L1 178 180 ]
 POC  179 TId: 3 ( B-SLICE, nQP 26 QP 26 )      43400 bits [Y 39.6181 dB    U 42.2553 dB    V 43.5398 dB] [ET    28 ] [L0 178 176 ] [L1 180 184 ]
 POC  182 TId: 2 ( B-SLICE, nQP 25 QP 25 )     178968 bits [Y 40.0710 dB    U 42.3330 dB    V 43.6385 dB] [ET    35 ] [L0 180 176 ] [L1 184 180 ]
+POC  181 TId: 3 ( B-SLICE, nQP 26 QP 26 )      46136 bits [Y 39.5594 dB    U 42.2539 dB    V 43.4991 dB] [ET    29 ] [L0 180 176 ] [L1 182 184 ]
+POC  183 TId: 3 ( B-SLICE, nQP 26 QP 26 )      47688 bits [Y 39.6321 dB    U 42.2771 dB    V 43.6131 dB] [ET    26 ] [L0 182 180 ] [L1 184 182 ]
+POC  192 TId: 0 ( I-SLICE, nQP 22 QP 22 )    2460208 bits [Y 42.3015 dB    U 43.7420 dB    V 44.5406 dB] [ET    14 ] [L0 ] [L1 ]

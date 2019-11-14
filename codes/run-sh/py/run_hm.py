@@ -180,6 +180,7 @@ if threads != 1:
 		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
 		j=0
 
+
 		while i < tam:
 
 			line = lines[i]

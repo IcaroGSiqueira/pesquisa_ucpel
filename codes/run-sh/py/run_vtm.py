@@ -141,9 +141,17 @@ for conf in confs:
 					tlines = test.readlines()
 					tline = tlines[-1]
 					if "Total Time" not in tline:
-						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
+						if gitpull == 1:
+							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
+						else:
+							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				except:
-					print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
+					if gitpull == 1:
+						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
+					else:
+						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				
 			else:
 				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s -b 8 %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
@@ -154,15 +162,23 @@ for conf in confs:
 					tlines = test.readlines()
 					tline = tlines[-1]
 					if "Total Time" not in tline:
-						print >> file, linha + " && " + linha4
+						if gitpull == 1:
+							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+							print >> file, linha + " && " + linha4 + " && " + linhag
+						else:
+							print >> file, linha + " && " + linha4
 				except:
-					print >> file, linha + " && " + linha4
+					if gitpull == 1:
+						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						print >> file, linha + " && " + linha4 + " && " + linhag
+					else:
+						print >> file, linha + " && " + linha4
 
-	if threads == 1:
-		if gitpull == 1:
-	 		linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
-	 		print >> file, linhag
-	file.close
+	# if threads == 1:
+	# 	if gitpull == 1:
+	#  		linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
+	#  		print >> file, linhag
+	# file.close
 
 i=0
 if threads != 1:
@@ -199,8 +215,8 @@ if threads != 1:
 			# 	if j == div:
 			# 		i = i+threads*div
 			# 		j=0
-		if gitpull == 1:
-			linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
-			print >> file2, linhag
+		# if gitpull == 1:
+		# 	linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
+		# 	print >> file2, linhag
 	file2.close
 file.close

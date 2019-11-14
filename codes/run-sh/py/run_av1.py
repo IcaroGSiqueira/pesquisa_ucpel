@@ -106,20 +106,57 @@ for yuv in yuvs:
 
 		if gprof == 1:
 			linha = "%s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp-3,qp+5,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
+
 			linha2 = "mv %s/%s/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,shpath,homepath,outpath,nome,info)
+
 			linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
-			linha4 =  " && echo \"%s_%s DONE!\""%(nome,info)
-			print >> file, linha + " && " + linha2 + " && " + linha3 + linha4
+
+			linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
+
+			#VERIFICAR SOBRESCRICAO
+				try:
+					test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
+					tlines = test.readlines()
+					tline = tlines[-1]
+					if "Total Time" not in tline:
+						if gitpull == 1:
+							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
+						else:
+							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
+				except:
+					if gitpull == 1:
+						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
+					else:
+						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 		else:
 			linha = "{ time %s/%s/%s --fps=%s/1 -w %s -h %s --min-q=%s --max-q=%s --limit=%s --rt -b 8 -o %s/%s/bin/%s_%s.bin %s/%s ; } 2> %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,fr,w,h,qp-3,qp+5,f,homepath,outpath,nome,info,yuvpath,yuv,homepath,outpath,nome,info)
-			print >> file, linha
+			
+			linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
 
-		#print >> file, ""
-		if threads == 1:
-			if gitpull == 1:
-				linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
-				print >> file, linhag
-		file.close
+			try:
+				test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
+				tlines = test.readlines()
+				tline = tlines[-1]
+				if "Total Time" not in tline:
+					if gitpull == 1:
+						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						print >> file, linha + " && " + linha4 + " && " + linhag
+					else:
+						print >> file, linha + " && " + linha4
+			except:
+				if gitpull == 1:
+					linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+					print >> file, linha + " && " + linha4 + " && " + linhag
+				else:
+					print >> file, linha + " && " + linha4
+
+	if threads == 1:
+		if gitpull == 1:
+	 		linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
+	 		print >> file, linhag
+	file.close
 
 if threads != 1:
 
@@ -128,12 +165,15 @@ if threads != 1:
 	tam = len(lines)
 	nqp = len(qps)
 
+
 	for x in range(threads):
+
 		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
 		i = x*nqp
 		j=0
 
 		while i < tam:
+			
 			line = lines[i]
 			print >> file2, line
 			i = i+1

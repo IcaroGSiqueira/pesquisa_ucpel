@@ -1,6 +1,8 @@
 import math
 import os
 
+numf=32
+
 def sobel(frame):
 	sobelFrame = []
 	clip = 1
@@ -69,7 +71,6 @@ def getYFrame(video,w,h):
 
 videos = ["BasketballPass_416x240_50.yuv","BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
 
-
 #videos = os.listdir("/home/icaro/origCfP/")
 
 for v in videos:
@@ -87,10 +88,12 @@ for v in videos:
 	video = open('/home/icaro/origCfP/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1].split('.')[0])
-	
+
 	try:
 		outFile = open(v+'.csv','r')
 	except:
+		siavg=0
+		tiavg=0
 		outFile = open(v+'.csv','w')
 		frame = getYFrame(video,w,h)
 		prevFrame = frame
@@ -106,12 +109,15 @@ for v in videos:
 				print "\tFrame #:",frameIdx
 			frameIdx += 1
 			frame = getYFrame(video,w,h)
-			if frameIdx > 32:
+			if frameIdx > numf:
 				break
 		video.close()
 
 		print >> outFile, v,';SI;TI'
 		for si, ti in zip(vetSI,vetTI):
 			print >> outFile,';',si,';',ti
+			siavg=siavg+si
+			tiavg=tiavg+ti
+		print >> outFile,'AVG;', siavg,';',tiavg
 		print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
 		outFile.close()

@@ -104,16 +104,22 @@ for conf in confs:
 
 			if ".py" in yuv:
 				continue
-			if "bit" in yuv:
-				continue
-
-			if "crop" in yuv:
-				vid,pix,fr,y = yuv.split("_")
-				nome = vid+"_"+pix+"_"+fr
+			elif "crop" in yuv:
+				if "bit" in yuv:
+					vid,pix,fr,b,dummy = yuv.split("_")
+					nome = vid+"_"+pix+"_"+fr+"_"+b
+				else:
+					vid,pix,fr,dummy = yuv.split("_")
+					nome = vid+"_"+pix+"_"+fr
 			else:
-				vid,pix,fps = yuv.split("_")
-				fr,y = fps.split(".")
-				nome = vid+"_"+pix+"_"+fr
+				if "bit" in yuv:
+					vid,pix,fr,split = yuv.split("_")
+					b,dummy = split.split(".")
+					nome = vid+"_"+pix+"_"+fr+"_"+b
+				else:
+					vid,pix,split = yuv.split("_")
+					fr,dummy = split.split(".")
+					nome = vid+"_"+pix+"_"+fr
 
 			w,h = pix.split("x")
 

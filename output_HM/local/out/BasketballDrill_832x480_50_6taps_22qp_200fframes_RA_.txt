@@ -101,6 +101,7 @@ POC   40 TId: 0 ( B-SLICE, nQP 23 QP 23 )     195608 bits [Y 41.5939 dB    U 43.
 POC   36 TId: 1 ( B-SLICE, nQP 24 QP 24 )      98840 bits [Y 41.0979 dB    U 43.4470 dB    V 44.0364 dB] [ET    10 ] [L0 32 40 ] [L1 40 32 ]
 POC   34 TId: 2 ( B-SLICE, nQP 25 QP 25 )      70920 bits [Y 40.7606 dB    U 43.1880 dB    V 43.6051 dB] [ET     9 ] [L0 32 36 ] [L1 36 40 ]
 POC   33 TId: 3 ( B-SLICE, nQP 26 QP 26 )      25952 bits [Y 39.9814 dB    U 42.8949 dB    V 43.1369 dB] [ET     6 ] [L0 32 34 ] [L1 34 36 ]
+<<<<<<< HEAD
 POC   35 TId: 3 ( B-SLICE, nQP 26 QP 26 )      27368 bits [Y 39.8846 dB    U 42.7225 dB    V 43.0557 dB] [ET     7 ] [L0 34 32 ] [L1 36 40 ]
 POC   38 TId: 2 ( B-SLICE, nQP 25 QP 25 )      62184 bits [Y 40.7634 dB    U 43.2689 dB    V 43.7442 dB] [ET     8 ] [L0 36 32 ] [L1 40 36 ]
 POC   37 TId: 3 ( B-SLICE, nQP 26 QP 26 )      24344 bits [Y 39.8843 dB    U 42.9092 dB    V 43.1902 dB] [ET     7 ] [L0 36 32 ] [L1 38 40 ]
@@ -289,3 +290,5 @@ RVM: 0.000
 Bytes written to file: 1792873 (3585.746 kbps)
 
  Total Time:     1518.402 sec.
+=======
+>>>>>>> 0a4c71c6ce9f267a9b9b062aa0f596a7ecfac9af

@@ -259,3 +259,33 @@ POC  189 TId: 3 ( B-SLICE, nQP 31 QP 31 )      16880 bits [Y 37.4960 dB    U 40.
 POC  191 TId: 3 ( B-SLICE, nQP 31 QP 31 )      17512 bits [Y 37.7715 dB    U 40.8231 dB    V 41.8068 dB] [ET    23 ] [L0 190 188 ] [L1 192 190 ]
 POC  196 TId: 1 ( B-SLICE, nQP 29 QP 29 )     179256 bits [Y 37.4176 dB    U 40.2257 dB    V 41.2596 dB] [ET    26 ] [L0 192 ] [L1 192 ]
 POC  194 TId: 2 ( B-SLICE, nQP 30 QP 30 )      62040 bits [Y 37.5867 dB    U 40.4472 dB    V 41.4172 dB] [ET    25 ] [L0 192 196 ] [L1 196 192 ]
+POC  193 TId: 3 ( B-SLICE, nQP 31 QP 31 )      17720 bits [Y 37.5577 dB    U 40.5554 dB    V 41.5264 dB] [ET    22 ] [L0 192 194 ] [L1 194 196 ]
+POC  195 TId: 3 ( B-SLICE, nQP 31 QP 31 )      18416 bits [Y 36.9830 dB    U 40.2978 dB    V 41.2799 dB] [ET    23 ] [L0 194 192 ] [L1 196 194 ]
+POC  198 TId: 2 ( B-SLICE, nQP 30 QP 30 )     108632 bits [Y 36.7814 dB    U 40.0526 dB    V 41.0994 dB] [ET    29 ] [L0 196 192 ] [L1 196 192 ]
+POC  197 TId: 3 ( B-SLICE, nQP 31 QP 31 )      17384 bits [Y 36.6384 dB    U 40.1190 dB    V 41.1257 dB] [ET    23 ] [L0 196 192 ] [L1 198 196 ]
+POC  199 TId: 3 ( B-SLICE, nQP 31 QP 31 )      28984 bits [Y 35.9001 dB    U 39.8392 dB    V 40.8959 dB] [ET    22 ] [L0 198 196 ] [L1 198 196 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      200    a    3280.1914   37.4680   40.4436   41.5127   38.3216
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        7    i   32326.0251   39.1358   41.0776   41.8768   39.7803
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        0    p         -nan      -nan      -nan      -nan      -nan
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      193    b    2226.7155   37.4076   40.4206   41.4995   38.2769
+
+RVM: 0.000
+Bytes written to file: 3417677 (3280.970 kbps)
+
+ Total Time:     5552.230 sec.

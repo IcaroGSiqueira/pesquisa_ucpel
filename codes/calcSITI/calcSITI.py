@@ -69,13 +69,13 @@ def getYFrame(video,w,h):
 
 # --- M A I N ------------------------------------------------
 
-videos = ["BasketballPass_416x240_50.yuv","BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
+#["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","ArenaOfValor","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","MarketPlace","RitualDance","Tango2","FoodMarket4","Campfire","CatRobot","DaylightRoad2","ParkRunning3"]		
+
+videos = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
 
 #videos = os.listdir("/home/icaro/origCfP/")
 
 for v in videos:
-#	if v not in yuvs:
-#		continue
 	print "Video: ", v
 	if '.py' in v:
 		continue
@@ -118,6 +118,6 @@ for v in videos:
 			print >> outFile,';',si,';',ti
 			siavg=siavg+si
 			tiavg=tiavg+ti
-		print >> outFile,'AVG;', siavg,';',tiavg
 		print >> outFile,'MAX;', max(vetSI),';',max(vetTI)
+		print >> outFile,'AVG;', siavg/numf,';',tiavg/numf
 		outFile.close()

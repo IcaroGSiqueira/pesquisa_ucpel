@@ -73,8 +73,6 @@ def getYFrame(video,w,h):
 
 videos = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"]
 
-videos = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv"]
-
 #videos = os.listdir("/home/icaro/origCfP/")
 
 # try:
@@ -137,6 +135,7 @@ for v in videos:
 # --- P A R S E ------------------------------------------------
 
 outAvgFile = open('SITI_AVG.csv','w')
+print >> outAvgFile, 'YUVS;SI;TI'
 sitis = os.listdir("./")
 for siti in sitis:
 	if '.py' in siti:
@@ -158,8 +157,8 @@ outAvgFile.close()
 
 
 import pandas as pd
-from StringIO import StringIO
 import  matplotlib.pyplot as plt
+#from StringIO import StringIO
 
 sstr = open('SITI_AVG.csv','r')
 
@@ -185,7 +184,7 @@ sstr = open('SITI_AVG.csv','r')
 # SlideEditing	26.0431579821	87.0229854694
 # """)
 
-df = pd.read_csv(sstr, sep = '\t')
+df = pd.read_csv(sstr, sep = ';')
 df.plot(x = 'SI', y = 'TI', style = 'o')
 x = df['SI']
 y = df['TI']

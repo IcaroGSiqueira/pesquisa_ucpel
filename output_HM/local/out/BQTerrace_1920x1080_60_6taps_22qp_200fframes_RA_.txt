@@ -66,3 +66,11 @@ Non-environment-variable-controlled macros set as follows:
 
 POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    3263560 bits [Y 43.3372 dB    U 43.4827 dB    V 44.9216 dB] [ET    16 ] [L0 ] [L1 ]
 POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    2097144 bits [Y 41.7784 dB    U 42.8473 dB    V 44.5119 dB] [ET    60 ] [L0 0 ] [L1 0 ]
+POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )    1251408 bits [Y 39.8072 dB    U 42.1850 dB    V 44.2026 dB] [ET    56 ] [L0 0 8 ] [L1 8 0 ]
+POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     790184 bits [Y 38.6696 dB    U 42.1566 dB    V 44.2251 dB] [ET    51 ] [L0 0 4 ] [L1 4 8 ]
+POC    1 TId: 3 ( B-SLICE, nQP 26 QP 26 )      80880 bits [Y 36.0606 dB    U 42.1646 dB    V 44.1978 dB] [ET    29 ] [L0 0 2 ] [L1 2 4 ]
+POC    3 TId: 3 ( B-SLICE, nQP 26 QP 26 )      85976 bits [Y 36.0506 dB    U 42.0003 dB    V 44.0916 dB] [ET    32 ] [L0 2 0 ] [L1 4 8 ]
+POC    6 TId: 2 ( B-SLICE, nQP 25 QP 25 )     796936 bits [Y 38.6746 dB    U 42.1390 dB    V 44.2416 dB] [ET    51 ] [L0 4 0 ] [L1 8 4 ]
+POC    5 TId: 3 ( B-SLICE, nQP 26 QP 26 )      66744 bits [Y 36.0766 dB    U 42.0241 dB    V 44.1005 dB] [ET    30 ] [L0 4 0 ] [L1 6 8 ]
+POC    7 TId: 3 ( B-SLICE, nQP 26 QP 26 )      81784 bits [Y 36.0351 dB    U 42.0981 dB    V 44.1665 dB] [ET    29 ] [L0 6 4 ] [L1 8 6 ]
+POC   16 TId: 0 ( B-SLICE, nQP 23 QP 23 )    1879664 bits [Y 41.7347 dB    U 42.8930 dB    V 44.5877 dB] [ET    64 ] [L0 8 0 ] [L1 8 0 ]

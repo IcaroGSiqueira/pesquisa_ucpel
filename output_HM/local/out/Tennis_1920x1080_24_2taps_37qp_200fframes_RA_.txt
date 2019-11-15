@@ -260,3 +260,32 @@ POC  191 TId: 3 ( B-SLICE, nQP 41 QP 41 )       4168 bits [Y 37.2026 dB    U 42.
 POC  196 TId: 1 ( B-SLICE, nQP 39 QP 39 )      18128 bits [Y 36.4728 dB    U 41.2480 dB    V 41.5286 dB] [ET    16 ] [L0 192 ] [L1 192 ]
 POC  194 TId: 2 ( B-SLICE, nQP 40 QP 40 )       9792 bits [Y 37.3576 dB    U 41.7618 dB    V 41.9724 dB] [ET    21 ] [L0 192 196 ] [L1 196 192 ]
 POC  193 TId: 3 ( B-SLICE, nQP 41 QP 41 )       5216 bits [Y 36.6513 dB    U 42.0040 dB    V 42.1218 dB] [ET    23 ] [L0 192 194 ] [L1 194 196 ]
+POC  195 TId: 3 ( B-SLICE, nQP 41 QP 41 )       4928 bits [Y 35.9160 dB    U 41.4945 dB    V 41.7032 dB] [ET    22 ] [L0 194 192 ] [L1 196 194 ]
+POC  198 TId: 2 ( B-SLICE, nQP 40 QP 40 )      11728 bits [Y 36.5421 dB    U 41.9480 dB    V 41.7050 dB] [ET    22 ] [L0 196 192 ] [L1 196 192 ]
+POC  197 TId: 3 ( B-SLICE, nQP 41 QP 41 )       4576 bits [Y 35.2375 dB    U 41.2698 dB    V 41.1924 dB] [ET    23 ] [L0 196 192 ] [L1 198 196 ]
+POC  199 TId: 3 ( B-SLICE, nQP 41 QP 41 )       6200 bits [Y 35.7784 dB    U 42.0860 dB    V 41.5741 dB] [ET    20 ] [L0 198 196 ] [L1 198 196 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      200    a     586.0570   35.4382   41.4101   41.3490   36.2284
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        7    i    3038.7291   37.8982   42.0455   42.3057   38.6352
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        0    p         -nan      -nan      -nan      -nan      -nan
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      193    b     497.0999   35.3490   41.3871   41.3143   36.1619
+
+RVM: 0.000
+Bytes written to file: 611287 (586.836 kbps)
+
+ Total Time:     5624.415 sec.

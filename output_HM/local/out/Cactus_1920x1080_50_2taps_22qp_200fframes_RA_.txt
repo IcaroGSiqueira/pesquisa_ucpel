@@ -258,3 +258,34 @@ POC  190 TId: 2 ( B-SLICE, nQP 25 QP 25 )     233752 bits [Y 38.5888 dB    U 39.
 POC  189 TId: 3 ( B-SLICE, nQP 26 QP 26 )      48840 bits [Y 38.1061 dB    U 39.8258 dB    V 43.8057 dB] [ET    30 ] [L0 188 184 ] [L1 190 192 ]
 POC  191 TId: 3 ( B-SLICE, nQP 26 QP 26 )      52680 bits [Y 38.0667 dB    U 39.6957 dB    V 43.9299 dB] [ET    27 ] [L0 190 188 ] [L1 192 190 ]
 POC  196 TId: 1 ( B-SLICE, nQP 24 QP 24 )     697544 bits [Y 38.9199 dB    U 40.3609 dB    V 43.7866 dB] [ET    44 ] [L0 192 ] [L1 192 ]
+POC  194 TId: 2 ( B-SLICE, nQP 25 QP 25 )     254752 bits [Y 38.3744 dB    U 39.9317 dB    V 43.7715 dB] [ET    36 ] [L0 192 196 ] [L1 196 192 ]
+POC  193 TId: 3 ( B-SLICE, nQP 26 QP 26 )      56472 bits [Y 37.8341 dB    U 39.5554 dB    V 43.6393 dB] [ET    27 ] [L0 192 194 ] [L1 194 196 ]
+POC  195 TId: 3 ( B-SLICE, nQP 26 QP 26 )      48848 bits [Y 37.8678 dB    U 39.6026 dB    V 43.5872 dB] [ET    27 ] [L0 194 192 ] [L1 196 194 ]
+POC  198 TId: 2 ( B-SLICE, nQP 25 QP 25 )     340536 bits [Y 38.3846 dB    U 39.9056 dB    V 43.5527 dB] [ET    41 ] [L0 196 192 ] [L1 196 192 ]
+POC  197 TId: 3 ( B-SLICE, nQP 26 QP 26 )      49480 bits [Y 37.8512 dB    U 39.5733 dB    V 43.4507 dB] [ET    28 ] [L0 196 192 ] [L1 198 196 ]
+POC  199 TId: 3 ( B-SLICE, nQP 26 QP 26 )      90320 bits [Y 37.6273 dB    U 39.5009 dB    V 43.1860 dB] [ET    28 ] [L0 198 196 ] [L1 198 196 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      200    a   19803.8980   38.4836   40.0441   43.6307   39.1935
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        7    i  133149.3714   41.5246   42.2375   44.5392   42.0238
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        0    p         -nan      -nan      -nan      -nan      -nan
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      193    b   15692.9223   38.3733   39.9645   43.5977   39.1187
+
+RVM: 0.000
+Bytes written to file: 9902760 (19805.520 kbps)
+
+ Total Time:     7412.400 sec.

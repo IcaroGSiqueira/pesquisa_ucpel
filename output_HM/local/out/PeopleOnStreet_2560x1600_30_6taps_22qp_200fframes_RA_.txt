@@ -3,7 +3,7 @@ HM software: Encoder Version [16.9] (including RExt)[Linux][GCC 7.4.0][64 bit]
 
 
 Input          File                    : /home/icaro/origCfP/PeopleOnStreet_2560x1600_30_crop.yuv
-Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/PeopleOnStreet_2560x1600_30_8taps_22qp_200fframes_RA_.bin
+Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/PeopleOnStreet_2560x1600_30_6taps_22qp_200fframes_RA_.bin
 Reconstruction File                    : rec.yuv
 Real     Format                        : 2560x1600 30Hz
 Internal Format                        : 2560x1600 30Hz
@@ -64,11 +64,6 @@ Non-environment-variable-controlled macros set as follows:
                    Input ChromaFormatIDC =   4:2:0
        Output (internal) ChromaFormatIDC =   4:2:0
 
-POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    3822048 bits [Y 43.8237 dB    U 46.0929 dB    V 45.7336 dB] [ET    27 ] [L0 ] [L1 ]
-POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    2805952 bits [Y 42.8436 dB    U 45.5328 dB    V 45.2533 dB] [ET   111 ] [L0 0 ] [L1 0 ]
-POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )    1648736 bits [Y 41.2804 dB    U 44.9590 dB    V 44.7710 dB] [ET   107 ] [L0 0 8 ] [L1 8 0 ]
-POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )    1120272 bits [Y 40.6241 dB    U 44.8859 dB    V 44.6900 dB] [ET    99 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 3 ( B-SLICE, nQP 26 QP 26 )     473216 bits [Y 38.8398 dB    U 44.9522 dB    V 44.6743 dB] [ET    77 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 3 ( B-SLICE, nQP 26 QP 26 )     445880 bits [Y 38.9451 dB    U 44.7325 dB    V 44.5566 dB] [ET    83 ] [L0 2 0 ] [L1 4 8 ]
-POC    6 TId: 2 ( B-SLICE, nQP 25 QP 25 )    1118352 bits [Y 40.5882 dB    U 44.8263 dB    V 44.6383 dB] [ET   100 ] [L0 4 0 ] [L1 8 4 ]
-POC    5 TId: 3 ( B-SLICE, nQP 26 QP 26 )     447496 bits [Y 38.9213 dB    U 44.7315 dB    V 44.5388 dB] [ET    84 ] [L0 4 0 ] [L1 6 8 ]
+POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    3822048 bits [Y 43.8237 dB    U 46.0929 dB    V 45.7336 dB] [ET    26 ] [L0 ] [L1 ]
+POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    2808440 bits [Y 42.8440 dB    U 45.5470 dB    V 45.2642 dB] [ET   110 ] [L0 0 ] [L1 0 ]
+POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )    1652760 bits [Y 41.2881 dB    U 44.9630 dB    V 44.7695 dB] [ET   106 ] [L0 0 8 ] [L1 8 0 ]

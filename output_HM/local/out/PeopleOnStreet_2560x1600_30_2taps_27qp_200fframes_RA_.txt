@@ -210,3 +210,32 @@ POC  142 TId: 2 ( B-SLICE, nQP 30 QP 30 )     510152 bits [Y 37.3665 dB    U 42.
 POC  141 TId: 3 ( B-SLICE, nQP 31 QP 31 )     183408 bits [Y 36.0618 dB    U 42.6397 dB    V 42.9648 dB] [ET    71 ] [L0 140 136 ] [L1 142 144 ]
 POC  143 TId: 3 ( B-SLICE, nQP 31 QP 31 )     186560 bits [Y 36.1643 dB    U 42.8411 dB    V 43.0805 dB] [ET    63 ] [L0 142 140 ] [L1 144 142 ]
 POC  148 TId: 1 ( B-SLICE, nQP 29 QP 29 )     901408 bits [Y 37.7667 dB    U 42.1157 dB    V 42.6113 dB] [ET    89 ] [L0 144 140 ] [L1 144 140 ]
+POC  146 TId: 2 ( B-SLICE, nQP 30 QP 30 )     522032 bits [Y 37.2944 dB    U 42.5204 dB    V 42.8694 dB] [ET    82 ] [L0 144 140 ] [L1 148 144 ]
+POC  145 TId: 3 ( B-SLICE, nQP 31 QP 31 )     194248 bits [Y 36.0932 dB    U 42.7477 dB    V 43.0087 dB] [ET    64 ] [L0 144 146 ] [L1 146 148 ]
+POC  147 TId: 3 ( B-SLICE, nQP 31 QP 31 )     191840 bits [Y 35.9530 dB    U 42.3734 dB    V 42.7535 dB] [ET    64 ] [L0 146 144 ] [L1 148 146 ]
+POC  149 TId: 3 ( B-SLICE, nQP 31 QP 31 )     269360 bits [Y 35.4617 dB    U 41.8106 dB    V 42.4050 dB] [ET    64 ] [L0 148 144 ] [L1 148 144 ]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      150    a   15786.1760   37.1403   42.9312   43.2666   38.2475
+
+
+I Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        5    i   68145.6960   40.3917   43.7250   43.8901   41.2613
+
+
+P Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	        0    p         -nan      -nan      -nan      -nan      -nan
+
+
+B Slices--------------------------------------------------------
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR 
+	      145    b   13980.6753   37.0282   42.9039   43.2451   38.1732
+
+RVM: 0.000
+Bytes written to file: 9866971 (15787.154 kbps)
+
+ Total Time:    11362.235 sec.

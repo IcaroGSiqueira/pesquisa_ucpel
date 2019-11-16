@@ -67,3 +67,4 @@ Non-environment-variable-controlled macros set as follows:
 POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    3822048 bits [Y 43.8237 dB    U 46.0929 dB    V 45.7336 dB] [ET    26 ] [L0 ] [L1 ]
 POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    2808440 bits [Y 42.8440 dB    U 45.5470 dB    V 45.2642 dB] [ET   110 ] [L0 0 ] [L1 0 ]
 POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )    1652760 bits [Y 41.2881 dB    U 44.9630 dB    V 44.7695 dB] [ET   106 ] [L0 0 8 ] [L1 8 0 ]
+POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )    1120736 bits [Y 40.6248 dB    U 44.8988 dB    V 44.7040 dB] [ET    99 ] [L0 0 4 ] [L1 4 8 ]

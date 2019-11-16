@@ -3,7 +3,7 @@ HM software: Encoder Version [16.9] (including RExt)[Linux][GCC 7.4.0][64 bit]
 
 
 Input          File                    : /home/icaro/origCfP/Traffic_2560x1600_30_crop.yuv
-Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/Traffic_2560x1600_30_8taps_22qp_200fframes_RA_.bin
+Bitstream      File                    : /home/icaro/pesquisa_ucpel/output_HM/local/bin/Traffic_2560x1600_30_6taps_22qp_200fframes_RA_.bin
 Reconstruction File                    : rec.yuv
 Real     Format                        : 2560x1600 30Hz
 Internal Format                        : 2560x1600 30Hz
@@ -65,8 +65,3 @@ Non-environment-variable-controlled macros set as follows:
        Output (internal) ChromaFormatIDC =   4:2:0
 
 POC    0 TId: 0 ( I-SLICE, nQP 22 QP 22 )    3800904 bits [Y 43.9168 dB    U 43.4093 dB    V 45.1926 dB] [ET    26 ] [L0 ] [L1 ]
-POC    8 TId: 0 ( B-SLICE, nQP 23 QP 23 )    1684432 bits [Y 42.9588 dB    U 42.5995 dB    V 44.6100 dB] [ET    91 ] [L0 0 ] [L1 0 ]
-POC    4 TId: 1 ( B-SLICE, nQP 24 QP 24 )     574528 bits [Y 41.9891 dB    U 41.6021 dB    V 44.1455 dB] [ET    73 ] [L0 0 8 ] [L1 8 0 ]
-POC    2 TId: 2 ( B-SLICE, nQP 25 QP 25 )     279304 bits [Y 41.7781 dB    U 41.5386 dB    V 44.2135 dB] [ET    64 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 3 ( B-SLICE, nQP 26 QP 26 )      75424 bits [Y 41.0275 dB    U 41.0533 dB    V 43.9521 dB] [ET    50 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 3 ( B-SLICE, nQP 26 QP 26 )      65256 bits [Y 41.0390 dB    U 41.0829 dB    V 43.9328 dB] [ET    53 ] [L0 2 0 ] [L1 4 8 ]

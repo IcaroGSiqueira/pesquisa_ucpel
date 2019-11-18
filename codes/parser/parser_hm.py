@@ -3,11 +3,11 @@ import os
 homepath = "/home/icaro"
 #homepath = "/home/grellert"
 
-outspath = 'output_HM/out'
+outspath = 'output_HM/local/out'
 outpath = 'output_HM'
 
 pathin = "%s/pesquisa_ucpel/%s"%(homepath,outspath)
-out = open("%s/pesquisa_ucpel/%s/hm_br-psnr.csv"%(homepath,outpath),"w")
+out = open("%s/pesquisa_ucpel/%s/hm_4t_br-psnr.csv"%(homepath,outpath),"w")
 
 yuvs = sorted(os.listdir("%s"%pathin))
 
@@ -17,6 +17,12 @@ print >> out, linha
 for yuv in yuvs:
 	# if "bin" in yuv:
 	# 	continue
+	if "6taps" in yuv:
+		continue
+	if "2taps" in yuv:
+		continue
+	if "8taps" in yuv:
+		continue
 	file = open("%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
 	line = lines[-1]

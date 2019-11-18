@@ -3,15 +3,13 @@ from bjontegaard import bdbr,bdpsnr,plotRDCurves
 #homepath = "home/grellert"
 homepath = "home/icaro"
 
-csv_ref = open("/%s/testesHEVC/hm0919.csv"%homepath,"rb")
+csv_ref = open('/home/icaro/pesquisa_ucpel/output_HM/hm_br-psnr.csv','rb')
+csv_test = open('/home/icaro/pesquisa_ucpel/output_HM/hm_4t_br-psnr.csv','rb')
+# csv_test = open('/home/icaro/pesquisa_ucpel/hm4taps_br-psnr.csv','rb')
+# csv_test = open('/home/icaro/pesquisa_ucpel/hm6taps_br-psnr.csv','rb')
+# csv_test = open('/home/icaro/pesquisa_ucpel/hm2taps_br-psnr.csv','rb')
 
-#csv_test = open("/%s/testesHEVC/hm4t0919.csv"%homepath,"rb")
-csv_test = open("/%s/testesHEVC/hm2t0919.csv"%homepath,"rb")
-#csv_test = open("/%s/testesHEVC/hm6t0919.csv"%homepath,"rb")
-
-#out = open("/%s/testesHEVC/BD-Rate/BD-Rate_hm-hm4taps.csv"%homepath,"w")
-out = open("/%s/testesHEVC/BD-Rate/BD-Rate_hm-hm2taps.csv"%homepath,"w")
-#out = open("/%s/testesHEVC/BD-Rate/BD-Rate_hm-hm6taps.csv"%homepath,"w")
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm_hm-4t.csv","w")
 
 print >> out,"YUV,Resolution,BD-BRate,BD-PSNR_Y,Time_Difference"
 
@@ -93,5 +91,5 @@ for x in xrange(1,tam):
 
 		bdb = bdbr(ref,test,1)
 		bdp = bdpsnr(ref,test,1) 
-		plotRDCurves(ref,test,1,"/%s/testesHEVC/BD-Rate/curvas/Curva_%s.pdf"%(homepath,n),n)
+		plotRDCurves(ref,test,1,"/%s/Curva_%s.pdf"%(homepath,n),n)
 		print >> out,n,n1,bdb,bdp,dt

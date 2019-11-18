@@ -7,13 +7,13 @@ bdpyuv_m=0;
 dt_m=0;
 tim=0;
 
-csv_ref = open('/home/icaro/pesquisa_ucpel/hm_br-psnr.csv','rb')
-csv_test = open('/home/icaro/pesquisa_ucpel/vtm_br-psnr.csv','rb')
+csv_ref = open('/home/icaro/pesquisa_ucpel/output_HM/hm_br-psnr.csv','rb')
+csv_test = open('/home/icaro/pesquisa_ucpel/output_HM/hm_6t_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm4taps_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm6taps_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm2taps_br-psnr.csv','rb')
 
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm-hmtaps60919.csv","w")
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm_hm-6t.csv","w")
 
 lines = csv_ref.readlines()
 tlines = csv_test.readlines()

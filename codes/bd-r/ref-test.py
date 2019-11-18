@@ -4,12 +4,12 @@ from bjontegaard import bdbr,bdpsnr,plotRDCurves
 homepath = "home/icaro"
 
 csv_ref = open('/home/icaro/pesquisa_ucpel/output_HM/hm_br-psnr.csv','rb')
-csv_test = open('/home/icaro/pesquisa_ucpel/output_HM/hm_4t_br-psnr.csv','rb')
+csv_test = open('/home/icaro/pesquisa_ucpel/output_HM/hm_2t_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm4taps_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm6taps_br-psnr.csv','rb')
 # csv_test = open('/home/icaro/pesquisa_ucpel/hm2taps_br-psnr.csv','rb')
 
-out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm_hm-4t.csv","w")
+out = open("/home/icaro/pesquisa_ucpel/bd-rate/hm_hm-2t.csv","w")
 
 print >> out,"YUV,Resolution,BD-BRate,BD-PSNR_Y,Time_Difference"
 

@@ -7,7 +7,7 @@ outspath = 'output_HM/local/out'
 outpath = 'output_HM'
 
 pathin = "%s/pesquisa_ucpel/%s"%(homepath,outspath)
-out = open("%s/pesquisa_ucpel/%s/hm_4t_br-psnr.csv"%(homepath,outpath),"w")
+out = open("%s/pesquisa_ucpel/%s/hm_2t_br-psnr.csv"%(homepath,outpath),"w")
 
 yuvs = sorted(os.listdir("%s"%pathin))
 
@@ -19,7 +19,7 @@ for yuv in yuvs:
 	# 	continue
 	if "6taps" in yuv:
 		continue
-	if "2taps" in yuv:
+	if "4taps" in yuv:
 		continue
 	if "8taps" in yuv:
 		continue

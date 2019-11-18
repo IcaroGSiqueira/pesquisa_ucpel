@@ -17,8 +17,6 @@ conf = "encoder_randomaccess_main.cfg"
 
 qps = [22,27,32,37]
 
-threads = 4 # numero de processos em parelelo
-
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"
 
@@ -165,33 +163,3 @@ for taps in [8,6,4,2]:
 	 		linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
 	 		print >> file, linhag
 	file.close
-
-i=0
-if threads != 1:
-
-	file = open("%s/%s/%s"%(homepath,shpath,filename),"r")
-	lines = file.readlines()
-	tam = len(lines)
-	nqp = len(qps)
-	nconf = len(confs)
-
-	for x in range(threads):
-
-		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
-		j=0
-
-
-		while i < tam:
-
-			line = lines[i]
-			print >> file2, line
-			i=i+1
-			j=j+1
-			if j >= (tam/threads):
-				break
-
-		if gitpull == 1:
-			linhag = "cd %s/%s && sh %s.sh || true"%(homepath,gitpath,gitscript)
-			print >> file2, linhag
-	file2.close
-file.close

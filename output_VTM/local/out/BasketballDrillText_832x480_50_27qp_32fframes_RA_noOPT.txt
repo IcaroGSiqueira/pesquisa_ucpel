@@ -38,3 +38,10 @@ POC   25 TId: 4 ( B-SLICE, QP 36 )       7648 bits [Y 38.0210 dB    U 41.7289 dB
 POC   27 TId: 4 ( B-SLICE, QP 36 )       8016 bits [Y 37.7837 dB    U 41.4671 dB    V 41.5612 dB] [ET    66 ] [L0 26 24 ] [L1 28 26 ]
 POC   30 TId: 3 ( B-SLICE, QP 34 )      22912 bits [Y 37.9157 dB    U 41.1067 dB    V 41.0008 dB] [ET   127 ] [L0 28 24 ] [L1 28 24 ]
 POC   29 TId: 4 ( B-SLICE, QP 36 )       8480 bits [Y 37.7024 dB    U 41.2174 dB    V 41.2585 dB] [ET    71 ] [L0 28 24 ] [L1 30 28 ]
+POC   31 TId: 4 ( B-SLICE, QP 36 )      13768 bits [Y 37.2511 dB    U 40.9221 dB    V 40.7199 dB] [ET    84 ] [L0 30 28 ] [L1 30 28 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       32    a    1249.0625   38.7590   42.1929   42.6957   39.5827
+
+ finished @ Mon Nov 18 17:35:50 2019
+ Total Time:     3431.434 sec. [user]     3433.634 sec. [elapsed]

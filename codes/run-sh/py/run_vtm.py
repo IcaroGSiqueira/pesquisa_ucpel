@@ -26,7 +26,7 @@ shpath = "pesquisa_ucpel/codes/run-sh/vtm"
 filename = "run_vtm.sh"
 
 # manter YUVS em ordem de menor para maior resolucao para melhor eficiencia no paralelismo
-yuvs = ["BlowingBubbles_416x240_50.yuv","BQSquare_416x240_60.yuv","BasketballPass_416x240_50.yuv","RaceHorses_416x240_30.yuv","RaceHorses_832x480_30.yuv","BasketballDrill_832x480_50.yuv","BQMall_832x480_60.yuv","PartyScene_832x480_50.yuv","BasketballDrillText_832x480_50.yuv","SlideShow_1280x720_20.yuv","SlideEditing_1280x720_30.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv","BasketballDrive_1920x1080_50.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv","MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Tango2_3840x2160_60fps_10bit_420.yuv","FoodMarket4_3840x2160_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"] 
+yuvs = ["BlowingBubbles_416x240_50fps_420.yuv","BQSquare_416x240_60fps_420.yuv","BasketballPass_416x240_50fps_420.yuv","RaceHorses_416x240_30fps_420.yuv","RaceHorses_832x480_30fps_420.yuv","BasketballDrill_832x480_50fps_420.yuv","BQMall_832x480_60fps_420.yuv","PartyScene_832x480_50fps_420.yuv","BasketballDrillText_832x480_50fps_420.yuv","SlideShow_1280x720_20fps_420.yuv","SlideEditing_1280x720_30fps_420.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv","BasketballDrive_1920x1080_50fps_420.yuv","BQTerrace_1920x1080_60fps_420.yuv","Cactus_1920x1080_50fps_420.yuv","MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Tango2_3840x2160_60fps_10bit_420.yuv","FoodMarket4_3840x2160_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"] 
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 
@@ -101,25 +101,19 @@ if gprof == 1:
 for conf in confs:
 	for yuv in yuvs:
 		for qp in qps:
-
+			print yuv
 			if ".py" in yuv:
 				continue
-			elif "crop" in yuv:
-				if "bit" in yuv:
-					vid,pix,fr,b,dummy = yuv.split("_")
-					nome = vid+"_"+pix+"_"+fr+"_"+b
-				else:
-					vid,pix,fr,dummy = yuv.split("_")
-					nome = vid+"_"+pix+"_"+fr
+			if "crop" in yuv:
+				vid,pix,fr,dummy,b,dummy = yuv.split("_")
+				b = b.strip("bit")
+				fr = fr.strip("fps")
+				nome = vid+"_"+pix+"_"+fr+"_"+b
 			else:
-				if "bit" in yuv:
-					vid,pix,fr,split = yuv.split("_")
-					b,dummy = split.split(".")
-					nome = vid+"_"+pix+"_"+fr+"_"+b
-				else:
-					vid,pix,split = yuv.split("_")
-					fr,dummy = split.split(".")
-					nome = vid+"_"+pix+"_"+fr
+				vid,pix,fr,b,dummy = yuv.split("_")
+				b = b.strip("bit")
+				fr = fr.strip("fps")
+				nome = vid+"_"+pix+"_"+fr+"_"+b
 
 			w,h = pix.split("x")
 

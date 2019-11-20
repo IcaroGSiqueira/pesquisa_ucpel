@@ -4,7 +4,7 @@ import re
 pathin = "/home/icaro/testesVVC/gprof"
 #pathin = "/home/grellert/testesHEVC/gprof"
 #out = open("/home/grellert/testesHEVC/gprof.csv","w")
-out = open("/home/icaro/testesVVC/gprof/vtmSIMD_gprof.csv","w")
+out = open("/home/icaro/testesVVC/vtmSIMD_gprof.csv","w")
 files = sorted(os.listdir("%s"%pathin))
 
 linha = "YUV,FME-Interp.,INT-S.,AMVP,IME-S.,FME-S.,Filter,Merge,I.Quant,I.Transf,MC,Quant,Transf,Affine,Bio,SUM,TOTAL,%"

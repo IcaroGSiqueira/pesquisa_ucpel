@@ -114,7 +114,7 @@ for conf in confs:
 
 				#qp = map(float,qp) !!--end-usage=q!!--AVALIAR
 				if gprof == 1:
-					linha = "%s/%s/%s -b %s/%s/bin/%s_%s.bin -o %s/Videos/%s_%s.yuv --TraceFile=\"%s/%s/traces/%s_%s_poc%s.csv\" --TraceRule=\"D_BLOCK_STATISTICS_CODED:poc==%s\""%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,nome,info,homepath,outpath,nome,info,i,i)
+					linha = "%s/%s/%s -b %s/%s/bin/%s_%s.bin -o %s/Videos/%s_%s.yuv --TraceFile=\"%s/%s/traces/%s_%s_poc%s.csv\" --TraceRule=D_BLOCK_STATISTICS_CODED:poc==%s"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,nome,info,homepath,outpath,nome,info,i,i)
 					linha4 =  "echo \"%s_%s_poc%s DONE!\""%(nome,info,i)
 
 					#VERIFICAR SOBRESCRICAO
@@ -124,7 +124,7 @@ for conf in confs:
 						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 					
 				else:
-					linha = "%s/%s/%s -b %s/%s/bin/%s_%s.bin -o %s/Videos/%s_%s.yuv --TraceFile=\"%s/%s/traces/%s_%s_poc%s.csv\" --TraceRule=\"D_BLOCK_STATISTICS_CODED:poc==%s\""%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,nome,info,homepath,outpath,nome,info,i,i)
+					linha = "%s/%s/%s -b %s/%s/bin/%s_%s.bin -o %s/Videos/%s_%s.yuv --TraceFile=\"%s/%s/traces/%s_%s_poc%s.csv\" --TraceRule=D_BLOCK_STATISTICS_CODED:poc==%s"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,nome,info,homepath,outpath,nome,info,i,i)
 					linha4 =  "echo \"%s_%s_poc%s DONE!\""%(nome,info,i)
 
 					try:

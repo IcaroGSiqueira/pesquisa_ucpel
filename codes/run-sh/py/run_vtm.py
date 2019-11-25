@@ -17,7 +17,7 @@ confs = ["encoder_randomaccess_vtm.cfg"]
 OPT = 0 # optimizacoes ligadas = 1
 gprof = 0
 
-threads = 8 # numero de processos em parelelo
+threads = 2 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"

@@ -16,6 +16,7 @@ confs = ["encoder_randomaccess_vtm.cfg"]
 
 OPT = 0 # optimizacoes ligadas = 1
 gprof = 0
+debug = 1 # se gprof = 1 debug = 0
 
 #threads = 8 # numero de processos em parelelo
 
@@ -63,6 +64,9 @@ if OPT == 1:
 	else:
 		bina = "DecoderAppStaticd_gprof"
 		inf = "gprof_OPT"
+	if debug == 1:
+		bina = "DecoderAppStaticd"
+		inf = "gprof_OPT"
 else:
 	if gprof == 0:
 		bina = "DecoderAppStatic_std"
@@ -70,6 +74,10 @@ else:
 	else:
 		bina = "DecoderAppStaticd_gprof"
 		inf = "gprof_noOPT"
+	if debug == 1:
+		bina = "DecoderAppStaticd"
+		inf = "gprof_noOPT"
+
 
 file = open("%s/%s/%s"%(homepath,shpath,filename),"w")
 
@@ -85,7 +93,7 @@ except:
 for conf in confs:
 	for yuv in yuvs:
 		for qp in qps:
-			for i in range(1):
+			for i in range(32):
 				print yuv
 				if ".py" in yuv:
 					continue

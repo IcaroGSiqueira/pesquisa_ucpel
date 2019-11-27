@@ -1,0 +1,4060 @@
+BlockStat;31;   0;   0;32;32;Depth;2
+BlockStat;31;   0;   0;32;32;QT_Depth;2
+BlockStat;31;   0;   0;32;32;BT_Depth;0
+BlockStat;31;   0;   0;32;32;MT_Depth;0
+BlockStat;31;   0;   0;32;32;ChromaQPAdj;0
+BlockStat;31;   0;   0;32;32;QP;41
+BlockStat;31;   0;   0;32;32;SplitSeries;33
+BlockStat;31;   0;   0;32;32;SkipFlag;0
+BlockStat;31;   0;   0;32;32;PredMode;0
+BlockStat;31;   0;   0;32;32;MergeFlag;0
+BlockStat;31;   0;   0;32;32;InterDir;3
+BlockStat;31;   0;   0;32;32;AffineFlag;0
+BlockStat;31;   0;   0;32;32;MVPIdxL0;0
+BlockStat;31;   0;   0;32;32;RefIdxL0;1
+BlockStat;31;   0;   0;32;32;MVPIdxL1;0
+BlockStat;31;   0;   0;32;32;RefIdxL1;0
+BlockStat;31;   0;   0;32;32;MVDL0;  -2;  -3
+BlockStat;31;   0;   0;32;32;MVL0;  -2;  -3
+BlockStat;31;   0;   0;32;32;MVDL1;   0;   0
+BlockStat;31;   0;   0;32;32;MVL1;   0;   0
+BlockStat;31;   0;   0;32;32;IMVMode;0
+BlockStat;31;   0;   0;32;32;RootCbf;1
+BlockStat;31;   0;   0;32;32;Cbf_Y;1
+BlockStat;31;   0;   0;32;32;TransformSkipFlag_Y;0
+BlockStat;31;   0;   0;32;32;Cbf_Cb;1
+BlockStat;31;   0;   0;32;32;Cbf_Cr;1
+BlockStat;31;  32;   0;16;16;Depth;3
+BlockStat;31;  32;   0;16;16;QT_Depth;3
+BlockStat;31;  32;   0;16;16;BT_Depth;0
+BlockStat;31;  32;   0;16;16;MT_Depth;0
+BlockStat;31;  32;   0;16;16;ChromaQPAdj;0
+BlockStat;31;  32;   0;16;16;QP;41
+BlockStat;31;  32;   0;16;16;SplitSeries;1057
+BlockStat;31;  32;   0;16;16;SkipFlag;0
+BlockStat;31;  32;   0;16;16;PredMode;1
+BlockStat;31;  32;   0;16;16;Luma_IntraMode;4
+BlockStat;31;  32;   0;16;16;Chroma_IntraMode;67
+BlockStat;31;  32;   0;16;16;MultiRefIdx;0
+BlockStat;31;  32;   0;16;16;Cbf_Y;1
+BlockStat;31;  32;   0;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  32;   0;16;16;Cbf_Cb;0
+BlockStat;31;  32;   0;16;16;Cbf_Cr;0
+BlockStat;31;  48;   0;16;16;Depth;3
+BlockStat;31;  48;   0;16;16;QT_Depth;3
+BlockStat;31;  48;   0;16;16;BT_Depth;0
+BlockStat;31;  48;   0;16;16;MT_Depth;0
+BlockStat;31;  48;   0;16;16;ChromaQPAdj;0
+BlockStat;31;  48;   0;16;16;QP;41
+BlockStat;31;  48;   0;16;16;SplitSeries;1057
+BlockStat;31;  48;   0;16;16;SkipFlag;0
+BlockStat;31;  48;   0;16;16;PredMode;1
+BlockStat;31;  48;   0;16;16;Luma_IntraMode;4
+BlockStat;31;  48;   0;16;16;Chroma_IntraMode;67
+BlockStat;31;  48;   0;16;16;MultiRefIdx;0
+BlockStat;31;  48;   0;16;16;Cbf_Y;1
+BlockStat;31;  48;   0;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  48;   0;16;16;Cbf_Cb;0
+BlockStat;31;  48;   0;16;16;Cbf_Cr;0
+BlockStat;31;  32;  16; 8;16;Depth;4
+BlockStat;31;  32;  16; 8;16;QT_Depth;3
+BlockStat;31;  32;  16; 8;16;BT_Depth;1
+BlockStat;31;  32;  16; 8;16;MT_Depth;1
+BlockStat;31;  32;  16; 8;16;ChromaQPAdj;0
+BlockStat;31;  32;  16; 8;16;QP;41
+BlockStat;31;  32;  16; 8;16;SplitSeries;99361
+BlockStat;31;  32;  16; 8;16;SkipFlag;0
+BlockStat;31;  32;  16; 8;16;PredMode;1
+BlockStat;31;  32;  16; 8;16;Luma_IntraMode;2
+BlockStat;31;  32;  16; 8;16;Chroma_IntraMode;0
+BlockStat;31;  32;  16; 8;16;MultiRefIdx;0
+BlockStat;31;  32;  16; 8;16;Cbf_Y;0
+BlockStat;31;  32;  16; 8;16;TransformSkipFlag_Y;0
+BlockStat;31;  32;  16; 8;16;Cbf_Cb;0
+BlockStat;31;  32;  16; 8;16;Cbf_Cr;0
+BlockStat;31;  40;  16; 8;16;Depth;4
+BlockStat;31;  40;  16; 8;16;QT_Depth;3
+BlockStat;31;  40;  16; 8;16;BT_Depth;1
+BlockStat;31;  40;  16; 8;16;MT_Depth;1
+BlockStat;31;  40;  16; 8;16;ChromaQPAdj;0
+BlockStat;31;  40;  16; 8;16;QP;41
+BlockStat;31;  40;  16; 8;16;SplitSeries;99361
+BlockStat;31;  40;  16; 8;16;SkipFlag;0
+BlockStat;31;  40;  16; 8;16;PredMode;0
+BlockStat;31;  40;  16; 8;16;MergeFlag;0
+BlockStat;31;  40;  16; 8;16;InterDir;1
+BlockStat;31;  40;  16; 8;16;MVPIdxL0;0
+BlockStat;31;  40;  16; 8;16;RefIdxL0;0
+BlockStat;31;  40;  16; 8;16;MVDL0; -36; -16
+BlockStat;31;  40;  16; 8;16;MVL0; -36; -16
+BlockStat;31;  40;  16; 8;16;IMVMode;1
+BlockStat;31;  40;  16; 8;16;RootCbf;0
+BlockStat;31;  48;  16;16;16;Depth;3
+BlockStat;31;  48;  16;16;16;QT_Depth;3
+BlockStat;31;  48;  16;16;16;BT_Depth;0
+BlockStat;31;  48;  16;16;16;MT_Depth;0
+BlockStat;31;  48;  16;16;16;ChromaQPAdj;0
+BlockStat;31;  48;  16;16;16;QP;41
+BlockStat;31;  48;  16;16;16;SplitSeries;1057
+BlockStat;31;  48;  16;16;16;SkipFlag;0
+BlockStat;31;  48;  16;16;16;PredMode;1
+BlockStat;31;  48;  16;16;16;Luma_IntraMode;4
+BlockStat;31;  48;  16;16;16;Chroma_IntraMode;0
+BlockStat;31;  48;  16;16;16;MultiRefIdx;0
+BlockStat;31;  48;  16;16;16;Cbf_Y;1
+BlockStat;31;  48;  16;16;16;TransformSkipFlag_Y;2
+BlockStat;31;  48;  16;16;16;Cbf_Cb;0
+BlockStat;31;  48;  16;16;16;Cbf_Cr;0
+BlockStat;31;   0;  32; 8;16;Depth;5
+BlockStat;31;   0;  32; 8;16;QT_Depth;2
+BlockStat;31;   0;  32; 8;16;BT_Depth;3
+BlockStat;31;   0;  32; 8;16;MT_Depth;3
+BlockStat;31;   0;  32; 8;16;ChromaQPAdj;0
+BlockStat;31;   0;  32; 8;16;QP;41
+BlockStat;31;   0;  32; 8;16;SplitSeries;3214369
+BlockStat;31;   0;  32; 8;16;SkipFlag;0
+BlockStat;31;   0;  32; 8;16;PredMode;1
+BlockStat;31;   0;  32; 8;16;Luma_IntraMode;0
+BlockStat;31;   0;  32; 8;16;Chroma_IntraMode;0
+BlockStat;31;   0;  32; 8;16;MultiRefIdx;0
+BlockStat;31;   0;  32; 8;16;Cbf_Y;1
+BlockStat;31;   0;  32; 8;16;TransformSkipFlag_Y;1
+BlockStat;31;   0;  32; 8;16;Cbf_Cb;0
+BlockStat;31;   0;  32; 8;16;Cbf_Cr;0
+BlockStat;31;   8;  32; 8;16;Depth;5
+BlockStat;31;   8;  32; 8;16;QT_Depth;2
+BlockStat;31;   8;  32; 8;16;BT_Depth;3
+BlockStat;31;   8;  32; 8;16;MT_Depth;3
+BlockStat;31;   8;  32; 8;16;ChromaQPAdj;0
+BlockStat;31;   8;  32; 8;16;QP;41
+BlockStat;31;   8;  32; 8;16;SplitSeries;3214369
+BlockStat;31;   8;  32; 8;16;SkipFlag;0
+BlockStat;31;   8;  32; 8;16;PredMode;1
+BlockStat;31;   8;  32; 8;16;Luma_IntraMode;0
+BlockStat;31;   8;  32; 8;16;Chroma_IntraMode;0
+BlockStat;31;   8;  32; 8;16;MultiRefIdx;0
+BlockStat;31;   8;  32; 8; 4;Cbf_Y;0
+BlockStat;31;   8;  32; 8; 4;TransformSkipFlag_Y;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cb;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cr;0
+BlockStat;31;   8;  36; 8; 4;Cbf_Y;0
+BlockStat;31;   8;  36; 8; 4;TransformSkipFlag_Y;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cb;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cr;0
+BlockStat;31;   8;  40; 8; 4;Cbf_Y;0
+BlockStat;31;   8;  40; 8; 4;TransformSkipFlag_Y;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cb;0
+BlockStat;31;   0;   0; 0; 0;Cbf_Cr;0
+BlockStat;31;   8;  44; 8; 4;Cbf_Y;2
+BlockStat;31;   8;  44; 8; 4;TransformSkipFlag_Y;0
+BlockStat;31;   8;  32; 8;16;Cbf_Cb;0
+BlockStat;31;   8;  32; 8;16;Cbf_Cr;0
+BlockStat;31;   0;  48;16;16;Depth;4
+BlockStat;31;   0;  48;16;16;QT_Depth;2
+BlockStat;31;   0;  48;16;16;BT_Depth;2
+BlockStat;31;   0;  48;16;16;MT_Depth;2
+BlockStat;31;   0;  48;16;16;ChromaQPAdj;0
+BlockStat;31;   0;  48;16;16;QP;41
+BlockStat;31;   0;  48;16;16;SplitSeries;68641
+BlockStat;31;   0;  48;16;16;SkipFlag;1
+BlockStat;31;   0;  48;16;16;MMVDSkipFlag;0
+BlockStat;31;   0;  48;16;16;PredMode;0
+BlockStat;31;   0;  48;16;16;MergeIdx;0
+BlockStat;31;   0;  48;16;16;MergeType;0
+BlockStat;31;   0;  48;16;16;MMVDMergeFlag;0
+BlockStat;31;   0;  48;16;16;AffineFlag;0
+BlockStat;31;   0;  48;16;16;MVPIdxL0;255
+BlockStat;31;   0;  48;16;16;RefIdxL0;0
+BlockStat;31;   0;  48;16;16;MVPIdxL1;255
+BlockStat;31;   0;  48;16;16;RefIdxL1;0
+BlockStat;31;   0;  48;16;16;MVDL0;   0;   0
+BlockStat;31;   0;  48;16;16;MVL0;  -2;   0
+BlockStat;31;   0;  48;16;16;MVDL1;   0;   0
+BlockStat;31;   0;  48;16;16;MVL1;  -2;   0
+BlockStat;31;  16;  32; 4;32;Depth;4
+BlockStat;31;  16;  32; 4;32;QT_Depth;2
+BlockStat;31;  16;  32; 4;32;BT_Depth;3
+BlockStat;31;  16;  32; 4;32;MT_Depth;2
+BlockStat;31;  16;  32; 4;32;ChromaQPAdj;0
+BlockStat;31;  16;  32; 4;32;QP;41
+BlockStat;31;  16;  32; 4;32;SplitSeries;166945
+BlockStat;31;  16;  32; 4;32;SkipFlag;1
+BlockStat;31;  16;  32; 4;32;MMVDSkipFlag;0
+BlockStat;31;  16;  32; 4;32;PredMode;0
+BlockStat;31;  16;  32; 4;32;MergeIdx;9
+BlockStat;31;  16;  32; 4;32;MergeType;0
+BlockStat;31;  16;  32; 4;32;MMVDMergeFlag;1
+BlockStat;31;  16;  32; 4;32;MMVDMergeIdx;9
+BlockStat;31;  16;  32; 4;32;MVPIdxL0;255
+BlockStat;31;  16;  32; 4;32;RefIdxL0;0
+BlockStat;31;  16;  32; 4;32;MVPIdxL1;255
+BlockStat;31;  16;  32; 4;32;RefIdxL1;0
+BlockStat;31;  16;  32; 4;32;MVDL0;   0;   0
+BlockStat;31;  16;  32; 4;32;MVL0;  -6;   0
+BlockStat;31;  16;  32; 4;32;MVDL1;   0;   0
+BlockStat;31;  16;  32; 4;32;MVL1;  -6;   0
+BlockStat;31;  20;  32; 8;32;Depth;4
+BlockStat;31;  20;  32; 8;32;QT_Depth;2
+BlockStat;31;  20;  32; 8;32;BT_Depth;2
+BlockStat;31;  20;  32; 8;32;MT_Depth;2
+BlockStat;31;  20;  32; 8;32;ChromaQPAdj;0
+BlockStat;31;  20;  32; 8;32;QP;41
+BlockStat;31;  20;  32; 8;32;SplitSeries;166945
+BlockStat;31;  20;  32; 8;32;SkipFlag;0
+BlockStat;31;  20;  32; 8;32;PredMode;0
+BlockStat;31;  20;  32; 8;32;MergeFlag;1
+BlockStat;31;  20;  32; 8;32;MergeIdx;0
+BlockStat;31;  20;  32; 8;32;MergeType;0
+BlockStat;31;  20;  32; 8;32;MMVDMergeFlag;0
+BlockStat;31;  20;  32; 8;32;AffineFlag;0
+BlockStat;31;  20;  32; 8;32;MHIntraFlag;1
+BlockStat;31;  20;  32; 8;32;Luma_IntraMode;0
+BlockStat;31;  20;  32; 8;32;Chroma_IntraMode;70
+BlockStat;31;  20;  32; 8;32;MVPIdxL0;255
+BlockStat;31;  20;  32; 8;32;RefIdxL0;0
+BlockStat;31;  20;  32; 8;32;MVPIdxL1;255
+BlockStat;31;  20;  32; 8;32;RefIdxL1;0
+BlockStat;31;  20;  32; 8;32;MVDL0;   0;   0
+BlockStat;31;  20;  32; 8;32;MVL0;  -6;   0
+BlockStat;31;  20;  32; 8;32;MVDL1;   0;   0
+BlockStat;31;  20;  32; 8;32;MVL1;  -6;   0
+BlockStat;31;  20;  32; 8;32;Cbf_Y;1
+BlockStat;31;  20;  32; 8;32;TransformSkipFlag_Y;0
+BlockStat;31;  20;  32; 8;32;Cbf_Cb;0
+BlockStat;31;  20;  32; 8;32;Cbf_Cr;0
+BlockStat;31;  28;  32; 4;32;Depth;4
+BlockStat;31;  28;  32; 4;32;QT_Depth;2
+BlockStat;31;  28;  32; 4;32;BT_Depth;3
+BlockStat;31;  28;  32; 4;32;MT_Depth;2
+BlockStat;31;  28;  32; 4;32;ChromaQPAdj;0
+BlockStat;31;  28;  32; 4;32;QP;41
+BlockStat;31;  28;  32; 4;32;SplitSeries;166945
+BlockStat;31;  28;  32; 4;32;SkipFlag;0
+BlockStat;31;  28;  32; 4;32;PredMode;0
+BlockStat;31;  28;  32; 4;32;MergeFlag;1
+BlockStat;31;  28;  32; 4;32;MergeIdx;4
+BlockStat;31;  28;  32; 4;32;MergeType;0
+BlockStat;31;  28;  32; 4;32;MMVDMergeFlag;0
+BlockStat;31;  28;  32; 4;32;MHIntraFlag;0
+BlockStat;31;  28;  32; 4;32;MVPIdxL0;255
+BlockStat;31;  28;  32; 4;32;RefIdxL0;0
+BlockStat: POC 31 @(  28,  32) [ 4x32] TrianglePartitioning={   0,  32,   4,   0}
+BlockStat;31;  28;  32; 4;32;Cbf_Y;1
+BlockStat;31;  28;  32; 4;32;TransformSkipFlag_Y;0
+BlockStat;31;  28;  32; 4;32;Cbf_Cb;0
+BlockStat;31;  28;  32; 4;32;Cbf_Cr;0
+BlockStat;31;  32;  32;32;32;Depth;2
+BlockStat;31;  32;  32;32;32;QT_Depth;2
+BlockStat;31;  32;  32;32;32;BT_Depth;0
+BlockStat;31;  32;  32;32;32;MT_Depth;0
+BlockStat;31;  32;  32;32;32;ChromaQPAdj;0
+BlockStat;31;  32;  32;32;32;QP;41
+BlockStat;31;  32;  32;32;32;SplitSeries;33
+BlockStat;31;  32;  32;32;32;SkipFlag;0
+BlockStat;31;  32;  32;32;32;PredMode;0
+BlockStat;31;  32;  32;32;32;MergeFlag;0
+BlockStat;31;  32;  32;32;32;InterDir;3
+BlockStat;31;  32;  32;32;32;AffineFlag;0
+BlockStat;31;  32;  32;32;32;MVPIdxL0;0
+BlockStat;31;  32;  32;32;32;RefIdxL0;0
+BlockStat;31;  32;  32;32;32;MVPIdxL1;0
+BlockStat;31;  32;  32;32;32;RefIdxL1;0
+BlockStat;31;  32;  32;32;32;MVDL0; -16;  -4
+BlockStat;31;  32;  32;32;32;MVL0; -52; -20
+BlockStat;31;  32;  32;32;32;MVDL1;   0;   0
+BlockStat;31;  32;  32;32;32;MVL1; -36; -16
+BlockStat;31;  32;  32;32;32;IMVMode;1
+BlockStat;31;  32;  32;32;32;RootCbf;1
+BlockStat;31;  32;  32;32;32;Cbf_Y;1
+BlockStat;31;  32;  32;32;32;TransformSkipFlag_Y;0
+BlockStat;31;  32;  32;32;32;Cbf_Cb;0
+BlockStat;31;  32;  32;32;32;Cbf_Cr;0
+BlockStat;31;  64;   0;16;32;Depth;3
+BlockStat;31;  64;   0;16;32;QT_Depth;2
+BlockStat;31;  64;   0;16;32;BT_Depth;1
+BlockStat;31;  64;   0;16;32;MT_Depth;1
+BlockStat;31;  64;   0;16;32;ChromaQPAdj;0
+BlockStat;31;  64;   0;16;32;QP;41
+BlockStat;31;  64;   0;16;32;SplitSeries;3105
+BlockStat;31;  64;   0;16;32;SkipFlag;0
+BlockStat;31;  64;   0;16;32;PredMode;0
+BlockStat;31;  64;   0;16;32;MergeFlag;0
+BlockStat;31;  64;   0;16;32;InterDir;1
+BlockStat;31;  64;   0;16;32;AffineFlag;0
+BlockStat;31;  64;   0;16;32;MVPIdxL0;0
+BlockStat;31;  64;   0;16;32;RefIdxL0;0
+BlockStat;31;  64;   0;16;32;MVDL0; -16; -16
+BlockStat;31;  64;   0;16;32;MVL0; -64; -32
+BlockStat;31;  64;   0;16;32;IMVMode;2
+BlockStat;31;  64;   0;16;32;RootCbf;1
+BlockStat;31;  64;   0;16;32;Cbf_Y;1
+BlockStat;31;  64;   0;16;32;TransformSkipFlag_Y;0
+BlockStat;31;  64;   0;16;32;Cbf_Cb;1
+BlockStat;31;  64;   0;16;32;Cbf_Cr;1
+BlockStat;31;  80;   0;16;32;Depth;3
+BlockStat;31;  80;   0;16;32;QT_Depth;2
+BlockStat;31;  80;   0;16;32;BT_Depth;1
+BlockStat;31;  80;   0;16;32;MT_Depth;1
+BlockStat;31;  80;   0;16;32;ChromaQPAdj;0
+BlockStat;31;  80;   0;16;32;QP;41
+BlockStat;31;  80;   0;16;32;SplitSeries;3105
+BlockStat;31;  80;   0;16;32;SkipFlag;0
+BlockStat;31;  80;   0;16;32;PredMode;0
+BlockStat;31;  80;   0;16;32;MergeFlag;0
+BlockStat;31;  80;   0;16;32;InterDir;3
+BlockStat;31;  80;   0;16;32;AffineFlag;0
+BlockStat;31;  80;   0;16;32;MVPIdxL0;1
+BlockStat;31;  80;   0;16;32;RefIdxL0;0
+BlockStat;31;  80;   0;16;32;MVPIdxL1;1
+BlockStat;31;  80;   0;16;32;RefIdxL1;0
+BlockStat;31;  80;   0;16;32;MVDL0;  24;   4
+BlockStat;31;  80;   0;16;32;MVL0;  24;   4
+BlockStat;31;  80;   0;16;32;MVDL1;   0;   0
+BlockStat;31;  80;   0;16;32;MVL1;   0;   0
+BlockStat;31;  80;   0;16;32;IMVMode;1
+BlockStat;31;  80;   0;16;32;RootCbf;1
+BlockStat;31;  80;   0;16;16;Cbf_Y;0
+BlockStat;31;  80;   0;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  80;   0;16;16;Cbf_Cb;0
+BlockStat;31;  80;   0;16;16;Cbf_Cr;0
+BlockStat;31;  80;  16;16;16;Cbf_Y;2
+BlockStat;31;  80;  16;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  80;  16;16;16;Cbf_Cb;0
+BlockStat;31;  80;  16;16;16;Cbf_Cr;0
+BlockStat;31;  96;   0;32;32;Depth;2
+BlockStat;31;  96;   0;32;32;QT_Depth;2
+BlockStat;31;  96;   0;32;32;BT_Depth;0
+BlockStat;31;  96;   0;32;32;MT_Depth;0
+BlockStat;31;  96;   0;32;32;ChromaQPAdj;0
+BlockStat;31;  96;   0;32;32;QP;41
+BlockStat;31;  96;   0;32;32;SplitSeries;33
+BlockStat;31;  96;   0;32;32;SkipFlag;0
+BlockStat;31;  96;   0;32;32;PredMode;0
+BlockStat;31;  96;   0;32;32;MergeFlag;0
+BlockStat;31;  96;   0;32;32;InterDir;3
+BlockStat;31;  96;   0;32;32;AffineFlag;0
+BlockStat;31;  96;   0;32;32;MVPIdxL0;1
+BlockStat;31;  96;   0;32;32;RefIdxL0;0
+BlockStat;31;  96;   0;32;32;MVPIdxL1;0
+BlockStat;31;  96;   0;32;32;RefIdxL1;1
+BlockStat;31;  96;   0;32;32;MVDL0;   0;  -6
+BlockStat;31;  96;   0;32;32;MVL0;   0;  -6
+BlockStat;31;  96;   0;32;32;MVDL1;   0;   0
+BlockStat;31;  96;   0;32;32;MVL1;  -2;   0
+BlockStat;31;  96;   0;32;32;IMVMode;3
+BlockStat;31;  96;   0;32;32;RootCbf;1
+BlockStat;31;  96;   0;32;32;Cbf_Y;1
+BlockStat;31;  96;   0;32;32;TransformSkipFlag_Y;0
+BlockStat;31;  96;   0;32;32;Cbf_Cb;1
+BlockStat;31;  96;   0;32;32;Cbf_Cr;1
+BlockStat;31;  64;  32; 4;32;Depth;4
+BlockStat;31;  64;  32; 4;32;QT_Depth;2
+BlockStat;31;  64;  32; 4;32;BT_Depth;3
+BlockStat;31;  64;  32; 4;32;MT_Depth;2
+BlockStat;31;  64;  32; 4;32;ChromaQPAdj;0
+BlockStat;31;  64;  32; 4;32;QP;41
+BlockStat;31;  64;  32; 4;32;SplitSeries;166945
+BlockStat;31;  64;  32; 4;32;SkipFlag;0
+BlockStat;31;  64;  32; 4;32;PredMode;1
+BlockStat;31;  64;  32; 4;32;Luma_IntraMode;0
+BlockStat;31;  64;  32; 4;32;Chroma_IntraMode;0
+BlockStat;31;  64;  32; 4;32;MultiRefIdx;0
+BlockStat;31;  64;  32; 4;32;Cbf_Y;0
+BlockStat;31;  64;  32; 4;32;TransformSkipFlag_Y;0
+BlockStat;31;  64;  32; 4;32;Cbf_Cb;0
+BlockStat;31;  64;  32; 4;32;Cbf_Cr;0
+BlockStat;31;  68;  32; 8;32;Depth;4
+BlockStat;31;  68;  32; 8;32;QT_Depth;2
+BlockStat;31;  68;  32; 8;32;BT_Depth;2
+BlockStat;31;  68;  32; 8;32;MT_Depth;2
+BlockStat;31;  68;  32; 8;32;ChromaQPAdj;0
+BlockStat;31;  68;  32; 8;32;QP;41
+BlockStat;31;  68;  32; 8;32;SplitSeries;166945
+BlockStat;31;  68;  32; 8;32;SkipFlag;0
+BlockStat;31;  68;  32; 8;32;PredMode;1
+BlockStat;31;  68;  32; 8;32;Luma_IntraMode;57
+BlockStat;31;  68;  32; 8;32;Chroma_IntraMode;57
+BlockStat;31;  68;  32; 8;32;MultiRefIdx;0
+BlockStat;31;  68;  32; 8;32;Cbf_Y;0
+BlockStat;31;  68;  32; 8;32;TransformSkipFlag_Y;0
+BlockStat;31;  68;  32; 8;32;Cbf_Cb;0
+BlockStat;31;  68;  32; 8;32;Cbf_Cr;0
+BlockStat;31;  76;  32; 4;32;Depth;4
+BlockStat;31;  76;  32; 4;32;QT_Depth;2
+BlockStat;31;  76;  32; 4;32;BT_Depth;3
+BlockStat;31;  76;  32; 4;32;MT_Depth;2
+BlockStat;31;  76;  32; 4;32;ChromaQPAdj;0
+BlockStat;31;  76;  32; 4;32;QP;41
+BlockStat;31;  76;  32; 4;32;SplitSeries;166945
+BlockStat;31;  76;  32; 4;32;SkipFlag;0
+BlockStat;31;  76;  32; 4;32;PredMode;0
+BlockStat;31;  76;  32; 4;32;MergeFlag;1
+BlockStat;31;  76;  32; 4;32;MergeIdx;0
+BlockStat;31;  76;  32; 4;32;MergeType;0
+BlockStat;31;  76;  32; 4;32;MMVDMergeFlag;0
+BlockStat;31;  76;  32; 4;32;MHIntraFlag;0
+BlockStat;31;  76;  32; 4;32;MVPIdxL0;255
+BlockStat;31;  76;  32; 4;32;RefIdxL0;0
+BlockStat;31;  76;  32; 4;32;MVDL0;   0;   0
+BlockStat;31;  76;  32; 4;32;MVL0; -64; -32
+BlockStat;31;  76;  32; 4;16;Cbf_Y;2
+BlockStat;31;  76;  32; 4;16;TransformSkipFlag_Y;0
+BlockStat;31;  76;  32; 4;16;Cbf_Cb;0
+BlockStat;31;  76;  32; 4;16;Cbf_Cr;0
+BlockStat;31;  76;  48; 4;16;Cbf_Y;0
+BlockStat;31;  76;  48; 4;16;TransformSkipFlag_Y;0
+BlockStat;31;  76;  48; 4;16;Cbf_Cb;0
+BlockStat;31;  76;  48; 4;16;Cbf_Cr;0
+BlockStat;31;  80;  32;16; 8;Depth;4
+BlockStat;31;  80;  32;16; 8;QT_Depth;2
+BlockStat;31;  80;  32;16; 8;BT_Depth;3
+BlockStat;31;  80;  32;16; 8;MT_Depth;2
+BlockStat;31;  80;  32;16; 8;ChromaQPAdj;0
+BlockStat;31;  80;  32;16; 8;QP;41
+BlockStat;31;  80;  32;16; 8;SplitSeries;134177
+BlockStat;31;  80;  32;16; 8;SkipFlag;0
+BlockStat;31;  80;  32;16; 8;PredMode;0
+BlockStat;31;  80;  32;16; 8;MergeFlag;1
+BlockStat;31;  80;  32;16; 8;MergeIdx;0
+BlockStat;31;  80;  32;16; 8;MergeType;0
+BlockStat;31;  80;  32;16; 8;MMVDMergeFlag;0
+BlockStat;31;  80;  32;16; 8;AffineFlag;0
+BlockStat;31;  80;  32;16; 8;MHIntraFlag;1
+BlockStat;31;  80;  32;16; 8;Luma_IntraMode;0
+BlockStat;31;  80;  32;16; 8;Chroma_IntraMode;70
+BlockStat;31;  80;  32;16; 8;MVPIdxL0;255
+BlockStat;31;  80;  32;16; 8;RefIdxL0;0
+BlockStat;31;  80;  32;16; 8;MVDL0;   0;   0
+BlockStat;31;  80;  32;16; 8;MVL0; -64; -32
+BlockStat;31;  80;  32;16; 8;Cbf_Y;1
+BlockStat;31;  80;  32;16; 8;TransformSkipFlag_Y;0
+BlockStat;31;  80;  32;16; 8;Cbf_Cb;0
+BlockStat;31;  80;  32;16; 8;Cbf_Cr;0
+BlockStat;31;  80;  40;16;16;Depth;4
+BlockStat;31;  80;  40;16;16;QT_Depth;2
+BlockStat;31;  80;  40;16;16;BT_Depth;2
+BlockStat;31;  80;  40;16;16;MT_Depth;2
+BlockStat;31;  80;  40;16;16;ChromaQPAdj;0
+BlockStat;31;  80;  40;16;16;QP;41
+BlockStat;31;  80;  40;16;16;SplitSeries;134177
+BlockStat;31;  80;  40;16;16;SkipFlag;0
+BlockStat;31;  80;  40;16;16;PredMode;1
+BlockStat;31;  80;  40;16;16;Luma_IntraMode;33
+BlockStat;31;  80;  40;16;16;Chroma_IntraMode;33
+BlockStat;31;  80;  40;16;16;MultiRefIdx;0
+BlockStat;31;  80;  40;16;16;Cbf_Y;1
+BlockStat;31;  80;  40;16;16;TransformSkipFlag_Y;2
+BlockStat;31;  80;  40;16;16;Cbf_Cb;0
+BlockStat;31;  80;  40;16;16;Cbf_Cr;0
+BlockStat;31;  80;  56;16; 8;Depth;4
+BlockStat;31;  80;  56;16; 8;QT_Depth;2
+BlockStat;31;  80;  56;16; 8;BT_Depth;3
+BlockStat;31;  80;  56;16; 8;MT_Depth;2
+BlockStat;31;  80;  56;16; 8;ChromaQPAdj;0
+BlockStat;31;  80;  56;16; 8;QP;41
+BlockStat;31;  80;  56;16; 8;SplitSeries;134177
+BlockStat;31;  80;  56;16; 8;SkipFlag;0
+BlockStat;31;  80;  56;16; 8;PredMode;0
+BlockStat;31;  80;  56;16; 8;MergeFlag;1
+BlockStat;31;  80;  56;16; 8;MergeIdx;0
+BlockStat;31;  80;  56;16; 8;MergeType;0
+BlockStat;31;  80;  56;16; 8;MMVDMergeFlag;0
+BlockStat;31;  80;  56;16; 8;AffineFlag;0
+BlockStat;31;  80;  56;16; 8;MHIntraFlag;1
+BlockStat;31;  80;  56;16; 8;Luma_IntraMode;0
+BlockStat;31;  80;  56;16; 8;Chroma_IntraMode;70
+BlockStat;31;  80;  56;16; 8;MVPIdxL0;255
+BlockStat;31;  80;  56;16; 8;RefIdxL0;0
+BlockStat;31;  80;  56;16; 8;MVDL0;   0;   0
+BlockStat;31;  80;  56;16; 8;MVL0; -64; -32
+BlockStat;31;  80;  56;16; 8;Cbf_Y;1
+BlockStat;31;  80;  56;16; 8;TransformSkipFlag_Y;0
+BlockStat;31;  80;  56;16; 8;Cbf_Cb;0
+BlockStat;31;  80;  56;16; 8;Cbf_Cr;0
+BlockStat;31;  96;  32;32;32;Depth;2
+BlockStat;31;  96;  32;32;32;QT_Depth;2
+BlockStat;31;  96;  32;32;32;BT_Depth;0
+BlockStat;31;  96;  32;32;32;MT_Depth;0
+BlockStat;31;  96;  32;32;32;ChromaQPAdj;0
+BlockStat;31;  96;  32;32;32;QP;41
+BlockStat;31;  96;  32;32;32;SplitSeries;33
+BlockStat;31;  96;  32;32;32;SkipFlag;0
+BlockStat;31;  96;  32;32;32;PredMode;1
+BlockStat;31;  96;  32;32;32;Luma_IntraMode;10
+BlockStat;31;  96;  32;32;32;Chroma_IntraMode;0
+BlockStat;31;  96;  32;32;32;MultiRefIdx;0
+BlockStat;31;  96;  32;32;32;Cbf_Y;1
+BlockStat;31;  96;  32;32;32;TransformSkipFlag_Y;2
+BlockStat;31;  96;  32;32;32;Cbf_Cb;0
+BlockStat;31;  96;  32;32;32;Cbf_Cr;0
+BlockStat;31;   0;  64;16;64;Depth;2
+BlockStat;31;   0;  64;16;64;QT_Depth;1
+BlockStat;31;   0;  64;16;64;BT_Depth;2
+BlockStat;31;   0;  64;16;64;MT_Depth;1
+BlockStat;31;   0;  64;16;64;ChromaQPAdj;0
+BlockStat;31;   0;  64;16;64;QP;41
+BlockStat;31;   0;  64;16;64;SplitSeries;161
+BlockStat;31;   0;  64;16;64;SkipFlag;0
+BlockStat;31;   0;  64;16;64;PredMode;0
+BlockStat;31;   0;  64;16;64;MergeFlag;0
+BlockStat;31;   0;  64;16;64;InterDir;3
+BlockStat;31;   0;  64;16;64;AffineFlag;0
+BlockStat;31;   0;  64;16;64;MVPIdxL0;1
+BlockStat;31;   0;  64;16;64;RefIdxL0;1
+BlockStat;31;   0;  64;16;64;MVPIdxL1;0
+BlockStat;31;   0;  64;16;64;RefIdxL1;0
+BlockStat;31;   0;  64;16;64;MVDL0; -12;  -4
+BlockStat;31;   0;  64;16;64;MVL0; -12;  -4
+BlockStat;31;   0;  64;16;64;MVDL1;   0;   0
+BlockStat;31;   0;  64;16;64;MVL1;  -4;   0
+BlockStat;31;   0;  64;16;64;IMVMode;1
+BlockStat;31;   0;  64;16;64;RootCbf;1
+BlockStat;31;   0;  64;16;64;Cbf_Y;1
+BlockStat;31;   0;  64;16;64;TransformSkipFlag_Y;0
+BlockStat;31;   0;  64;16;64;Cbf_Cb;0
+BlockStat;31;   0;  64;16;64;Cbf_Cr;0
+BlockStat;31;  16;  64;32;32;Depth;3
+BlockStat;31;  16;  64;32;32;QT_Depth;1
+BlockStat;31;  16;  64;32;32;BT_Depth;2
+BlockStat;31;  16;  64;32;32;MT_Depth;2
+BlockStat;31;  16;  64;32;32;ChromaQPAdj;0
+BlockStat;31;  16;  64;32;32;QP;41
+BlockStat;31;  16;  64;32;32;SplitSeries;2209
+BlockStat;31;  16;  64;32;32;SkipFlag;0
+BlockStat;31;  16;  64;32;32;PredMode;1
+BlockStat;31;  16;  64;32;32;Luma_IntraMode;4
+BlockStat;31;  16;  64;32;32;Chroma_IntraMode;0
+BlockStat;31;  16;  64;32;32;MultiRefIdx;0
+BlockStat;31;  16;  64;32;32;Cbf_Y;0
+BlockStat;31;  16;  64;32;32;TransformSkipFlag_Y;0
+BlockStat;31;  16;  64;32;32;Cbf_Cb;0
+BlockStat;31;  16;  64;32;32;Cbf_Cr;0
+BlockStat;31;  16;  96;32;32;Depth;3
+BlockStat;31;  16;  96;32;32;QT_Depth;1
+BlockStat;31;  16;  96;32;32;BT_Depth;2
+BlockStat;31;  16;  96;32;32;MT_Depth;2
+BlockStat;31;  16;  96;32;32;ChromaQPAdj;0
+BlockStat;31;  16;  96;32;32;QP;41
+BlockStat;31;  16;  96;32;32;SplitSeries;2209
+BlockStat;31;  16;  96;32;32;SkipFlag;0
+BlockStat;31;  16;  96;32;32;PredMode;1
+BlockStat;31;  16;  96;32;32;Luma_IntraMode;4
+BlockStat;31;  16;  96;32;32;Chroma_IntraMode;67
+BlockStat;31;  16;  96;32;32;MultiRefIdx;0
+BlockStat;31;  16;  96;32;32;Cbf_Y;1
+BlockStat;31;  16;  96;32;32;TransformSkipFlag_Y;2
+BlockStat;31;  16;  96;32;32;Cbf_Cb;0
+BlockStat;31;  16;  96;32;32;Cbf_Cr;0
+BlockStat;31;  48;  64;16;64;Depth;2
+BlockStat;31;  48;  64;16;64;QT_Depth;1
+BlockStat;31;  48;  64;16;64;BT_Depth;2
+BlockStat;31;  48;  64;16;64;MT_Depth;1
+BlockStat;31;  48;  64;16;64;ChromaQPAdj;0
+BlockStat;31;  48;  64;16;64;QP;41
+BlockStat;31;  48;  64;16;64;SplitSeries;161
+BlockStat;31;  48;  64;16;64;SkipFlag;0
+BlockStat;31;  48;  64;16;64;PredMode;0
+BlockStat;31;  48;  64;16;64;MergeFlag;1
+BlockStat;31;  48;  64;16;64;MergeIdx;2
+BlockStat;31;  48;  64;16;64;MergeType;0
+BlockStat;31;  48;  64;16;64;MMVDMergeFlag;0
+BlockStat;31;  48;  64;16;64;AffineFlag;0
+BlockStat;31;  48;  64;16;64;MHIntraFlag;0
+BlockStat;31;  48;  64;16;64;MVPIdxL0;255
+BlockStat;31;  48;  64;16;64;RefIdxL0;1
+BlockStat: POC 31 @(  48,  64) [16x64] TrianglePartitioning={   0,  64,  16,   0}
+BlockStat: POC 31 @[(48, 64)--(64, 64)--(48, 128)--] TriangleMVL0={ -52, -20}
+BlockStat: POC 31 @[(64, 64)--(48, 128)--(64, 128)--] TriangleMVL0={ -12,  -4}
+BlockStat;31;  48;  64;16;64;Cbf_Y;1
+BlockStat;31;  48;  64;16;64;TransformSkipFlag_Y;0
+BlockStat;31;  48;  64;16;64;Cbf_Cb;0
+BlockStat;31;  48;  64;16;64;Cbf_Cr;0
+BlockStat;31;  64;  64;32;64;Depth;2
+BlockStat;31;  64;  64;32;64;QT_Depth;1
+BlockStat;31;  64;  64;32;64;BT_Depth;1
+BlockStat;31;  64;  64;32;64;MT_Depth;1
+BlockStat;31;  64;  64;32;64;ChromaQPAdj;0
+BlockStat;31;  64;  64;32;64;QP;41
+BlockStat;31;  64;  64;32;64;SplitSeries;97
+BlockStat;31;  64;  64;32;64;SkipFlag;0
+BlockStat;31;  64;  64;32;64;PredMode;0
+BlockStat;31;  64;  64;32;64;MergeFlag;0
+BlockStat;31;  64;  64;32;64;InterDir;3
+BlockStat;31;  64;  64;32;64;AffineFlag;0
+BlockStat;31;  64;  64;32;64;MVPIdxL0;0
+BlockStat;31;  64;  64;32;64;RefIdxL0;1
+BlockStat;31;  64;  64;32;64;MVPIdxL1;1
+BlockStat;31;  64;  64;32;64;RefIdxL1;0
+BlockStat;31;  64;  64;32;64;MVDL0; -16;   0
+BlockStat;31;  64;  64;32;64;MVL0; -32;   0
+BlockStat;31;  64;  64;32;64;MVDL1;   0;   0
+BlockStat;31;  64;  64;32;64;MVL1;   0;   0
+BlockStat;31;  64;  64;32;64;IMVMode;2
+BlockStat;31;  64;  64;32;64;RootCbf;1
+BlockStat;31;  64;  64;32;64;Cbf_Y;1
+BlockStat;31;  64;  64;32;64;TransformSkipFlag_Y;0
+BlockStat;31;  64;  64;32;64;Cbf_Cb;0
+BlockStat;31;  64;  64;32;64;Cbf_Cr;0
+BlockStat;31;  96;  64;32;64;Depth;2
+BlockStat;31;  96;  64;32;64;QT_Depth;1
+BlockStat;31;  96;  64;32;64;BT_Depth;1
+BlockStat;31;  96;  64;32;64;MT_Depth;1
+BlockStat;31;  96;  64;32;64;ChromaQPAdj;0
+BlockStat;31;  96;  64;32;64;QP;41
+BlockStat;31;  96;  64;32;64;SplitSeries;97
+BlockStat;31;  96;  64;32;64;SkipFlag;0
+BlockStat;31;  96;  64;32;64;PredMode;0
+BlockStat;31;  96;  64;32;64;MergeFlag;0
+BlockStat;31;  96;  64;32;64;InterDir;1
+BlockStat;31;  96;  64;32;64;AffineFlag;0
+BlockStat;31;  96;  64;32;64;MVPIdxL0;1
+BlockStat;31;  96;  64;32;64;RefIdxL0;1
+BlockStat;31;  96;  64;32;64;MVDL0; -12;   6
+BlockStat;31;  96;  64;32;64;MVL0; -14;   6
+BlockStat;31;  96;  64;32;64;IMVMode;3
+BlockStat;31;  96;  64;32;64;RootCbf;1
+BlockStat;31;  96;  64;32;64;Cbf_Y;1
+BlockStat;31;  96;  64;32;64;TransformSkipFlag_Y;0
+BlockStat;31;  96;  64;32;64;Cbf_Cb;1
+BlockStat;31;  96;  64;32;64;Cbf_Cr;1
+BlockStat;31; 128;   0; 8;16;Depth;4
+BlockStat;31; 128;   0; 8;16;QT_Depth;1
+BlockStat;31; 128;   0; 8;16;BT_Depth;5
+BlockStat;31; 128;   0; 8;16;MT_Depth;3
+BlockStat;31; 128;   0; 8;16;ChromaQPAdj;0
+BlockStat;31; 128;   0; 8;16;QP;41
+BlockStat;31; 128;   0; 8;16;SplitSeries;136289
+BlockStat;31; 128;   0; 8;16;SkipFlag;0
+BlockStat;31; 128;   0; 8;16;PredMode;1
+BlockStat;31; 128;   0; 8;16;Luma_IntraMode;0
+BlockStat;31; 128;   0; 8;16;Chroma_IntraMode;67
+BlockStat;31; 128;   0; 8;16;MultiRefIdx;0
+BlockStat;31; 128;   0; 8;16;Cbf_Y;1
+BlockStat;31; 128;   0; 8;16;TransformSkipFlag_Y;2
+BlockStat;31; 128;   0; 8;16;Cbf_Cb;0
+BlockStat;31; 128;   0; 8;16;Cbf_Cr;0
+BlockStat;31; 128;  16; 8;32;Depth;4
+BlockStat;31; 128;  16; 8;32;QT_Depth;1
+BlockStat;31; 128;  16; 8;32;BT_Depth;4
+BlockStat;31; 128;  16; 8;32;MT_Depth;3
+BlockStat;31; 128;  16; 8;32;ChromaQPAdj;0
+BlockStat;31; 128;  16; 8;32;QP;41
+BlockStat;31; 128;  16; 8;32;SplitSeries;136289
+BlockStat;31; 128;  16; 8;32;SkipFlag;0
+BlockStat;31; 128;  16; 8;32;PredMode;0
+BlockStat;31; 128;  16; 8;32;MergeFlag;1
+BlockStat;31; 128;  16; 8;32;MergeIdx;0
+BlockStat;31; 128;  16; 8;32;MergeType;0
+BlockStat;31; 128;  16; 8;32;MMVDMergeFlag;0
+BlockStat;31; 128;  16; 8;32;AffineFlag;0
+BlockStat;31; 128;  16; 8;32;MHIntraFlag;1
+BlockStat;31; 128;  16; 8;32;Luma_IntraMode;0
+BlockStat;31; 128;  16; 8;32;Chroma_IntraMode;70
+BlockStat;31; 128;  16; 8;32;MVPIdxL0;255
+BlockStat;31; 128;  16; 8;32;RefIdxL0;0
+BlockStat;31; 128;  16; 8;32;MVPIdxL1;255
+BlockStat;31; 128;  16; 8;32;RefIdxL1;1
+BlockStat;31; 128;  16; 8;32;MVDL0;   0;   0
+BlockStat;31; 128;  16; 8;32;MVL0;   0;  -6
+BlockStat;31; 128;  16; 8;32;MVDL1;   0;   0
+BlockStat;31; 128;  16; 8;32;MVL1;  -2;   0
+BlockStat;31; 128;  16; 8;32;Cbf_Y;1
+BlockStat;31; 128;  16; 8;32;TransformSkipFlag_Y;0
+BlockStat;31; 128;  16; 8;32;Cbf_Cb;0
+BlockStat;31; 128;  16; 8;32;Cbf_Cr;0
+BlockStat;31; 128;  48; 8;16;Depth;4
+BlockStat;31; 128;  48; 8;16;QT_Depth;1
+BlockStat;31; 128;  48; 8;16;BT_Depth;5
+BlockStat;31; 128;  48; 8;16;MT_Depth;3
+BlockStat;31; 128;  48; 8;16;ChromaQPAdj;0
+BlockStat;31; 128;  48; 8;16;QP;41
+BlockStat;31; 128;  48; 8;16;SplitSeries;136289
+BlockStat;31; 128;  48; 8;16;SkipFlag;0
+BlockStat;31; 128;  48; 8;16;PredMode;0
+BlockStat;31; 128;  48; 8;16;MergeFlag;1
+BlockStat;31; 128;  48; 8;16;MergeIdx;0
+BlockStat;31; 128;  48; 8;16;MergeType;0
+BlockStat;31; 128;  48; 8;16;MMVDMergeFlag;0
+BlockStat;31; 128;  48; 8;16;AffineFlag;1
+BlockStat;31; 128;  48; 8;16;MVPIdxL0;0
+BlockStat;31; 128;  48; 8;16;RefIdxL0;0
+BlockStat;31; 128;  48; 8;16;AffineMVL0;   0;  -5;   0;  -5;  -1;   0
+BlockStat;31; 128;  48; 8;16;Cbf_Y;1
+BlockStat;31; 128;  48; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 128;  48; 8;16;Cbf_Cb;0
+BlockStat;31; 128;  48; 8;16;Cbf_Cr;0
+BlockStat;31; 136;   0;16;64;Depth;3
+BlockStat;31; 136;   0;16;64;QT_Depth;1
+BlockStat;31; 136;   0;16;64;BT_Depth;2
+BlockStat;31; 136;   0;16;64;MT_Depth;2
+BlockStat;31; 136;   0;16;64;ChromaQPAdj;0
+BlockStat;31; 136;   0;16;64;QP;41
+BlockStat;31; 136;   0;16;64;SplitSeries;5217
+BlockStat;31; 136;   0;16;64;SkipFlag;0
+BlockStat;31; 136;   0;16;64;PredMode;0
+BlockStat;31; 136;   0;16;64;MergeFlag;0
+BlockStat;31; 136;   0;16;64;InterDir;3
+BlockStat;31; 136;   0;16;64;AffineFlag;0
+BlockStat;31; 136;   0;16;64;MVPIdxL0;0
+BlockStat;31; 136;   0;16;64;RefIdxL0;0
+BlockStat;31; 136;   0;16;64;MVPIdxL1;0
+BlockStat;31; 136;   0;16;64;RefIdxL1;0
+BlockStat;31; 136;   0;16;64;MVDL0;  32;-240
+BlockStat;31; 136;   0;16;64;MVL0;  32;-240
+BlockStat;31; 136;   0;16;64;MVDL1;   0;   0
+BlockStat;31; 136;   0;16;64;MVL1;   0;   0
+BlockStat;31; 136;   0;16;64;IMVMode;2
+BlockStat;31; 136;   0;16;64;RootCbf;1
+BlockStat;31; 136;   0;16;64;Cbf_Y;1
+BlockStat;31; 136;   0;16;64;TransformSkipFlag_Y;0
+BlockStat;31; 136;   0;16;64;Cbf_Cb;1
+BlockStat;31; 136;   0;16;64;Cbf_Cr;0
+BlockStat;31; 152;   0; 8;64;Depth;3
+BlockStat;31; 152;   0; 8;64;QT_Depth;1
+BlockStat;31; 152;   0; 8;64;BT_Depth;3
+BlockStat;31; 152;   0; 8;64;MT_Depth;2
+BlockStat;31; 152;   0; 8;64;ChromaQPAdj;0
+BlockStat;31; 152;   0; 8;64;QP;41
+BlockStat;31; 152;   0; 8;64;SplitSeries;5217
+BlockStat;31; 152;   0; 8;64;SkipFlag;1
+BlockStat;31; 152;   0; 8;64;MMVDSkipFlag;0
+BlockStat;31; 152;   0; 8;64;PredMode;0
+BlockStat;31; 152;   0; 8;64;MergeIdx;0
+BlockStat;31; 152;   0; 8;64;MergeType;1
+BlockStat;31; 152;   0; 8;64;MMVDMergeFlag;0
+BlockStat;31; 152;   0; 8;64;AffineFlag;1
+BlockStat;31; 152;   0; 8;64;MVPIdxL0;255
+BlockStat;31; 152;   0; 8;64;RefIdxL0;0
+BlockStat;31; 152;   0; 8;64;MVPIdxL1;255
+BlockStat;31; 152;   0; 8;64;RefIdxL1;0
+BlockStat;31; 152;   0; 8;64;AffineMVL0;   1;  -1;   1;  -1;   1;  -1
+BlockStat;31; 152;   0; 8;64;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 160;   0;32;32;Depth;3
+BlockStat;31; 160;   0;32;32;QT_Depth;1
+BlockStat;31; 160;   0;32;32;BT_Depth;2
+BlockStat;31; 160;   0;32;32;MT_Depth;2
+BlockStat;31; 160;   0;32;32;ChromaQPAdj;0
+BlockStat;31; 160;   0;32;32;QP;41
+BlockStat;31; 160;   0;32;32;SplitSeries;2145
+BlockStat;31; 160;   0;32;32;SkipFlag;0
+BlockStat;31; 160;   0;32;32;PredMode;0
+BlockStat;31; 160;   0;32;32;MergeFlag;0
+BlockStat;31; 160;   0;32;32;InterDir;1
+BlockStat;31; 160;   0;32;32;AffineFlag;1
+BlockStat;31; 160;   0;32;32;AffineType;0
+BlockStat;31; 160;   0;32;32;MVPIdxL0;0
+BlockStat;31; 160;   0;32;32;RefIdxL0;1
+BlockStat;31; 160;   0;32;32;AffineMVL0;   1;  -2;   2;  -2;   1;  -1
+BlockStat;31; 160;   0;32;32;RootCbf;0
+BlockStat;31; 160;  32; 8;32;Depth;4
+BlockStat;31; 160;  32; 8;32;QT_Depth;1
+BlockStat;31; 160;  32; 8;32;BT_Depth;4
+BlockStat;31; 160;  32; 8;32;MT_Depth;3
+BlockStat;31; 160;  32; 8;32;ChromaQPAdj;0
+BlockStat;31; 160;  32; 8;32;QP;41
+BlockStat;31; 160;  32; 8;32;SplitSeries;165985
+BlockStat;31; 160;  32; 8;32;SkipFlag;1
+BlockStat;31; 160;  32; 8;32;MMVDSkipFlag;0
+BlockStat;31; 160;  32; 8;32;PredMode;0
+BlockStat;31; 160;  32; 8;32;MergeIdx;1
+BlockStat;31; 160;  32; 8;32;MergeType;0
+BlockStat;31; 160;  32; 8;32;MMVDMergeFlag;0
+BlockStat;31; 160;  32; 8;32;AffineFlag;0
+BlockStat;31; 160;  32; 8;32;MVPIdxL0;255
+BlockStat;31; 160;  32; 8;32;RefIdxL0;1
+BlockStat;31; 160;  32; 8;32;MVDL0;   0;   0
+BlockStat;31; 160;  32; 8;32;MVL0;   1;  -1
+BlockStat;31; 168;  32;16;32;Depth;4
+BlockStat;31; 168;  32;16;32;QT_Depth;1
+BlockStat;31; 168;  32;16;32;BT_Depth;3
+BlockStat;31; 168;  32;16;32;MT_Depth;3
+BlockStat;31; 168;  32;16;32;ChromaQPAdj;0
+BlockStat;31; 168;  32;16;32;QP;41
+BlockStat;31; 168;  32;16;32;SplitSeries;165985
+BlockStat;31; 168;  32;16;32;SkipFlag;0
+BlockStat;31; 168;  32;16;32;PredMode;0
+BlockStat;31; 168;  32;16;32;MergeFlag;1
+BlockStat;31; 168;  32;16;32;MergeIdx;1
+BlockStat;31; 168;  32;16;32;MergeType;0
+BlockStat;31; 168;  32;16;32;MMVDMergeFlag;0
+BlockStat;31; 168;  32;16;32;AffineFlag;1
+BlockStat;31; 168;  32;16;32;MVPIdxL0;0
+BlockStat;31; 168;  32;16;32;RefIdxL0;1
+BlockStat;31; 168;  32;16;32;AffineMVL0;   1;  -1;   2;  -1;   1;   0
+BlockStat;31; 168;  32;16;16;Cbf_Y;0
+BlockStat;31; 168;  32;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 168;  32;16;16;Cbf_Cb;0
+BlockStat;31; 168;  32;16;16;Cbf_Cr;0
+BlockStat;31; 168;  48;16;16;Cbf_Y;2
+BlockStat;31; 168;  48;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 168;  48;16;16;Cbf_Cb;0
+BlockStat;31; 168;  48;16;16;Cbf_Cr;0
+BlockStat;31; 184;  32; 8;32;Depth;4
+BlockStat;31; 184;  32; 8;32;QT_Depth;1
+BlockStat;31; 184;  32; 8;32;BT_Depth;4
+BlockStat;31; 184;  32; 8;32;MT_Depth;3
+BlockStat;31; 184;  32; 8;32;ChromaQPAdj;0
+BlockStat;31; 184;  32; 8;32;QP;41
+BlockStat;31; 184;  32; 8;32;SplitSeries;165985
+BlockStat;31; 184;  32; 8;32;SkipFlag;1
+BlockStat;31; 184;  32; 8;32;MMVDSkipFlag;0
+BlockStat;31; 184;  32; 8;32;PredMode;0
+BlockStat;31; 184;  32; 8;32;MergeIdx;0
+BlockStat;31; 184;  32; 8;32;MergeType;1
+BlockStat;31; 184;  32; 8;32;MMVDMergeFlag;0
+BlockStat;31; 184;  32; 8;32;AffineFlag;1
+BlockStat;31; 184;  32; 8;32;MVPIdxL0;255
+BlockStat;31; 184;  32; 8;32;RefIdxL0;0
+BlockStat;31; 184;  32; 8;32;MVPIdxL1;255
+BlockStat;31; 184;  32; 8;32;RefIdxL1;0
+BlockStat;31; 184;  32; 8;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 184;  32; 8;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;   0;32;32;Depth;3
+BlockStat;31; 192;   0;32;32;QT_Depth;1
+BlockStat;31; 192;   0;32;32;BT_Depth;2
+BlockStat;31; 192;   0;32;32;MT_Depth;2
+BlockStat;31; 192;   0;32;32;ChromaQPAdj;0
+BlockStat;31; 192;   0;32;32;QP;41
+BlockStat;31; 192;   0;32;32;SplitSeries;2145
+BlockStat;31; 192;   0;32;32;SkipFlag;0
+BlockStat;31; 192;   0;32;32;PredMode;0
+BlockStat;31; 192;   0;32;32;MergeFlag;1
+BlockStat;31; 192;   0;32;32;MergeIdx;0
+BlockStat;31; 192;   0;32;32;MergeType;1
+BlockStat;31; 192;   0;32;32;MMVDMergeFlag;0
+BlockStat;31; 192;   0;32;32;AffineFlag;1
+BlockStat;31; 192;   0;32;32;MVPIdxL0;255
+BlockStat;31; 192;   0;32;32;RefIdxL0;0
+BlockStat;31; 192;   0;32;32;MVPIdxL1;255
+BlockStat;31; 192;   0;32;32;RefIdxL1;0
+BlockStat;31; 192;   0;32;32;AffineMVL0;   1;  -1;   1;  -1;   1;  -1
+BlockStat;31; 192;   0;32;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;   0;16;32;Cbf_Y;2
+BlockStat;31; 192;   0;16;32;TransformSkipFlag_Y;0
+BlockStat;31; 192;   0;16;32;Cbf_Cb;0
+BlockStat;31; 192;   0;16;32;Cbf_Cr;0
+BlockStat;31; 208;   0;16;32;Cbf_Y;0
+BlockStat;31; 208;   0;16;32;TransformSkipFlag_Y;0
+BlockStat;31; 208;   0;16;32;Cbf_Cb;0
+BlockStat;31; 208;   0;16;32;Cbf_Cr;0
+BlockStat;31; 192;  32;16;32;Depth;4
+BlockStat;31; 192;  32;16;32;QT_Depth;1
+BlockStat;31; 192;  32;16;32;BT_Depth;3
+BlockStat;31; 192;  32;16;32;MT_Depth;3
+BlockStat;31; 192;  32;16;32;ChromaQPAdj;0
+BlockStat;31; 192;  32;16;32;QP;41
+BlockStat;31; 192;  32;16;32;SplitSeries;100449
+BlockStat;31; 192;  32;16;32;SkipFlag;1
+BlockStat;31; 192;  32;16;32;MMVDSkipFlag;0
+BlockStat;31; 192;  32;16;32;PredMode;0
+BlockStat;31; 192;  32;16;32;MergeIdx;0
+BlockStat;31; 192;  32;16;32;MergeType;0
+BlockStat;31; 192;  32;16;32;MMVDMergeFlag;0
+BlockStat;31; 192;  32;16;32;AffineFlag;0
+BlockStat;31; 192;  32;16;32;MVPIdxL0;255
+BlockStat;31; 192;  32;16;32;RefIdxL0;0
+BlockStat: POC 31 @( 192,  32) [16x32] TrianglePartitioning={   0,   0,  16,  32}
+BlockStat: POC 31 @[(192, 32)--(208, 32)--(208, 64)--] TriangleMVL0={   2,  -1}
+BlockStat: POC 31 @[(192, 32)--(192, 64)--(208, 64)--] TriangleMVL0={   0,   0}
+BlockStat;31; 208;  32;16;32;Depth;4
+BlockStat;31; 208;  32;16;32;QT_Depth;1
+BlockStat;31; 208;  32;16;32;BT_Depth;3
+BlockStat;31; 208;  32;16;32;MT_Depth;3
+BlockStat;31; 208;  32;16;32;ChromaQPAdj;0
+BlockStat;31; 208;  32;16;32;QP;41
+BlockStat;31; 208;  32;16;32;SplitSeries;100449
+BlockStat;31; 208;  32;16;32;SkipFlag;0
+BlockStat;31; 208;  32;16;32;PredMode;0
+BlockStat;31; 208;  32;16;32;MergeFlag;1
+BlockStat;31; 208;  32;16;32;MergeIdx;2
+BlockStat;31; 208;  32;16;32;MergeType;0
+BlockStat;31; 208;  32;16;32;MMVDMergeFlag;0
+BlockStat;31; 208;  32;16;32;AffineFlag;1
+BlockStat;31; 208;  32;16;32;MVPIdxL0;0
+BlockStat;31; 208;  32;16;32;RefIdxL0;0
+BlockStat;31; 208;  32;16;32;MVPIdxL1;0
+BlockStat;31; 208;  32;16;32;RefIdxL1;0
+BlockStat;31; 208;  32;16;32;AffineMVL0;   1;  -1;   1;  -1;   4;   3
+BlockStat;31; 208;  32;16;32;AffineMVL1;   0;   0;   0;   0;   4;   3
+BlockStat;31; 208;  32; 8;32;Cbf_Y;2
+BlockStat;31; 208;  32; 8;32;TransformSkipFlag_Y;0
+BlockStat;31; 208;  32; 8;32;Cbf_Cb;0
+BlockStat;31; 208;  32; 8;32;Cbf_Cr;0
+BlockStat;31; 216;  32; 8;32;Cbf_Y;0
+BlockStat;31; 216;  32; 8;32;TransformSkipFlag_Y;0
+BlockStat;31; 216;  32; 8;32;Cbf_Cb;0
+BlockStat;31; 216;  32; 8;32;Cbf_Cr;0
+BlockStat;31; 224;   0;32;64;Depth;2
+BlockStat;31; 224;   0;32;64;QT_Depth;1
+BlockStat;31; 224;   0;32;64;BT_Depth;1
+BlockStat;31; 224;   0;32;64;MT_Depth;1
+BlockStat;31; 224;   0;32;64;ChromaQPAdj;0
+BlockStat;31; 224;   0;32;64;QP;41
+BlockStat;31; 224;   0;32;64;SplitSeries;97
+BlockStat;31; 224;   0;32;64;SkipFlag;1
+BlockStat;31; 224;   0;32;64;MMVDSkipFlag;0
+BlockStat;31; 224;   0;32;64;PredMode;0
+BlockStat;31; 224;   0;32;64;MergeIdx;11
+BlockStat;31; 224;   0;32;64;MergeType;0
+BlockStat;31; 224;   0;32;64;MMVDMergeFlag;1
+BlockStat;31; 224;   0;32;64;MMVDMergeIdx;11
+BlockStat;31; 224;   0;32;64;MVPIdxL0;255
+BlockStat;31; 224;   0;32;64;RefIdxL0;0
+BlockStat;31; 224;   0;32;64;MVPIdxL1;255
+BlockStat;31; 224;   0;32;64;RefIdxL1;0
+BlockStat;31; 224;   0;32;64;MVDL0;   0;   0
+BlockStat;31; 224;   0;32;64;MVL0;   4;  -1
+BlockStat;31; 224;   0;32;64;MVDL1;   0;   0
+BlockStat;31; 224;   0;32;64;MVL1;   4;  -1
+BlockStat;31; 128;  64; 8;32;Depth;4
+BlockStat;31; 128;  64; 8;32;QT_Depth;1
+BlockStat;31; 128;  64; 8;32;BT_Depth;4
+BlockStat;31; 128;  64; 8;32;MT_Depth;3
+BlockStat;31; 128;  64; 8;32;ChromaQPAdj;0
+BlockStat;31; 128;  64; 8;32;QP;41
+BlockStat;31; 128;  64; 8;32;SplitSeries;166977
+BlockStat;31; 128;  64; 8;32;SkipFlag;0
+BlockStat;31; 128;  64; 8;32;PredMode;0
+BlockStat;31; 128;  64; 8;32;MergeFlag;1
+BlockStat;31; 128;  64; 8;32;MergeIdx;0
+BlockStat;31; 128;  64; 8;32;MergeType;0
+BlockStat;31; 128;  64; 8;32;MMVDMergeFlag;0
+BlockStat;31; 128;  64; 8;32;AffineFlag;0
+BlockStat;31; 128;  64; 8;32;MHIntraFlag;1
+BlockStat;31; 128;  64; 8;32;Luma_IntraMode;0
+BlockStat;31; 128;  64; 8;32;Chroma_IntraMode;70
+BlockStat;31; 128;  64; 8;32;MVPIdxL0;255
+BlockStat;31; 128;  64; 8;32;RefIdxL0;1
+BlockStat;31; 128;  64; 8;32;MVDL0;   0;   0
+BlockStat;31; 128;  64; 8;32;MVL0; -14;   6
+BlockStat;31; 128;  64; 8;32;Cbf_Y;1
+BlockStat;31; 128;  64; 8;32;TransformSkipFlag_Y;0
+BlockStat;31; 128;  64; 8;32;Cbf_Cb;0
+BlockStat;31; 128;  64; 8;32;Cbf_Cr;0
+BlockStat;31; 136;  64;16;32;Depth;4
+BlockStat;31; 136;  64;16;32;QT_Depth;1
+BlockStat;31; 136;  64;16;32;BT_Depth;3
+BlockStat;31; 136;  64;16;32;MT_Depth;3
+BlockStat;31; 136;  64;16;32;ChromaQPAdj;0
+BlockStat;31; 136;  64;16;32;QP;41
+BlockStat;31; 136;  64;16;32;SplitSeries;166977
+BlockStat;31; 136;  64;16;32;SkipFlag;0
+BlockStat;31; 136;  64;16;32;PredMode;0
+BlockStat;31; 136;  64;16;32;MergeFlag;0
+BlockStat;31; 136;  64;16;32;InterDir;3
+BlockStat;31; 136;  64;16;32;AffineFlag;0
+BlockStat;31; 136;  64;16;32;MVPIdxL0;0
+BlockStat;31; 136;  64;16;32;RefIdxL0;0
+BlockStat;31; 136;  64;16;32;MVPIdxL1;0
+BlockStat;31; 136;  64;16;32;RefIdxL1;0
+BlockStat;31; 136;  64;16;32;MVDL0;  -6;   2
+BlockStat;31; 136;  64;16;32;MVL0;  -6;   2
+BlockStat;31; 136;  64;16;32;MVDL1;   0;   0
+BlockStat;31; 136;  64;16;32;MVL1;   0;   0
+BlockStat;31; 136;  64;16;32;IMVMode;3
+BlockStat;31; 136;  64;16;32;RootCbf;0
+BlockStat;31; 152;  64; 8;32;Depth;4
+BlockStat;31; 152;  64; 8;32;QT_Depth;1
+BlockStat;31; 152;  64; 8;32;BT_Depth;4
+BlockStat;31; 152;  64; 8;32;MT_Depth;3
+BlockStat;31; 152;  64; 8;32;ChromaQPAdj;0
+BlockStat;31; 152;  64; 8;32;QP;41
+BlockStat;31; 152;  64; 8;32;SplitSeries;166977
+BlockStat;31; 152;  64; 8;32;SkipFlag;1
+BlockStat;31; 152;  64; 8;32;MMVDSkipFlag;0
+BlockStat;31; 152;  64; 8;32;PredMode;0
+BlockStat;31; 152;  64; 8;32;MergeIdx;0
+BlockStat;31; 152;  64; 8;32;MergeType;1
+BlockStat;31; 152;  64; 8;32;MMVDMergeFlag;0
+BlockStat;31; 152;  64; 8;32;AffineFlag;1
+BlockStat;31; 152;  64; 8;32;MVPIdxL0;255
+BlockStat;31; 152;  64; 8;32;RefIdxL0;0
+BlockStat;31; 152;  64; 8;32;MVPIdxL1;255
+BlockStat;31; 152;  64; 8;32;RefIdxL1;0
+BlockStat;31; 152;  64; 8;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 152;  64; 8;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 160;  64;16;32;Depth;4
+BlockStat;31; 160;  64;16;32;QT_Depth;1
+BlockStat;31; 160;  64;16;32;BT_Depth;3
+BlockStat;31; 160;  64;16;32;MT_Depth;3
+BlockStat;31; 160;  64;16;32;ChromaQPAdj;0
+BlockStat;31; 160;  64;16;32;QP;41
+BlockStat;31; 160;  64;16;32;SplitSeries;101441
+BlockStat;31; 160;  64;16;32;SkipFlag;1
+BlockStat;31; 160;  64;16;32;MMVDSkipFlag;0
+BlockStat;31; 160;  64;16;32;PredMode;0
+BlockStat;31; 160;  64;16;32;MergeIdx;0
+BlockStat;31; 160;  64;16;32;MergeType;1
+BlockStat;31; 160;  64;16;32;MMVDMergeFlag;0
+BlockStat;31; 160;  64;16;32;AffineFlag;1
+BlockStat;31; 160;  64;16;32;MVPIdxL0;255
+BlockStat;31; 160;  64;16;32;RefIdxL0;0
+BlockStat;31; 160;  64;16;32;MVPIdxL1;255
+BlockStat;31; 160;  64;16;32;RefIdxL1;0
+BlockStat;31; 160;  64;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 160;  64;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 176;  64;16;32;Depth;4
+BlockStat;31; 176;  64;16;32;QT_Depth;1
+BlockStat;31; 176;  64;16;32;BT_Depth;3
+BlockStat;31; 176;  64;16;32;MT_Depth;3
+BlockStat;31; 176;  64;16;32;ChromaQPAdj;0
+BlockStat;31; 176;  64;16;32;QP;41
+BlockStat;31; 176;  64;16;32;SplitSeries;101441
+BlockStat;31; 176;  64;16;32;SkipFlag;0
+BlockStat;31; 176;  64;16;32;PredMode;0
+BlockStat;31; 176;  64;16;32;MergeFlag;1
+BlockStat;31; 176;  64;16;32;MergeIdx;0
+BlockStat;31; 176;  64;16;32;MergeType;1
+BlockStat;31; 176;  64;16;32;MMVDMergeFlag;0
+BlockStat;31; 176;  64;16;32;AffineFlag;1
+BlockStat;31; 176;  64;16;32;MVPIdxL0;255
+BlockStat;31; 176;  64;16;32;RefIdxL0;0
+BlockStat;31; 176;  64;16;32;MVPIdxL1;255
+BlockStat;31; 176;  64;16;32;RefIdxL1;0
+BlockStat;31; 176;  64;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 176;  64;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 176;  64;16;16;Cbf_Y;2
+BlockStat;31; 176;  64;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 176;  64;16;16;Cbf_Cb;0
+BlockStat;31; 176;  64;16;16;Cbf_Cr;0
+BlockStat;31; 176;  80;16;16;Cbf_Y;0
+BlockStat;31; 176;  80;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 176;  80;16;16;Cbf_Cb;0
+BlockStat;31; 176;  80;16;16;Cbf_Cr;0
+BlockStat;31; 128;  96;16;16;Depth;4
+BlockStat;31; 128;  96;16;16;QT_Depth;1
+BlockStat;31; 128;  96;16;16;BT_Depth;4
+BlockStat;31; 128;  96;16;16;MT_Depth;3
+BlockStat;31; 128;  96;16;16;ChromaQPAdj;0
+BlockStat;31; 128;  96;16;16;QP;41
+BlockStat;31; 128;  96;16;16;SplitSeries;70721
+BlockStat;31; 128;  96;16;16;SkipFlag;0
+BlockStat;31; 128;  96;16;16;PredMode;0
+BlockStat;31; 128;  96;16;16;MergeFlag;1
+BlockStat;31; 128;  96;16;16;MergeIdx;1
+BlockStat;31; 128;  96;16;16;MergeType;0
+BlockStat;31; 128;  96;16;16;MMVDMergeFlag;0
+BlockStat;31; 128;  96;16;16;AffineFlag;0
+BlockStat;31; 128;  96;16;16;MHIntraFlag;1
+BlockStat;31; 128;  96;16;16;Luma_IntraMode;0
+BlockStat;31; 128;  96;16;16;Chroma_IntraMode;70
+BlockStat;31; 128;  96;16;16;MVPIdxL0;255
+BlockStat;31; 128;  96;16;16;RefIdxL0;0
+BlockStat;31; 128;  96;16;16;MVPIdxL1;255
+BlockStat;31; 128;  96;16;16;RefIdxL1;0
+BlockStat;31; 128;  96;16;16;MVDL0;   0;   0
+BlockStat;31; 128;  96;16;16;MVL0;  -6;   2
+BlockStat;31; 128;  96;16;16;MVDL1;   0;   0
+BlockStat;31; 128;  96;16;16;MVL1;   0;   0
+BlockStat;31; 128;  96;16;16;Cbf_Y;1
+BlockStat;31; 128;  96;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 128;  96;16;16;Cbf_Cb;0
+BlockStat;31; 128;  96;16;16;Cbf_Cr;0
+BlockStat;31; 128; 112;16;16;Depth;4
+BlockStat;31; 128; 112;16;16;QT_Depth;1
+BlockStat;31; 128; 112;16;16;BT_Depth;4
+BlockStat;31; 128; 112;16;16;MT_Depth;3
+BlockStat;31; 128; 112;16;16;ChromaQPAdj;0
+BlockStat;31; 128; 112;16;16;QP;41
+BlockStat;31; 128; 112;16;16;SplitSeries;70721
+BlockStat;31; 128; 112;16;16;SkipFlag;0
+BlockStat;31; 128; 112;16;16;PredMode;1
+BlockStat;31; 128; 112;16;16;Luma_IntraMode;36
+BlockStat;31; 128; 112;16;16;Chroma_IntraMode;36
+BlockStat;31; 128; 112;16;16;MultiRefIdx;0
+BlockStat;31; 128; 112;16;16;Cbf_Y;1
+BlockStat;31; 128; 112;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 128; 112;16;16;Cbf_Cb;1
+BlockStat;31; 128; 112;16;16;Cbf_Cr;0
+BlockStat;31; 144;  96; 8;32;Depth;4
+BlockStat;31; 144;  96; 8;32;QT_Depth;1
+BlockStat;31; 144;  96; 8;32;BT_Depth;4
+BlockStat;31; 144;  96; 8;32;MT_Depth;3
+BlockStat;31; 144;  96; 8;32;ChromaQPAdj;0
+BlockStat;31; 144;  96; 8;32;QP;41
+BlockStat;31; 144;  96; 8;32;SplitSeries;169025
+BlockStat;31; 144;  96; 8;32;SkipFlag;0
+BlockStat;31; 144;  96; 8;32;PredMode;0
+BlockStat;31; 144;  96; 8;32;MergeFlag;1
+BlockStat;31; 144;  96; 8;32;MergeIdx;1
+BlockStat;31; 144;  96; 8;32;MergeType;0
+BlockStat;31; 144;  96; 8;32;MMVDMergeFlag;0
+BlockStat;31; 144;  96; 8;32;AffineFlag;0
+BlockStat;31; 144;  96; 8;32;MHIntraFlag;1
+BlockStat;31; 144;  96; 8;32;Luma_IntraMode;0
+BlockStat;31; 144;  96; 8;32;Chroma_IntraMode;70
+BlockStat;31; 144;  96; 8;32;MVPIdxL0;255
+BlockStat;31; 144;  96; 8;32;RefIdxL0;0
+BlockStat;31; 144;  96; 8;32;MVPIdxL1;255
+BlockStat;31; 144;  96; 8;32;RefIdxL1;0
+BlockStat;31; 144;  96; 8;32;MVDL0;   0;   0
+BlockStat;31; 144;  96; 8;32;MVL0;   0;   0
+BlockStat;31; 144;  96; 8;32;MVDL1;   0;   0
+BlockStat;31; 144;  96; 8;32;MVL1;   0;   0
+BlockStat;31; 144;  96; 8;32;Cbf_Y;1
+BlockStat;31; 144;  96; 8;32;TransformSkipFlag_Y;0
+BlockStat;31; 144;  96; 8;32;Cbf_Cb;0
+BlockStat;31; 144;  96; 8;32;Cbf_Cr;0
+BlockStat;31; 152;  96;16;32;Depth;4
+BlockStat;31; 152;  96;16;32;QT_Depth;1
+BlockStat;31; 152;  96;16;32;BT_Depth;3
+BlockStat;31; 152;  96;16;32;MT_Depth;3
+BlockStat;31; 152;  96;16;32;ChromaQPAdj;0
+BlockStat;31; 152;  96;16;32;QP;41
+BlockStat;31; 152;  96;16;32;SplitSeries;169025
+BlockStat;31; 152;  96;16;32;SkipFlag;1
+BlockStat;31; 152;  96;16;32;MMVDSkipFlag;0
+BlockStat;31; 152;  96;16;32;PredMode;0
+BlockStat;31; 152;  96;16;32;MergeIdx;0
+BlockStat;31; 152;  96;16;32;MergeType;1
+BlockStat;31; 152;  96;16;32;MMVDMergeFlag;0
+BlockStat;31; 152;  96;16;32;AffineFlag;1
+BlockStat;31; 152;  96;16;32;MVPIdxL0;255
+BlockStat;31; 152;  96;16;32;RefIdxL0;0
+BlockStat;31; 152;  96;16;32;MVPIdxL1;255
+BlockStat;31; 152;  96;16;32;RefIdxL1;0
+BlockStat;31; 152;  96;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 152;  96;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 168;  96; 8;32;Depth;4
+BlockStat;31; 168;  96; 8;32;QT_Depth;1
+BlockStat;31; 168;  96; 8;32;BT_Depth;4
+BlockStat;31; 168;  96; 8;32;MT_Depth;3
+BlockStat;31; 168;  96; 8;32;ChromaQPAdj;0
+BlockStat;31; 168;  96; 8;32;QP;41
+BlockStat;31; 168;  96; 8;32;SplitSeries;169025
+BlockStat;31; 168;  96; 8;32;SkipFlag;1
+BlockStat;31; 168;  96; 8;32;MMVDSkipFlag;0
+BlockStat;31; 168;  96; 8;32;PredMode;0
+BlockStat;31; 168;  96; 8;32;MergeIdx;0
+BlockStat;31; 168;  96; 8;32;MergeType;1
+BlockStat;31; 168;  96; 8;32;MMVDMergeFlag;0
+BlockStat;31; 168;  96; 8;32;AffineFlag;1
+BlockStat;31; 168;  96; 8;32;MVPIdxL0;255
+BlockStat;31; 168;  96; 8;32;RefIdxL0;0
+BlockStat;31; 168;  96; 8;32;MVPIdxL1;255
+BlockStat;31; 168;  96; 8;32;RefIdxL1;0
+BlockStat;31; 168;  96; 8;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 168;  96; 8;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 176;  96;16;32;Depth;3
+BlockStat;31; 176;  96;16;32;QT_Depth;1
+BlockStat;31; 176;  96;16;32;BT_Depth;3
+BlockStat;31; 176;  96;16;32;MT_Depth;2
+BlockStat;31; 176;  96;16;32;ChromaQPAdj;0
+BlockStat;31; 176;  96;16;32;QP;41
+BlockStat;31; 176;  96;16;32;SplitSeries;5185
+BlockStat;31; 176;  96;16;32;SkipFlag;1
+BlockStat;31; 176;  96;16;32;MMVDSkipFlag;0
+BlockStat;31; 176;  96;16;32;PredMode;0
+BlockStat;31; 176;  96;16;32;MergeIdx;0
+BlockStat;31; 176;  96;16;32;MergeType;1
+BlockStat;31; 176;  96;16;32;MMVDMergeFlag;0
+BlockStat;31; 176;  96;16;32;AffineFlag;1
+BlockStat;31; 176;  96;16;32;MVPIdxL0;255
+BlockStat;31; 176;  96;16;32;RefIdxL0;0
+BlockStat;31; 176;  96;16;32;MVPIdxL1;255
+BlockStat;31; 176;  96;16;32;RefIdxL1;0
+BlockStat;31; 176;  96;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 176;  96;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;  64;16;32;Depth;3
+BlockStat;31; 192;  64;16;32;QT_Depth;2
+BlockStat;31; 192;  64;16;32;BT_Depth;1
+BlockStat;31; 192;  64;16;32;MT_Depth;1
+BlockStat;31; 192;  64;16;32;ChromaQPAdj;0
+BlockStat;31; 192;  64;16;32;QP;41
+BlockStat;31; 192;  64;16;32;SplitSeries;3105
+BlockStat;31; 192;  64;16;32;SkipFlag;0
+BlockStat;31; 192;  64;16;32;PredMode;0
+BlockStat;31; 192;  64;16;32;MergeFlag;1
+BlockStat;31; 192;  64;16;32;MergeIdx;0
+BlockStat;31; 192;  64;16;32;MergeType;1
+BlockStat;31; 192;  64;16;32;MMVDMergeFlag;0
+BlockStat;31; 192;  64;16;32;AffineFlag;1
+BlockStat;31; 192;  64;16;32;MVPIdxL0;255
+BlockStat;31; 192;  64;16;32;RefIdxL0;0
+BlockStat;31; 192;  64;16;32;MVPIdxL1;255
+BlockStat;31; 192;  64;16;32;RefIdxL1;0
+BlockStat;31; 192;  64;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;  64;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;  64;16;24;Cbf_Y;0
+BlockStat;31; 192;  64;16;24;TransformSkipFlag_Y;0
+BlockStat;31; 192;  64;16;24;Cbf_Cb;0
+BlockStat;31; 192;  64;16;24;Cbf_Cr;0
+BlockStat;31; 192;  88;16; 8;Cbf_Y;2
+BlockStat;31; 192;  88;16; 8;TransformSkipFlag_Y;0
+BlockStat;31; 192;  88;16; 8;Cbf_Cb;0
+BlockStat;31; 192;  88;16; 8;Cbf_Cr;0
+BlockStat;31; 208;  64; 8;32;Depth;4
+BlockStat;31; 208;  64; 8;32;QT_Depth;2
+BlockStat;31; 208;  64; 8;32;BT_Depth;2
+BlockStat;31; 208;  64; 8;32;MT_Depth;2
+BlockStat;31; 208;  64; 8;32;ChromaQPAdj;0
+BlockStat;31; 208;  64; 8;32;QP;41
+BlockStat;31; 208;  64; 8;32;SplitSeries;101409
+BlockStat;31; 208;  64; 8;32;SkipFlag;0
+BlockStat;31; 208;  64; 8;32;PredMode;0
+BlockStat;31; 208;  64; 8;32;MergeFlag;1
+BlockStat;31; 208;  64; 8;32;MergeIdx;0
+BlockStat;31; 208;  64; 8;32;MergeType;1
+BlockStat;31; 208;  64; 8;32;MMVDMergeFlag;0
+BlockStat;31; 208;  64; 8;32;AffineFlag;1
+BlockStat;31; 208;  64; 8;32;MVPIdxL0;255
+BlockStat;31; 208;  64; 8;32;RefIdxL0;0
+BlockStat;31; 208;  64; 8;32;MVPIdxL1;255
+BlockStat;31; 208;  64; 8;32;RefIdxL1;0
+BlockStat;31; 208;  64; 8;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 208;  64; 8;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 208;  64; 8; 8;Cbf_Y;2
+BlockStat;31; 208;  64; 8; 8;TransformSkipFlag_Y;0
+BlockStat;31; 208;  64; 8; 8;Cbf_Cb;0
+BlockStat;31; 208;  64; 8; 8;Cbf_Cr;0
+BlockStat;31; 208;  72; 8;24;Cbf_Y;0
+BlockStat;31; 208;  72; 8;24;TransformSkipFlag_Y;0
+BlockStat;31; 208;  72; 8;24;Cbf_Cb;0
+BlockStat;31; 208;  72; 8;24;Cbf_Cr;0
+BlockStat;31; 216;  64; 8;32;Depth;4
+BlockStat;31; 216;  64; 8;32;QT_Depth;2
+BlockStat;31; 216;  64; 8;32;BT_Depth;2
+BlockStat;31; 216;  64; 8;32;MT_Depth;2
+BlockStat;31; 216;  64; 8;32;ChromaQPAdj;0
+BlockStat;31; 216;  64; 8;32;QP;41
+BlockStat;31; 216;  64; 8;32;SplitSeries;101409
+BlockStat;31; 216;  64; 8;32;SkipFlag;1
+BlockStat;31; 216;  64; 8;32;MMVDSkipFlag;0
+BlockStat;31; 216;  64; 8;32;PredMode;0
+BlockStat;31; 216;  64; 8;32;MergeIdx;0
+BlockStat;31; 216;  64; 8;32;MergeType;1
+BlockStat;31; 216;  64; 8;32;MMVDMergeFlag;0
+BlockStat;31; 216;  64; 8;32;AffineFlag;1
+BlockStat;31; 216;  64; 8;32;MVPIdxL0;255
+BlockStat;31; 216;  64; 8;32;RefIdxL0;0
+BlockStat;31; 216;  64; 8;32;MVPIdxL1;255
+BlockStat;31; 216;  64; 8;32;RefIdxL1;0
+BlockStat;31; 216;  64; 8;32;AffineMVL0;   4;   3;   4;   3;   0;   0
+BlockStat;31; 216;  64; 8;32;AffineMVL1;   4;   3;   4;   3;   4;   0
+BlockStat;31; 224;  64;32;32;Depth;2
+BlockStat;31; 224;  64;32;32;QT_Depth;2
+BlockStat;31; 224;  64;32;32;BT_Depth;0
+BlockStat;31; 224;  64;32;32;MT_Depth;0
+BlockStat;31; 224;  64;32;32;ChromaQPAdj;0
+BlockStat;31; 224;  64;32;32;QP;41
+BlockStat;31; 224;  64;32;32;SplitSeries;33
+BlockStat;31; 224;  64;32;32;SkipFlag;1
+BlockStat;31; 224;  64;32;32;MMVDSkipFlag;0
+BlockStat;31; 224;  64;32;32;PredMode;0
+BlockStat;31; 224;  64;32;32;MergeIdx;38
+BlockStat;31; 224;  64;32;32;MergeType;0
+BlockStat;31; 224;  64;32;32;MMVDMergeFlag;1
+BlockStat;31; 224;  64;32;32;MMVDMergeIdx;38
+BlockStat;31; 224;  64;32;32;MVPIdxL0;255
+BlockStat;31; 224;  64;32;32;RefIdxL0;0
+BlockStat;31; 224;  64;32;32;MVPIdxL1;255
+BlockStat;31; 224;  64;32;32;RefIdxL1;0
+BlockStat;31; 224;  64;32;32;MVDL0;   0;   0
+BlockStat;31; 224;  64;32;32;MVL0;   4;   1
+BlockStat;31; 224;  64;32;32;MVDL1;   0;   0
+BlockStat;31; 224;  64;32;32;MVL1;   4;   1
+BlockStat;31; 192;  96;32;32;Depth;2
+BlockStat;31; 192;  96;32;32;QT_Depth;2
+BlockStat;31; 192;  96;32;32;BT_Depth;0
+BlockStat;31; 192;  96;32;32;MT_Depth;0
+BlockStat;31; 192;  96;32;32;ChromaQPAdj;0
+BlockStat;31; 192;  96;32;32;QP;41
+BlockStat;31; 192;  96;32;32;SplitSeries;33
+BlockStat;31; 192;  96;32;32;SkipFlag;1
+BlockStat;31; 192;  96;32;32;MMVDSkipFlag;0
+BlockStat;31; 192;  96;32;32;PredMode;0
+BlockStat;31; 192;  96;32;32;MergeIdx;0
+BlockStat;31; 192;  96;32;32;MergeType;1
+BlockStat;31; 192;  96;32;32;MMVDMergeFlag;0
+BlockStat;31; 192;  96;32;32;AffineFlag;1
+BlockStat;31; 192;  96;32;32;MVPIdxL0;255
+BlockStat;31; 192;  96;32;32;RefIdxL0;0
+BlockStat;31; 192;  96;32;32;MVPIdxL1;255
+BlockStat;31; 192;  96;32;32;RefIdxL1;0
+BlockStat;31; 192;  96;32;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192;  96;32;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 224;  96;16;16;Depth;4
+BlockStat;31; 224;  96;16;16;QT_Depth;2
+BlockStat;31; 224;  96;16;16;BT_Depth;2
+BlockStat;31; 224;  96;16;16;MT_Depth;2
+BlockStat;31; 224;  96;16;16;ChromaQPAdj;0
+BlockStat;31; 224;  96;16;16;QP;41
+BlockStat;31; 224;  96;16;16;SplitSeries;100385
+BlockStat;31; 224;  96;16;16;SkipFlag;0
+BlockStat;31; 224;  96;16;16;PredMode;0
+BlockStat;31; 224;  96;16;16;MergeFlag;0
+BlockStat;31; 224;  96;16;16;InterDir;1
+BlockStat;31; 224;  96;16;16;AffineFlag;1
+BlockStat;31; 224;  96;16;16;AffineType;0
+BlockStat;31; 224;  96;16;16;MVPIdxL0;1
+BlockStat;31; 224;  96;16;16;RefIdxL0;0
+BlockStat;31; 224;  96;16;16;AffineMVL0;  -5;  -1;  -8;  -1;  -5;  -4
+BlockStat;31; 224;  96;16;16;RootCbf;0
+BlockStat;31; 240;  96;16;16;Depth;4
+BlockStat;31; 240;  96;16;16;QT_Depth;2
+BlockStat;31; 240;  96;16;16;BT_Depth;2
+BlockStat;31; 240;  96;16;16;MT_Depth;2
+BlockStat;31; 240;  96;16;16;ChromaQPAdj;0
+BlockStat;31; 240;  96;16;16;QP;41
+BlockStat;31; 240;  96;16;16;SplitSeries;100385
+BlockStat;31; 240;  96;16;16;SkipFlag;1
+BlockStat;31; 240;  96;16;16;MMVDSkipFlag;0
+BlockStat;31; 240;  96;16;16;PredMode;0
+BlockStat;31; 240;  96;16;16;MergeIdx;5
+BlockStat;31; 240;  96;16;16;MergeType;0
+BlockStat;31; 240;  96;16;16;MMVDMergeFlag;0
+BlockStat;31; 240;  96;16;16;AffineFlag;0
+BlockStat;31; 240;  96;16;16;MVPIdxL0;255
+BlockStat;31; 240;  96;16;16;RefIdxL0;0
+BlockStat;31; 240;  96;16;16;MVPIdxL1;255
+BlockStat;31; 240;  96;16;16;RefIdxL1;0
+BlockStat;31; 240;  96;16;16;MVDL0;   0;   0
+BlockStat;31; 240;  96;16;16;MVL0;  -2;  -1
+BlockStat;31; 240;  96;16;16;MVDL1;   0;   0
+BlockStat;31; 240;  96;16;16;MVL1;   4;   1
+BlockStat;31; 224; 112;32;16;Depth;3
+BlockStat;31; 224; 112;32;16;QT_Depth;2
+BlockStat;31; 224; 112;32;16;BT_Depth;1
+BlockStat;31; 224; 112;32;16;MT_Depth;1
+BlockStat;31; 224; 112;32;16;ChromaQPAdj;0
+BlockStat;31; 224; 112;32;16;QP;41
+BlockStat;31; 224; 112;32;16;SplitSeries;2081
+BlockStat;31; 224; 112;32;16;SkipFlag;1
+BlockStat;31; 224; 112;32;16;MMVDSkipFlag;0
+BlockStat;31; 224; 112;32;16;PredMode;0
+BlockStat;31; 224; 112;32;16;MergeIdx;0
+BlockStat;31; 224; 112;32;16;MergeType;1
+BlockStat;31; 224; 112;32;16;MMVDMergeFlag;0
+BlockStat;31; 224; 112;32;16;AffineFlag;1
+BlockStat;31; 224; 112;32;16;MVPIdxL0;255
+BlockStat;31; 224; 112;32;16;RefIdxL0;0
+BlockStat;31; 224; 112;32;16;MVPIdxL1;255
+BlockStat;31; 224; 112;32;16;RefIdxL1;0
+BlockStat;31; 224; 112;32;16;AffineMVL0;   0;   0;   3;  -1;   0;   0
+BlockStat;31; 224; 112;32;16;AffineMVL1;   0;   0;   3;  -1;   0;   0
+BlockStat;31; 256;   0;64;64;Depth;1
+BlockStat;31; 256;   0;64;64;QT_Depth;1
+BlockStat;31; 256;   0;64;64;BT_Depth;0
+BlockStat;31; 256;   0;64;64;MT_Depth;0
+BlockStat;31; 256;   0;64;64;ChromaQPAdj;0
+BlockStat;31; 256;   0;64;64;QP;41
+BlockStat;31; 256;   0;64;64;SplitSeries;1
+BlockStat;31; 256;   0;64;64;SkipFlag;1
+BlockStat;31; 256;   0;64;64;MMVDSkipFlag;0
+BlockStat;31; 256;   0;64;64;PredMode;0
+BlockStat;31; 256;   0;64;64;MergeIdx;0
+BlockStat;31; 256;   0;64;64;MergeType;1
+BlockStat;31; 256;   0;64;64;MMVDMergeFlag;0
+BlockStat;31; 256;   0;64;64;AffineFlag;1
+BlockStat;31; 256;   0;64;64;MVPIdxL0;255
+BlockStat;31; 256;   0;64;64;RefIdxL0;0
+BlockStat;31; 256;   0;64;64;MVPIdxL1;255
+BlockStat;31; 256;   0;64;64;RefIdxL1;0
+BlockStat;31; 256;   0;64;64;AffineMVL0;   4;   2;   4;   2;   4;   2
+BlockStat;31; 256;   0;64;64;AffineMVL1;   4;   2;   4;   2;   4;   2
+BlockStat;31; 320;   0;16;64;Depth;2
+BlockStat;31; 320;   0;16;64;QT_Depth;1
+BlockStat;31; 320;   0;16;64;BT_Depth;2
+BlockStat;31; 320;   0;16;64;MT_Depth;1
+BlockStat;31; 320;   0;16;64;ChromaQPAdj;0
+BlockStat;31; 320;   0;16;64;QP;41
+BlockStat;31; 320;   0;16;64;SplitSeries;161
+BlockStat;31; 320;   0;16;64;SkipFlag;1
+BlockStat;31; 320;   0;16;64;MMVDSkipFlag;0
+BlockStat;31; 320;   0;16;64;PredMode;0
+BlockStat;31; 320;   0;16;64;MergeIdx;0
+BlockStat;31; 320;   0;16;64;MergeType;1
+BlockStat;31; 320;   0;16;64;MMVDMergeFlag;0
+BlockStat;31; 320;   0;16;64;AffineFlag;1
+BlockStat;31; 320;   0;16;64;MVPIdxL0;255
+BlockStat;31; 320;   0;16;64;RefIdxL0;0
+BlockStat;31; 320;   0;16;64;MVPIdxL1;255
+BlockStat;31; 320;   0;16;64;RefIdxL1;0
+BlockStat;31; 320;   0;16;64;AffineMVL0;   4;  -1;   4;  -1;   4;   2
+BlockStat;31; 320;   0;16;64;AffineMVL1;   4;  -1;   4;  -1;   4;   2
+BlockStat;31; 336;   0;32;64;Depth;2
+BlockStat;31; 336;   0;32;64;QT_Depth;1
+BlockStat;31; 336;   0;32;64;BT_Depth;1
+BlockStat;31; 336;   0;32;64;MT_Depth;1
+BlockStat;31; 336;   0;32;64;ChromaQPAdj;0
+BlockStat;31; 336;   0;32;64;QP;41
+BlockStat;31; 336;   0;32;64;SplitSeries;161
+BlockStat;31; 336;   0;32;64;SkipFlag;1
+BlockStat;31; 336;   0;32;64;MMVDSkipFlag;0
+BlockStat;31; 336;   0;32;64;PredMode;0
+BlockStat;31; 336;   0;32;64;MergeIdx;2
+BlockStat;31; 336;   0;32;64;MergeType;0
+BlockStat;31; 336;   0;32;64;MMVDMergeFlag;0
+BlockStat;31; 336;   0;32;64;AffineFlag;1
+BlockStat;31; 336;   0;32;64;MVPIdxL0;0
+BlockStat;31; 336;   0;32;64;RefIdxL0;0
+BlockStat;31; 336;   0;32;64;MVPIdxL1;0
+BlockStat;31; 336;   0;32;64;RefIdxL1;0
+BlockStat;31; 336;   0;32;64;AffineMVL0;   4;  -1;   5;  -1;   4;   1
+BlockStat;31; 336;   0;32;64;AffineMVL1;   4;  -1;   5;  -1;   4;   1
+BlockStat;31; 368;   0;16;16;Depth;3
+BlockStat;31; 368;   0;16;16;QT_Depth;1
+BlockStat;31; 368;   0;16;16;BT_Depth;4
+BlockStat;31; 368;   0;16;16;MT_Depth;2
+BlockStat;31; 368;   0;16;16;ChromaQPAdj;0
+BlockStat;31; 368;   0;16;16;QP;41
+BlockStat;31; 368;   0;16;16;SplitSeries;4257
+BlockStat;31; 368;   0;16;16;SkipFlag;1
+BlockStat;31; 368;   0;16;16;MMVDSkipFlag;0
+BlockStat;31; 368;   0;16;16;PredMode;0
+BlockStat;31; 368;   0;16;16;MergeIdx;0
+BlockStat;31; 368;   0;16;16;MergeType;1
+BlockStat;31; 368;   0;16;16;MMVDMergeFlag;0
+BlockStat;31; 368;   0;16;16;AffineFlag;1
+BlockStat;31; 368;   0;16;16;MVPIdxL0;255
+BlockStat;31; 368;   0;16;16;RefIdxL0;0
+BlockStat;31; 368;   0;16;16;MVPIdxL1;255
+BlockStat;31; 368;   0;16;16;RefIdxL1;0
+BlockStat;31; 368;   0;16;16;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;   0;16;16;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;  16;16; 8;Depth;4
+BlockStat;31; 368;  16;16; 8;QT_Depth;1
+BlockStat;31; 368;  16;16; 8;BT_Depth;5
+BlockStat;31; 368;  16;16; 8;MT_Depth;3
+BlockStat;31; 368;  16;16; 8;ChromaQPAdj;0
+BlockStat;31; 368;  16;16; 8;QP;41
+BlockStat;31; 368;  16;16; 8;SplitSeries;135329
+BlockStat;31; 368;  16;16; 8;SkipFlag;1
+BlockStat;31; 368;  16;16; 8;MMVDSkipFlag;0
+BlockStat;31; 368;  16;16; 8;PredMode;0
+BlockStat;31; 368;  16;16; 8;MergeIdx;0
+BlockStat;31; 368;  16;16; 8;MergeType;1
+BlockStat;31; 368;  16;16; 8;MMVDMergeFlag;0
+BlockStat;31; 368;  16;16; 8;AffineFlag;1
+BlockStat;31; 368;  16;16; 8;MVPIdxL0;255
+BlockStat;31; 368;  16;16; 8;RefIdxL0;0
+BlockStat;31; 368;  16;16; 8;MVPIdxL1;255
+BlockStat;31; 368;  16;16; 8;RefIdxL1;0
+BlockStat;31; 368;  16;16; 8;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;  16;16; 8;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;  24;16;16;Depth;4
+BlockStat;31; 368;  24;16;16;QT_Depth;1
+BlockStat;31; 368;  24;16;16;BT_Depth;4
+BlockStat;31; 368;  24;16;16;MT_Depth;3
+BlockStat;31; 368;  24;16;16;ChromaQPAdj;0
+BlockStat;31; 368;  24;16;16;QP;41
+BlockStat;31; 368;  24;16;16;SplitSeries;135329
+BlockStat;31; 368;  24;16;16;SkipFlag;1
+BlockStat;31; 368;  24;16;16;MMVDSkipFlag;0
+BlockStat;31; 368;  24;16;16;PredMode;0
+BlockStat;31; 368;  24;16;16;MergeIdx;0
+BlockStat;31; 368;  24;16;16;MergeType;1
+BlockStat;31; 368;  24;16;16;MMVDMergeFlag;0
+BlockStat;31; 368;  24;16;16;AffineFlag;1
+BlockStat;31; 368;  24;16;16;MVPIdxL0;255
+BlockStat;31; 368;  24;16;16;RefIdxL0;0
+BlockStat;31; 368;  24;16;16;MVPIdxL1;255
+BlockStat;31; 368;  24;16;16;RefIdxL1;0
+BlockStat;31; 368;  24;16;16;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;  24;16;16;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 368;  40;16; 8;Depth;4
+BlockStat;31; 368;  40;16; 8;QT_Depth;1
+BlockStat;31; 368;  40;16; 8;BT_Depth;5
+BlockStat;31; 368;  40;16; 8;MT_Depth;3
+BlockStat;31; 368;  40;16; 8;ChromaQPAdj;0
+BlockStat;31; 368;  40;16; 8;QP;41
+BlockStat;31; 368;  40;16; 8;SplitSeries;135329
+BlockStat;31; 368;  40;16; 8;SkipFlag;0
+BlockStat;31; 368;  40;16; 8;PredMode;0
+BlockStat;31; 368;  40;16; 8;MergeFlag;0
+BlockStat;31; 368;  40;16; 8;InterDir;3
+BlockStat;31; 368;  40;16; 8;MVPIdxL0;0
+BlockStat;31; 368;  40;16; 8;RefIdxL0;0
+BlockStat;31; 368;  40;16; 8;MVPIdxL1;0
+BlockStat;31; 368;  40;16; 8;RefIdxL1;0
+BlockStat;31; 368;  40;16; 8;MVDL0;  13;   6
+BlockStat;31; 368;  40;16; 8;MVL0;  18;   6
+BlockStat;31; 368;  40;16; 8;MVDL1;   0;   0
+BlockStat;31; 368;  40;16; 8;MVL1;   5;   0
+BlockStat;31; 368;  40;16; 8;IMVMode;0
+BlockStat;31; 368;  40;16; 8;RootCbf;1
+BlockStat;31; 368;  40;16; 8;Cbf_Y;1
+BlockStat;31; 368;  40;16; 8;TransformSkipFlag_Y;0
+BlockStat;31; 368;  40;16; 8;Cbf_Cb;0
+BlockStat;31; 368;  40;16; 8;Cbf_Cr;0
+BlockStat;31; 368;  48; 4;16;Depth;4
+BlockStat;31; 368;  48; 4;16;QT_Depth;1
+BlockStat;31; 368;  48; 4;16;BT_Depth;6
+BlockStat;31; 368;  48; 4;16;MT_Depth;3
+BlockStat;31; 368;  48; 4;16;ChromaQPAdj;0
+BlockStat;31; 368;  48; 4;16;QP;41
+BlockStat;31; 368;  48; 4;16;SplitSeries;168097
+BlockStat;31; 368;  48; 4;16;SkipFlag;1
+BlockStat;31; 368;  48; 4;16;MMVDSkipFlag;0
+BlockStat;31; 368;  48; 4;16;PredMode;0
+BlockStat;31; 368;  48; 4;16;MergeIdx;0
+BlockStat;31; 368;  48; 4;16;MergeType;0
+BlockStat;31; 368;  48; 4;16;MMVDMergeFlag;0
+BlockStat;31; 368;  48; 4;16;MVPIdxL0;255
+BlockStat;31; 368;  48; 4;16;RefIdxL0;0
+BlockStat;31; 368;  48; 4;16;MVPIdxL1;255
+BlockStat;31; 368;  48; 4;16;RefIdxL1;0
+BlockStat;31; 368;  48; 4;16;MVDL0;   0;   0
+BlockStat;31; 368;  48; 4;16;MVL0;   5;   1
+BlockStat;31; 368;  48; 4;16;MVDL1;   0;   0
+BlockStat;31; 368;  48; 4;16;MVL1;   5;   1
+BlockStat;31; 372;  48; 8;16;Depth;4
+BlockStat;31; 372;  48; 8;16;QT_Depth;1
+BlockStat;31; 372;  48; 8;16;BT_Depth;5
+BlockStat;31; 372;  48; 8;16;MT_Depth;3
+BlockStat;31; 372;  48; 8;16;ChromaQPAdj;0
+BlockStat;31; 372;  48; 8;16;QP;41
+BlockStat;31; 372;  48; 8;16;SplitSeries;168097
+BlockStat;31; 372;  48; 8;16;SkipFlag;1
+BlockStat;31; 372;  48; 8;16;MMVDSkipFlag;0
+BlockStat;31; 372;  48; 8;16;PredMode;0
+BlockStat;31; 372;  48; 8;16;MergeIdx;37
+BlockStat;31; 372;  48; 8;16;MergeType;0
+BlockStat;31; 372;  48; 8;16;MMVDMergeFlag;1
+BlockStat;31; 372;  48; 8;16;MMVDMergeIdx;37
+BlockStat;31; 372;  48; 8;16;MVPIdxL0;255
+BlockStat;31; 372;  48; 8;16;RefIdxL0;0
+BlockStat;31; 372;  48; 8;16;MVPIdxL1;255
+BlockStat;31; 372;  48; 8;16;RefIdxL1;0
+BlockStat;31; 372;  48; 8;16;MVDL0;   0;   0
+BlockStat;31; 372;  48; 8;16;MVL0;  16;   6
+BlockStat;31; 372;  48; 8;16;MVDL1;   0;   0
+BlockStat;31; 372;  48; 8;16;MVL1;   3;   0
+BlockStat;31; 380;  48; 4;16;Depth;4
+BlockStat;31; 380;  48; 4;16;QT_Depth;1
+BlockStat;31; 380;  48; 4;16;BT_Depth;6
+BlockStat;31; 380;  48; 4;16;MT_Depth;3
+BlockStat;31; 380;  48; 4;16;ChromaQPAdj;0
+BlockStat;31; 380;  48; 4;16;QP;41
+BlockStat;31; 380;  48; 4;16;SplitSeries;168097
+BlockStat;31; 380;  48; 4;16;SkipFlag;0
+BlockStat;31; 380;  48; 4;16;PredMode;0
+BlockStat;31; 380;  48; 4;16;MergeFlag;1
+BlockStat;31; 380;  48; 4;16;MergeIdx;0
+BlockStat;31; 380;  48; 4;16;MergeType;0
+BlockStat;31; 380;  48; 4;16;MMVDMergeFlag;0
+BlockStat;31; 380;  48; 4;16;MHIntraFlag;1
+BlockStat;31; 380;  48; 4;16;Luma_IntraMode;0
+BlockStat;31; 380;  48; 4;16;Chroma_IntraMode;70
+BlockStat;31; 380;  48; 4;16;MVPIdxL0;255
+BlockStat;31; 380;  48; 4;16;RefIdxL0;0
+BlockStat;31; 380;  48; 4;16;MVPIdxL1;255
+BlockStat;31; 380;  48; 4;16;RefIdxL1;0
+BlockStat;31; 380;  48; 4;16;MVDL0;   0;   0
+BlockStat;31; 380;  48; 4;16;MVL0;  16;   6
+BlockStat;31; 380;  48; 4;16;MVDL1;   0;   0
+BlockStat;31; 380;  48; 4;16;MVL1;   3;   0
+BlockStat;31; 380;  48; 4;16;Cbf_Y;1
+BlockStat;31; 380;  48; 4;16;TransformSkipFlag_Y;0
+BlockStat;31; 380;  48; 4;16;Cbf_Cb;0
+BlockStat;31; 380;  48; 4;16;Cbf_Cr;0
+BlockStat;31; 256;  64;64;32;Depth;2
+BlockStat;31; 256;  64;64;32;QT_Depth;1
+BlockStat;31; 256;  64;64;32;BT_Depth;1
+BlockStat;31; 256;  64;64;32;MT_Depth;1
+BlockStat;31; 256;  64;64;32;ChromaQPAdj;0
+BlockStat;31; 256;  64;64;32;QP;41
+BlockStat;31; 256;  64;64;32;SplitSeries;65
+BlockStat;31; 256;  64;64;32;SkipFlag;1
+BlockStat;31; 256;  64;64;32;MMVDSkipFlag;0
+BlockStat;31; 256;  64;64;32;PredMode;0
+BlockStat;31; 256;  64;64;32;MergeIdx;1
+BlockStat;31; 256;  64;64;32;MergeType;0
+BlockStat;31; 256;  64;64;32;MMVDMergeFlag;0
+BlockStat;31; 256;  64;64;32;AffineFlag;0
+BlockStat;31; 256;  64;64;32;MVPIdxL0;255
+BlockStat;31; 256;  64;64;32;RefIdxL0;0
+BlockStat;31; 256;  64;64;32;MVPIdxL1;255
+BlockStat;31; 256;  64;64;32;RefIdxL1;0
+BlockStat;31; 256;  64;64;32;MVDL0;   0;   0
+BlockStat;31; 256;  64;64;32;MVL0;   4;   2
+BlockStat;31; 256;  64;64;32;MVDL1;   0;   0
+BlockStat;31; 256;  64;64;32;MVL1;   4;   2
+BlockStat;31; 256;  96;64;32;Depth;2
+BlockStat;31; 256;  96;64;32;QT_Depth;1
+BlockStat;31; 256;  96;64;32;BT_Depth;1
+BlockStat;31; 256;  96;64;32;MT_Depth;1
+BlockStat;31; 256;  96;64;32;ChromaQPAdj;0
+BlockStat;31; 256;  96;64;32;QP;41
+BlockStat;31; 256;  96;64;32;SplitSeries;65
+BlockStat;31; 256;  96;64;32;SkipFlag;1
+BlockStat;31; 256;  96;64;32;MMVDSkipFlag;0
+BlockStat;31; 256;  96;64;32;PredMode;0
+BlockStat;31; 256;  96;64;32;MergeIdx;5
+BlockStat;31; 256;  96;64;32;MergeType;0
+BlockStat;31; 256;  96;64;32;MMVDMergeFlag;0
+BlockStat;31; 256;  96;64;32;AffineFlag;0
+BlockStat;31; 256;  96;64;32;MVPIdxL0;255
+BlockStat;31; 256;  96;64;32;RefIdxL0;0
+BlockStat;31; 256;  96;64;32;MVPIdxL1;255
+BlockStat;31; 256;  96;64;32;RefIdxL1;0
+BlockStat;31; 256;  96;64;32;MVDL0;   0;   0
+BlockStat;31; 256;  96;64;32;MVL0;   3;   1
+BlockStat;31; 256;  96;64;32;MVDL1;   0;   0
+BlockStat;31; 256;  96;64;32;MVL1;   3;   1
+BlockStat;31; 320;  64;64;64;Depth;1
+BlockStat;31; 320;  64;64;64;QT_Depth;1
+BlockStat;31; 320;  64;64;64;BT_Depth;0
+BlockStat;31; 320;  64;64;64;MT_Depth;0
+BlockStat;31; 320;  64;64;64;ChromaQPAdj;0
+BlockStat;31; 320;  64;64;64;QP;41
+BlockStat;31; 320;  64;64;64;SplitSeries;1
+BlockStat;31; 320;  64;64;64;SkipFlag;1
+BlockStat;31; 320;  64;64;64;MMVDSkipFlag;0
+BlockStat;31; 320;  64;64;64;PredMode;0
+BlockStat;31; 320;  64;64;64;MergeIdx;0
+BlockStat;31; 320;  64;64;64;MergeType;0
+BlockStat;31; 320;  64;64;64;MMVDMergeFlag;0
+BlockStat;31; 320;  64;64;64;AffineFlag;0
+BlockStat;31; 320;  64;64;64;MVPIdxL0;255
+BlockStat;31; 320;  64;64;64;RefIdxL0;0
+BlockStat;31; 320;  64;64;64;MVPIdxL1;255
+BlockStat;31; 320;  64;64;64;RefIdxL1;0
+BlockStat;31; 320;  64;64;64;MVDL0;   0;   0
+BlockStat;31; 320;  64;64;64;MVL0;   3;   1
+BlockStat;31; 320;  64;64;64;MVDL1;   0;   0
+BlockStat;31; 320;  64;64;64;MVL1;   3;   1
+BlockStat;31; 384;   0;32; 8;Depth;4
+BlockStat;31; 384;   0;32; 8;QT_Depth;2
+BlockStat;31; 384;   0;32; 8;BT_Depth;2
+BlockStat;31; 384;   0;32; 8;MT_Depth;2
+BlockStat;31; 384;   0;32; 8;ChromaQPAdj;0
+BlockStat;31; 384;   0;32; 8;QP;41
+BlockStat;31; 384;   0;32; 8;SplitSeries;67617
+BlockStat;31; 384;   0;32; 8;SkipFlag;1
+BlockStat;31; 384;   0;32; 8;MMVDSkipFlag;0
+BlockStat;31; 384;   0;32; 8;PredMode;0
+BlockStat;31; 384;   0;32; 8;MergeIdx;0
+BlockStat;31; 384;   0;32; 8;MergeType;1
+BlockStat;31; 384;   0;32; 8;MMVDMergeFlag;0
+BlockStat;31; 384;   0;32; 8;AffineFlag;1
+BlockStat;31; 384;   0;32; 8;MVPIdxL0;255
+BlockStat;31; 384;   0;32; 8;RefIdxL0;0
+BlockStat;31; 384;   0;32; 8;MVPIdxL1;255
+BlockStat;31; 384;   0;32; 8;RefIdxL1;0
+BlockStat;31; 384;   0;32; 8;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 384;   0;32; 8;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 384;   8;32; 8;Depth;4
+BlockStat;31; 384;   8;32; 8;QT_Depth;2
+BlockStat;31; 384;   8;32; 8;BT_Depth;2
+BlockStat;31; 384;   8;32; 8;MT_Depth;2
+BlockStat;31; 384;   8;32; 8;ChromaQPAdj;0
+BlockStat;31; 384;   8;32; 8;QP;41
+BlockStat;31; 384;   8;32; 8;SplitSeries;67617
+BlockStat;31; 384;   8;32; 8;SkipFlag;1
+BlockStat;31; 384;   8;32; 8;MMVDSkipFlag;0
+BlockStat;31; 384;   8;32; 8;PredMode;0
+BlockStat;31; 384;   8;32; 8;MergeIdx;34
+BlockStat;31; 384;   8;32; 8;MergeType;0
+BlockStat;31; 384;   8;32; 8;MMVDMergeFlag;1
+BlockStat;31; 384;   8;32; 8;MMVDMergeIdx;34
+BlockStat;31; 384;   8;32; 8;MVPIdxL0;255
+BlockStat;31; 384;   8;32; 8;RefIdxL0;0
+BlockStat;31; 384;   8;32; 8;MVPIdxL1;255
+BlockStat;31; 384;   8;32; 8;RefIdxL1;0
+BlockStat;31; 384;   8;32; 8;MVDL0;   0;   0
+BlockStat;31; 384;   8;32; 8;MVL0;  11;  -1
+BlockStat;31; 384;   8;32; 8;MVDL1;   0;   0
+BlockStat;31; 384;   8;32; 8;MVL1;  11;  -1
+BlockStat;31; 384;  16;32; 8;Depth;4
+BlockStat;31; 384;  16;32; 8;QT_Depth;2
+BlockStat;31; 384;  16;32; 8;BT_Depth;2
+BlockStat;31; 384;  16;32; 8;MT_Depth;2
+BlockStat;31; 384;  16;32; 8;ChromaQPAdj;0
+BlockStat;31; 384;  16;32; 8;QP;41
+BlockStat;31; 384;  16;32; 8;SplitSeries;67617
+BlockStat;31; 384;  16;32; 8;SkipFlag;1
+BlockStat;31; 384;  16;32; 8;MMVDSkipFlag;0
+BlockStat;31; 384;  16;32; 8;PredMode;0
+BlockStat;31; 384;  16;32; 8;MergeIdx;0
+BlockStat;31; 384;  16;32; 8;MergeType;1
+BlockStat;31; 384;  16;32; 8;MMVDMergeFlag;0
+BlockStat;31; 384;  16;32; 8;AffineFlag;1
+BlockStat;31; 384;  16;32; 8;MVPIdxL0;255
+BlockStat;31; 384;  16;32; 8;RefIdxL0;0
+BlockStat;31; 384;  16;32; 8;MVPIdxL1;255
+BlockStat;31; 384;  16;32; 8;RefIdxL1;0
+BlockStat;31; 384;  16;32; 8;AffineMVL0;   1;   0;  12;   4;   1;   0
+BlockStat;31; 384;  16;32; 8;AffineMVL1;   1;   0;  10;  -2;   1;   0
+BlockStat;31; 384;  24;32; 8;Depth;4
+BlockStat;31; 384;  24;32; 8;QT_Depth;2
+BlockStat;31; 384;  24;32; 8;BT_Depth;2
+BlockStat;31; 384;  24;32; 8;MT_Depth;2
+BlockStat;31; 384;  24;32; 8;ChromaQPAdj;0
+BlockStat;31; 384;  24;32; 8;QP;41
+BlockStat;31; 384;  24;32; 8;SplitSeries;67617
+BlockStat;31; 384;  24;32; 8;SkipFlag;0
+BlockStat;31; 384;  24;32; 8;PredMode;0
+BlockStat;31; 384;  24;32; 8;MergeFlag;0
+BlockStat;31; 384;  24;32; 8;InterDir;1
+BlockStat;31; 384;  24;32; 8;MVPIdxL0;0
+BlockStat;31; 384;  24;32; 8;RefIdxL0;0
+BlockStat;31; 384;  24;32; 8;MVDL0;  10;   0
+BlockStat;31; 384;  24;32; 8;MVL0;  11;   0
+BlockStat;31; 384;  24;32; 8;IMVMode;0
+BlockStat;31; 384;  24;32; 8;RootCbf;0
+BlockStat;31; 384;  32;32;32;Depth;2
+BlockStat;31; 384;  32;32;32;QT_Depth;2
+BlockStat;31; 384;  32;32;32;BT_Depth;0
+BlockStat;31; 384;  32;32;32;MT_Depth;0
+BlockStat;31; 384;  32;32;32;ChromaQPAdj;0
+BlockStat;31; 384;  32;32;32;QP;41
+BlockStat;31; 384;  32;32;32;SplitSeries;33
+BlockStat;31; 384;  32;32;32;SkipFlag;1
+BlockStat;31; 384;  32;32;32;MMVDSkipFlag;0
+BlockStat;31; 384;  32;32;32;PredMode;0
+BlockStat;31; 384;  32;32;32;MergeIdx;0
+BlockStat;31; 384;  32;32;32;MergeType;1
+BlockStat;31; 384;  32;32;32;MMVDMergeFlag;0
+BlockStat;31; 384;  32;32;32;AffineFlag;1
+BlockStat;31; 384;  32;32;32;MVPIdxL0;255
+BlockStat;31; 384;  32;32;32;RefIdxL0;0
+BlockStat;31; 384;  32;32;32;MVPIdxL1;255
+BlockStat;31; 384;  32;32;32;RefIdxL1;0
+BlockStat;31; 384;  32;32;32;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 384;  32;32;32;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 384;  64;32;64;Depth;2
+BlockStat;31; 384;  64;32;64;QT_Depth;1
+BlockStat;31; 384;  64;32;64;BT_Depth;1
+BlockStat;31; 384;  64;32;64;MT_Depth;1
+BlockStat;31; 384;  64;32;64;ChromaQPAdj;0
+BlockStat;31; 384;  64;32;64;QP;41
+BlockStat;31; 384;  64;32;64;SplitSeries;97
+BlockStat;31; 384;  64;32;64;SkipFlag;1
+BlockStat;31; 384;  64;32;64;MMVDSkipFlag;0
+BlockStat;31; 384;  64;32;64;PredMode;0
+BlockStat;31; 384;  64;32;64;MergeIdx;1
+BlockStat;31; 384;  64;32;64;MergeType;0
+BlockStat;31; 384;  64;32;64;MMVDMergeFlag;0
+BlockStat;31; 384;  64;32;64;AffineFlag;1
+BlockStat;31; 384;  64;32;64;MVPIdxL0;0
+BlockStat;31; 384;  64;32;64;RefIdxL0;0
+BlockStat;31; 384;  64;32;64;MVPIdxL1;0
+BlockStat;31; 384;  64;32;64;RefIdxL1;0
+BlockStat;31; 384;  64;32;64;AffineMVL0;  15;   6;   2;   0;   3;   1
+BlockStat;31; 384;  64;32;64;AffineMVL1;   3;   0;   1;   0;   3;   1
+BlockStat;31;   0; 128;16;32;Depth;3
+BlockStat;31;   0; 128;16;32;QT_Depth;1
+BlockStat;31;   0; 128;16;32;BT_Depth;3
+BlockStat;31;   0; 128;16;32;MT_Depth;2
+BlockStat;31;   0; 128;16;32;ChromaQPAdj;0
+BlockStat;31;   0; 128;16;32;QP;41
+BlockStat;31;   0; 128;16;32;SplitSeries;5185
+BlockStat;31;   0; 128;16;32;SkipFlag;0
+BlockStat;31;   0; 128;16;32;PredMode;1
+BlockStat;31;   0; 128;16;32;Luma_IntraMode;0
+BlockStat;31;   0; 128;16;32;Chroma_IntraMode;0
+BlockStat;31;   0; 128;16;32;MultiRefIdx;0
+BlockStat;31;   0; 128;16;32;Cbf_Y;1
+BlockStat;31;   0; 128;16;32;TransformSkipFlag_Y;0
+BlockStat;31;   0; 128;16;32;Cbf_Cb;0
+BlockStat;31;   0; 128;16;32;Cbf_Cr;0
+BlockStat;31;  16; 128;32;16;Depth;4
+BlockStat;31;  16; 128;32;16;QT_Depth;1
+BlockStat;31;  16; 128;32;16;BT_Depth;3
+BlockStat;31;  16; 128;32;16;MT_Depth;3
+BlockStat;31;  16; 128;32;16;ChromaQPAdj;0
+BlockStat;31;  16; 128;32;16;QP;41
+BlockStat;31;  16; 128;32;16;SplitSeries;70721
+BlockStat;31;  16; 128;32;16;SkipFlag;0
+BlockStat;31;  16; 128;32;16;PredMode;1
+BlockStat;31;  16; 128;32;16;Luma_IntraMode;37
+BlockStat;31;  16; 128;32;16;Chroma_IntraMode;37
+BlockStat;31;  16; 128;32;16;MultiRefIdx;0
+BlockStat;31;  16; 128;32;16;Cbf_Y;1
+BlockStat;31;  16; 128;32;16;TransformSkipFlag_Y;0
+BlockStat;31;  16; 128;32;16;Cbf_Cb;0
+BlockStat;31;  16; 128;32;16;Cbf_Cr;0
+BlockStat;31;  16; 144;32;16;Depth;4
+BlockStat;31;  16; 144;32;16;QT_Depth;1
+BlockStat;31;  16; 144;32;16;BT_Depth;3
+BlockStat;31;  16; 144;32;16;MT_Depth;3
+BlockStat;31;  16; 144;32;16;ChromaQPAdj;0
+BlockStat;31;  16; 144;32;16;QP;41
+BlockStat;31;  16; 144;32;16;SplitSeries;70721
+BlockStat;31;  16; 144;32;16;SkipFlag;0
+BlockStat;31;  16; 144;32;16;PredMode;1
+BlockStat;31;  16; 144;32;16;Luma_IntraMode;66
+BlockStat;31;  16; 144;32;16;Chroma_IntraMode;66
+BlockStat;31;  16; 144;32;16;MultiRefIdx;0
+BlockStat;31;  16; 144;32;16;Cbf_Y;1
+BlockStat;31;  16; 144;32;16;TransformSkipFlag_Y;2
+BlockStat;31;  16; 144;32;16;Cbf_Cb;0
+BlockStat;31;  16; 144;32;16;Cbf_Cr;0
+BlockStat;31;  48; 128;16;16;Depth;4
+BlockStat;31;  48; 128;16;16;QT_Depth;1
+BlockStat;31;  48; 128;16;16;BT_Depth;4
+BlockStat;31;  48; 128;16;16;MT_Depth;3
+BlockStat;31;  48; 128;16;16;ChromaQPAdj;0
+BlockStat;31;  48; 128;16;16;QP;41
+BlockStat;31;  48; 128;16;16;SplitSeries;70721
+BlockStat;31;  48; 128;16;16;SkipFlag;0
+BlockStat;31;  48; 128;16;16;PredMode;0
+BlockStat;31;  48; 128;16;16;MergeFlag;1
+BlockStat;31;  48; 128;16;16;MergeIdx;3
+BlockStat;31;  48; 128;16;16;MergeType;0
+BlockStat;31;  48; 128;16;16;MMVDMergeFlag;0
+BlockStat;31;  48; 128;16;16;AffineFlag;0
+BlockStat;31;  48; 128;16;16;MHIntraFlag;1
+BlockStat;31;  48; 128;16;16;Luma_IntraMode;0
+BlockStat;31;  48; 128;16;16;Chroma_IntraMode;70
+BlockStat;31;  48; 128;16;16;MVPIdxL0;255
+BlockStat;31;  48; 128;16;16;RefIdxL0;1
+BlockStat;31;  48; 128;16;16;MVPIdxL1;255
+BlockStat;31;  48; 128;16;16;RefIdxL1;0
+BlockStat;31;  48; 128;16;16;MVDL0;   0;   0
+BlockStat;31;  48; 128;16;16;MVL0; -22;  -2
+BlockStat;31;  48; 128;16;16;MVDL1;   0;   0
+BlockStat;31;  48; 128;16;16;MVL1;   0;   0
+BlockStat;31;  48; 128;16;16;Cbf_Y;1
+BlockStat;31;  48; 128;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  48; 128;16;16;Cbf_Cb;0
+BlockStat;31;  48; 128;16;16;Cbf_Cr;0
+BlockStat;31;  48; 144;16;16;Depth;4
+BlockStat;31;  48; 144;16;16;QT_Depth;1
+BlockStat;31;  48; 144;16;16;BT_Depth;4
+BlockStat;31;  48; 144;16;16;MT_Depth;3
+BlockStat;31;  48; 144;16;16;ChromaQPAdj;0
+BlockStat;31;  48; 144;16;16;QP;41
+BlockStat;31;  48; 144;16;16;SplitSeries;70721
+BlockStat;31;  48; 144;16;16;SkipFlag;0
+BlockStat;31;  48; 144;16;16;PredMode;1
+BlockStat;31;  48; 144;16;16;Luma_IntraMode;4
+BlockStat;31;  48; 144;16;16;Chroma_IntraMode;0
+BlockStat;31;  48; 144;16;16;MultiRefIdx;0
+BlockStat;31;  48; 144;16;16;Cbf_Y;1
+BlockStat;31;  48; 144;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  48; 144;16;16;Cbf_Cb;0
+BlockStat;31;  48; 144;16;16;Cbf_Cr;0
+BlockStat;31;   0; 160;32;32;Depth;3
+BlockStat;31;   0; 160;32;32;QT_Depth;1
+BlockStat;31;   0; 160;32;32;BT_Depth;2
+BlockStat;31;   0; 160;32;32;MT_Depth;2
+BlockStat;31;   0; 160;32;32;ChromaQPAdj;0
+BlockStat;31;   0; 160;32;32;QP;41
+BlockStat;31;   0; 160;32;32;SplitSeries;3137
+BlockStat;31;   0; 160;32;32;SkipFlag;0
+BlockStat;31;   0; 160;32;32;PredMode;0
+BlockStat;31;   0; 160;32;32;MergeFlag;0
+BlockStat;31;   0; 160;32;32;InterDir;3
+BlockStat;31;   0; 160;32;32;AffineFlag;0
+BlockStat;31;   0; 160;32;32;MVPIdxL0;0
+BlockStat;31;   0; 160;32;32;RefIdxL0;0
+BlockStat;31;   0; 160;32;32;MVPIdxL1;0
+BlockStat;31;   0; 160;32;32;RefIdxL1;0
+BlockStat;31;   0; 160;32;32;MVDL0;   0; -32
+BlockStat;31;   0; 160;32;32;MVL0;   0; -32
+BlockStat;31;   0; 160;32;32;MVDL1;   0;   0
+BlockStat;31;   0; 160;32;32;MVL1;   0;   0
+BlockStat;31;   0; 160;32;32;IMVMode;2
+BlockStat;31;   0; 160;32;32;RootCbf;1
+BlockStat;31;   0; 160;32;32;Cbf_Y;1
+BlockStat;31;   0; 160;32;32;TransformSkipFlag_Y;0
+BlockStat;31;   0; 160;32;32;Cbf_Cb;0
+BlockStat;31;   0; 160;32;32;Cbf_Cr;0
+BlockStat;31;  32; 160;32;32;Depth;3
+BlockStat;31;  32; 160;32;32;QT_Depth;1
+BlockStat;31;  32; 160;32;32;BT_Depth;2
+BlockStat;31;  32; 160;32;32;MT_Depth;2
+BlockStat;31;  32; 160;32;32;ChromaQPAdj;0
+BlockStat;31;  32; 160;32;32;QP;41
+BlockStat;31;  32; 160;32;32;SplitSeries;3137
+BlockStat;31;  32; 160;32;32;SkipFlag;0
+BlockStat;31;  32; 160;32;32;PredMode;1
+BlockStat;31;  32; 160;32;32;Luma_IntraMode;3
+BlockStat;31;  32; 160;32;32;Chroma_IntraMode;0
+BlockStat;31;  32; 160;32;32;MultiRefIdx;0
+BlockStat;31;  32; 160;32;32;Cbf_Y;1
+BlockStat;31;  32; 160;32;32;TransformSkipFlag_Y;2
+BlockStat;31;  32; 160;32;32;Cbf_Cb;1
+BlockStat;31;  32; 160;32;32;Cbf_Cr;1
+BlockStat;31;  64; 128;32;16;Depth;3
+BlockStat;31;  64; 128;32;16;QT_Depth;2
+BlockStat;31;  64; 128;32;16;BT_Depth;1
+BlockStat;31;  64; 128;32;16;MT_Depth;1
+BlockStat;31;  64; 128;32;16;ChromaQPAdj;0
+BlockStat;31;  64; 128;32;16;QP;41
+BlockStat;31;  64; 128;32;16;SplitSeries;2081
+BlockStat;31;  64; 128;32;16;SkipFlag;0
+BlockStat;31;  64; 128;32;16;PredMode;0
+BlockStat;31;  64; 128;32;16;MergeFlag;1
+BlockStat;31;  64; 128;32;16;MergeIdx;0
+BlockStat;31;  64; 128;32;16;MergeType;0
+BlockStat;31;  64; 128;32;16;MMVDMergeFlag;0
+BlockStat;31;  64; 128;32;16;AffineFlag;0
+BlockStat;31;  64; 128;32;16;MHIntraFlag;1
+BlockStat;31;  64; 128;32;16;Luma_IntraMode;0
+BlockStat;31;  64; 128;32;16;Chroma_IntraMode;70
+BlockStat;31;  64; 128;32;16;MVPIdxL0;255
+BlockStat;31;  64; 128;32;16;RefIdxL0;1
+BlockStat;31;  64; 128;32;16;MVPIdxL1;255
+BlockStat;31;  64; 128;32;16;RefIdxL1;0
+BlockStat;31;  64; 128;32;16;MVDL0;   0;   0
+BlockStat;31;  64; 128;32;16;MVL0; -22;  -2
+BlockStat;31;  64; 128;32;16;MVDL1;   0;   0
+BlockStat;31;  64; 128;32;16;MVL1;   0;   0
+BlockStat;31;  64; 128;32;16;Cbf_Y;1
+BlockStat;31;  64; 128;32;16;TransformSkipFlag_Y;0
+BlockStat;31;  64; 128;32;16;Cbf_Cb;0
+BlockStat;31;  64; 128;32;16;Cbf_Cr;0
+BlockStat;31;  64; 144;32;16;Depth;3
+BlockStat;31;  64; 144;32;16;QT_Depth;2
+BlockStat;31;  64; 144;32;16;BT_Depth;1
+BlockStat;31;  64; 144;32;16;MT_Depth;1
+BlockStat;31;  64; 144;32;16;ChromaQPAdj;0
+BlockStat;31;  64; 144;32;16;QP;41
+BlockStat;31;  64; 144;32;16;SplitSeries;2081
+BlockStat;31;  64; 144;32;16;SkipFlag;0
+BlockStat;31;  64; 144;32;16;PredMode;1
+BlockStat;31;  64; 144;32;16;Luma_IntraMode;9
+BlockStat;31;  64; 144;32;16;Chroma_IntraMode;0
+BlockStat;31;  64; 144;32;16;MultiRefIdx;0
+BlockStat;31;  64; 144;32;16;Cbf_Y;1
+BlockStat;31;  64; 144;32;16;TransformSkipFlag_Y;2
+BlockStat;31;  64; 144;32;16;Cbf_Cb;0
+BlockStat;31;  64; 144;32;16;Cbf_Cr;0
+BlockStat;31;  96; 128;32;32;Depth;2
+BlockStat;31;  96; 128;32;32;QT_Depth;2
+BlockStat;31;  96; 128;32;32;BT_Depth;0
+BlockStat;31;  96; 128;32;32;MT_Depth;0
+BlockStat;31;  96; 128;32;32;ChromaQPAdj;0
+BlockStat;31;  96; 128;32;32;QP;41
+BlockStat;31;  96; 128;32;32;SplitSeries;33
+BlockStat;31;  96; 128;32;32;SkipFlag;0
+BlockStat;31;  96; 128;32;32;PredMode;0
+BlockStat;31;  96; 128;32;32;MergeFlag;1
+BlockStat;31;  96; 128;32;32;MergeIdx;0
+BlockStat;31;  96; 128;32;32;MergeType;0
+BlockStat;31;  96; 128;32;32;MMVDMergeFlag;0
+BlockStat;31;  96; 128;32;32;AffineFlag;0
+BlockStat;31;  96; 128;32;32;MHIntraFlag;1
+BlockStat;31;  96; 128;32;32;Luma_IntraMode;0
+BlockStat;31;  96; 128;32;32;Chroma_IntraMode;70
+BlockStat;31;  96; 128;32;32;MVPIdxL0;255
+BlockStat;31;  96; 128;32;32;RefIdxL0;1
+BlockStat;31;  96; 128;32;32;MVDL0;   0;   0
+BlockStat;31;  96; 128;32;32;MVL0; -14;   6
+BlockStat;31;  96; 128;32;32;Cbf_Y;1
+BlockStat;31;  96; 128;32;32;TransformSkipFlag_Y;0
+BlockStat;31;  96; 128;32;32;Cbf_Cb;1
+BlockStat;31;  96; 128;32;32;Cbf_Cr;1
+BlockStat;31;  64; 160; 8;16;Depth;4
+BlockStat;31;  64; 160; 8;16;QT_Depth;2
+BlockStat;31;  64; 160; 8;16;BT_Depth;3
+BlockStat;31;  64; 160; 8;16;MT_Depth;2
+BlockStat;31;  64; 160; 8;16;ChromaQPAdj;0
+BlockStat;31;  64; 160; 8;16;QP;41
+BlockStat;31;  64; 160; 8;16;SplitSeries;165921
+BlockStat;31;  64; 160; 8;16;SkipFlag;1
+BlockStat;31;  64; 160; 8;16;MMVDSkipFlag;0
+BlockStat;31;  64; 160; 8;16;PredMode;0
+BlockStat;31;  64; 160; 8;16;MergeIdx;2
+BlockStat;31;  64; 160; 8;16;MergeType;0
+BlockStat;31;  64; 160; 8;16;MMVDMergeFlag;0
+BlockStat;31;  64; 160; 8;16;AffineFlag;0
+BlockStat;31;  64; 160; 8;16;MVPIdxL0;255
+BlockStat;31;  64; 160; 8;16;RefIdxL0;1
+BlockStat;31;  64; 160; 8;16;MVPIdxL1;255
+BlockStat;31;  64; 160; 8;16;RefIdxL1;0
+BlockStat;31;  64; 160; 8;16;MVDL0;   0;   0
+BlockStat;31;  64; 160; 8;16;MVL0; -22;  -2
+BlockStat;31;  64; 160; 8;16;MVDL1;   0;   0
+BlockStat;31;  64; 160; 8;16;MVL1;   0;   0
+BlockStat;31;  72; 160;16;16;Depth;4
+BlockStat;31;  72; 160;16;16;QT_Depth;2
+BlockStat;31;  72; 160;16;16;BT_Depth;2
+BlockStat;31;  72; 160;16;16;MT_Depth;2
+BlockStat;31;  72; 160;16;16;ChromaQPAdj;0
+BlockStat;31;  72; 160;16;16;QP;41
+BlockStat;31;  72; 160;16;16;SplitSeries;165921
+BlockStat;31;  72; 160;16;16;SkipFlag;0
+BlockStat;31;  72; 160;16;16;PredMode;1
+BlockStat;31;  72; 160;16;16;Luma_IntraMode;2
+BlockStat;31;  72; 160;16;16;Chroma_IntraMode;0
+BlockStat;31;  72; 160;16;16;MultiRefIdx;0
+BlockStat;31;  72; 160;16;16;Cbf_Y;1
+BlockStat;31;  72; 160;16;16;TransformSkipFlag_Y;2
+BlockStat;31;  72; 160;16;16;Cbf_Cb;0
+BlockStat;31;  72; 160;16;16;Cbf_Cr;0
+BlockStat;31;  88; 160; 8;16;Depth;4
+BlockStat;31;  88; 160; 8;16;QT_Depth;2
+BlockStat;31;  88; 160; 8;16;BT_Depth;3
+BlockStat;31;  88; 160; 8;16;MT_Depth;2
+BlockStat;31;  88; 160; 8;16;ChromaQPAdj;0
+BlockStat;31;  88; 160; 8;16;QP;41
+BlockStat;31;  88; 160; 8;16;SplitSeries;165921
+BlockStat;31;  88; 160; 8;16;SkipFlag;0
+BlockStat;31;  88; 160; 8;16;PredMode;1
+BlockStat;31;  88; 160; 8;16;Luma_IntraMode;24
+BlockStat;31;  88; 160; 8;16;Chroma_IntraMode;24
+BlockStat;31;  88; 160; 8;16;MultiRefIdx;0
+BlockStat;31;  88; 160; 8;16;Cbf_Y;1
+BlockStat;31;  88; 160; 8;16;TransformSkipFlag_Y;2
+BlockStat;31;  88; 160; 8;16;Cbf_Cb;0
+BlockStat;31;  88; 160; 8;16;Cbf_Cr;0
+BlockStat;31;  64; 176;32;16;Depth;3
+BlockStat;31;  64; 176;32;16;QT_Depth;2
+BlockStat;31;  64; 176;32;16;BT_Depth;1
+BlockStat;31;  64; 176;32;16;MT_Depth;1
+BlockStat;31;  64; 176;32;16;ChromaQPAdj;0
+BlockStat;31;  64; 176;32;16;QP;41
+BlockStat;31;  64; 176;32;16;SplitSeries;2081
+BlockStat;31;  64; 176;32;16;SkipFlag;0
+BlockStat;31;  64; 176;32;16;PredMode;0
+BlockStat;31;  64; 176;32;16;MergeFlag;1
+BlockStat;31;  64; 176;32;16;MergeIdx;0
+BlockStat;31;  64; 176;32;16;MergeType;1
+BlockStat;31;  64; 176;32;16;MMVDMergeFlag;0
+BlockStat;31;  64; 176;32;16;AffineFlag;1
+BlockStat;31;  64; 176;32;16;MVPIdxL0;255
+BlockStat;31;  64; 176;32;16;RefIdxL0;0
+BlockStat;31;  64; 176;32;16;MVPIdxL1;255
+BlockStat;31;  64; 176;32;16;RefIdxL1;0
+BlockStat;31;  64; 176;32;16;AffineMVL0;  -4;  -1;  -4;   0;  -4;  -1
+BlockStat;31;  64; 176;32;16;AffineMVL1;  -4;  -1;  -4;  -1;  -4;  -1
+BlockStat;31;  64; 176;32;16;Cbf_Y;1
+BlockStat;31;  64; 176;32;16;TransformSkipFlag_Y;0
+BlockStat;31;  64; 176;32;16;Cbf_Cb;0
+BlockStat;31;  64; 176;32;16;Cbf_Cr;0
+BlockStat;31;  96; 160;16;16;Depth;4
+BlockStat;31;  96; 160;16;16;QT_Depth;2
+BlockStat;31;  96; 160;16;16;BT_Depth;2
+BlockStat;31;  96; 160;16;16;MT_Depth;2
+BlockStat;31;  96; 160;16;16;ChromaQPAdj;0
+BlockStat;31;  96; 160;16;16;QP;41
+BlockStat;31;  96; 160;16;16;SplitSeries;68641
+BlockStat;31;  96; 160;16;16;SkipFlag;0
+BlockStat;31;  96; 160;16;16;PredMode;0
+BlockStat;31;  96; 160;16;16;MergeFlag;1
+BlockStat;31;  96; 160;16;16;MergeIdx;1
+BlockStat;31;  96; 160;16;16;MergeType;0
+BlockStat;31;  96; 160;16;16;MMVDMergeFlag;0
+BlockStat;31;  96; 160;16;16;AffineFlag;0
+BlockStat;31;  96; 160;16;16;MHIntraFlag;1
+BlockStat;31;  96; 160;16;16;Luma_IntraMode;0
+BlockStat;31;  96; 160;16;16;Chroma_IntraMode;70
+BlockStat;31;  96; 160;16;16;MVPIdxL0;255
+BlockStat;31;  96; 160;16;16;RefIdxL0;0
+BlockStat;31;  96; 160;16;16;MVPIdxL1;255
+BlockStat;31;  96; 160;16;16;RefIdxL1;0
+BlockStat;31;  96; 160;16;16;MVDL0;   0;   0
+BlockStat;31;  96; 160;16;16;MVL0;  -4;   0
+BlockStat;31;  96; 160;16;16;MVDL1;   0;   0
+BlockStat;31;  96; 160;16;16;MVL1;  -4;  -1
+BlockStat;31;  96; 160;16;16;Cbf_Y;1
+BlockStat;31;  96; 160;16;16;TransformSkipFlag_Y;0
+BlockStat;31;  96; 160;16;16;Cbf_Cb;0
+BlockStat;31;  96; 160;16;16;Cbf_Cr;0
+BlockStat;31;  96; 176;16;16;Depth;4
+BlockStat;31;  96; 176;16;16;QT_Depth;2
+BlockStat;31;  96; 176;16;16;BT_Depth;2
+BlockStat;31;  96; 176;16;16;MT_Depth;2
+BlockStat;31;  96; 176;16;16;ChromaQPAdj;0
+BlockStat;31;  96; 176;16;16;QP;41
+BlockStat;31;  96; 176;16;16;SplitSeries;68641
+BlockStat;31;  96; 176;16;16;SkipFlag;1
+BlockStat;31;  96; 176;16;16;MMVDSkipFlag;0
+BlockStat;31;  96; 176;16;16;PredMode;0
+BlockStat;31;  96; 176;16;16;MergeIdx;0
+BlockStat;31;  96; 176;16;16;MergeType;1
+BlockStat;31;  96; 176;16;16;MMVDMergeFlag;0
+BlockStat;31;  96; 176;16;16;AffineFlag;1
+BlockStat;31;  96; 176;16;16;MVPIdxL0;255
+BlockStat;31;  96; 176;16;16;RefIdxL0;0
+BlockStat;31;  96; 176;16;16;MVPIdxL1;255
+BlockStat;31;  96; 176;16;16;RefIdxL1;0
+BlockStat;31;  96; 176;16;16;AffineMVL0;  -4;   0;  -4;   0;  -4;   0
+BlockStat;31;  96; 176;16;16;AffineMVL1;  -4;  -1;  -4;  -1;  -4;  -1
+BlockStat;31; 112; 160;16;32;Depth;3
+BlockStat;31; 112; 160;16;32;QT_Depth;2
+BlockStat;31; 112; 160;16;32;BT_Depth;1
+BlockStat;31; 112; 160;16;32;MT_Depth;1
+BlockStat;31; 112; 160;16;32;ChromaQPAdj;0
+BlockStat;31; 112; 160;16;32;QP;41
+BlockStat;31; 112; 160;16;32;SplitSeries;3105
+BlockStat;31; 112; 160;16;32;SkipFlag;1
+BlockStat;31; 112; 160;16;32;MMVDSkipFlag;0
+BlockStat;31; 112; 160;16;32;PredMode;0
+BlockStat;31; 112; 160;16;32;MergeIdx;0
+BlockStat;31; 112; 160;16;32;MergeType;1
+BlockStat;31; 112; 160;16;32;MMVDMergeFlag;0
+BlockStat;31; 112; 160;16;32;AffineFlag;1
+BlockStat;31; 112; 160;16;32;MVPIdxL0;255
+BlockStat;31; 112; 160;16;32;RefIdxL0;0
+BlockStat;31; 112; 160;16;32;MVPIdxL1;255
+BlockStat;31; 112; 160;16;32;RefIdxL1;0
+BlockStat;31; 112; 160;16;32;AffineMVL0;  -4;   0;  -2;  -1;  -4;   0
+BlockStat;31; 112; 160;16;32;AffineMVL1;  -4;  -1;  -3;   0;  -4;  -1
+BlockStat;31;   0; 192;32;32;Depth;2
+BlockStat;31;   0; 192;32;32;QT_Depth;2
+BlockStat;31;   0; 192;32;32;BT_Depth;0
+BlockStat;31;   0; 192;32;32;MT_Depth;0
+BlockStat;31;   0; 192;32;32;ChromaQPAdj;0
+BlockStat;31;   0; 192;32;32;QP;41
+BlockStat;31;   0; 192;32;32;SplitSeries;33
+BlockStat;31;   0; 192;32;32;SkipFlag;1
+BlockStat;31;   0; 192;32;32;MMVDSkipFlag;0
+BlockStat;31;   0; 192;32;32;PredMode;0
+BlockStat;31;   0; 192;32;32;MergeIdx;0
+BlockStat;31;   0; 192;32;32;MergeType;1
+BlockStat;31;   0; 192;32;32;MMVDMergeFlag;0
+BlockStat;31;   0; 192;32;32;AffineFlag;1
+BlockStat;31;   0; 192;32;32;MVPIdxL0;255
+BlockStat;31;   0; 192;32;32;RefIdxL0;0
+BlockStat;31;   0; 192;32;32;MVPIdxL1;255
+BlockStat;31;   0; 192;32;32;RefIdxL1;0
+BlockStat;31;   0; 192;32;32;AffineMVL0;  -4;   2;  -6;  -2;  -6;  -2
+BlockStat;31;   0; 192;32;32;AffineMVL1;  -4;   2;  -6;  -2;  -6;  -2
+BlockStat;31;  32; 192;32; 8;Depth;3
+BlockStat;31;  32; 192;32; 8;QT_Depth;2
+BlockStat;31;  32; 192;32; 8;BT_Depth;2
+BlockStat;31;  32; 192;32; 8;MT_Depth;1
+BlockStat;31;  32; 192;32; 8;ChromaQPAdj;0
+BlockStat;31;  32; 192;32; 8;QP;41
+BlockStat;31;  32; 192;32; 8;SplitSeries;4129
+BlockStat;31;  32; 192;32; 8;SkipFlag;0
+BlockStat;31;  32; 192;32; 8;PredMode;0
+BlockStat;31;  32; 192;32; 8;MergeFlag;1
+BlockStat;31;  32; 192;32; 8;MergeIdx;0
+BlockStat;31;  32; 192;32; 8;MergeType;1
+BlockStat;31;  32; 192;32; 8;MMVDMergeFlag;0
+BlockStat;31;  32; 192;32; 8;AffineFlag;1
+BlockStat;31;  32; 192;32; 8;MVPIdxL0;255
+BlockStat;31;  32; 192;32; 8;RefIdxL0;0
+BlockStat;31;  32; 192;32; 8;MVPIdxL1;255
+BlockStat;31;  32; 192;32; 8;RefIdxL1;0
+BlockStat;31;  32; 192;32; 8;AffineMVL0;  -4;  -1;  -4;  -1;  -4;  -1
+BlockStat;31;  32; 192;32; 8;AffineMVL1;  -4;  -1;  -4;  -1;  -4;  -1
+BlockStat;31;  32; 192;32; 4;Cbf_Y;2
+BlockStat;31;  32; 192;32; 4;TransformSkipFlag_Y;0
+BlockStat;31;  32; 192;32; 4;Cbf_Cb;0
+BlockStat;31;  32; 192;32; 4;Cbf_Cr;0
+BlockStat;31;  32; 196;32; 4;Cbf_Y;0
+BlockStat;31;  32; 196;32; 4;TransformSkipFlag_Y;0
+BlockStat;31;  32; 196;32; 4;Cbf_Cb;0
+BlockStat;31;  32; 196;32; 4;Cbf_Cr;0
+BlockStat;31;  32; 200;32;16;Depth;3
+BlockStat;31;  32; 200;32;16;QT_Depth;2
+BlockStat;31;  32; 200;32;16;BT_Depth;1
+BlockStat;31;  32; 200;32;16;MT_Depth;1
+BlockStat;31;  32; 200;32;16;ChromaQPAdj;0
+BlockStat;31;  32; 200;32;16;QP;41
+BlockStat;31;  32; 200;32;16;SplitSeries;4129
+BlockStat;31;  32; 200;32;16;SkipFlag;1
+BlockStat;31;  32; 200;32;16;MMVDSkipFlag;0
+BlockStat;31;  32; 200;32;16;PredMode;0
+BlockStat;31;  32; 200;32;16;MergeIdx;7
+BlockStat;31;  32; 200;32;16;MergeType;0
+BlockStat;31;  32; 200;32;16;MMVDMergeFlag;1
+BlockStat;31;  32; 200;32;16;MMVDMergeIdx;7
+BlockStat;31;  32; 200;32;16;MVPIdxL0;255
+BlockStat;31;  32; 200;32;16;RefIdxL0;0
+BlockStat;31;  32; 200;32;16;MVPIdxL1;255
+BlockStat;31;  32; 200;32;16;RefIdxL1;0
+BlockStat;31;  32; 200;32;16;MVDL0;   0;   0
+BlockStat;31;  32; 200;32;16;MVL0;  -6;  -4
+BlockStat;31;  32; 200;32;16;MVDL1;   0;   0
+BlockStat;31;  32; 200;32;16;MVL1;  -6;  -4
+BlockStat;31;  32; 216;32; 8;Depth;3
+BlockStat;31;  32; 216;32; 8;QT_Depth;2
+BlockStat;31;  32; 216;32; 8;BT_Depth;2
+BlockStat;31;  32; 216;32; 8;MT_Depth;1
+BlockStat;31;  32; 216;32; 8;ChromaQPAdj;0
+BlockStat;31;  32; 216;32; 8;QP;41
+BlockStat;31;  32; 216;32; 8;SplitSeries;4129
+BlockStat;31;  32; 216;32; 8;SkipFlag;1
+BlockStat;31;  32; 216;32; 8;MMVDSkipFlag;0
+BlockStat;31;  32; 216;32; 8;PredMode;0
+BlockStat;31;  32; 216;32; 8;MergeIdx;1
+BlockStat;31;  32; 216;32; 8;MergeType;0
+BlockStat;31;  32; 216;32; 8;MMVDMergeFlag;0
+BlockStat;31;  32; 216;32; 8;AffineFlag;1
+BlockStat;31;  32; 216;32; 8;MVPIdxL0;0
+BlockStat;31;  32; 216;32; 8;RefIdxL0;0
+BlockStat;31;  32; 216;32; 8;MVPIdxL1;0
+BlockStat;31;  32; 216;32; 8;RefIdxL1;0
+BlockStat;31;  32; 216;32; 8;AffineMVL0;  -6;  -2;  -6;  -4;  -6;  -2
+BlockStat;31;  32; 216;32; 8;AffineMVL1;  -6;  -2;  -6;  -4;  -6;  -2
+BlockStat;31;   0; 224;32;16;Depth;3
+BlockStat;31;   0; 224;32;16;QT_Depth;2
+BlockStat;31;   0; 224;32;16;BT_Depth;1
+BlockStat;31;   0; 224;32;16;MT_Depth;1
+BlockStat;31;   0; 224;32;16;ChromaQPAdj;0
+BlockStat;31;   0; 224;32;16;QP;41
+BlockStat;31;   0; 224;32;16;SplitSeries;2081
+BlockStat;31;   0; 224;32;16;SkipFlag;1
+BlockStat;31;   0; 224;32;16;MMVDSkipFlag;0
+BlockStat;31;   0; 224;32;16;PredMode;0
+BlockStat;31;   0; 224;32;16;MergeIdx;0
+BlockStat;31;   0; 224;32;16;MergeType;1
+BlockStat;31;   0; 224;32;16;MMVDMergeFlag;0
+BlockStat;31;   0; 224;32;16;AffineFlag;1
+BlockStat;31;   0; 224;32;16;MVPIdxL0;255
+BlockStat;31;   0; 224;32;16;RefIdxL0;0
+BlockStat;31;   0; 224;32;16;MVPIdxL1;255
+BlockStat;31;   0; 224;32;16;RefIdxL1;0
+BlockStat;31;   0; 224;32;16;AffineMVL0;  -7;  -4;  -7;  -4;  -7;  -4
+BlockStat;31;   0; 224;32;16;AffineMVL1;  -7;  -4;  -7;  -4;  -7;  -4
+BlockStat;31;  32; 224;32;16;Depth;3
+BlockStat;31;  32; 224;32;16;QT_Depth;2
+BlockStat;31;  32; 224;32;16;BT_Depth;1
+BlockStat;31;  32; 224;32;16;MT_Depth;1
+BlockStat;31;  32; 224;32;16;ChromaQPAdj;0
+BlockStat;31;  32; 224;32;16;QP;41
+BlockStat;31;  32; 224;32;16;SplitSeries;2081
+BlockStat;31;  32; 224;32;16;SkipFlag;1
+BlockStat;31;  32; 224;32;16;MMVDSkipFlag;0
+BlockStat;31;  32; 224;32;16;PredMode;0
+BlockStat;31;  32; 224;32;16;MergeIdx;0
+BlockStat;31;  32; 224;32;16;MergeType;1
+BlockStat;31;  32; 224;32;16;MMVDMergeFlag;0
+BlockStat;31;  32; 224;32;16;AffineFlag;1
+BlockStat;31;  32; 224;32;16;MVPIdxL0;255
+BlockStat;31;  32; 224;32;16;RefIdxL0;0
+BlockStat;31;  32; 224;32;16;MVPIdxL1;255
+BlockStat;31;  32; 224;32;16;RefIdxL1;0
+BlockStat;31;  32; 224;32;16;AffineMVL0;  -6;  -2;  -4;  -2;  -6;  -1
+BlockStat;31;  32; 224;32;16;AffineMVL1;  -6;  -2;  -4;  -2;  -6;  -1
+BlockStat;31;  64; 192;32;16;Depth;3
+BlockStat;31;  64; 192;32;16;QT_Depth;2
+BlockStat;31;  64; 192;32;16;BT_Depth;1
+BlockStat;31;  64; 192;32;16;MT_Depth;1
+BlockStat;31;  64; 192;32;16;ChromaQPAdj;0
+BlockStat;31;  64; 192;32;16;QP;41
+BlockStat;31;  64; 192;32;16;SplitSeries;2081
+BlockStat;31;  64; 192;32;16;SkipFlag;1
+BlockStat;31;  64; 192;32;16;MMVDSkipFlag;0
+BlockStat;31;  64; 192;32;16;PredMode;0
+BlockStat;31;  64; 192;32;16;MergeIdx;2
+BlockStat;31;  64; 192;32;16;MergeType;0
+BlockStat;31;  64; 192;32;16;MMVDMergeFlag;0
+BlockStat;31;  64; 192;32;16;AffineFlag;0
+BlockStat;31;  64; 192;32;16;MVPIdxL0;255
+BlockStat;31;  64; 192;32;16;RefIdxL0;0
+BlockStat;31;  64; 192;32;16;MVPIdxL1;255
+BlockStat;31;  64; 192;32;16;RefIdxL1;0
+BlockStat;31;  64; 192;32;16;MVDL0;   0;   0
+BlockStat;31;  64; 192;32;16;MVL0;  -5;  -1
+BlockStat;31;  64; 192;32;16;MVDL1;   0;   0
+BlockStat;31;  64; 192;32;16;MVL1;  -5;  -1
+BlockStat;31;  64; 208; 8;16;Depth;4
+BlockStat;31;  64; 208; 8;16;QT_Depth;2
+BlockStat;31;  64; 208; 8;16;BT_Depth;3
+BlockStat;31;  64; 208; 8;16;MT_Depth;2
+BlockStat;31;  64; 208; 8;16;ChromaQPAdj;0
+BlockStat;31;  64; 208; 8;16;QP;41
+BlockStat;31;  64; 208; 8;16;SplitSeries;165921
+BlockStat;31;  64; 208; 8;16;SkipFlag;1
+BlockStat;31;  64; 208; 8;16;MMVDSkipFlag;0
+BlockStat;31;  64; 208; 8;16;PredMode;0
+BlockStat;31;  64; 208; 8;16;MergeIdx;39
+BlockStat;31;  64; 208; 8;16;MergeType;0
+BlockStat;31;  64; 208; 8;16;MMVDMergeFlag;1
+BlockStat;31;  64; 208; 8;16;MMVDMergeIdx;39
+BlockStat;31;  64; 208; 8;16;MVPIdxL0;255
+BlockStat;31;  64; 208; 8;16;RefIdxL0;0
+BlockStat;31;  64; 208; 8;16;MVPIdxL1;255
+BlockStat;31;  64; 208; 8;16;RefIdxL1;0
+BlockStat;31;  64; 208; 8;16;MVDL0;   0;   0
+BlockStat;31;  64; 208; 8;16;MVL0;  -5;  -3
+BlockStat;31;  64; 208; 8;16;MVDL1;   0;   0
+BlockStat;31;  64; 208; 8;16;MVL1;  -5;  -3
+BlockStat;31;  72; 208;16;16;Depth;4
+BlockStat;31;  72; 208;16;16;QT_Depth;2
+BlockStat;31;  72; 208;16;16;BT_Depth;2
+BlockStat;31;  72; 208;16;16;MT_Depth;2
+BlockStat;31;  72; 208;16;16;ChromaQPAdj;0
+BlockStat;31;  72; 208;16;16;QP;41
+BlockStat;31;  72; 208;16;16;SplitSeries;165921
+BlockStat;31;  72; 208;16;16;SkipFlag;1
+BlockStat;31;  72; 208;16;16;MMVDSkipFlag;0
+BlockStat;31;  72; 208;16;16;PredMode;0
+BlockStat;31;  72; 208;16;16;MergeIdx;4
+BlockStat;31;  72; 208;16;16;MergeType;0
+BlockStat;31;  72; 208;16;16;MMVDMergeFlag;0
+BlockStat;31;  72; 208;16;16;AffineFlag;1
+BlockStat;31;  72; 208;16;16;MVPIdxL0;0
+BlockStat;31;  72; 208;16;16;RefIdxL0;0
+BlockStat;31;  72; 208;16;16;MVPIdxL1;0
+BlockStat;31;  72; 208;16;16;RefIdxL1;0
+BlockStat;31;  72; 208;16;16;AffineMVL0;  -6;  -2;  -5;  -1;  -5;  -2
+BlockStat;31;  72; 208;16;16;AffineMVL1;  -6;  -2;  -5;  -1;  -5;  -2
+BlockStat;31;  88; 208; 8;16;Depth;4
+BlockStat;31;  88; 208; 8;16;QT_Depth;2
+BlockStat;31;  88; 208; 8;16;BT_Depth;3
+BlockStat;31;  88; 208; 8;16;MT_Depth;2
+BlockStat;31;  88; 208; 8;16;ChromaQPAdj;0
+BlockStat;31;  88; 208; 8;16;QP;41
+BlockStat;31;  88; 208; 8;16;SplitSeries;165921
+BlockStat;31;  88; 208; 8;16;SkipFlag;1
+BlockStat;31;  88; 208; 8;16;MMVDSkipFlag;0
+BlockStat;31;  88; 208; 8;16;PredMode;0
+BlockStat;31;  88; 208; 8;16;MergeIdx;0
+BlockStat;31;  88; 208; 8;16;MergeType;1
+BlockStat;31;  88; 208; 8;16;MMVDMergeFlag;0
+BlockStat;31;  88; 208; 8;16;AffineFlag;1
+BlockStat;31;  88; 208; 8;16;MVPIdxL0;255
+BlockStat;31;  88; 208; 8;16;RefIdxL0;0
+BlockStat;31;  88; 208; 8;16;MVPIdxL1;255
+BlockStat;31;  88; 208; 8;16;RefIdxL1;0
+BlockStat;31;  88; 208; 8;16;AffineMVL0;  -3;  -1;  -3;  -1;  -3;  -1
+BlockStat;31;  88; 208; 8;16;AffineMVL1;  -3;  -1;  -3;  -1;  -3;  -1
+BlockStat;31;  96; 192;32;32;Depth;2
+BlockStat;31;  96; 192;32;32;QT_Depth;2
+BlockStat;31;  96; 192;32;32;BT_Depth;0
+BlockStat;31;  96; 192;32;32;MT_Depth;0
+BlockStat;31;  96; 192;32;32;ChromaQPAdj;0
+BlockStat;31;  96; 192;32;32;QP;41
+BlockStat;31;  96; 192;32;32;SplitSeries;33
+BlockStat;31;  96; 192;32;32;SkipFlag;0
+BlockStat;31;  96; 192;32;32;PredMode;0
+BlockStat;31;  96; 192;32;32;MergeFlag;0
+BlockStat;31;  96; 192;32;32;InterDir;1
+BlockStat;31;  96; 192;32;32;AffineFlag;1
+BlockStat;31;  96; 192;32;32;AffineType;1
+BlockStat;31;  96; 192;32;32;MVPIdxL0;1
+BlockStat;31;  96; 192;32;32;RefIdxL0;0
+BlockStat;31;  96; 192;32;32;AffineMVL0;  -4;   3;  -4;   3;  -4;  -7
+BlockStat;31;  96; 192;32;32;RootCbf;0
+BlockStat;31;  64; 224;16;16;Depth;4
+BlockStat;31;  64; 224;16;16;QT_Depth;2
+BlockStat;31;  64; 224;16;16;BT_Depth;2
+BlockStat;31;  64; 224;16;16;MT_Depth;2
+BlockStat;31;  64; 224;16;16;ChromaQPAdj;0
+BlockStat;31;  64; 224;16;16;QP;41
+BlockStat;31;  64; 224;16;16;SplitSeries;100385
+BlockStat;31;  64; 224;16;16;SkipFlag;1
+BlockStat;31;  64; 224;16;16;MMVDSkipFlag;0
+BlockStat;31;  64; 224;16;16;PredMode;0
+BlockStat;31;  64; 224;16;16;MergeIdx;0
+BlockStat;31;  64; 224;16;16;MergeType;0
+BlockStat;31;  64; 224;16;16;MMVDMergeFlag;0
+BlockStat;31;  64; 224;16;16;AffineFlag;0
+BlockStat;31;  64; 224;16;16;MVPIdxL0;255
+BlockStat;31;  64; 224;16;16;RefIdxL0;0
+BlockStat;31;  64; 224;16;16;MVPIdxL1;255
+BlockStat;31;  64; 224;16;16;RefIdxL1;0
+BlockStat;31;  64; 224;16;16;MVDL0;   0;   0
+BlockStat;31;  64; 224;16;16;MVL0;  -4;  -1
+BlockStat;31;  64; 224;16;16;MVDL1;   0;   0
+BlockStat;31;  64; 224;16;16;MVL1;  -4;  -1
+BlockStat;31;  80; 224;16;16;Depth;4
+BlockStat;31;  80; 224;16;16;QT_Depth;2
+BlockStat;31;  80; 224;16;16;BT_Depth;2
+BlockStat;31;  80; 224;16;16;MT_Depth;2
+BlockStat;31;  80; 224;16;16;ChromaQPAdj;0
+BlockStat;31;  80; 224;16;16;QP;41
+BlockStat;31;  80; 224;16;16;SplitSeries;100385
+BlockStat;31;  80; 224;16;16;SkipFlag;1
+BlockStat;31;  80; 224;16;16;MMVDSkipFlag;0
+BlockStat;31;  80; 224;16;16;PredMode;0
+BlockStat;31;  80; 224;16;16;MergeIdx;2
+BlockStat;31;  80; 224;16;16;MergeType;0
+BlockStat;31;  80; 224;16;16;MMVDMergeFlag;0
+BlockStat;31;  80; 224;16;16;AffineFlag;0
+BlockStat;31;  80; 224;16;16;MVPIdxL0;255
+BlockStat;31;  80; 224;16;16;RefIdxL0;0
+BlockStat: POC 31 @(  80, 224) [16x16] TrianglePartitioning={   0,  16,  16,   0}
+BlockStat: POC 31 @[(80, 224)--(96, 224)--(80, 240)--] TriangleMVL0={  -4,  -1}
+BlockStat: POC 31 @[(96, 224)--(80, 240)--(96, 240)--] TriangleMVL0={  -4,  -7}
+BlockStat;31;  96; 224;32;16;Depth;3
+BlockStat;31;  96; 224;32;16;QT_Depth;2
+BlockStat;31;  96; 224;32;16;BT_Depth;1
+BlockStat;31;  96; 224;32;16;MT_Depth;1
+BlockStat;31;  96; 224;32;16;ChromaQPAdj;0
+BlockStat;31;  96; 224;32;16;QP;41
+BlockStat;31;  96; 224;32;16;SplitSeries;2081
+BlockStat;31;  96; 224;32;16;SkipFlag;1
+BlockStat;31;  96; 224;32;16;MMVDSkipFlag;0
+BlockStat;31;  96; 224;32;16;PredMode;0
+BlockStat;31;  96; 224;32;16;MergeIdx;0
+BlockStat;31;  96; 224;32;16;MergeType;0
+BlockStat;31;  96; 224;32;16;MMVDMergeFlag;0
+BlockStat;31;  96; 224;32;16;AffineFlag;0
+BlockStat;31;  96; 224;32;16;MVPIdxL0;255
+BlockStat;31;  96; 224;32;16;RefIdxL0;0
+BlockStat;31;  96; 224;32;16;MVDL0;   0;   0
+BlockStat;31;  96; 224;32;16;MVL0;  -4;  -7
+BlockStat;31; 128; 128;16;16;Depth;4
+BlockStat;31; 128; 128;16;16;QT_Depth;2
+BlockStat;31; 128; 128;16;16;BT_Depth;2
+BlockStat;31; 128; 128;16;16;MT_Depth;2
+BlockStat;31; 128; 128;16;16;ChromaQPAdj;0
+BlockStat;31; 128; 128;16;16;QP;41
+BlockStat;31; 128; 128;16;16;SplitSeries;68641
+BlockStat;31; 128; 128;16;16;SkipFlag;0
+BlockStat;31; 128; 128;16;16;PredMode;0
+BlockStat;31; 128; 128;16;16;MergeFlag;1
+BlockStat;31; 128; 128;16;16;MergeIdx;2
+BlockStat;31; 128; 128;16;16;MergeType;0
+BlockStat;31; 128; 128;16;16;MMVDMergeFlag;0
+BlockStat;31; 128; 128;16;16;AffineFlag;0
+BlockStat;31; 128; 128;16;16;MHIntraFlag;1
+BlockStat;31; 128; 128;16;16;Luma_IntraMode;0
+BlockStat;31; 128; 128;16;16;Chroma_IntraMode;70
+BlockStat;31; 128; 128;16;16;MVPIdxL0;255
+BlockStat;31; 128; 128;16;16;RefIdxL0;0
+BlockStat;31; 128; 128;16;16;MVPIdxL1;255
+BlockStat;31; 128; 128;16;16;RefIdxL1;0
+BlockStat;31; 128; 128;16;16;MVDL0;   0;   0
+BlockStat;31; 128; 128;16;16;MVL0;  -2;   0
+BlockStat;31; 128; 128;16;16;MVDL1;   0;   0
+BlockStat;31; 128; 128;16;16;MVL1;  -2;   0
+BlockStat;31; 128; 128;16;16;Cbf_Y;1
+BlockStat;31; 128; 128;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 128; 128;16;16;Cbf_Cb;0
+BlockStat;31; 128; 128;16;16;Cbf_Cr;0
+BlockStat;31; 128; 144;16;16;Depth;4
+BlockStat;31; 128; 144;16;16;QT_Depth;2
+BlockStat;31; 128; 144;16;16;BT_Depth;2
+BlockStat;31; 128; 144;16;16;MT_Depth;2
+BlockStat;31; 128; 144;16;16;ChromaQPAdj;0
+BlockStat;31; 128; 144;16;16;QP;41
+BlockStat;31; 128; 144;16;16;SplitSeries;68641
+BlockStat;31; 128; 144;16;16;SkipFlag;1
+BlockStat;31; 128; 144;16;16;MMVDSkipFlag;0
+BlockStat;31; 128; 144;16;16;PredMode;0
+BlockStat;31; 128; 144;16;16;MergeIdx;0
+BlockStat;31; 128; 144;16;16;MergeType;1
+BlockStat;31; 128; 144;16;16;MMVDMergeFlag;0
+BlockStat;31; 128; 144;16;16;AffineFlag;1
+BlockStat;31; 128; 144;16;16;MVPIdxL0;255
+BlockStat;31; 128; 144;16;16;RefIdxL0;0
+BlockStat;31; 128; 144;16;16;MVPIdxL1;255
+BlockStat;31; 128; 144;16;16;RefIdxL1;0
+BlockStat;31; 128; 144;16;16;AffineMVL0;  -4;   0;  -4;   0;  -4;   0
+BlockStat;31; 128; 144;16;16;AffineMVL1;  -4;  -1;  -4;  -1;  -4;  -1
+BlockStat;31; 144; 128;16;32;Depth;3
+BlockStat;31; 144; 128;16;32;QT_Depth;2
+BlockStat;31; 144; 128;16;32;BT_Depth;1
+BlockStat;31; 144; 128;16;32;MT_Depth;1
+BlockStat;31; 144; 128;16;32;ChromaQPAdj;0
+BlockStat;31; 144; 128;16;32;QP;41
+BlockStat;31; 144; 128;16;32;SplitSeries;3105
+BlockStat;31; 144; 128;16;32;SkipFlag;1
+BlockStat;31; 144; 128;16;32;MMVDSkipFlag;0
+BlockStat;31; 144; 128;16;32;PredMode;0
+BlockStat;31; 144; 128;16;32;MergeIdx;1
+BlockStat;31; 144; 128;16;32;MergeType;0
+BlockStat;31; 144; 128;16;32;MMVDMergeFlag;0
+BlockStat;31; 144; 128;16;32;AffineFlag;0
+BlockStat;31; 144; 128;16;32;MVPIdxL0;255
+BlockStat;31; 144; 128;16;32;RefIdxL0;0
+BlockStat;31; 144; 128;16;32;MVPIdxL1;255
+BlockStat;31; 144; 128;16;32;RefIdxL1;0
+BlockStat;31; 144; 128;16;32;MVDL0;   0;   0
+BlockStat;31; 144; 128;16;32;MVL0;   0;   0
+BlockStat;31; 144; 128;16;32;MVDL1;   0;   0
+BlockStat;31; 144; 128;16;32;MVL1;   0;   0
+BlockStat;31; 160; 128;32;32;Depth;2
+BlockStat;31; 160; 128;32;32;QT_Depth;2
+BlockStat;31; 160; 128;32;32;BT_Depth;0
+BlockStat;31; 160; 128;32;32;MT_Depth;0
+BlockStat;31; 160; 128;32;32;ChromaQPAdj;0
+BlockStat;31; 160; 128;32;32;QP;41
+BlockStat;31; 160; 128;32;32;SplitSeries;33
+BlockStat;31; 160; 128;32;32;SkipFlag;1
+BlockStat;31; 160; 128;32;32;MMVDSkipFlag;0
+BlockStat;31; 160; 128;32;32;PredMode;0
+BlockStat;31; 160; 128;32;32;MergeIdx;0
+BlockStat;31; 160; 128;32;32;MergeType;1
+BlockStat;31; 160; 128;32;32;MMVDMergeFlag;0
+BlockStat;31; 160; 128;32;32;AffineFlag;1
+BlockStat;31; 160; 128;32;32;MVPIdxL0;255
+BlockStat;31; 160; 128;32;32;RefIdxL0;0
+BlockStat;31; 160; 128;32;32;MVPIdxL1;255
+BlockStat;31; 160; 128;32;32;RefIdxL1;0
+BlockStat;31; 160; 128;32;32;AffineMVL0;   0;   0;   0;   0;   0;   1
+BlockStat;31; 160; 128;32;32;AffineMVL1;   0;   0;   0;   0;   0;   1
+BlockStat;31; 128; 160; 8;32;Depth;3
+BlockStat;31; 128; 160; 8;32;QT_Depth;2
+BlockStat;31; 128; 160; 8;32;BT_Depth;2
+BlockStat;31; 128; 160; 8;32;MT_Depth;1
+BlockStat;31; 128; 160; 8;32;ChromaQPAdj;0
+BlockStat;31; 128; 160; 8;32;QP;41
+BlockStat;31; 128; 160; 8;32;SplitSeries;5153
+BlockStat;31; 128; 160; 8;32;SkipFlag;1
+BlockStat;31; 128; 160; 8;32;MMVDSkipFlag;0
+BlockStat;31; 128; 160; 8;32;PredMode;0
+BlockStat;31; 128; 160; 8;32;MergeIdx;0
+BlockStat;31; 128; 160; 8;32;MergeType;1
+BlockStat;31; 128; 160; 8;32;MMVDMergeFlag;0
+BlockStat;31; 128; 160; 8;32;AffineFlag;1
+BlockStat;31; 128; 160; 8;32;MVPIdxL0;255
+BlockStat;31; 128; 160; 8;32;RefIdxL0;0
+BlockStat;31; 128; 160; 8;32;MVPIdxL1;255
+BlockStat;31; 128; 160; 8;32;RefIdxL1;0
+BlockStat;31; 128; 160; 8;32;AffineMVL0;  -2;   2;  -2;   2;  -2;   2
+BlockStat;31; 128; 160; 8;32;AffineMVL1;  -4;   0;  -4;   0;  -4;   0
+BlockStat;31; 136; 160;16;32;Depth;3
+BlockStat;31; 136; 160;16;32;QT_Depth;2
+BlockStat;31; 136; 160;16;32;BT_Depth;1
+BlockStat;31; 136; 160;16;32;MT_Depth;1
+BlockStat;31; 136; 160;16;32;ChromaQPAdj;0
+BlockStat;31; 136; 160;16;32;QP;41
+BlockStat;31; 136; 160;16;32;SplitSeries;5153
+BlockStat;31; 136; 160;16;32;SkipFlag;0
+BlockStat;31; 136; 160;16;32;PredMode;0
+BlockStat;31; 136; 160;16;32;MergeFlag;1
+BlockStat;31; 136; 160;16;32;MergeIdx;0
+BlockStat;31; 136; 160;16;32;MergeType;1
+BlockStat;31; 136; 160;16;32;MMVDMergeFlag;0
+BlockStat;31; 136; 160;16;32;AffineFlag;1
+BlockStat;31; 136; 160;16;32;MVPIdxL0;255
+BlockStat;31; 136; 160;16;32;RefIdxL0;0
+BlockStat;31; 136; 160;16;32;MVPIdxL1;255
+BlockStat;31; 136; 160;16;32;RefIdxL1;0
+BlockStat;31; 136; 160;16;32;AffineMVL0;  -2;   2;   0;   1;  -2;   2
+BlockStat;31; 136; 160;16;32;AffineMVL1;  -4;   0;   0;   1;  -4;   0
+BlockStat;31; 136; 160;12;32;Cbf_Y;0
+BlockStat;31; 136; 160;12;32;TransformSkipFlag_Y;0
+BlockStat;31; 136; 160;12;32;Cbf_Cb;0
+BlockStat;31; 136; 160;12;32;Cbf_Cr;0
+BlockStat;31; 148; 160; 4;32;Cbf_Y;2
+BlockStat;31; 148; 160; 4;32;TransformSkipFlag_Y;0
+BlockStat;31; 148; 160; 4;32;Cbf_Cb;0
+BlockStat;31; 148; 160; 4;32;Cbf_Cr;0
+BlockStat;31; 152; 160; 8;16;Depth;4
+BlockStat;31; 152; 160; 8;16;QT_Depth;2
+BlockStat;31; 152; 160; 8;16;BT_Depth;3
+BlockStat;31; 152; 160; 8;16;MT_Depth;2
+BlockStat;31; 152; 160; 8;16;ChromaQPAdj;0
+BlockStat;31; 152; 160; 8;16;QP;41
+BlockStat;31; 152; 160; 8;16;SplitSeries;70689
+BlockStat;31; 152; 160; 8;16;SkipFlag;1
+BlockStat;31; 152; 160; 8;16;MMVDSkipFlag;0
+BlockStat;31; 152; 160; 8;16;PredMode;0
+BlockStat;31; 152; 160; 8;16;MergeIdx;1
+BlockStat;31; 152; 160; 8;16;MergeType;0
+BlockStat;31; 152; 160; 8;16;MMVDMergeFlag;0
+BlockStat;31; 152; 160; 8;16;AffineFlag;0
+BlockStat;31; 152; 160; 8;16;MVPIdxL0;255
+BlockStat;31; 152; 160; 8;16;RefIdxL0;0
+BlockStat;31; 152; 160; 8;16;MVPIdxL1;255
+BlockStat;31; 152; 160; 8;16;RefIdxL1;0
+BlockStat;31; 152; 160; 8;16;MVDL0;   0;   0
+BlockStat;31; 152; 160; 8;16;MVL0;   0;   0
+BlockStat;31; 152; 160; 8;16;MVDL1;   0;   0
+BlockStat;31; 152; 160; 8;16;MVL1;   0;   0
+BlockStat;31; 152; 176; 8;16;Depth;4
+BlockStat;31; 152; 176; 8;16;QT_Depth;2
+BlockStat;31; 152; 176; 8;16;BT_Depth;3
+BlockStat;31; 152; 176; 8;16;MT_Depth;2
+BlockStat;31; 152; 176; 8;16;ChromaQPAdj;0
+BlockStat;31; 152; 176; 8;16;QP;41
+BlockStat;31; 152; 176; 8;16;SplitSeries;70689
+BlockStat;31; 152; 176; 8;16;SkipFlag;1
+BlockStat;31; 152; 176; 8;16;MMVDSkipFlag;0
+BlockStat;31; 152; 176; 8;16;PredMode;0
+BlockStat;31; 152; 176; 8;16;MergeIdx;43
+BlockStat;31; 152; 176; 8;16;MergeType;0
+BlockStat;31; 152; 176; 8;16;MMVDMergeFlag;1
+BlockStat;31; 152; 176; 8;16;MMVDMergeIdx;43
+BlockStat;31; 152; 176; 8;16;MVPIdxL0;255
+BlockStat;31; 152; 176; 8;16;RefIdxL0;0
+BlockStat;31; 152; 176; 8;16;MVPIdxL1;255
+BlockStat;31; 152; 176; 8;16;RefIdxL1;0
+BlockStat;31; 152; 176; 8;16;MVDL0;   0;   0
+BlockStat;31; 152; 176; 8;16;MVL0;   0;  -4
+BlockStat;31; 152; 176; 8;16;MVDL1;   0;   0
+BlockStat;31; 152; 176; 8;16;MVL1;   0;  -4
+BlockStat;31; 160; 160;16;16;Depth;4
+BlockStat;31; 160; 160;16;16;QT_Depth;2
+BlockStat;31; 160; 160;16;16;BT_Depth;2
+BlockStat;31; 160; 160;16;16;MT_Depth;2
+BlockStat;31; 160; 160;16;16;ChromaQPAdj;0
+BlockStat;31; 160; 160;16;16;QP;41
+BlockStat;31; 160; 160;16;16;SplitSeries;68641
+BlockStat;31; 160; 160;16;16;SkipFlag;1
+BlockStat;31; 160; 160;16;16;MMVDSkipFlag;0
+BlockStat;31; 160; 160;16;16;PredMode;0
+BlockStat;31; 160; 160;16;16;MergeIdx;0
+BlockStat;31; 160; 160;16;16;MergeType;0
+BlockStat;31; 160; 160;16;16;MMVDMergeFlag;1
+BlockStat;31; 160; 160;16;16;MMVDMergeIdx;0
+BlockStat;31; 160; 160;16;16;MVPIdxL0;255
+BlockStat;31; 160; 160;16;16;RefIdxL0;0
+BlockStat;31; 160; 160;16;16;MVPIdxL1;255
+BlockStat;31; 160; 160;16;16;RefIdxL1;0
+BlockStat;31; 160; 160;16;16;MVDL0;   0;   0
+BlockStat;31; 160; 160;16;16;MVL0;   1;   0
+BlockStat;31; 160; 160;16;16;MVDL1;   0;   0
+BlockStat;31; 160; 160;16;16;MVL1;   1;   0
+BlockStat;31; 160; 176;16;16;Depth;4
+BlockStat;31; 160; 176;16;16;QT_Depth;2
+BlockStat;31; 160; 176;16;16;BT_Depth;2
+BlockStat;31; 160; 176;16;16;MT_Depth;2
+BlockStat;31; 160; 176;16;16;ChromaQPAdj;0
+BlockStat;31; 160; 176;16;16;QP;41
+BlockStat;31; 160; 176;16;16;SplitSeries;68641
+BlockStat;31; 160; 176;16;16;SkipFlag;1
+BlockStat;31; 160; 176;16;16;MMVDSkipFlag;0
+BlockStat;31; 160; 176;16;16;PredMode;0
+BlockStat;31; 160; 176;16;16;MergeIdx;2
+BlockStat;31; 160; 176;16;16;MergeType;0
+BlockStat;31; 160; 176;16;16;MMVDMergeFlag;0
+BlockStat;31; 160; 176;16;16;AffineFlag;1
+BlockStat;31; 160; 176;16;16;MVPIdxL0;0
+BlockStat;31; 160; 176;16;16;RefIdxL0;0
+BlockStat;31; 160; 176;16;16;MVPIdxL1;0
+BlockStat;31; 160; 176;16;16;RefIdxL1;0
+BlockStat;31; 160; 176;16;16;AffineMVL0;  -1;  -1;  -8;  -1;  -1;  -4
+BlockStat;31; 160; 176;16;16;AffineMVL1;  -1;  -1;  -8;  -1;  -1;  -4
+BlockStat;31; 176; 160; 8;32;Depth;4
+BlockStat;31; 176; 160; 8;32;QT_Depth;2
+BlockStat;31; 176; 160; 8;32;BT_Depth;2
+BlockStat;31; 176; 160; 8;32;MT_Depth;2
+BlockStat;31; 176; 160; 8;32;ChromaQPAdj;0
+BlockStat;31; 176; 160; 8;32;QP;41
+BlockStat;31; 176; 160; 8;32;SplitSeries;101409
+BlockStat;31; 176; 160; 8;32;SkipFlag;1
+BlockStat;31; 176; 160; 8;32;MMVDSkipFlag;0
+BlockStat;31; 176; 160; 8;32;PredMode;0
+BlockStat;31; 176; 160; 8;32;MergeIdx;0
+BlockStat;31; 176; 160; 8;32;MergeType;0
+BlockStat;31; 176; 160; 8;32;MMVDMergeFlag;0
+BlockStat;31; 176; 160; 8;32;AffineFlag;0
+BlockStat;31; 176; 160; 8;32;MVPIdxL0;255
+BlockStat;31; 176; 160; 8;32;RefIdxL0;0
+BlockStat: POC 31 @( 176, 160) [ 8x32] TrianglePartitioning={   0,  32,   8,   0}
+BlockStat: POC 31 @[(176, 160)--(184, 160)--(176, 192)--] TriangleMVL0={   1,   0}
+BlockStat: POC 31 @[(184, 160)--(176, 192)--(184, 192)--] TriangleMVL0={  -8,  -4}
+BlockStat;31; 184; 160; 8;32;Depth;4
+BlockStat;31; 184; 160; 8;32;QT_Depth;2
+BlockStat;31; 184; 160; 8;32;BT_Depth;2
+BlockStat;31; 184; 160; 8;32;MT_Depth;2
+BlockStat;31; 184; 160; 8;32;ChromaQPAdj;0
+BlockStat;31; 184; 160; 8;32;QP;41
+BlockStat;31; 184; 160; 8;32;SplitSeries;101409
+BlockStat;31; 184; 160; 8;32;SkipFlag;1
+BlockStat;31; 184; 160; 8;32;MMVDSkipFlag;0
+BlockStat;31; 184; 160; 8;32;PredMode;0
+BlockStat;31; 184; 160; 8;32;MergeIdx;8
+BlockStat;31; 184; 160; 8;32;MergeType;0
+BlockStat;31; 184; 160; 8;32;MMVDMergeFlag;1
+BlockStat;31; 184; 160; 8;32;MMVDMergeIdx;8
+BlockStat;31; 184; 160; 8;32;MVPIdxL0;255
+BlockStat;31; 184; 160; 8;32;RefIdxL0;0
+BlockStat;31; 184; 160; 8;32;MVDL0;   0;   0
+BlockStat;31; 184; 160; 8;32;MVL0;  -4;  -4
+BlockStat;31; 192; 128;32;32;Depth;2
+BlockStat;31; 192; 128;32;32;QT_Depth;2
+BlockStat;31; 192; 128;32;32;BT_Depth;0
+BlockStat;31; 192; 128;32;32;MT_Depth;0
+BlockStat;31; 192; 128;32;32;ChromaQPAdj;0
+BlockStat;31; 192; 128;32;32;QP;41
+BlockStat;31; 192; 128;32;32;SplitSeries;33
+BlockStat;31; 192; 128;32;32;SkipFlag;1
+BlockStat;31; 192; 128;32;32;MMVDSkipFlag;0
+BlockStat;31; 192; 128;32;32;PredMode;0
+BlockStat;31; 192; 128;32;32;MergeIdx;0
+BlockStat;31; 192; 128;32;32;MergeType;1
+BlockStat;31; 192; 128;32;32;MMVDMergeFlag;0
+BlockStat;31; 192; 128;32;32;AffineFlag;1
+BlockStat;31; 192; 128;32;32;MVPIdxL0;255
+BlockStat;31; 192; 128;32;32;RefIdxL0;0
+BlockStat;31; 192; 128;32;32;MVPIdxL1;255
+BlockStat;31; 192; 128;32;32;RefIdxL1;0
+BlockStat;31; 192; 128;32;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192; 128;32;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 224; 128;32;32;Depth;2
+BlockStat;31; 224; 128;32;32;QT_Depth;2
+BlockStat;31; 224; 128;32;32;BT_Depth;0
+BlockStat;31; 224; 128;32;32;MT_Depth;0
+BlockStat;31; 224; 128;32;32;ChromaQPAdj;0
+BlockStat;31; 224; 128;32;32;QP;41
+BlockStat;31; 224; 128;32;32;SplitSeries;33
+BlockStat;31; 224; 128;32;32;SkipFlag;1
+BlockStat;31; 224; 128;32;32;MMVDSkipFlag;0
+BlockStat;31; 224; 128;32;32;PredMode;0
+BlockStat;31; 224; 128;32;32;MergeIdx;3
+BlockStat;31; 224; 128;32;32;MergeType;0
+BlockStat;31; 224; 128;32;32;MMVDMergeFlag;0
+BlockStat;31; 224; 128;32;32;AffineFlag;0
+BlockStat;31; 224; 128;32;32;MVPIdxL0;255
+BlockStat;31; 224; 128;32;32;RefIdxL0;0
+BlockStat;31; 224; 128;32;32;MVPIdxL1;255
+BlockStat;31; 224; 128;32;32;RefIdxL1;0
+BlockStat;31; 224; 128;32;32;MVDL0;   0;   0
+BlockStat;31; 224; 128;32;32;MVL0;   0;   0
+BlockStat;31; 224; 128;32;32;MVDL1;   0;   0
+BlockStat;31; 224; 128;32;32;MVL1;   0;   0
+BlockStat;31; 192; 160;16; 8;Depth;4
+BlockStat;31; 192; 160;16; 8;QT_Depth;2
+BlockStat;31; 192; 160;16; 8;BT_Depth;3
+BlockStat;31; 192; 160;16; 8;MT_Depth;2
+BlockStat;31; 192; 160;16; 8;ChromaQPAdj;0
+BlockStat;31; 192; 160;16; 8;QP;41
+BlockStat;31; 192; 160;16; 8;SplitSeries;134177
+BlockStat;31; 192; 160;16; 8;SkipFlag;1
+BlockStat;31; 192; 160;16; 8;MMVDSkipFlag;0
+BlockStat;31; 192; 160;16; 8;PredMode;0
+BlockStat;31; 192; 160;16; 8;MergeIdx;0
+BlockStat;31; 192; 160;16; 8;MergeType;1
+BlockStat;31; 192; 160;16; 8;MMVDMergeFlag;0
+BlockStat;31; 192; 160;16; 8;AffineFlag;1
+BlockStat;31; 192; 160;16; 8;MVPIdxL0;255
+BlockStat;31; 192; 160;16; 8;RefIdxL0;0
+BlockStat;31; 192; 160;16; 8;MVPIdxL1;255
+BlockStat;31; 192; 160;16; 8;RefIdxL1;0
+BlockStat;31; 192; 160;16; 8;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192; 160;16; 8;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 192; 168;16;16;Depth;4
+BlockStat;31; 192; 168;16;16;QT_Depth;2
+BlockStat;31; 192; 168;16;16;BT_Depth;2
+BlockStat;31; 192; 168;16;16;MT_Depth;2
+BlockStat;31; 192; 168;16;16;ChromaQPAdj;0
+BlockStat;31; 192; 168;16;16;QP;41
+BlockStat;31; 192; 168;16;16;SplitSeries;134177
+BlockStat;31; 192; 168;16;16;SkipFlag;1
+BlockStat;31; 192; 168;16;16;MMVDSkipFlag;0
+BlockStat;31; 192; 168;16;16;PredMode;0
+BlockStat;31; 192; 168;16;16;MergeIdx;1
+BlockStat;31; 192; 168;16;16;MergeType;0
+BlockStat;31; 192; 168;16;16;MMVDMergeFlag;0
+BlockStat;31; 192; 168;16;16;AffineFlag;0
+BlockStat;31; 192; 168;16;16;MVPIdxL0;255
+BlockStat;31; 192; 168;16;16;RefIdxL0;0
+BlockStat;31; 192; 168;16;16;MVPIdxL1;255
+BlockStat;31; 192; 168;16;16;RefIdxL1;0
+BlockStat;31; 192; 168;16;16;MVDL0;   0;   0
+BlockStat;31; 192; 168;16;16;MVL0;   0;   0
+BlockStat;31; 192; 168;16;16;MVDL1;   0;   0
+BlockStat;31; 192; 168;16;16;MVL1;   0;   0
+BlockStat;31; 192; 184;16; 8;Depth;4
+BlockStat;31; 192; 184;16; 8;QT_Depth;2
+BlockStat;31; 192; 184;16; 8;BT_Depth;3
+BlockStat;31; 192; 184;16; 8;MT_Depth;2
+BlockStat;31; 192; 184;16; 8;ChromaQPAdj;0
+BlockStat;31; 192; 184;16; 8;QP;41
+BlockStat;31; 192; 184;16; 8;SplitSeries;134177
+BlockStat;31; 192; 184;16; 8;SkipFlag;1
+BlockStat;31; 192; 184;16; 8;MMVDSkipFlag;0
+BlockStat;31; 192; 184;16; 8;PredMode;0
+BlockStat;31; 192; 184;16; 8;MergeIdx;4
+BlockStat;31; 192; 184;16; 8;MergeType;0
+BlockStat;31; 192; 184;16; 8;MMVDMergeFlag;1
+BlockStat;31; 192; 184;16; 8;MMVDMergeIdx;4
+BlockStat;31; 192; 184;16; 8;MVPIdxL0;255
+BlockStat;31; 192; 184;16; 8;RefIdxL0;0
+BlockStat;31; 192; 184;16; 8;MVDL0;   0;   0
+BlockStat;31; 192; 184;16; 8;MVL0;  -2;  -4
+BlockStat;31; 208; 160;16;32;Depth;3
+BlockStat;31; 208; 160;16;32;QT_Depth;2
+BlockStat;31; 208; 160;16;32;BT_Depth;1
+BlockStat;31; 208; 160;16;32;MT_Depth;1
+BlockStat;31; 208; 160;16;32;ChromaQPAdj;0
+BlockStat;31; 208; 160;16;32;QP;41
+BlockStat;31; 208; 160;16;32;SplitSeries;3105
+BlockStat;31; 208; 160;16;32;SkipFlag;1
+BlockStat;31; 208; 160;16;32;MMVDSkipFlag;0
+BlockStat;31; 208; 160;16;32;PredMode;0
+BlockStat;31; 208; 160;16;32;MergeIdx;0
+BlockStat;31; 208; 160;16;32;MergeType;1
+BlockStat;31; 208; 160;16;32;MMVDMergeFlag;0
+BlockStat;31; 208; 160;16;32;AffineFlag;1
+BlockStat;31; 208; 160;16;32;MVPIdxL0;255
+BlockStat;31; 208; 160;16;32;RefIdxL0;0
+BlockStat;31; 208; 160;16;32;MVPIdxL1;255
+BlockStat;31; 208; 160;16;32;RefIdxL1;0
+BlockStat;31; 208; 160;16;32;AffineMVL0;   0;   0;   0;   0;   0;   1
+BlockStat;31; 208; 160;16;32;AffineMVL1;   0;   0;   0;   0;   0;   1
+BlockStat;31; 224; 160;32;32;Depth;2
+BlockStat;31; 224; 160;32;32;QT_Depth;2
+BlockStat;31; 224; 160;32;32;BT_Depth;0
+BlockStat;31; 224; 160;32;32;MT_Depth;0
+BlockStat;31; 224; 160;32;32;ChromaQPAdj;0
+BlockStat;31; 224; 160;32;32;QP;41
+BlockStat;31; 224; 160;32;32;SplitSeries;33
+BlockStat;31; 224; 160;32;32;SkipFlag;1
+BlockStat;31; 224; 160;32;32;MMVDSkipFlag;0
+BlockStat;31; 224; 160;32;32;PredMode;0
+BlockStat;31; 224; 160;32;32;MergeIdx;0
+BlockStat;31; 224; 160;32;32;MergeType;1
+BlockStat;31; 224; 160;32;32;MMVDMergeFlag;0
+BlockStat;31; 224; 160;32;32;AffineFlag;1
+BlockStat;31; 224; 160;32;32;MVPIdxL0;255
+BlockStat;31; 224; 160;32;32;RefIdxL0;0
+BlockStat;31; 224; 160;32;32;MVPIdxL1;255
+BlockStat;31; 224; 160;32;32;RefIdxL1;0
+BlockStat;31; 224; 160;32;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 224; 160;32;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 128; 192;32;16;Depth;3
+BlockStat;31; 128; 192;32;16;QT_Depth;2
+BlockStat;31; 128; 192;32;16;BT_Depth;1
+BlockStat;31; 128; 192;32;16;MT_Depth;1
+BlockStat;31; 128; 192;32;16;ChromaQPAdj;0
+BlockStat;31; 128; 192;32;16;QP;41
+BlockStat;31; 128; 192;32;16;SplitSeries;2081
+BlockStat;31; 128; 192;32;16;SkipFlag;1
+BlockStat;31; 128; 192;32;16;MMVDSkipFlag;0
+BlockStat;31; 128; 192;32;16;PredMode;0
+BlockStat;31; 128; 192;32;16;MergeIdx;39
+BlockStat;31; 128; 192;32;16;MergeType;0
+BlockStat;31; 128; 192;32;16;MMVDMergeFlag;1
+BlockStat;31; 128; 192;32;16;MMVDMergeIdx;39
+BlockStat;31; 128; 192;32;16;MVPIdxL0;255
+BlockStat;31; 128; 192;32;16;RefIdxL0;0
+BlockStat;31; 128; 192;32;16;MVPIdxL1;255
+BlockStat;31; 128; 192;32;16;RefIdxL1;0
+BlockStat;31; 128; 192;32;16;MVDL0;   0;   0
+BlockStat;31; 128; 192;32;16;MVL0;   0;  -6
+BlockStat;31; 128; 192;32;16;MVDL1;   0;   0
+BlockStat;31; 128; 192;32;16;MVL1;   0;  -6
+BlockStat;31; 128; 208;32;16;Depth;3
+BlockStat;31; 128; 208;32;16;QT_Depth;2
+BlockStat;31; 128; 208;32;16;BT_Depth;1
+BlockStat;31; 128; 208;32;16;MT_Depth;1
+BlockStat;31; 128; 208;32;16;ChromaQPAdj;0
+BlockStat;31; 128; 208;32;16;QP;41
+BlockStat;31; 128; 208;32;16;SplitSeries;2081
+BlockStat;31; 128; 208;32;16;SkipFlag;0
+BlockStat;31; 128; 208;32;16;PredMode;0
+BlockStat;31; 128; 208;32;16;MergeFlag;1
+BlockStat;31; 128; 208;32;16;MergeIdx;0
+BlockStat;31; 128; 208;32;16;MergeType;0
+BlockStat;31; 128; 208;32;16;MMVDMergeFlag;0
+BlockStat;31; 128; 208;32;16;AffineFlag;0
+BlockStat;31; 128; 208;32;16;MHIntraFlag;0
+BlockStat;31; 128; 208;32;16;MVPIdxL0;255
+BlockStat;31; 128; 208;32;16;RefIdxL0;0
+BlockStat;31; 128; 208;32;16;MVDL0;   0;   0
+BlockStat;31; 128; 208;32;16;MVL0;  -4;  -7
+BlockStat;31; 128; 208;24;16;Cbf_Y;0
+BlockStat;31; 128; 208;24;16;TransformSkipFlag_Y;0
+BlockStat;31; 128; 208;24;16;Cbf_Cb;0
+BlockStat;31; 128; 208;24;16;Cbf_Cr;0
+BlockStat;31; 152; 208; 8;16;Cbf_Y;2
+BlockStat;31; 152; 208; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 152; 208; 8;16;Cbf_Cb;0
+BlockStat;31; 152; 208; 8;16;Cbf_Cr;0
+BlockStat;31; 160; 192;32;16;Depth;3
+BlockStat;31; 160; 192;32;16;QT_Depth;2
+BlockStat;31; 160; 192;32;16;BT_Depth;1
+BlockStat;31; 160; 192;32;16;MT_Depth;1
+BlockStat;31; 160; 192;32;16;ChromaQPAdj;0
+BlockStat;31; 160; 192;32;16;QP;41
+BlockStat;31; 160; 192;32;16;SplitSeries;2081
+BlockStat;31; 160; 192;32;16;SkipFlag;1
+BlockStat;31; 160; 192;32;16;MMVDSkipFlag;0
+BlockStat;31; 160; 192;32;16;PredMode;0
+BlockStat;31; 160; 192;32;16;MergeIdx;10
+BlockStat;31; 160; 192;32;16;MergeType;0
+BlockStat;31; 160; 192;32;16;MMVDMergeFlag;1
+BlockStat;31; 160; 192;32;16;MMVDMergeIdx;10
+BlockStat;31; 160; 192;32;16;MVPIdxL0;255
+BlockStat;31; 160; 192;32;16;RefIdxL0;0
+BlockStat;31; 160; 192;32;16;MVPIdxL1;255
+BlockStat;31; 160; 192;32;16;RefIdxL1;0
+BlockStat;31; 160; 192;32;16;MVDL0;   0;   0
+BlockStat;31; 160; 192;32;16;MVL0;   0;  -2
+BlockStat;31; 160; 192;32;16;MVDL1;   0;   0
+BlockStat;31; 160; 192;32;16;MVL1;   0;  -2
+BlockStat;31; 160; 208;32;16;Depth;3
+BlockStat;31; 160; 208;32;16;QT_Depth;2
+BlockStat;31; 160; 208;32;16;BT_Depth;1
+BlockStat;31; 160; 208;32;16;MT_Depth;1
+BlockStat;31; 160; 208;32;16;ChromaQPAdj;0
+BlockStat;31; 160; 208;32;16;QP;41
+BlockStat;31; 160; 208;32;16;SplitSeries;2081
+BlockStat;31; 160; 208;32;16;SkipFlag;0
+BlockStat;31; 160; 208;32;16;PredMode;0
+BlockStat;31; 160; 208;32;16;MergeFlag;1
+BlockStat;31; 160; 208;32;16;MergeIdx;0
+BlockStat;31; 160; 208;32;16;MergeType;0
+BlockStat;31; 160; 208;32;16;MMVDMergeFlag;0
+BlockStat;31; 160; 208;32;16;AffineFlag;0
+BlockStat;31; 160; 208;32;16;MHIntraFlag;0
+BlockStat;31; 160; 208;32;16;MVPIdxL0;255
+BlockStat;31; 160; 208;32;16;RefIdxL0;0
+BlockStat: POC 31 @( 160, 208) [32x16] TrianglePartitioning={   0,   0,  32,  16}
+BlockStat: POC 31 @[(160, 208)--(192, 208)--(192, 224)--] TriangleMVL0={  -4,  -7}
+BlockStat: POC 31 @[(160, 208)--(160, 224)--(192, 224)--] TriangleMVL0={   0,  -2}
+BlockStat;31; 160; 208;32;16;Cbf_Y;1
+BlockStat;31; 160; 208;32;16;TransformSkipFlag_Y;0
+BlockStat;31; 160; 208;32;16;Cbf_Cb;0
+BlockStat;31; 160; 208;32;16;Cbf_Cr;0
+BlockStat;31; 128; 224;16;16;Depth;3
+BlockStat;31; 128; 224;16;16;QT_Depth;3
+BlockStat;31; 128; 224;16;16;BT_Depth;0
+BlockStat;31; 128; 224;16;16;MT_Depth;0
+BlockStat;31; 128; 224;16;16;ChromaQPAdj;0
+BlockStat;31; 128; 224;16;16;QP;41
+BlockStat;31; 128; 224;16;16;SplitSeries;1057
+BlockStat;31; 128; 224;16;16;SkipFlag;1
+BlockStat;31; 128; 224;16;16;MMVDSkipFlag;0
+BlockStat;31; 128; 224;16;16;PredMode;0
+BlockStat;31; 128; 224;16;16;MergeIdx;0
+BlockStat;31; 128; 224;16;16;MergeType;0
+BlockStat;31; 128; 224;16;16;MMVDMergeFlag;0
+BlockStat;31; 128; 224;16;16;AffineFlag;0
+BlockStat;31; 128; 224;16;16;MVPIdxL0;255
+BlockStat;31; 128; 224;16;16;RefIdxL0;0
+BlockStat;31; 128; 224;16;16;MVDL0;   0;   0
+BlockStat;31; 128; 224;16;16;MVL0;  -4;  -7
+BlockStat;31; 144; 224;16; 4;Depth;5
+BlockStat;31; 144; 224;16; 4;QT_Depth;3
+BlockStat;31; 144; 224;16; 4;BT_Depth;2
+BlockStat;31; 144; 224;16; 4;MT_Depth;2
+BlockStat;31; 144; 224;16; 4;ChromaQPAdj;0
+BlockStat;31; 144; 224;16; 4;QP;41
+BlockStat;31; 144; 224;16; 4;SplitSeries;2163745
+BlockStat;31; 144; 224;16; 4;SkipFlag;0
+BlockStat;31; 144; 224;16; 4;PredMode;0
+BlockStat;31; 144; 224;16; 4;MergeFlag;0
+BlockStat;31; 144; 224;16; 4;InterDir;1
+BlockStat;31; 144; 224;16; 4;MVPIdxL0;0
+BlockStat;31; 144; 224;16; 4;RefIdxL0;0
+BlockStat;31; 144; 224;16; 4;MVDL0;  52;   0
+BlockStat;31; 144; 224;16; 4;MVL0;  48;  -8
+BlockStat;31; 144; 224;16; 4;IMVMode;1
+BlockStat;31; 144; 224;16; 4;RootCbf;0
+BlockStat;31; 144; 228;16; 4;Depth;5
+BlockStat;31; 144; 228;16; 4;QT_Depth;3
+BlockStat;31; 144; 228;16; 4;BT_Depth;2
+BlockStat;31; 144; 228;16; 4;MT_Depth;2
+BlockStat;31; 144; 228;16; 4;ChromaQPAdj;0
+BlockStat;31; 144; 228;16; 4;QP;41
+BlockStat;31; 144; 228;16; 4;SplitSeries;2163745
+BlockStat;31; 144; 228;16; 4;SkipFlag;1
+BlockStat;31; 144; 228;16; 4;MMVDSkipFlag;0
+BlockStat;31; 144; 228;16; 4;PredMode;0
+BlockStat;31; 144; 228;16; 4;MergeIdx;0
+BlockStat;31; 144; 228;16; 4;MergeType;0
+BlockStat;31; 144; 228;16; 4;MMVDMergeFlag;0
+BlockStat;31; 144; 228;16; 4;MVPIdxL0;255
+BlockStat;31; 144; 228;16; 4;RefIdxL0;0
+BlockStat;31; 144; 228;16; 4;MVDL0;   0;   0
+BlockStat;31; 144; 228;16; 4;MVL0;  -4;  -7
+BlockStat;31; 144; 232;16; 8;Depth;4
+BlockStat;31; 144; 232;16; 8;QT_Depth;3
+BlockStat;31; 144; 232;16; 8;BT_Depth;1
+BlockStat;31; 144; 232;16; 8;MT_Depth;1
+BlockStat;31; 144; 232;16; 8;ChromaQPAdj;0
+BlockStat;31; 144; 232;16; 8;QP;41
+BlockStat;31; 144; 232;16; 8;SplitSeries;66593
+BlockStat;31; 144; 232;16; 8;SkipFlag;0
+BlockStat;31; 144; 232;16; 8;PredMode;0
+BlockStat;31; 144; 232;16; 8;MergeFlag;1
+BlockStat;31; 144; 232;16; 8;MergeIdx;5
+BlockStat;31; 144; 232;16; 8;MergeType;0
+BlockStat;31; 144; 232;16; 8;MMVDMergeFlag;0
+BlockStat;31; 144; 232;16; 8;AffineFlag;0
+BlockStat;31; 144; 232;16; 8;MHIntraFlag;1
+BlockStat;31; 144; 232;16; 8;Luma_IntraMode;0
+BlockStat;31; 144; 232;16; 8;Chroma_IntraMode;70
+BlockStat;31; 144; 232;16; 8;MVPIdxL0;255
+BlockStat;31; 144; 232;16; 8;RefIdxL0;0
+BlockStat;31; 144; 232;16; 8;MVPIdxL1;255
+BlockStat;31; 144; 232;16; 8;RefIdxL1;0
+BlockStat;31; 144; 232;16; 8;MVDL0;   0;   0
+BlockStat;31; 144; 232;16; 8;MVL0;  -2;  -4
+BlockStat;31; 144; 232;16; 8;MVDL1;   0;   0
+BlockStat;31; 144; 232;16; 8;MVL1;   1;  -1
+BlockStat;31; 144; 232;16; 8;Cbf_Y;1
+BlockStat;31; 144; 232;16; 8;TransformSkipFlag_Y;0
+BlockStat;31; 144; 232;16; 8;Cbf_Cb;0
+BlockStat;31; 144; 232;16; 8;Cbf_Cr;0
+BlockStat;31; 160; 224;16; 4;Depth;4
+BlockStat;31; 160; 224;16; 4;QT_Depth;3
+BlockStat;31; 160; 224;16; 4;BT_Depth;2
+BlockStat;31; 160; 224;16; 4;MT_Depth;1
+BlockStat;31; 160; 224;16; 4;ChromaQPAdj;0
+BlockStat;31; 160; 224;16; 4;QP;41
+BlockStat;31; 160; 224;16; 4;SplitSeries;132129
+BlockStat;31; 160; 224;16; 4;SkipFlag;1
+BlockStat;31; 160; 224;16; 4;MMVDSkipFlag;0
+BlockStat;31; 160; 224;16; 4;PredMode;0
+BlockStat;31; 160; 224;16; 4;MergeIdx;4
+BlockStat;31; 160; 224;16; 4;MergeType;0
+BlockStat;31; 160; 224;16; 4;MMVDMergeFlag;1
+BlockStat;31; 160; 224;16; 4;MMVDMergeIdx;4
+BlockStat;31; 160; 224;16; 4;MVPIdxL0;255
+BlockStat;31; 160; 224;16; 4;RefIdxL0;0
+BlockStat;31; 160; 224;16; 4;MVDL0;   0;   0
+BlockStat;31; 160; 224;16; 4;MVL0;  50;  -8
+BlockStat;31; 160; 228;16; 8;Depth;4
+BlockStat;31; 160; 228;16; 8;QT_Depth;3
+BlockStat;31; 160; 228;16; 8;BT_Depth;1
+BlockStat;31; 160; 228;16; 8;MT_Depth;1
+BlockStat;31; 160; 228;16; 8;ChromaQPAdj;0
+BlockStat;31; 160; 228;16; 8;QP;41
+BlockStat;31; 160; 228;16; 8;SplitSeries;132129
+BlockStat;31; 160; 228;16; 8;SkipFlag;1
+BlockStat;31; 160; 228;16; 8;MMVDSkipFlag;0
+BlockStat;31; 160; 228;16; 8;PredMode;0
+BlockStat;31; 160; 228;16; 8;MergeIdx;0
+BlockStat;31; 160; 228;16; 8;MergeType;1
+BlockStat;31; 160; 228;16; 8;MMVDMergeFlag;0
+BlockStat;31; 160; 228;16; 8;AffineFlag;1
+BlockStat;31; 160; 228;16; 8;MVPIdxL0;255
+BlockStat;31; 160; 228;16; 8;RefIdxL0;0
+BlockStat;31; 160; 228;16; 8;MVPIdxL1;255
+BlockStat;31; 160; 228;16; 8;RefIdxL1;0
+BlockStat;31; 160; 228;16; 8;AffineMVL0;   0;   1;   0;   1;   0;   1
+BlockStat;31; 160; 228;16; 8;AffineMVL1;   0;   1;   0;   1;   0;   1
+BlockStat;31; 160; 236;16; 4;Depth;4
+BlockStat;31; 160; 236;16; 4;QT_Depth;3
+BlockStat;31; 160; 236;16; 4;BT_Depth;2
+BlockStat;31; 160; 236;16; 4;MT_Depth;1
+BlockStat;31; 160; 236;16; 4;ChromaQPAdj;0
+BlockStat;31; 160; 236;16; 4;QP;41
+BlockStat;31; 160; 236;16; 4;SplitSeries;132129
+BlockStat;31; 160; 236;16; 4;SkipFlag;0
+BlockStat;31; 160; 236;16; 4;PredMode;0
+BlockStat;31; 160; 236;16; 4;MergeFlag;1
+BlockStat;31; 160; 236;16; 4;MergeIdx;1
+BlockStat;31; 160; 236;16; 4;MergeType;0
+BlockStat;31; 160; 236;16; 4;MMVDMergeFlag;0
+BlockStat;31; 160; 236;16; 4;MHIntraFlag;1
+BlockStat;31; 160; 236;16; 4;Luma_IntraMode;0
+BlockStat;31; 160; 236;16; 4;Chroma_IntraMode;70
+BlockStat;31; 160; 236;16; 4;MVPIdxL0;255
+BlockStat;31; 160; 236;16; 4;RefIdxL0;0
+BlockStat;31; 160; 236;16; 4;MVPIdxL1;255
+BlockStat;31; 160; 236;16; 4;RefIdxL1;0
+BlockStat;31; 160; 236;16; 4;MVDL0;   0;   0
+BlockStat;31; 160; 236;16; 4;MVL0;   0;   1
+BlockStat;31; 160; 236;16; 4;MVDL1;   0;   0
+BlockStat;31; 160; 236;16; 4;MVL1;   0;   1
+BlockStat;31; 160; 236;16; 4;Cbf_Y;1
+BlockStat;31; 160; 236;16; 4;TransformSkipFlag_Y;0
+BlockStat;31; 160; 236;16; 4;Cbf_Cb;0
+BlockStat;31; 160; 236;16; 4;Cbf_Cr;0
+BlockStat;31; 176; 224;16;16;Depth;3
+BlockStat;31; 176; 224;16;16;QT_Depth;3
+BlockStat;31; 176; 224;16;16;BT_Depth;0
+BlockStat;31; 176; 224;16;16;MT_Depth;0
+BlockStat;31; 176; 224;16;16;ChromaQPAdj;0
+BlockStat;31; 176; 224;16;16;QP;41
+BlockStat;31; 176; 224;16;16;SplitSeries;1057
+BlockStat;31; 176; 224;16;16;SkipFlag;0
+BlockStat;31; 176; 224;16;16;PredMode;0
+BlockStat;31; 176; 224;16;16;MergeFlag;1
+BlockStat;31; 176; 224;16;16;MergeIdx;0
+BlockStat;31; 176; 224;16;16;MergeType;1
+BlockStat;31; 176; 224;16;16;MMVDMergeFlag;0
+BlockStat;31; 176; 224;16;16;AffineFlag;1
+BlockStat;31; 176; 224;16;16;MVPIdxL0;255
+BlockStat;31; 176; 224;16;16;RefIdxL0;0
+BlockStat;31; 176; 224;16;16;MVPIdxL1;255
+BlockStat;31; 176; 224;16;16;RefIdxL1;0
+BlockStat;31; 176; 224;16;16;AffineMVL0;   0;   1;   0;   1;   0;   1
+BlockStat;31; 176; 224;16;16;AffineMVL1;   0;   1;   0;   1;   0;   1
+BlockStat;31; 176; 224;16;16;Cbf_Y;1
+BlockStat;31; 176; 224;16;16;TransformSkipFlag_Y;0
+BlockStat;31; 176; 224;16;16;Cbf_Cb;0
+BlockStat;31; 176; 224;16;16;Cbf_Cr;0
+BlockStat;31; 192; 192;16;16;Depth;4
+BlockStat;31; 192; 192;16;16;QT_Depth;1
+BlockStat;31; 192; 192;16;16;BT_Depth;4
+BlockStat;31; 192; 192;16;16;MT_Depth;3
+BlockStat;31; 192; 192;16;16;ChromaQPAdj;0
+BlockStat;31; 192; 192;16;16;QP;41
+BlockStat;31; 192; 192;16;16;SplitSeries;165953
+BlockStat;31; 192; 192;16;16;SkipFlag;1
+BlockStat;31; 192; 192;16;16;MMVDSkipFlag;0
+BlockStat;31; 192; 192;16;16;PredMode;0
+BlockStat;31; 192; 192;16;16;MergeIdx;0
+BlockStat;31; 192; 192;16;16;MergeType;0
+BlockStat;31; 192; 192;16;16;MMVDMergeFlag;1
+BlockStat;31; 192; 192;16;16;MMVDMergeIdx;0
+BlockStat;31; 192; 192;16;16;MVPIdxL0;255
+BlockStat;31; 192; 192;16;16;RefIdxL0;0
+BlockStat;31; 192; 192;16;16;MVPIdxL1;255
+BlockStat;31; 192; 192;16;16;RefIdxL1;0
+BlockStat;31; 192; 192;16;16;MVDL0;   0;   0
+BlockStat;31; 192; 192;16;16;MVL0;   1;  -2
+BlockStat;31; 192; 192;16;16;MVDL1;   0;   0
+BlockStat;31; 192; 192;16;16;MVL1;   1;  -2
+BlockStat;31; 208; 192;32;16;Depth;4
+BlockStat;31; 208; 192;32;16;QT_Depth;1
+BlockStat;31; 208; 192;32;16;BT_Depth;3
+BlockStat;31; 208; 192;32;16;MT_Depth;3
+BlockStat;31; 208; 192;32;16;ChromaQPAdj;0
+BlockStat;31; 208; 192;32;16;QP;41
+BlockStat;31; 208; 192;32;16;SplitSeries;165953
+BlockStat;31; 208; 192;32;16;SkipFlag;1
+BlockStat;31; 208; 192;32;16;MMVDSkipFlag;0
+BlockStat;31; 208; 192;32;16;PredMode;0
+BlockStat;31; 208; 192;32;16;MergeIdx;0
+BlockStat;31; 208; 192;32;16;MergeType;1
+BlockStat;31; 208; 192;32;16;MMVDMergeFlag;0
+BlockStat;31; 208; 192;32;16;AffineFlag;1
+BlockStat;31; 208; 192;32;16;MVPIdxL0;255
+BlockStat;31; 208; 192;32;16;RefIdxL0;0
+BlockStat;31; 208; 192;32;16;MVPIdxL1;255
+BlockStat;31; 208; 192;32;16;RefIdxL1;0
+BlockStat;31; 208; 192;32;16;AffineMVL0;   0;   1;   0;   0;   0;  -4
+BlockStat;31; 208; 192;32;16;AffineMVL1;   0;   1;   0;   0;   0;  -4
+BlockStat;31; 240; 192; 4;16;Depth;5
+BlockStat;31; 240; 192; 4;16;QT_Depth;1
+BlockStat;31; 240; 192; 4;16;BT_Depth;6
+BlockStat;31; 240; 192; 4;16;MT_Depth;4
+BlockStat;31; 240; 192; 4;16;ChromaQPAdj;0
+BlockStat;31; 240; 192; 4;16;QP;41
+BlockStat;31; 240; 192; 4;16;SplitSeries;5408833
+BlockStat;31; 240; 192; 4;16;SkipFlag;1
+BlockStat;31; 240; 192; 4;16;MMVDSkipFlag;0
+BlockStat;31; 240; 192; 4;16;PredMode;0
+BlockStat;31; 240; 192; 4;16;MergeIdx;2
+BlockStat;31; 240; 192; 4;16;MergeType;0
+BlockStat;31; 240; 192; 4;16;MMVDMergeFlag;0
+BlockStat;31; 240; 192; 4;16;MVPIdxL0;255
+BlockStat;31; 240; 192; 4;16;RefIdxL0;0
+BlockStat: POC 31 @( 240, 192) [ 4x16] TrianglePartitioning={   0,   0,   4,  16}
+BlockStat: POC 31 @[(240, 192)--(244, 192)--(244, 208)--] TriangleMVL0={   0,   0}
+BlockStat: POC 31 @[(240, 192)--(240, 208)--(244, 208)--] TriangleMVL0={   2,   1}
+BlockStat;31; 244; 192; 8;16;Depth;5
+BlockStat;31; 244; 192; 8;16;QT_Depth;1
+BlockStat;31; 244; 192; 8;16;BT_Depth;5
+BlockStat;31; 244; 192; 8;16;MT_Depth;4
+BlockStat;31; 244; 192; 8;16;ChromaQPAdj;0
+BlockStat;31; 244; 192; 8;16;QP;41
+BlockStat;31; 244; 192; 8;16;SplitSeries;5408833
+BlockStat;31; 244; 192; 8;16;SkipFlag;1
+BlockStat;31; 244; 192; 8;16;MMVDSkipFlag;0
+BlockStat;31; 244; 192; 8;16;PredMode;0
+BlockStat;31; 244; 192; 8;16;MergeIdx;1
+BlockStat;31; 244; 192; 8;16;MergeType;0
+BlockStat;31; 244; 192; 8;16;MMVDMergeFlag;0
+BlockStat;31; 244; 192; 8;16;AffineFlag;1
+BlockStat;31; 244; 192; 8;16;MVPIdxL0;0
+BlockStat;31; 244; 192; 8;16;RefIdxL0;0
+BlockStat;31; 244; 192; 8;16;MVPIdxL1;0
+BlockStat;31; 244; 192; 8;16;RefIdxL1;0
+BlockStat;31; 244; 192; 8;16;AffineMVL0;   0;   0;  -1;  -1;  -6;  -4
+BlockStat;31; 244; 192; 8;16;AffineMVL1;   0;   0;  -1;  -1;  -6;  -4
+BlockStat;31; 252; 192; 4;16;Depth;5
+BlockStat;31; 252; 192; 4;16;QT_Depth;1
+BlockStat;31; 252; 192; 4;16;BT_Depth;6
+BlockStat;31; 252; 192; 4;16;MT_Depth;4
+BlockStat;31; 252; 192; 4;16;ChromaQPAdj;0
+BlockStat;31; 252; 192; 4;16;QP;41
+BlockStat;31; 252; 192; 4;16;SplitSeries;5408833
+BlockStat;31; 252; 192; 4;16;SkipFlag;1
+BlockStat;31; 252; 192; 4;16;MMVDSkipFlag;0
+BlockStat;31; 252; 192; 4;16;PredMode;0
+BlockStat;31; 252; 192; 4;16;MergeIdx;0
+BlockStat;31; 252; 192; 4;16;MergeType;0
+BlockStat;31; 252; 192; 4;16;MMVDMergeFlag;0
+BlockStat;31; 252; 192; 4;16;MVPIdxL0;255
+BlockStat;31; 252; 192; 4;16;RefIdxL0;0
+BlockStat;31; 252; 192; 4;16;MVPIdxL1;255
+BlockStat;31; 252; 192; 4;16;RefIdxL1;0
+BlockStat;31; 252; 192; 4;16;MVDL0;   0;   0
+BlockStat;31; 252; 192; 4;16;MVL0;  -7;  -4
+BlockStat;31; 252; 192; 4;16;MVDL1;   0;   0
+BlockStat;31; 252; 192; 4;16;MVL1;  -7;  -4
+BlockStat;31; 192; 208; 8;16;Depth;5
+BlockStat;31; 192; 208; 8;16;QT_Depth;1
+BlockStat;31; 192; 208; 8;16;BT_Depth;5
+BlockStat;31; 192; 208; 8;16;MT_Depth;4
+BlockStat;31; 192; 208; 8;16;ChromaQPAdj;0
+BlockStat;31; 192; 208; 8;16;QP;41
+BlockStat;31; 192; 208; 8;16;SplitSeries;5343297
+BlockStat;31; 192; 208; 8;16;SkipFlag;1
+BlockStat;31; 192; 208; 8;16;MMVDSkipFlag;0
+BlockStat;31; 192; 208; 8;16;PredMode;0
+BlockStat;31; 192; 208; 8;16;MergeIdx;4
+BlockStat;31; 192; 208; 8;16;MergeType;0
+BlockStat;31; 192; 208; 8;16;MMVDMergeFlag;1
+BlockStat;31; 192; 208; 8;16;MMVDMergeIdx;4
+BlockStat;31; 192; 208; 8;16;MVPIdxL0;255
+BlockStat;31; 192; 208; 8;16;RefIdxL0;0
+BlockStat;31; 192; 208; 8;16;MVPIdxL1;255
+BlockStat;31; 192; 208; 8;16;RefIdxL1;0
+BlockStat;31; 192; 208; 8;16;MVDL0;   0;   0
+BlockStat;31; 192; 208; 8;16;MVL0;  -2;  -7
+BlockStat;31; 192; 208; 8;16;MVDL1;   0;   0
+BlockStat;31; 192; 208; 8;16;MVL1;   2;  -2
+BlockStat;31; 200; 208;16;16;Depth;5
+BlockStat;31; 200; 208;16;16;QT_Depth;1
+BlockStat;31; 200; 208;16;16;BT_Depth;4
+BlockStat;31; 200; 208;16;16;MT_Depth;4
+BlockStat;31; 200; 208;16;16;ChromaQPAdj;0
+BlockStat;31; 200; 208;16;16;QP;41
+BlockStat;31; 200; 208;16;16;SplitSeries;5343297
+BlockStat;31; 200; 208;16;16;SkipFlag;1
+BlockStat;31; 200; 208;16;16;MMVDSkipFlag;0
+BlockStat;31; 200; 208;16;16;PredMode;0
+BlockStat;31; 200; 208;16;16;MergeIdx;2
+BlockStat;31; 200; 208;16;16;MergeType;0
+BlockStat;31; 200; 208;16;16;MMVDMergeFlag;0
+BlockStat;31; 200; 208;16;16;AffineFlag;1
+BlockStat;31; 200; 208;16;16;MVPIdxL0;0
+BlockStat;31; 200; 208;16;16;RefIdxL0;0
+BlockStat;31; 200; 208;16;16;MVPIdxL1;0
+BlockStat;31; 200; 208;16;16;RefIdxL1;0
+BlockStat;31; 200; 208;16;16;AffineMVL0;   0;  -3;  -4;   0;  -2;  -6
+BlockStat;31; 200; 208;16;16;AffineMVL1;   1;  -2;   1;  -3;   2;  -2
+BlockStat;31; 216; 208; 8;16;Depth;5
+BlockStat;31; 216; 208; 8;16;QT_Depth;1
+BlockStat;31; 216; 208; 8;16;BT_Depth;5
+BlockStat;31; 216; 208; 8;16;MT_Depth;4
+BlockStat;31; 216; 208; 8;16;ChromaQPAdj;0
+BlockStat;31; 216; 208; 8;16;QP;41
+BlockStat;31; 216; 208; 8;16;SplitSeries;5343297
+BlockStat;31; 216; 208; 8;16;SkipFlag;1
+BlockStat;31; 216; 208; 8;16;MMVDSkipFlag;0
+BlockStat;31; 216; 208; 8;16;PredMode;0
+BlockStat;31; 216; 208; 8;16;MergeIdx;0
+BlockStat;31; 216; 208; 8;16;MergeType;0
+BlockStat;31; 216; 208; 8;16;MMVDMergeFlag;0
+BlockStat;31; 216; 208; 8;16;AffineFlag;0
+BlockStat;31; 216; 208; 8;16;MVPIdxL0;255
+BlockStat;31; 216; 208; 8;16;RefIdxL0;0
+BlockStat: POC 31 @( 216, 208) [ 8x16] TrianglePartitioning={   0,  16,   8,   0}
+BlockStat: POC 31 @[(216, 208)--(224, 208)--(216, 224)--] TriangleMVL1={  -9,  -1}
+BlockStat: POC 31 @[(224, 208)--(216, 224)--(224, 224)--] TriangleMVL0={  -6,  -4}
+BlockStat;31; 224; 208;32;16;Depth;4
+BlockStat;31; 224; 208;32;16;QT_Depth;1
+BlockStat;31; 224; 208;32;16;BT_Depth;3
+BlockStat;31; 224; 208;32;16;MT_Depth;3
+BlockStat;31; 224; 208;32;16;ChromaQPAdj;0
+BlockStat;31; 224; 208;32;16;QP;41
+BlockStat;31; 224; 208;32;16;SplitSeries;100417
+BlockStat;31; 224; 208;32;16;SkipFlag;1
+BlockStat;31; 224; 208;32;16;MMVDSkipFlag;0
+BlockStat;31; 224; 208;32;16;PredMode;0
+BlockStat;31; 224; 208;32;16;MergeIdx;0
+BlockStat;31; 224; 208;32;16;MergeType;1
+BlockStat;31; 224; 208;32;16;MMVDMergeFlag;0
+BlockStat;31; 224; 208;32;16;AffineFlag;1
+BlockStat;31; 224; 208;32;16;MVPIdxL0;255
+BlockStat;31; 224; 208;32;16;RefIdxL0;0
+BlockStat;31; 224; 208;32;16;MVPIdxL1;255
+BlockStat;31; 224; 208;32;16;RefIdxL1;0
+BlockStat;31; 224; 208;32;16;AffineMVL0;  -9;  -5;  -9;  -5;  -9;  -5
+BlockStat;31; 224; 208;32;16;AffineMVL1;  -9;  -5;  -9;  -5;  -9;  -5
+BlockStat;31; 192; 224; 8;16;Depth;6
+BlockStat;31; 192; 224; 8;16;QT_Depth;1
+BlockStat;31; 192; 224; 8;16;BT_Depth;5
+BlockStat;31; 192; 224; 8;16;MT_Depth;5
+BlockStat;31; 192; 224; 8;16;ChromaQPAdj;0
+BlockStat;31; 192; 224; 8;16;QP;41
+BlockStat;31; 192; 224; 8;16;SplitSeries;103909441
+BlockStat;31; 192; 224; 8;16;SkipFlag;1
+BlockStat;31; 192; 224; 8;16;MMVDSkipFlag;0
+BlockStat;31; 192; 224; 8;16;PredMode;0
+BlockStat;31; 192; 224; 8;16;MergeIdx;5
+BlockStat;31; 192; 224; 8;16;MergeType;0
+BlockStat;31; 192; 224; 8;16;MMVDMergeFlag;0
+BlockStat;31; 192; 224; 8;16;AffineFlag;0
+BlockStat;31; 192; 224; 8;16;MVPIdxL0;255
+BlockStat;31; 192; 224; 8;16;RefIdxL0;0
+BlockStat;31; 192; 224; 8;16;MVPIdxL1;255
+BlockStat;31; 192; 224; 8;16;RefIdxL1;0
+BlockStat;31; 192; 224; 8;16;MVDL0;   0;   0
+BlockStat;31; 192; 224; 8;16;MVL0;  -1;  -3
+BlockStat;31; 192; 224; 8;16;MVDL1;   0;   0
+BlockStat;31; 192; 224; 8;16;MVL1;   1;  -1
+BlockStat;31; 200; 224; 8;16;Depth;6
+BlockStat;31; 200; 224; 8;16;QT_Depth;1
+BlockStat;31; 200; 224; 8;16;BT_Depth;5
+BlockStat;31; 200; 224; 8;16;MT_Depth;5
+BlockStat;31; 200; 224; 8;16;ChromaQPAdj;0
+BlockStat;31; 200; 224; 8;16;QP;41
+BlockStat;31; 200; 224; 8;16;SplitSeries;103909441
+BlockStat;31; 200; 224; 8;16;SkipFlag;0
+BlockStat;31; 200; 224; 8;16;PredMode;0
+BlockStat;31; 200; 224; 8;16;MergeFlag;1
+BlockStat;31; 200; 224; 8;16;MergeIdx;1
+BlockStat;31; 200; 224; 8;16;MergeType;0
+BlockStat;31; 200; 224; 8;16;MMVDMergeFlag;0
+BlockStat;31; 200; 224; 8;16;AffineFlag;0
+BlockStat;31; 200; 224; 8;16;MHIntraFlag;0
+BlockStat;31; 200; 224; 8;16;MVPIdxL1;255
+BlockStat;31; 200; 224; 8;16;RefIdxL1;0
+BlockStat: POC 31 @( 200, 224) [ 8x16] TrianglePartitioning={   0,   0,   8,  16}
+BlockStat: POC 31 @[(200, 224)--(208, 224)--(208, 240)--] TriangleMVL0={  -1,  -3}
+BlockStat: POC 31 @[(200, 224)--(200, 240)--(208, 240)--] TriangleMVL0={   2,  -3}
+BlockStat;31; 200; 224; 8;16;Cbf_Y;1
+BlockStat;31; 200; 224; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 200; 224; 8;16;Cbf_Cb;0
+BlockStat;31; 200; 224; 8;16;Cbf_Cr;0
+BlockStat;31; 208; 224;16;16;Depth;5
+BlockStat;31; 208; 224;16;16;QT_Depth;1
+BlockStat;31; 208; 224;16;16;BT_Depth;4
+BlockStat;31; 208; 224;16;16;MT_Depth;4
+BlockStat;31; 208; 224;16;16;ChromaQPAdj;0
+BlockStat;31; 208; 224;16;16;QP;41
+BlockStat;31; 208; 224;16;16;SplitSeries;3246145
+BlockStat;31; 208; 224;16;16;SkipFlag;1
+BlockStat;31; 208; 224;16;16;MMVDSkipFlag;0
+BlockStat;31; 208; 224;16;16;PredMode;0
+BlockStat;31; 208; 224;16;16;MergeIdx;0
+BlockStat;31; 208; 224;16;16;MergeType;1
+BlockStat;31; 208; 224;16;16;MMVDMergeFlag;0
+BlockStat;31; 208; 224;16;16;AffineFlag;1
+BlockStat;31; 208; 224;16;16;MVPIdxL0;255
+BlockStat;31; 208; 224;16;16;RefIdxL0;0
+BlockStat;31; 208; 224;16;16;MVPIdxL1;255
+BlockStat;31; 208; 224;16;16;RefIdxL1;0
+BlockStat;31; 208; 224;16;16;AffineMVL0;  -5;  -2;  -5;  -2;  -5;  -2
+BlockStat;31; 208; 224;16;16;AffineMVL1;  -5;  -2;  -5;  -2;  -5;  -2
+BlockStat;31; 224; 224;32;16;Depth;4
+BlockStat;31; 224; 224;32;16;QT_Depth;1
+BlockStat;31; 224; 224;32;16;BT_Depth;3
+BlockStat;31; 224; 224;32;16;MT_Depth;3
+BlockStat;31; 224; 224;32;16;ChromaQPAdj;0
+BlockStat;31; 224; 224;32;16;QP;41
+BlockStat;31; 224; 224;32;16;SplitSeries;100417
+BlockStat;31; 224; 224;32;16;SkipFlag;1
+BlockStat;31; 224; 224;32;16;MMVDSkipFlag;0
+BlockStat;31; 224; 224;32;16;PredMode;0
+BlockStat;31; 224; 224;32;16;MergeIdx;0
+BlockStat;31; 224; 224;32;16;MergeType;0
+BlockStat;31; 224; 224;32;16;MMVDMergeFlag;0
+BlockStat;31; 224; 224;32;16;AffineFlag;0
+BlockStat;31; 224; 224;32;16;MVPIdxL0;255
+BlockStat;31; 224; 224;32;16;RefIdxL0;0
+BlockStat;31; 224; 224;32;16;MVPIdxL1;255
+BlockStat;31; 224; 224;32;16;RefIdxL1;0
+BlockStat;31; 224; 224;32;16;MVDL0;   0;   0
+BlockStat;31; 224; 224;32;16;MVL0;  -5;  -2
+BlockStat;31; 224; 224;32;16;MVDL1;   0;   0
+BlockStat;31; 224; 224;32;16;MVL1;  -5;  -2
+BlockStat;31; 256; 128; 8;32;Depth;3
+BlockStat;31; 256; 128; 8;32;QT_Depth;2
+BlockStat;31; 256; 128; 8;32;BT_Depth;2
+BlockStat;31; 256; 128; 8;32;MT_Depth;1
+BlockStat;31; 256; 128; 8;32;ChromaQPAdj;0
+BlockStat;31; 256; 128; 8;32;QP;41
+BlockStat;31; 256; 128; 8;32;SplitSeries;5153
+BlockStat;31; 256; 128; 8;32;SkipFlag;1
+BlockStat;31; 256; 128; 8;32;MMVDSkipFlag;0
+BlockStat;31; 256; 128; 8;32;PredMode;0
+BlockStat;31; 256; 128; 8;32;MergeIdx;0
+BlockStat;31; 256; 128; 8;32;MergeType;1
+BlockStat;31; 256; 128; 8;32;MMVDMergeFlag;0
+BlockStat;31; 256; 128; 8;32;AffineFlag;1
+BlockStat;31; 256; 128; 8;32;MVPIdxL0;255
+BlockStat;31; 256; 128; 8;32;RefIdxL0;0
+BlockStat;31; 256; 128; 8;32;MVPIdxL1;255
+BlockStat;31; 256; 128; 8;32;RefIdxL1;0
+BlockStat;31; 256; 128; 8;32;AffineMVL0;   1;  -3;   1;  -3;   0;  -1
+BlockStat;31; 256; 128; 8;32;AffineMVL1;   1;  -3;   1;  -3;   0;  -1
+BlockStat;31; 264; 128; 4; 8;Depth;5
+BlockStat;31; 264; 128; 4; 8;QT_Depth;2
+BlockStat;31; 264; 128; 4; 8;BT_Depth;5
+BlockStat;31; 264; 128; 4; 8;MT_Depth;3
+BlockStat;31; 264; 128; 4; 8;ChromaQPAdj;0
+BlockStat;31; 264; 128; 4; 8;QP;41
+BlockStat;31; 264; 128; 4; 8;SplitSeries;4363297
+BlockStat;31; 264; 128; 4; 8;SkipFlag;1
+BlockStat;31; 264; 128; 4; 8;MMVDSkipFlag;0
+BlockStat;31; 264; 128; 4; 8;PredMode;0
+BlockStat;31; 264; 128; 4; 8;MergeIdx;0
+BlockStat;31; 264; 128; 4; 8;MergeType;0
+BlockStat;31; 264; 128; 4; 8;MMVDMergeFlag;0
+BlockStat;31; 264; 128; 4; 8;MVPIdxL0;255
+BlockStat;31; 264; 128; 4; 8;RefIdxL0;0
+BlockStat;31; 264; 128; 4; 8;MVDL0;   0;   0
+BlockStat;31; 264; 128; 4; 8;MVL0;   1;  -3
+BlockStat;31; 264; 136; 4;16;Depth;5
+BlockStat;31; 264; 136; 4;16;QT_Depth;2
+BlockStat;31; 264; 136; 4;16;BT_Depth;4
+BlockStat;31; 264; 136; 4;16;MT_Depth;3
+BlockStat;31; 264; 136; 4;16;ChromaQPAdj;0
+BlockStat;31; 264; 136; 4;16;QP;41
+BlockStat;31; 264; 136; 4;16;SplitSeries;4363297
+BlockStat;31; 264; 136; 4;16;SkipFlag;1
+BlockStat;31; 264; 136; 4;16;MMVDSkipFlag;0
+BlockStat;31; 264; 136; 4;16;PredMode;0
+BlockStat;31; 264; 136; 4;16;MergeIdx;0
+BlockStat;31; 264; 136; 4;16;MergeType;0
+BlockStat;31; 264; 136; 4;16;MMVDMergeFlag;0
+BlockStat;31; 264; 136; 4;16;MVPIdxL0;255
+BlockStat;31; 264; 136; 4;16;RefIdxL0;0
+BlockStat;31; 264; 136; 4;16;MVPIdxL1;255
+BlockStat;31; 264; 136; 4;16;RefIdxL1;0
+BlockStat;31; 264; 136; 4;16;MVDL0;   0;   0
+BlockStat;31; 264; 136; 4;16;MVL0;   0;  -1
+BlockStat;31; 264; 136; 4;16;MVDL1;   0;   0
+BlockStat;31; 264; 136; 4;16;MVL1;   0;  -1
+BlockStat;31; 264; 152; 4; 8;Depth;5
+BlockStat;31; 264; 152; 4; 8;QT_Depth;2
+BlockStat;31; 264; 152; 4; 8;BT_Depth;5
+BlockStat;31; 264; 152; 4; 8;MT_Depth;3
+BlockStat;31; 264; 152; 4; 8;ChromaQPAdj;0
+BlockStat;31; 264; 152; 4; 8;QP;41
+BlockStat;31; 264; 152; 4; 8;SplitSeries;4363297
+BlockStat;31; 264; 152; 4; 8;SkipFlag;0
+BlockStat;31; 264; 152; 4; 8;PredMode;0
+BlockStat;31; 264; 152; 4; 8;MergeFlag;0
+BlockStat;31; 264; 152; 4; 8;InterDir;1
+BlockStat;31; 264; 152; 4; 8;MVPIdxL0;0
+BlockStat;31; 264; 152; 4; 8;RefIdxL0;1
+BlockStat;31; 264; 152; 4; 8;MVDL0;   0;   0
+BlockStat;31; 264; 152; 4; 8;MVL0;   0;   0
+BlockStat;31; 264; 152; 4; 8;RootCbf;0
+BlockStat;31; 268; 128; 8;16;Depth;5
+BlockStat;31; 268; 128; 8;16;QT_Depth;2
+BlockStat;31; 268; 128; 8;16;BT_Depth;3
+BlockStat;31; 268; 128; 8;16;MT_Depth;3
+BlockStat;31; 268; 128; 8;16;ChromaQPAdj;0
+BlockStat;31; 268; 128; 8;16;QP;41
+BlockStat;31; 268; 128; 8;16;SplitSeries;2266145
+BlockStat;31; 268; 128; 8;16;SkipFlag;1
+BlockStat;31; 268; 128; 8;16;MMVDSkipFlag;0
+BlockStat;31; 268; 128; 8;16;PredMode;0
+BlockStat;31; 268; 128; 8;16;MergeIdx;4
+BlockStat;31; 268; 128; 8;16;MergeType;0
+BlockStat;31; 268; 128; 8;16;MMVDMergeFlag;0
+BlockStat;31; 268; 128; 8;16;AffineFlag;0
+BlockStat;31; 268; 128; 8;16;MVPIdxL0;255
+BlockStat;31; 268; 128; 8;16;RefIdxL0;0
+BlockStat;31; 268; 128; 8;16;MVDL0;   0;   0
+BlockStat;31; 268; 128; 8;16;MVL0;   1;  -3
+BlockStat;31; 268; 144; 8;16;Depth;5
+BlockStat;31; 268; 144; 8;16;QT_Depth;2
+BlockStat;31; 268; 144; 8;16;BT_Depth;3
+BlockStat;31; 268; 144; 8;16;MT_Depth;3
+BlockStat;31; 268; 144; 8;16;ChromaQPAdj;0
+BlockStat;31; 268; 144; 8;16;QP;41
+BlockStat;31; 268; 144; 8;16;SplitSeries;2266145
+BlockStat;31; 268; 144; 8;16;SkipFlag;0
+BlockStat;31; 268; 144; 8;16;PredMode;1
+BlockStat;31; 268; 144; 8;16;Luma_IntraMode;58
+BlockStat;31; 268; 144; 8;16;Chroma_IntraMode;58
+BlockStat;31; 268; 144; 8;16;MultiRefIdx;0
+BlockStat;31; 268; 144; 8;16;Cbf_Y;1
+BlockStat;31; 268; 144; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 268; 144; 8;16;Cbf_Cb;1
+BlockStat;31; 268; 144; 8;16;Cbf_Cr;1
+BlockStat;31; 276; 128; 4;16;Depth;5
+BlockStat;31; 276; 128; 4;16;QT_Depth;2
+BlockStat;31; 276; 128; 4;16;BT_Depth;4
+BlockStat;31; 276; 128; 4;16;MT_Depth;3
+BlockStat;31; 276; 128; 4;16;ChromaQPAdj;0
+BlockStat;31; 276; 128; 4;16;QP;41
+BlockStat;31; 276; 128; 4;16;SplitSeries;2266145
+BlockStat;31; 276; 128; 4;16;SkipFlag;1
+BlockStat;31; 276; 128; 4;16;MMVDSkipFlag;0
+BlockStat;31; 276; 128; 4;16;PredMode;0
+BlockStat;31; 276; 128; 4;16;MergeIdx;0
+BlockStat;31; 276; 128; 4;16;MergeType;0
+BlockStat;31; 276; 128; 4;16;MMVDMergeFlag;0
+BlockStat;31; 276; 128; 4;16;MVPIdxL0;255
+BlockStat;31; 276; 128; 4;16;RefIdxL0;0
+BlockStat;31; 276; 128; 4;16;MVDL0;   0;   0
+BlockStat;31; 276; 128; 4;16;MVL0;   1;  -3
+BlockStat;31; 276; 144; 4;16;Depth;5
+BlockStat;31; 276; 144; 4;16;QT_Depth;2
+BlockStat;31; 276; 144; 4;16;BT_Depth;4
+BlockStat;31; 276; 144; 4;16;MT_Depth;3
+BlockStat;31; 276; 144; 4;16;ChromaQPAdj;0
+BlockStat;31; 276; 144; 4;16;QP;41
+BlockStat;31; 276; 144; 4;16;SplitSeries;2266145
+BlockStat;31; 276; 144; 4;16;SkipFlag;0
+BlockStat;31; 276; 144; 4;16;PredMode;0
+BlockStat;31; 276; 144; 4;16;MergeFlag;1
+BlockStat;31; 276; 144; 4;16;MergeIdx;1
+BlockStat;31; 276; 144; 4;16;MergeType;0
+BlockStat;31; 276; 144; 4;16;MMVDMergeFlag;0
+BlockStat;31; 276; 144; 4;16;MHIntraFlag;1
+BlockStat;31; 276; 144; 4;16;Luma_IntraMode;0
+BlockStat;31; 276; 144; 4;16;Chroma_IntraMode;70
+BlockStat;31; 276; 144; 4;16;MVPIdxL0;255
+BlockStat;31; 276; 144; 4;16;RefIdxL0;0
+BlockStat;31; 276; 144; 4;16;MVPIdxL1;255
+BlockStat;31; 276; 144; 4;16;RefIdxL1;0
+BlockStat;31; 276; 144; 4;16;MVDL0;   0;   0
+BlockStat;31; 276; 144; 4;16;MVL0;   0;   0
+BlockStat;31; 276; 144; 4;16;MVDL1;   0;   0
+BlockStat;31; 276; 144; 4;16;MVL1;   0;   0
+BlockStat;31; 276; 144; 4;16;Cbf_Y;1
+BlockStat;31; 276; 144; 4;16;TransformSkipFlag_Y;0
+BlockStat;31; 276; 144; 4;16;Cbf_Cb;0
+BlockStat;31; 276; 144; 4;16;Cbf_Cr;0
+BlockStat;31; 280; 128; 8;32;Depth;3
+BlockStat;31; 280; 128; 8;32;QT_Depth;2
+BlockStat;31; 280; 128; 8;32;BT_Depth;2
+BlockStat;31; 280; 128; 8;32;MT_Depth;1
+BlockStat;31; 280; 128; 8;32;ChromaQPAdj;0
+BlockStat;31; 280; 128; 8;32;QP;41
+BlockStat;31; 280; 128; 8;32;SplitSeries;5153
+BlockStat;31; 280; 128; 8;32;SkipFlag;1
+BlockStat;31; 280; 128; 8;32;MMVDSkipFlag;0
+BlockStat;31; 280; 128; 8;32;PredMode;0
+BlockStat;31; 280; 128; 8;32;MergeIdx;0
+BlockStat;31; 280; 128; 8;32;MergeType;0
+BlockStat;31; 280; 128; 8;32;MMVDMergeFlag;0
+BlockStat;31; 280; 128; 8;32;AffineFlag;0
+BlockStat;31; 280; 128; 8;32;MVPIdxL0;255
+BlockStat;31; 280; 128; 8;32;RefIdxL0;0
+BlockStat;31; 280; 128; 8;32;MVPIdxL1;255
+BlockStat;31; 280; 128; 8;32;RefIdxL1;0
+BlockStat;31; 280; 128; 8;32;MVDL0;   0;   0
+BlockStat;31; 280; 128; 8;32;MVL0;   0;   0
+BlockStat;31; 280; 128; 8;32;MVDL1;   0;   0
+BlockStat;31; 280; 128; 8;32;MVL1;   0;   0
+BlockStat;31; 288; 128;32;32;Depth;2
+BlockStat;31; 288; 128;32;32;QT_Depth;2
+BlockStat;31; 288; 128;32;32;BT_Depth;0
+BlockStat;31; 288; 128;32;32;MT_Depth;0
+BlockStat;31; 288; 128;32;32;ChromaQPAdj;0
+BlockStat;31; 288; 128;32;32;QP;41
+BlockStat;31; 288; 128;32;32;SplitSeries;33
+BlockStat;31; 288; 128;32;32;SkipFlag;1
+BlockStat;31; 288; 128;32;32;MMVDSkipFlag;0
+BlockStat;31; 288; 128;32;32;PredMode;0
+BlockStat;31; 288; 128;32;32;MergeIdx;0
+BlockStat;31; 288; 128;32;32;MergeType;1
+BlockStat;31; 288; 128;32;32;MMVDMergeFlag;0
+BlockStat;31; 288; 128;32;32;AffineFlag;1
+BlockStat;31; 288; 128;32;32;MVPIdxL0;255
+BlockStat;31; 288; 128;32;32;RefIdxL0;0
+BlockStat;31; 288; 128;32;32;MVPIdxL1;255
+BlockStat;31; 288; 128;32;32;RefIdxL1;0
+BlockStat;31; 288; 128;32;32;AffineMVL0;   7;   1;   3;   1;   1;  -1
+BlockStat;31; 288; 128;32;32;AffineMVL1;   7;   1;   3;   1;   1;  -1
+BlockStat;31; 256; 160; 4;16;Depth;5
+BlockStat;31; 256; 160; 4;16;QT_Depth;2
+BlockStat;31; 256; 160; 4;16;BT_Depth;4
+BlockStat;31; 256; 160; 4;16;MT_Depth;3
+BlockStat;31; 256; 160; 4;16;ChromaQPAdj;0
+BlockStat;31; 256; 160; 4;16;QP;41
+BlockStat;31; 256; 160; 4;16;SplitSeries;5311521
+BlockStat;31; 256; 160; 4;16;SkipFlag;1
+BlockStat;31; 256; 160; 4;16;MMVDSkipFlag;0
+BlockStat;31; 256; 160; 4;16;PredMode;0
+BlockStat;31; 256; 160; 4;16;MergeIdx;0
+BlockStat;31; 256; 160; 4;16;MergeType;0
+BlockStat;31; 256; 160; 4;16;MMVDMergeFlag;0
+BlockStat;31; 256; 160; 4;16;MVPIdxL0;255
+BlockStat;31; 256; 160; 4;16;RefIdxL0;0
+BlockStat;31; 256; 160; 4;16;MVPIdxL1;255
+BlockStat;31; 256; 160; 4;16;RefIdxL1;0
+BlockStat;31; 256; 160; 4;16;MVDL0;   0;   0
+BlockStat;31; 256; 160; 4;16;MVL0;   0;   0
+BlockStat;31; 256; 160; 4;16;MVDL1;   0;   0
+BlockStat;31; 256; 160; 4;16;MVL1;   0;   0
+BlockStat;31; 260; 160; 8;16;Depth;5
+BlockStat;31; 260; 160; 8;16;QT_Depth;2
+BlockStat;31; 260; 160; 8;16;BT_Depth;3
+BlockStat;31; 260; 160; 8;16;MT_Depth;3
+BlockStat;31; 260; 160; 8;16;ChromaQPAdj;0
+BlockStat;31; 260; 160; 8;16;QP;41
+BlockStat;31; 260; 160; 8;16;SplitSeries;5311521
+BlockStat;31; 260; 160; 8;16;SkipFlag;0
+BlockStat;31; 260; 160; 8;16;PredMode;0
+BlockStat;31; 260; 160; 8;16;MergeFlag;1
+BlockStat;31; 260; 160; 8;16;MergeIdx;0
+BlockStat;31; 260; 160; 8;16;MergeType;0
+BlockStat;31; 260; 160; 8;16;MMVDMergeFlag;0
+BlockStat;31; 260; 160; 8;16;AffineFlag;0
+BlockStat;31; 260; 160; 8;16;MHIntraFlag;0
+BlockStat;31; 260; 160; 8;16;MVPIdxL0;255
+BlockStat;31; 260; 160; 8;16;RefIdxL0;0
+BlockStat: POC 31 @( 260, 160) [ 8x16] TrianglePartitioning={   0,  16,   8,   0}
+BlockStat: POC 31 @[(260, 160)--(268, 160)--(260, 176)--] TriangleMVL0={   0,   0}
+BlockStat: POC 31 @[(268, 160)--(260, 176)--(268, 176)--] TriangleMVL0={   0,   0}
+BlockStat;31; 260; 160; 8;16;Cbf_Y;1
+BlockStat;31; 260; 160; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 260; 160; 8;16;Cbf_Cb;0
+BlockStat;31; 260; 160; 8;16;Cbf_Cr;0
+BlockStat;31; 268; 160; 4;16;Depth;5
+BlockStat;31; 268; 160; 4;16;QT_Depth;2
+BlockStat;31; 268; 160; 4;16;BT_Depth;4
+BlockStat;31; 268; 160; 4;16;MT_Depth;3
+BlockStat;31; 268; 160; 4;16;ChromaQPAdj;0
+BlockStat;31; 268; 160; 4;16;QP;41
+BlockStat;31; 268; 160; 4;16;SplitSeries;5311521
+BlockStat;31; 268; 160; 4;16;SkipFlag;1
+BlockStat;31; 268; 160; 4;16;MMVDSkipFlag;0
+BlockStat;31; 268; 160; 4;16;PredMode;0
+BlockStat;31; 268; 160; 4;16;MergeIdx;0
+BlockStat;31; 268; 160; 4;16;MergeType;0
+BlockStat;31; 268; 160; 4;16;MMVDMergeFlag;0
+BlockStat;31; 268; 160; 4;16;MVPIdxL0;255
+BlockStat;31; 268; 160; 4;16;RefIdxL0;0
+BlockStat;31; 268; 160; 4;16;MVDL0;   0;   0
+BlockStat;31; 268; 160; 4;16;MVL0;   0;   0
+BlockStat;31; 256; 176;16;16;Depth;4
+BlockStat;31; 256; 176;16;16;QT_Depth;2
+BlockStat;31; 256; 176;16;16;BT_Depth;2
+BlockStat;31; 256; 176;16;16;MT_Depth;2
+BlockStat;31; 256; 176;16;16;ChromaQPAdj;0
+BlockStat;31; 256; 176;16;16;QP;41
+BlockStat;31; 256; 176;16;16;SplitSeries;68641
+BlockStat;31; 256; 176;16;16;SkipFlag;1
+BlockStat;31; 256; 176;16;16;MMVDSkipFlag;0
+BlockStat;31; 256; 176;16;16;PredMode;0
+BlockStat;31; 256; 176;16;16;MergeIdx;0
+BlockStat;31; 256; 176;16;16;MergeType;1
+BlockStat;31; 256; 176;16;16;MMVDMergeFlag;0
+BlockStat;31; 256; 176;16;16;AffineFlag;1
+BlockStat;31; 256; 176;16;16;MVPIdxL0;255
+BlockStat;31; 256; 176;16;16;RefIdxL0;0
+BlockStat;31; 256; 176;16;16;MVPIdxL1;255
+BlockStat;31; 256; 176;16;16;RefIdxL1;0
+BlockStat;31; 256; 176;16;16;AffineMVL0;  -1;   0;   1;  -1;  -1;   0
+BlockStat;31; 256; 176;16;16;AffineMVL1;  -1;   0;   1;  -1;  -1;   0
+BlockStat;31; 272; 160;16;32;Depth;3
+BlockStat;31; 272; 160;16;32;QT_Depth;2
+BlockStat;31; 272; 160;16;32;BT_Depth;1
+BlockStat;31; 272; 160;16;32;MT_Depth;1
+BlockStat;31; 272; 160;16;32;ChromaQPAdj;0
+BlockStat;31; 272; 160;16;32;QP;41
+BlockStat;31; 272; 160;16;32;SplitSeries;3105
+BlockStat;31; 272; 160;16;32;SkipFlag;1
+BlockStat;31; 272; 160;16;32;MMVDSkipFlag;0
+BlockStat;31; 272; 160;16;32;PredMode;0
+BlockStat;31; 272; 160;16;32;MergeIdx;0
+BlockStat;31; 272; 160;16;32;MergeType;1
+BlockStat;31; 272; 160;16;32;MMVDMergeFlag;0
+BlockStat;31; 272; 160;16;32;AffineFlag;1
+BlockStat;31; 272; 160;16;32;MVPIdxL0;255
+BlockStat;31; 272; 160;16;32;RefIdxL0;0
+BlockStat;31; 272; 160;16;32;MVPIdxL1;255
+BlockStat;31; 272; 160;16;32;RefIdxL1;0
+BlockStat;31; 272; 160;16;32;AffineMVL0;   0;   0;   0;   0;   0;   0
+BlockStat;31; 272; 160;16;32;AffineMVL1;   0;   0;   0;   0;   0;   0
+BlockStat;31; 288; 160;32;32;Depth;2
+BlockStat;31; 288; 160;32;32;QT_Depth;2
+BlockStat;31; 288; 160;32;32;BT_Depth;0
+BlockStat;31; 288; 160;32;32;MT_Depth;0
+BlockStat;31; 288; 160;32;32;ChromaQPAdj;0
+BlockStat;31; 288; 160;32;32;QP;41
+BlockStat;31; 288; 160;32;32;SplitSeries;33
+BlockStat;31; 288; 160;32;32;SkipFlag;1
+BlockStat;31; 288; 160;32;32;MMVDSkipFlag;0
+BlockStat;31; 288; 160;32;32;PredMode;0
+BlockStat;31; 288; 160;32;32;MergeIdx;0
+BlockStat;31; 288; 160;32;32;MergeType;1
+BlockStat;31; 288; 160;32;32;MMVDMergeFlag;0
+BlockStat;31; 288; 160;32;32;AffineFlag;1
+BlockStat;31; 288; 160;32;32;MVPIdxL0;255
+BlockStat;31; 288; 160;32;32;RefIdxL0;0
+BlockStat;31; 288; 160;32;32;MVPIdxL1;255
+BlockStat;31; 288; 160;32;32;RefIdxL1;0
+BlockStat;31; 288; 160;32;32;AffineMVL0;   1;  -2;   2;  -2;   0;   0
+BlockStat;31; 288; 160;32;32;AffineMVL1;   1;  -2;   2;  -2;   0;   0
+BlockStat;31; 320; 128;64;64;Depth;1
+BlockStat;31; 320; 128;64;64;QT_Depth;1
+BlockStat;31; 320; 128;64;64;BT_Depth;0
+BlockStat;31; 320; 128;64;64;MT_Depth;0
+BlockStat;31; 320; 128;64;64;ChromaQPAdj;0
+BlockStat;31; 320; 128;64;64;QP;41
+BlockStat;31; 320; 128;64;64;SplitSeries;1
+BlockStat;31; 320; 128;64;64;SkipFlag;0
+BlockStat;31; 320; 128;64;64;PredMode;0
+BlockStat;31; 320; 128;64;64;MergeFlag;1
+BlockStat;31; 320; 128;64;64;MergeIdx;0
+BlockStat;31; 320; 128;64;64;MergeType;1
+BlockStat;31; 320; 128;64;64;MMVDMergeFlag;0
+BlockStat;31; 320; 128;64;64;AffineFlag;1
+BlockStat;31; 320; 128;64;64;MVPIdxL0;255
+BlockStat;31; 320; 128;64;64;RefIdxL0;0
+BlockStat;31; 320; 128;64;64;MVPIdxL1;255
+BlockStat;31; 320; 128;64;64;RefIdxL1;0
+BlockStat;31; 320; 128;64;64;AffineMVL0;   4;   1;   3;  -1;   2;  -1
+BlockStat;31; 320; 128;64;64;AffineMVL1;   4;   1;   3;  -1;   2;  -1
+BlockStat;31; 320; 128;64;64;Cbf_Y;1
+BlockStat;31; 320; 128;64;64;TransformSkipFlag_Y;0
+BlockStat;31; 320; 128;64;64;Cbf_Cb;0
+BlockStat;31; 320; 128;64;64;Cbf_Cr;0
+BlockStat;31; 256; 192; 4;32;Depth;4
+BlockStat;31; 256; 192; 4;32;QT_Depth;2
+BlockStat;31; 256; 192; 4;32;BT_Depth;3
+BlockStat;31; 256; 192; 4;32;MT_Depth;2
+BlockStat;31; 256; 192; 4;32;ChromaQPAdj;0
+BlockStat;31; 256; 192; 4;32;QP;41
+BlockStat;31; 256; 192; 4;32;SplitSeries;103457
+BlockStat;31; 256; 192; 4;32;SkipFlag;1
+BlockStat;31; 256; 192; 4;32;MMVDSkipFlag;0
+BlockStat;31; 256; 192; 4;32;PredMode;0
+BlockStat;31; 256; 192; 4;32;MergeIdx;0
+BlockStat;31; 256; 192; 4;32;MergeType;0
+BlockStat;31; 256; 192; 4;32;MMVDMergeFlag;0
+BlockStat;31; 256; 192; 4;32;MVPIdxL0;255
+BlockStat;31; 256; 192; 4;32;RefIdxL0;0
+BlockStat;31; 256; 192; 4;32;MVPIdxL1;255
+BlockStat;31; 256; 192; 4;32;RefIdxL1;0
+BlockStat;31; 256; 192; 4;32;MVDL0;   0;   0
+BlockStat;31; 256; 192; 4;32;MVL0;  -9;  -5
+BlockStat;31; 256; 192; 4;32;MVDL1;   0;   0
+BlockStat;31; 256; 192; 4;32;MVL1;  -9;  -5
+BlockStat;31; 260; 192; 4;32;Depth;4
+BlockStat;31; 260; 192; 4;32;QT_Depth;2
+BlockStat;31; 260; 192; 4;32;BT_Depth;3
+BlockStat;31; 260; 192; 4;32;MT_Depth;2
+BlockStat;31; 260; 192; 4;32;ChromaQPAdj;0
+BlockStat;31; 260; 192; 4;32;QP;41
+BlockStat;31; 260; 192; 4;32;SplitSeries;103457
+BlockStat;31; 260; 192; 4;32;SkipFlag;1
+BlockStat;31; 260; 192; 4;32;MMVDSkipFlag;0
+BlockStat;31; 260; 192; 4;32;PredMode;0
+BlockStat;31; 260; 192; 4;32;MergeIdx;43
+BlockStat;31; 260; 192; 4;32;MergeType;0
+BlockStat;31; 260; 192; 4;32;MMVDMergeFlag;1
+BlockStat;31; 260; 192; 4;32;MMVDMergeIdx;43
+BlockStat;31; 260; 192; 4;32;MVPIdxL0;255
+BlockStat;31; 260; 192; 4;32;RefIdxL0;0
+BlockStat;31; 260; 192; 4;32;MVPIdxL1;255
+BlockStat;31; 260; 192; 4;32;RefIdxL1;0
+BlockStat;31; 260; 192; 4;32;MVDL0;   0;   0
+BlockStat;31; 260; 192; 4;32;MVL0;  -1;  -4
+BlockStat;31; 260; 192; 4;32;MVDL1;   0;   0
+BlockStat;31; 260; 192; 4;32;MVL1;  -1;  -4
+BlockStat;31; 264; 192; 8;16;Depth;5
+BlockStat;31; 264; 192; 8;16;QT_Depth;2
+BlockStat;31; 264; 192; 8;16;BT_Depth;3
+BlockStat;31; 264; 192; 8;16;MT_Depth;3
+BlockStat;31; 264; 192; 8;16;ChromaQPAdj;0
+BlockStat;31; 264; 192; 8;16;QP;41
+BlockStat;31; 264; 192; 8;16;SplitSeries;3216417
+BlockStat;31; 264; 192; 8;16;SkipFlag;1
+BlockStat;31; 264; 192; 8;16;MMVDSkipFlag;0
+BlockStat;31; 264; 192; 8;16;PredMode;0
+BlockStat;31; 264; 192; 8;16;MergeIdx;11
+BlockStat;31; 264; 192; 8;16;MergeType;0
+BlockStat;31; 264; 192; 8;16;MMVDMergeFlag;1
+BlockStat;31; 264; 192; 8;16;MMVDMergeIdx;11
+BlockStat;31; 264; 192; 8;16;MVPIdxL0;255
+BlockStat;31; 264; 192; 8;16;RefIdxL0;0
+BlockStat;31; 264; 192; 8;16;MVPIdxL1;255
+BlockStat;31; 264; 192; 8;16;RefIdxL1;0
+BlockStat;31; 264; 192; 8;16;MVDL0;   0;   0
+BlockStat;31; 264; 192; 8;16;MVL0;  -1;  -8
+BlockStat;31; 264; 192; 8;16;MVDL1;   0;   0
+BlockStat;31; 264; 192; 8;16;MVL1;  -1;  -8
+BlockStat;31; 272; 192; 8;16;Depth;5
+BlockStat;31; 272; 192; 8;16;QT_Depth;2
+BlockStat;31; 272; 192; 8;16;BT_Depth;3
+BlockStat;31; 272; 192; 8;16;MT_Depth;3
+BlockStat;31; 272; 192; 8;16;ChromaQPAdj;0
+BlockStat;31; 272; 192; 8;16;QP;41
+BlockStat;31; 272; 192; 8;16;SplitSeries;3216417
+BlockStat;31; 272; 192; 8;16;SkipFlag;0
+BlockStat;31; 272; 192; 8;16;PredMode;0
+BlockStat;31; 272; 192; 8;16;MergeFlag;0
+BlockStat;31; 272; 192; 8;16;InterDir;1
+BlockStat;31; 272; 192; 8;16;MVPIdxL0;0
+BlockStat;31; 272; 192; 8;16;RefIdxL0;0
+BlockStat;31; 272; 192; 8;16;MVDL0; -10;   4
+BlockStat;31; 272; 192; 8;16;MVL0; -10;  -4
+BlockStat;31; 272; 192; 8;16;IMVMode;3
+BlockStat;31; 272; 192; 8;16;RootCbf;1
+BlockStat;31; 272; 192; 8;16;Cbf_Y;1
+BlockStat;31; 272; 192; 8;16;TransformSkipFlag_Y;0
+BlockStat;31; 272; 192; 8;16;Cbf_Cb;0
+BlockStat;31; 272; 192; 8;16;Cbf_Cr;0
+BlockStat;31; 264; 208;16;16;Depth;4
+BlockStat;31; 264; 208;16;16;QT_Depth;2
+BlockStat;31; 264; 208;16;16;BT_Depth;2
+BlockStat;31; 264; 208;16;16;MT_Depth;2
+BlockStat;31; 264; 208;16;16;ChromaQPAdj;0
+BlockStat;31; 264; 208;16;16;QP;41
+BlockStat;31; 264; 208;16;16;SplitSeries;70689
+BlockStat;31; 264; 208;16;16;SkipFlag;1
+BlockStat;31; 264; 208;16;16;MMVDSkipFlag;0
+BlockStat;31; 264; 208;16;16;PredMode;0
+BlockStat;31; 264; 208;16;16;MergeIdx;0
+BlockStat;31; 264; 208;16;16;MergeType;1
+BlockStat;31; 264; 208;16;16;MMVDMergeFlag;0
+BlockStat;31; 264; 208;16;16;AffineFlag;1
+BlockStat;31; 264; 208;16;16;MVPIdxL0;255
+BlockStat;31; 264; 208;16;16;RefIdxL0;0
+BlockStat;31; 264; 208;16;16;MVPIdxL1;255
+BlockStat;31; 264; 208;16;16;RefIdxL1;0
+BlockStat;31; 264; 208;16;16;AffineMVL0;   0;  -1;   0;   0;   0;  -1
+BlockStat;31; 264; 208;16;16;AffineMVL1;   0;  -1;   0;   0;   0;  -1
+BlockStat;31; 280; 192; 8;32;Depth;3
+BlockStat;31; 280; 192; 8;32;QT_Depth;2
+BlockStat;31; 280; 192; 8;32;BT_Depth;2
+BlockStat;31; 280; 192; 8;32;MT_Depth;1
+BlockStat;31; 280; 192; 8;32;ChromaQPAdj;0
+BlockStat;31; 280; 192; 8;32;QP;41
+BlockStat;31; 280; 192; 8;32;SplitSeries;5153
+BlockStat;31; 280; 192; 8;32;SkipFlag;1
+BlockStat;31; 280; 192; 8;32;MMVDSkipFlag;0
+BlockStat;31; 280; 192; 8;32;PredMode;0
+BlockStat;31; 280; 192; 8;32;MergeIdx;2
+BlockStat;31; 280; 192; 8;32;MergeType;0
+BlockStat;31; 280; 192; 8;32;MMVDMergeFlag;0
+BlockStat;31; 280; 192; 8;32;AffineFlag;0
+BlockStat;31; 280; 192; 8;32;MVPIdxL0;255
+BlockStat;31; 280; 192; 8;32;RefIdxL0;0
+BlockStat;31; 280; 192; 8;32;MVPIdxL1;255
+BlockStat;31; 280; 192; 8;32;RefIdxL1;0
+BlockStat;31; 280; 192; 8;32;MVDL0;   0;   0
+BlockStat;31; 280; 192; 8;32;MVL0;   1;   0
+BlockStat;31; 280; 192; 8;32;MVDL1;   0;   0
+BlockStat;31; 280; 192; 8;32;MVL1;   1;   0
+BlockStat;31; 288; 192;32;32;Depth;2
+BlockStat;31; 288; 192;32;32;QT_Depth;2
+BlockStat;31; 288; 192;32;32;BT_Depth;0
+BlockStat;31; 288; 192;32;32;MT_Depth;0
+BlockStat;31; 288; 192;32;32;ChromaQPAdj;0
+BlockStat;31; 288; 192;32;32;QP;41
+BlockStat;31; 288; 192;32;32;SplitSeries;33
+BlockStat;31; 288; 192;32;32;SkipFlag;1
+BlockStat;31; 288; 192;32;32;MMVDSkipFlag;0
+BlockStat;31; 288; 192;32;32;PredMode;0
+BlockStat;31; 288; 192;32;32;MergeIdx;0
+BlockStat;31; 288; 192;32;32;MergeType;0
+BlockStat;31; 288; 192;32;32;MMVDMergeFlag;0
+BlockStat;31; 288; 192;32;32;AffineFlag;0
+BlockStat;31; 288; 192;32;32;MVPIdxL0;255
+BlockStat;31; 288; 192;32;32;RefIdxL0;0
+BlockStat;31; 288; 192;32;32;MVPIdxL1;255
+BlockStat;31; 288; 192;32;32;RefIdxL1;0
+BlockStat;31; 288; 192;32;32;MVDL0;   0;   0
+BlockStat;31; 288; 192;32;32;MVL0;   1;   0
+BlockStat;31; 288; 192;32;32;MVDL1;   0;   0
+BlockStat;31; 288; 192;32;32;MVL1;   1;   0
+BlockStat;31; 256; 224; 8; 8;Depth;6
+BlockStat;31; 256; 224; 8; 8;QT_Depth;2
+BlockStat;31; 256; 224; 8; 8;BT_Depth;4
+BlockStat;31; 256; 224; 8; 8;MT_Depth;4
+BlockStat;31; 256; 224; 8; 8;ChromaQPAdj;0
+BlockStat;31; 256; 224; 8; 8;QP;41
+BlockStat;31; 256; 224; 8; 8;SplitSeries;102860833
+BlockStat;31; 256; 224; 8; 8;SkipFlag;1
+BlockStat;31; 256; 224; 8; 8;MMVDSkipFlag;0
+BlockStat;31; 256; 224; 8; 8;PredMode;0
+BlockStat;31; 256; 224; 8; 8;MergeIdx;37
+BlockStat;31; 256; 224; 8; 8;MergeType;0
+BlockStat;31; 256; 224; 8; 8;MMVDMergeFlag;1
+BlockStat;31; 256; 224; 8; 8;MMVDMergeIdx;37
+BlockStat;31; 256; 224; 8; 8;MVPIdxL0;255
+BlockStat;31; 256; 224; 8; 8;RefIdxL0;0
+BlockStat;31; 256; 224; 8; 8;MVPIdxL1;255
+BlockStat;31; 256; 224; 8; 8;RefIdxL1;0
+BlockStat;31; 256; 224; 8; 8;MVDL0;   0;   0
+BlockStat;31; 256; 224; 8; 8;MVL0;  -3;  -4
+BlockStat;31; 256; 224; 8; 8;MVDL1;   0;   0
+BlockStat;31; 256; 224; 8; 8;MVL1;  -3;  -4
+BlockStat;31; 264; 224; 8; 8;Depth;6
+BlockStat;31; 264; 224; 8; 8;QT_Depth;2
+BlockStat;31; 264; 224; 8; 8;BT_Depth;4
+BlockStat;31; 264; 224; 8; 8;MT_Depth;4
+BlockStat;31; 264; 224; 8; 8;ChromaQPAdj;0
+BlockStat;31; 264; 224; 8; 8;QP;41
+BlockStat;31; 264; 224; 8; 8;SplitSeries;102860833
+BlockStat;31; 264; 224; 8; 8;SkipFlag;0
+BlockStat;31; 264; 224; 8; 8;PredMode;0
+BlockStat;31; 264; 224; 8; 8;MergeFlag;1
+BlockStat;31; 264; 224; 8; 8;MergeIdx;1
+BlockStat;31; 264; 224; 8; 8;MergeType;0
+BlockStat;31; 264; 224; 8; 8;MMVDMergeFlag;0
+BlockStat;31; 264; 224; 8; 8;AffineFlag;0
+BlockStat;31; 264; 224; 8; 8;MHIntraFlag;1
+BlockStat;31; 264; 224; 8; 8;Luma_IntraMode;0
+BlockStat;31; 264; 224; 8; 8;Chroma_IntraMode;70
+BlockStat;31; 264; 224; 8; 8;MVPIdxL0;255
+BlockStat;31; 264; 224; 8; 8;RefIdxL0;0
+BlockStat;31; 264; 224; 8; 8;MVPIdxL1;255
+BlockStat;31; 264; 224; 8; 8;RefIdxL1;0
+BlockStat;31; 264; 224; 8; 8;MVDL0;   0;   0
+BlockStat;31; 264; 224; 8; 8;MVL0;   0;  -1
+BlockStat;31; 264; 224; 8; 8;MVDL1;   0;   0
+BlockStat;31; 264; 224; 8; 8;MVL1;   0;  -1
+BlockStat;31; 264; 224; 8; 8;Cbf_Y;1
+BlockStat;31; 264; 224; 8; 8;TransformSkipFlag_Y;0
+BlockStat;31; 264; 224; 8; 8;Cbf_Cb;0
+BlockStat;31; 264; 224; 8; 8;Cbf_Cr;0
+BlockStat;31; 256; 232;16; 8;Depth;5
+BlockStat;31; 256; 232;16; 8;QT_Depth;2
+BlockStat;31; 256; 232;16; 8;BT_Depth;3
+BlockStat;31; 256; 232;16; 8;MT_Depth;3
+BlockStat;31; 256; 232;16; 8;ChromaQPAdj;0
+BlockStat;31; 256; 232;16; 8;QP;41
+BlockStat;31; 256; 232;16; 8;SplitSeries;2197537
+BlockStat;31; 256; 232;16; 8;SkipFlag;1
+BlockStat;31; 256; 232;16; 8;MMVDSkipFlag;0
+BlockStat;31; 256; 232;16; 8;PredMode;0
+BlockStat;31; 256; 232;16; 8;MergeIdx;1
+BlockStat;31; 256; 232;16; 8;MergeType;0
+BlockStat;31; 256; 232;16; 8;MMVDMergeFlag;0
+BlockStat;31; 256; 232;16; 8;AffineFlag;0
+BlockStat;31; 256; 232;16; 8;MVPIdxL1;255
+BlockStat;31; 256; 232;16; 8;RefIdxL1;0
+BlockStat: POC 31 @( 256, 232) [16x 8] TrianglePartitioning={   0,   8,  16,   0}
+BlockStat: POC 31 @[(256, 232)--(272, 232)--(256, 240)--] TriangleMVL0={  -5,  -2}
+BlockStat: POC 31 @[(272, 232)--(256, 240)--(272, 240)--] TriangleMVL1={   0,  -1}
+BlockStat;31; 272; 224;16;16;Depth;4
+BlockStat;31; 272; 224;16;16;QT_Depth;2
+BlockStat;31; 272; 224;16;16;BT_Depth;2
+BlockStat;31; 272; 224;16;16;MT_Depth;2
+BlockStat;31; 272; 224;16;16;ChromaQPAdj;0
+BlockStat;31; 272; 224;16;16;QP;41
+BlockStat;31; 272; 224;16;16;SplitSeries;100385
+BlockStat;31; 272; 224;16;16;SkipFlag;1
+BlockStat;31; 272; 224;16;16;MMVDSkipFlag;0
+BlockStat;31; 272; 224;16;16;PredMode;0
+BlockStat;31; 272; 224;16;16;MergeIdx;0
+BlockStat;31; 272; 224;16;16;MergeType;1
+BlockStat;31; 272; 224;16;16;MMVDMergeFlag;0
+BlockStat;31; 272; 224;16;16;AffineFlag;1
+BlockStat;31; 272; 224;16;16;MVPIdxL0;255
+BlockStat;31; 272; 224;16;16;RefIdxL0;0
+BlockStat;31; 272; 224;16;16;MVPIdxL1;255
+BlockStat;31; 272; 224;16;16;RefIdxL1;0
+BlockStat;31; 272; 224;16;16;AffineMVL0;   1;   0;   1;   0;   1;   0
+BlockStat;31; 272; 224;16;16;AffineMVL1;   1;   0;   1;   0;   1;   0
+BlockStat;31; 288; 224;32;16;Depth;3
+BlockStat;31; 288; 224;32;16;QT_Depth;2
+BlockStat;31; 288; 224;32;16;BT_Depth;1
+BlockStat;31; 288; 224;32;16;MT_Depth;1
+BlockStat;31; 288; 224;32;16;ChromaQPAdj;0
+BlockStat;31; 288; 224;32;16;QP;41
+BlockStat;31; 288; 224;32;16;SplitSeries;2081
+BlockStat;31; 288; 224;32;16;SkipFlag;1
+BlockStat;31; 288; 224;32;16;MMVDSkipFlag;0
+BlockStat;31; 288; 224;32;16;PredMode;0
+BlockStat;31; 288; 224;32;16;MergeIdx;1
+BlockStat;31; 288; 224;32;16;MergeType;0
+BlockStat;31; 288; 224;32;16;MMVDMergeFlag;0
+BlockStat;31; 288; 224;32;16;AffineFlag;0
+BlockStat;31; 288; 224;32;16;MVPIdxL0;255
+BlockStat;31; 288; 224;32;16;RefIdxL0;0
+BlockStat;31; 288; 224;32;16;MVPIdxL1;255
+BlockStat;31; 288; 224;32;16;RefIdxL1;0
+BlockStat;31; 288; 224;32;16;MVDL0;   0;   0
+BlockStat;31; 288; 224;32;16;MVL0;   1;   0
+BlockStat;31; 288; 224;32;16;MVDL1;   0;   0
+BlockStat;31; 288; 224;32;16;MVL1;   1;   0
+BlockStat;31; 320; 192;32;32;Depth;2
+BlockStat;31; 320; 192;32;32;QT_Depth;2
+BlockStat;31; 320; 192;32;32;BT_Depth;0
+BlockStat;31; 320; 192;32;32;MT_Depth;0
+BlockStat;31; 320; 192;32;32;ChromaQPAdj;0
+BlockStat;31; 320; 192;32;32;QP;41
+BlockStat;31; 320; 192;32;32;SplitSeries;33
+BlockStat;31; 320; 192;32;32;SkipFlag;1
+BlockStat;31; 320; 192;32;32;MMVDSkipFlag;0
+BlockStat;31; 320; 192;32;32;PredMode;0
+BlockStat;31; 320; 192;32;32;MergeIdx;0
+BlockStat;31; 320; 192;32;32;MergeType;1
+BlockStat;31; 320; 192;32;32;MMVDMergeFlag;0
+BlockStat;31; 320; 192;32;32;AffineFlag;1
+BlockStat;31; 320; 192;32;32;MVPIdxL0;255
+BlockStat;31; 320; 192;32;32;RefIdxL0;0
+BlockStat;31; 320; 192;32;32;MVPIdxL1;255
+BlockStat;31; 320; 192;32;32;RefIdxL1;0
+BlockStat;31; 320; 192;32;32;AffineMVL0;   2;  -1;   3;  -1;   2;  -1
+BlockStat;31; 320; 192;32;32;AffineMVL1;   2;  -1;   3;  -1;   2;  -1
+BlockStat;31; 352; 192;32;32;Depth;2
+BlockStat;31; 352; 192;32;32;QT_Depth;2
+BlockStat;31; 352; 192;32;32;BT_Depth;0
+BlockStat;31; 352; 192;32;32;MT_Depth;0
+BlockStat;31; 352; 192;32;32;ChromaQPAdj;0
+BlockStat;31; 352; 192;32;32;QP;41
+BlockStat;31; 352; 192;32;32;SplitSeries;33
+BlockStat;31; 352; 192;32;32;SkipFlag;1
+BlockStat;31; 352; 192;32;32;MMVDSkipFlag;0
+BlockStat;31; 352; 192;32;32;PredMode;0
+BlockStat;31; 352; 192;32;32;MergeIdx;0
+BlockStat;31; 352; 192;32;32;MergeType;1
+BlockStat;31; 352; 192;32;32;MMVDMergeFlag;0
+BlockStat;31; 352; 192;32;32;AffineFlag;1
+BlockStat;31; 352; 192;32;32;MVPIdxL0;255
+BlockStat;31; 352; 192;32;32;RefIdxL0;0
+BlockStat;31; 352; 192;32;32;MVPIdxL1;255
+BlockStat;31; 352; 192;32;32;RefIdxL1;0
+BlockStat;31; 352; 192;32;32;AffineMVL0;   2;  -1;   2;  -1;   2;  -1
+BlockStat;31; 352; 192;32;32;AffineMVL1;   2;  -1;   2;  -1;   2;  -1
+BlockStat;31; 320; 224;32;16;Depth;3
+BlockStat;31; 320; 224;32;16;QT_Depth;2
+BlockStat;31; 320; 224;32;16;BT_Depth;1
+BlockStat;31; 320; 224;32;16;MT_Depth;1
+BlockStat;31; 320; 224;32;16;ChromaQPAdj;0
+BlockStat;31; 320; 224;32;16;QP;41
+BlockStat;31; 320; 224;32;16;SplitSeries;2081
+BlockStat;31; 320; 224;32;16;SkipFlag;1
+BlockStat;31; 320; 224;32;16;MMVDSkipFlag;0
+BlockStat;31; 320; 224;32;16;PredMode;0
+BlockStat;31; 320; 224;32;16;MergeIdx;1
+BlockStat;31; 320; 224;32;16;MergeType;0
+BlockStat;31; 320; 224;32;16;MMVDMergeFlag;0
+BlockStat;31; 320; 224;32;16;AffineFlag;0
+BlockStat;31; 320; 224;32;16;MVPIdxL1;255
+BlockStat;31; 320; 224;32;16;RefIdxL1;0
+BlockStat: POC 31 @( 320, 224) [32x16] TrianglePartitioning={   0,   0,  32,  16}
+BlockStat: POC 31 @[(320, 224)--(352, 224)--(352, 240)--] TriangleMVL0={   1,   0}
+BlockStat: POC 31 @[(320, 224)--(320, 240)--(352, 240)--] TriangleMVL0={   2,  -1}
+BlockStat;31; 352; 224;32;16;Depth;3
+BlockStat;31; 352; 224;32;16;QT_Depth;2
+BlockStat;31; 352; 224;32;16;BT_Depth;1
+BlockStat;31; 352; 224;32;16;MT_Depth;1
+BlockStat;31; 352; 224;32;16;ChromaQPAdj;0
+BlockStat;31; 352; 224;32;16;QP;41
+BlockStat;31; 352; 224;32;16;SplitSeries;2081
+BlockStat;31; 352; 224;32;16;SkipFlag;1
+BlockStat;31; 352; 224;32;16;MMVDSkipFlag;0
+BlockStat;31; 352; 224;32;16;PredMode;0
+BlockStat;31; 352; 224;32;16;MergeIdx;0
+BlockStat;31; 352; 224;32;16;MergeType;0
+BlockStat;31; 352; 224;32;16;MMVDMergeFlag;0
+BlockStat;31; 352; 224;32;16;AffineFlag;0
+BlockStat;31; 352; 224;32;16;MVPIdxL0;255
+BlockStat;31; 352; 224;32;16;RefIdxL0;0
+BlockStat: POC 31 @( 352, 224) [32x16] TrianglePartitioning={   0,   0,  32,  16}
+BlockStat: POC 31 @[(352, 224)--(384, 224)--(384, 240)--] TriangleMVL0={   1,   0}
+BlockStat: POC 31 @[(352, 224)--(352, 240)--(384, 240)--] TriangleMVL0={   2,  -1}
+BlockStat;31; 384; 128;32;64;Depth;2
+BlockStat;31; 384; 128;32;64;QT_Depth;1
+BlockStat;31; 384; 128;32;64;BT_Depth;1
+BlockStat;31; 384; 128;32;64;MT_Depth;1
+BlockStat;31; 384; 128;32;64;ChromaQPAdj;0
+BlockStat;31; 384; 128;32;64;QP;41
+BlockStat;31; 384; 128;32;64;SplitSeries;97
+BlockStat;31; 384; 128;32;64;SkipFlag;1
+BlockStat;31; 384; 128;32;64;MMVDSkipFlag;0
+BlockStat;31; 384; 128;32;64;PredMode;0
+BlockStat;31; 384; 128;32;64;MergeIdx;0
+BlockStat;31; 384; 128;32;64;MergeType;1
+BlockStat;31; 384; 128;32;64;MMVDMergeFlag;0
+BlockStat;31; 384; 128;32;64;AffineFlag;1
+BlockStat;31; 384; 128;32;64;MVPIdxL0;255
+BlockStat;31; 384; 128;32;64;RefIdxL0;0
+BlockStat;31; 384; 128;32;64;MVPIdxL1;255
+BlockStat;31; 384; 128;32;64;RefIdxL1;0
+BlockStat;31; 384; 128;32;64;AffineMVL0;   3;  -1;   3;  -2;   3;  -1
+BlockStat;31; 384; 128;32;64;AffineMVL1;   3;  -1;   3;  -2;   3;  -1
+BlockStat;31; 384; 192;32;32;Depth;2
+BlockStat;31; 384; 192;32;32;QT_Depth;2
+BlockStat;31; 384; 192;32;32;BT_Depth;0
+BlockStat;31; 384; 192;32;32;MT_Depth;0
+BlockStat;31; 384; 192;32;32;ChromaQPAdj;0
+BlockStat;31; 384; 192;32;32;QP;41
+BlockStat;31; 384; 192;32;32;SplitSeries;33
+BlockStat;31; 384; 192;32;32;SkipFlag;1
+BlockStat;31; 384; 192;32;32;MMVDSkipFlag;0
+BlockStat;31; 384; 192;32;32;PredMode;0
+BlockStat;31; 384; 192;32;32;MergeIdx;38
+BlockStat;31; 384; 192;32;32;MergeType;0
+BlockStat;31; 384; 192;32;32;MMVDMergeFlag;1
+BlockStat;31; 384; 192;32;32;MMVDMergeIdx;38
+BlockStat;31; 384; 192;32;32;MVPIdxL0;255
+BlockStat;31; 384; 192;32;32;RefIdxL0;0
+BlockStat;31; 384; 192;32;32;MVPIdxL1;255
+BlockStat;31; 384; 192;32;32;RefIdxL1;0
+BlockStat;31; 384; 192;32;32;MVDL0;   0;   0
+BlockStat;31; 384; 192;32;32;MVL0;   3;   2
+BlockStat;31; 384; 192;32;32;MVDL1;   0;   0
+BlockStat;31; 384; 192;32;32;MVL1;   3;   2
+BlockStat;31; 384; 224;32;16;Depth;3
+BlockStat;31; 384; 224;32;16;QT_Depth;2
+BlockStat;31; 384; 224;32;16;BT_Depth;1
+BlockStat;31; 384; 224;32;16;MT_Depth;1
+BlockStat;31; 384; 224;32;16;ChromaQPAdj;0
+BlockStat;31; 384; 224;32;16;QP;41
+BlockStat;31; 384; 224;32;16;SplitSeries;2081
+BlockStat;31; 384; 224;32;16;SkipFlag;1
+BlockStat;31; 384; 224;32;16;MMVDSkipFlag;0
+BlockStat;31; 384; 224;32;16;PredMode;0
+BlockStat;31; 384; 224;32;16;MergeIdx;1
+BlockStat;31; 384; 224;32;16;MergeType;0
+BlockStat;31; 384; 224;32;16;MMVDMergeFlag;0
+BlockStat;31; 384; 224;32;16;AffineFlag;1
+BlockStat;31; 384; 224;32;16;MVPIdxL0;0
+BlockStat;31; 384; 224;32;16;RefIdxL0;0
+BlockStat;31; 384; 224;32;16;MVPIdxL1;0
+BlockStat;31; 384; 224;32;16;RefIdxL1;0
+BlockStat;31; 384; 224;32;16;AffineMVL0;   2;  -1;   2;   2;   1;   0
+BlockStat;31; 384; 224;32;16;AffineMVL1;   2;  -1;   3;   1;   2;  -1

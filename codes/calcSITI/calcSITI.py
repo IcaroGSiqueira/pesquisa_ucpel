@@ -85,7 +85,7 @@ yuvs = ["BlowingBubbles_416x240_50fps_8bit_420.yuv","BQSquare_416x240_60fps_8bit
 # 	outAvgFile = open('SITI_AVG.csv','w')
 		
 for v in yuvs:
-	print "Video: ", v
+	print "SITI Calc: ", v
 	if '.py' in v:
 		continue
 	if '.csv' in v:
@@ -131,6 +131,7 @@ for v in yuvs:
 		print >> outFile, 'MAX;', max(vetSI), ';', max(vetTI)
 		print >> outFile, 'AVG;', siavg/numf, ';', tiavg/numf
 		outFile.close()
+print "\nDONE!!!\n"
 
 # --- P A R S E ------------------------------------------------
 
@@ -140,8 +141,11 @@ sitis = os.listdir("./")
 for siti in sitis:
 	if '.py' in siti:
 		continue
+	if '.png' in siti:
+		continue
 	if 'SITI_AVG.csv' in siti:
 		continue	
+	print "Avg Calc: ", siti
 	file = open("./%s"%siti,'r')
 	lines = file.readlines()
 	line = lines[-1]
@@ -151,6 +155,7 @@ for siti in sitis:
 	print >> outAvgFile, siti, ';', line1, ';', line2
 
 outAvgFile.close()
+print "\nDONE!!!\n"
 
 
 # --- S C A T T E R ------------------------------------------------

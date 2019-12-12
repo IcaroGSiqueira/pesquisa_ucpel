@@ -1,42 +1,34 @@
 import os
 import re
 
-pathin = "/home/icaro/testesVVC/gprof"
+pathin = "/home/icaro/pesquisa_ucpel/output_VTM/local/traces"
 #pathin = "/home/icaro/testesHEVC/gprof"
-#out = open("/home/icaro/testesHEVC/gprof.csv","w")
-out = open("/home/icaro/testesVVC/vtm_gprof.csv","w")
 files = sorted(os.listdir("%s"%pathin))
 
-#linha = "YUV,I.Quant,FME-Interp.,FME-S.,I.Transf,Transf,ENTPY,Bio,AMVP,IME-S.,Merge,Filter,Affine,Quant,INT-S.,MC,SUM,TOTAL,%"
-linha = "YUV,FME-Interp.,FME-S.,Bio,IME-S.,Affine,I.Transf,Transf,I.Quant,Quant,Filter,INT-S.,ENTPY,AMVP,T/IT,ME,Q/IQ,MC,Merge,FME,SUM,TOTAL,%"
-print >> out, linha
-
 for file in files:
-	#if "SIMD" in file:
-	#	continue
-	if ".csv" in file:
-		continue
+
+	vid,pix,fr,b,qp,fl,conf,opt,poc = file.split("_")
+	b = b.strip("bit")
+	fr = fr.strip("fps")
+	qp = qp.strip("qp")
+	fl = fl.strip("fframes")
+	poc = poc.strip("poc.csv")
+	w,h = pix.split("x")
+	nome = vid+"_"+pix+"_"+fr+"fps"+"_"+b+"bit"+"_"+fl+"flimit"+"_"+conf+"_"+opt
+
+	out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s.csv"%nome,"w")
+
+	linha = "YUV, POC, QP, X, Y, W, H, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma"
+
+	print >> out, linha
 
 	prof = open("%s/%s"%(pathin,file),"r")
 	lines = prof.readlines()
-	line=0
+	line=i=0
 
-	FMEINT=0
-	Bio=0
-	Affine=0
-	ENTPY=0
-	INTS=0
-	AMVP=0
-	IMES=0
-	FMES=0
-	FLT=0
-	MRG=0
-	IQ=0
-	IT=0
-	MC=0
-	Q=0
-	T=0
-	i=0
+	X = Y = W = H = PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
+
+	dummy1 = dummypoc = x = y = w = h = linha = value = "0"
 
 	print file
 
@@ -44,285 +36,254 @@ for file in files:
 	yuv = yuv.strip(".yuv")
 	yuv = yuv.strip("gprof_")
 
-	while line != lines[-1]:
-		i+=1
+	while linha == "0":
 		line=lines[i]
+		i+=1
+		if "#" in line:
+			continue
+		dummy1,dummypoc,x,y,w,h,linha,value = line.split(';')
 
-		#linha = re.match(r'granularity:',line)
-		#if linha != None:
-		#		pt1 = re.findall(r'\d*\.\d*',line)
-		#		p1,called = pt1
-		#		called = float(called)
-		#		TOTAL = called
-		#		print TOTAL
+	i=0
+	while line != lines[-1]:
+		line=lines[i]
+		i+=1
+		if "#" in line:
+			continue
+		#BlockStat: POC 1 @( 144, 144) [32x32] TrianglePartitioning={   0,   0,  32,  32}
+		#line = line.strip('\n')
+		try:
+			dummy1,dummypoc,X,Y,W,H,linha,value = line.split(';')
+		except:
+			try:
+				dummy1,dummypoc,X,Y,W,H,linha,value, value2 = line.split(';')
+			except:
+				print line
+				X,YWHlinha,value, value2, value3 = line.split(',')
+				dummy,dummy2,dummy3,dummy4,X = X.split(" ")
+				Y,WHlinha = YWHlinha.split(")")
+				WH,linhav = WHlinha.split("] ")
+				W,H = WH.strip("[X]")
+				linha,value1 = linhav.strip("={ ")
+				#W,H = WH.split("x")
 
-		linha = re.match(r'\[1\][\d \.]+main \[1\]',line)
-		if linha != None:
-				pt1 = re.findall(r'\d*\.\d*',line)
-				p1,selff,called = pt1
-				called = float(called)
-				TOTAL = called
-				print TOTAL
+		if ((x != X) or (Y != y) or (W != w) or (H != h)):
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xPatternSearch',line)
-		if linha != None:
-			if "Frac" in line:
-				continue
-			else:
-				pt1 = re.findall(r'\d*\.\d*',line)
-				p1,selff,called = pt1
-				selff = float(selff)
-				called = float(called)
-				IMES = IMES + selff + called
+			linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"%(nome, poc, qp, X, Y, W, H, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma)
+			print >> out, linha
 
-		#linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xTZSearch',line)
-		#if linha != None:
-		#	if "Help" in line:
-		#		continue
-		#	else:
-		#		pt1 = re.findall(r'\d*\.\d*',line)
-		#		p1,selff,called = pt1
-		#		selff = float(selff)
-		#		called = float(called)
-		#		IMES = IMES + selff + called
+			x = X
+			y = Y
+			w = W
+			h = H
 
-		linha = re.match(r'\[\d+\][ \d \.]+[A-Za-z]+::xPatternRefinement',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMES = FMES + selff + called
+			X = Y = W = H = PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
 
-		linha = re.match(r'\[\d+\][ \d \.]+[A-Za-z]+::xExtDIFUpSamplingQ',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMEINT = FMEINT + selff + called
+		if linha == "PredMode":
+			PredMode = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+[A-Za-z]+::xExtDIFUpSamplingH',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FMEINT = FMEINT + selff + called
+		if linha == "Depth":
+			Depth = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+IntraSearch::estIntraPredLumaQT',line)
-		if linha != None:
-			temp=0
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			INTS = INTS + selff + called
-			i+=1
-			line = lines[i]
-			pt1 = re.findall(r'\d*\.\d*',line)
-			selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			temp = temp + selff + called
-			INTS = INTS - temp
+		if linha == "QT_Depth":
+			QT_Depth = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterPrediction::motionCompensation\(PredictionUnit&, UnitBuf<short>&, RefPicList const&, bool, bool, UnitBuf<short>',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			MC = MC + selff + called
+		if linha == "BT_Depth":
+			BT_Depth = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xEstimateAffineAMVP',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			AMVP = AMVP + selff + called
+		if linha == "MT_Depth":
+			MT_Depth = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xEstimateMvPredAMVP',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			AMVP = AMVP + selff + called
+		if linha == "ChromaQPAdj":
+			ChromaQPAdj = value
 
+		if linha == "BlockQP":
+			BlockQP = value
 
+		if linha == "SplitSeries":
+			SplitSeries = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+EncCu::xCheckRDCostAffineMerge2Nx2N',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			MRG = MRG + selff + called
-			j=i
-			TempMC=0
-			while "---" not in line:
-				j+=1
-				line = lines[j]
-				if "EncCu::xEncodeInterResidual" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-				if "InterPrediction::motionCompensation" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-			MRG = MRG - TempMC
+		if linha == "TransQuantBypassFlag":
+			TransQuantBypassFlag = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+EncCu::xCheckRDCostMergeTriangle2Nx2N',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			MRG = MRG + selff + called
-			j=i
-			TempMC=0
-			while "---" not in line:
-				j+=1
-				line = lines[j]
-				if "EncCu::xEncodeInterResidual" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-				if "InterPrediction::motionCompensation" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-			MRG = MRG - TempMC
+		if linha == "TransformSkipFlag_Y":
+			TransformSkipFlag_Y = value
 
+		if linha == "BDPCM":
+			BDPCM = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+IntraSearch::xFracModeBitsIntra',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			INTS = INTS + selff + called
+		if linha == "TileIdx":
+			TileIdx = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xAffineMotionEstimation',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			Affine = Affine + selff + called
+		if linha == "IndependentSliceIdx":
+			IndependentSliceIdx = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+[A-Za-z]+::xCheckRDCostMerge2Nx2N',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			MRG = MRG + selff + called
-			j=i
-			TempMC=0
-			while "---" not in line:
-				j+=1
-				line = lines[j]
-				if "EncCu::xEncodeInterResidual" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-				if "InterPrediction::motionCompensation" in line:
-					pt1 = re.findall(r'\d*\.\d*',line)
-					selff,called = pt1
-					selff = float(selff)
-					called = float(called)
-					TempMC = TempMC + selff + called
-			MRG = MRG - TempMC
+		if linha == "LFNSTIdx":
+			LFNSTIdx = value
 
+		if linha == "JointCbCr":
+			JointCbCr = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xQuant',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			Q = Q + selff + called
+		if linha == "CompAlphaCb":
+			CompAlphaCb = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xDeQuant',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			IQ = IQ + selff + called
+		if linha == "CompAlphaCr":
+			CompAlphaCr = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xT',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			T = T + selff + called
+		if linha == "RDPCM_Y":
+			RDPCM_Y = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xIT',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			IT = IT + selff + called
+		if linha == "RDPCM_Cb":
+			RDPCM_Cb = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+InterPrediction::applyBiOptFlow',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			Bio = Bio + selff + called
+		if linha == "RDPCM_Cr":
+			RDPCM_Cr = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+EncSampleAdaptiveOffset::SAOProcess',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FLT = FLT + selff + called
+		if linha == "Luma_IntraMode":
+			Luma_IntraMode = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+EncAdaptiveLoopFilter::ALFProcess',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			FLT = FLT + selff + called
+		if linha == "Chroma_IntraMode":
+			Chroma_IntraMode = value
 
-		linha = re.match(r'\[\d+\][ \d \.]+CABACWriter::residual_coding\(',line)
-		if linha != None:
-			pt1 = re.findall(r'\d*\.\d*',line)
-			p1,selff,called = pt1
-			selff = float(selff)
-			called = float(called)
-			ENTPY = ENTPY + selff + called
+		if linha == "MultiRefIdx":
+			MultiRefIdx = value
 
-	SOMA = FMEINT + INTS + AMVP + IMES + FMES + FLT + MRG + IQ + IT + MC + Q + T + Affine
-	PORC = SOMA/TOTAL*100
+		if linha == "MIPFlag":
+			MIPFlag = value
 
-	QIQ = Q + IQ
-	TIT = T + IT
-	FME = FMES + FMEINT
-	ME = Bio + IMES + Affine
+		if linha == "ISPMode":
+			ISPMode = value
 
-	linha = "%s,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf"%(yuv,FMEINT,FMES,Bio,IMES,Affine,IT,T,IQ,Q,FLT,INTS,ENTPY,AMVP,TIT,ME,QIQ,MC,MRG,FME,SOMA,TOTAL,PORC)
-	print >> out, linha
+		if linha == "SkipFlag":
+			SkipFlag = value
+
+		if linha == "RootCbf":
+			RootCbf = value
+
+		if linha == "SbtIdx":
+			SbtIdx = value
+
+		if linha == "SbtPos":
+			SbtPos = value
+
+		if linha == "Cbf_Y":
+			Cbf_Y = value
+
+		if linha == "Cbf_Cb":
+			Cbf_Cb = value
+
+		if linha == "Cbf_Cr":
+			Cbf_Cr = value
+
+		if linha == "IMVMode":
+			IMVMode = value
+
+		if linha == "InterDir":
+			InterDir = value
+
+		if linha == "MergeFlag":
+			MergeFlag = value
+
+		if linha == "RegularMergeFlag":
+			RegularMergeFlag = value
+
+		if linha == "MergeIdx":
+			MergeIdx = value
+
+		if linha == "MergeType":
+			MergeType = value
+
+		if linha == "MVPIdxL0":
+			MVPIdxL0 = value
+
+		if linha == "MVPIdxL1":
+			MVPIdxL1 = value
+
+		if linha == "MVL0":
+			MVL0 = value
+
+		if linha == "MVL1":
+			MVL1 = value
+
+		if linha == "MVDL0":
+			MVDL0 = value
+
+		if linha == "MVDL1":
+			MVDL1 = value
+
+		if linha == "MotionBufL0":
+			MotionBufL0 = value
+
+		if linha == "MotionBufL1":
+			MotionBufL1 = value
+
+		if linha == "RefIdxL0":
+			RefIdxL0 = value
+
+		if linha == "RefIdxL1":
+			RefIdxL1 = value
+
+		if linha == "AffineFlag":
+			AffineFlag = value
+
+		if linha == "AffineMVL0":
+			AffineMVL0 = value
+
+		if linha == "AffineMVL1":
+			AffineMVL1 = value
+
+		if linha == "AffineType":
+			AffineType = value
+
+		if linha == "MMVDSkipFlag":
+			MMVDSkipFlag = value
+
+		if linha == "MMVDMergeFlag":
+			MMVDMergeFlag = value
+
+		if linha == "MMVDMergeIdx":
+			MMVDMergeIdx = value
+
+		if linha == "MHIntraFlag":
+			MHIntraFlag = value
+
+		if linha == "SMVDFlag":
+			SMVDFlag = value
+
+		if linha == "TrianglePartitioning":
+			TrianglePartitioning = value
+
+		if linha == "TriangleMVL0":
+			TriangleMVL0 = value
+
+		if linha == "TriangleMVL1":
+			TriangleMVL1 = value
+
+		if linha == "GBIIndex":
+			GBIIndex = value
+
+		if linha == "Depth_Chroma":
+			Depth_Chroma = value
+
+		if linha == "QT_Depth_Chroma":
+			QT_Depth_Chroma = value
+
+		if linha == "BT_Depth_Chroma":
+			BT_Depth_Chroma = value
+
+		if linha == "MT_Depth_Chroma":
+			MT_Depth_Chroma = value
+
+		if linha == "ChromaQPAdj_Chroma":
+			ChromaQPAdj_Chroma = value
+
+		if linha == "QP_Chroma":
+			QP_Chroma = value
+
+		if linha == "SplitSeries_Chroma":
+			SplitSeries_Chroma = value
+
+		if linha == "TransQuantBypassFlag_Chroma":
+			TransQuantBypassFlag_Chroma = value
 	out.close
 
 #linha = "Average,%s,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f"%(yuv,FMEINT,INTS,AMVP,IMES,FMES,FLT,MRG,IQ,IT,MC,Q,T,SOMA,TOTAL,PORC)

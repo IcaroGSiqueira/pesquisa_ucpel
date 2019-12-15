@@ -92,8 +92,6 @@ for v in yuvs:
 		continue
 	if '10bit' in v:
 		continue
-	if '2160.yuv' in v:
-		continue
 	video = open('/home/icaro/origCfP/' + v,'rb')
 	w = int((v.split('_')[1]).split('x')[0])
 	h = int((v.split('_')[1]).split('x')[1].split('.')[0])

@@ -8,3 +8,4 @@ FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(in
 
  started @ Fri Dec 20 19:34:46 2019
 POC    0 TId: 0 ( I-SLICE, QP 24 )     292712 bits [Y 47.0029 dB    U 49.3843 dB    V 50.3216 dB] [ET  1762 ] [L0 ] [L1 ]
+POC   16 TId: 0 ( B-SLICE, QP 28 )      62200 bits [Y 44.0158 dB    U 49.0590 dB    V 50.6357 dB] [ET  3600 ] [L0 0 ] [L1 0 ]

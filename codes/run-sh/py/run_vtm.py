@@ -137,15 +137,15 @@ for conf in confs:
 
 				#VERIFICAR SOBRESCRICAO
 				try:
-					test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
-					tlines = test.readlines()
-					tline = tlines[-1]
-					if "Total Time" not in tline:
-						if gitpull == 1:
-							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
-							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
-						else:
-							print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
+					test = open("%s/%s/gmon/gmon_%s_%s.out"%(homepath,outpath,nome,info),"r")
+					#tlines = test.readlines()
+					#tline = tlines[-1]
+					#if "Total Time" not in tline:
+					#	if gitpull == 1:
+					#		linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+					#		print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linhag + " && " + linha4
+					#	else:
+					#		print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				except:
 					if gitpull == 1:
 						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
@@ -170,7 +170,7 @@ for conf in confs:
 				except:
 					if gitpull == 1:
 						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
-						print >> file, linha + " && " + linha4 + " && " + linhag
+						print >> file, linha + " && " + linhag + " && " + linha4
 					else:
 						print >> file, linha + " && " + linha4
 

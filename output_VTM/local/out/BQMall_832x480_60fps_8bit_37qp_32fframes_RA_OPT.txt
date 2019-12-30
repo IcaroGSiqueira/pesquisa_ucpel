@@ -6,13 +6,7 @@ NEXT TOOL CFG: LFNST:1 MMVD:1 Affine:1 AffineType:1 PROF:1 SubPuMvp:1+0 DualITre
 FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(intra) 4(inter) ISPFast:0 FastLFNST:0 AMaxBT:1 E0023FastEnc:1 ContentBasedFastQtbt:0 UseNonLinearAlfLuma:1 UseNonLinearAlfChroma:1 MaxNumAlfAlternativesChroma:8 FastMIP:0 FastLocalDualTree:1 NumSplitThreads:1 NumWppThreads:1+0 EnsureWppBitEqual:0 RPR:0
 
 
- started @ Sun Dec 29 22:46:45 2019
-POC    0 TId: 0 ( I-SLICE, QP 34 )      84896 bits [Y 35.6170 dB    U 39.2862 dB    V 39.8887 dB] [ET    60 ] [L0 ] [L1 ]
-POC   16 TId: 0 ( B-SLICE, QP 38 )      19864 bits [Y 34.5317 dB    U 38.4405 dB    V 38.8456 dB] [ET    96 ] [L0 0 ] [L1 0 ]
-POC    8 TId: 1 ( B-SLICE, QP 41 )       9368 bits [Y 34.0553 dB    U 38.4281 dB    V 39.1709 dB] [ET    59 ] [L0 0 16 ] [L1 16 0 ]
-POC    4 TId: 2 ( B-SLICE, QP 44 )       4800 bits [Y 33.5739 dB    U 38.3095 dB    V 39.0361 dB] [ET    36 ] [L0 0 8 ] [L1 8 16 ]
-POC    2 TId: 3 ( B-SLICE, QP 45 )       2352 bits [Y 34.1011 dB    U 38.8416 dB    V 39.3109 dB] [ET    20 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 4 ( B-SLICE, QP 46 )        248 bits [Y 35.6104 dB    U 39.2896 dB    V 39.8869 dB] [ET     4 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 4 ( B-SLICE, QP 46 )       1400 bits [Y 33.5292 dB    U 38.5028 dB    V 38.9855 dB] [ET    11 ] [L0 2 0 ] [L1 4 8 ]
-POC    6 TId: 3 ( B-SLICE, QP 45 )       2872 bits [Y 33.2893 dB    U 38.2446 dB    V 38.8272 dB] [ET    25 ] [L0 4 0 ] [L1 8 16 ]
-POC    5 TId: 4 ( B-SLICE, QP 46 )       1448 bits [Y 33.0653 dB    U 38.1545 dB    V 38.9059 dB] [ET    12 ] [L0 4 0 ] [L1 6 8 ]
+ started @ Sun Dec 29 22:47:50 2019
+POC    0 TId: 0 ( I-SLICE, QP 34 )     142376 bits [Y 35.2198 dB    U 39.2427 dB    V 40.2049 dB] [ET    86 ] [L0 ] [L1 ]
+POC   16 TId: 0 ( B-SLICE, QP 38 )      32480 bits [Y 33.7016 dB    U 38.6201 dB    V 39.3387 dB] [ET   101 ] [L0 0 ] [L1 0 ]
+POC    8 TId: 1 ( B-SLICE, QP 41 )       9056 bits [Y 33.2423 dB    U 38.6980 dB    V 39.6014 dB] [ET    51 ] [L0 0 16 ] [L1 16 0 ]

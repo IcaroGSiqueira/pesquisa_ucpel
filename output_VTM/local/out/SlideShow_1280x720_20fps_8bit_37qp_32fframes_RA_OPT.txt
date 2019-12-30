@@ -35,3 +35,13 @@ POC   23 TId: 4 ( B-SLICE, QP 46 )        216 bits [Y 39.5351 dB    U 44.3910 dB
 POC   28 TId: 2 ( B-SLICE, QP 44 )      17576 bits [Y 38.0534 dB    U 42.8565 dB    V 43.5099 dB] [ET    64 ] [L0 24 16 ] [L1 24 16 ]
 POC   26 TId: 3 ( B-SLICE, QP 45 )        304 bits [Y 39.5404 dB    U 44.3929 dB    V 46.2209 dB] [ET     7 ] [L0 24 16 ] [L1 28 24 ]
 POC   25 TId: 4 ( B-SLICE, QP 46 )        224 bits [Y 39.5438 dB    U 44.3917 dB    V 46.2195 dB] [ET     7 ] [L0 24 16 ] [L1 26 28 ]
+POC   27 TId: 4 ( B-SLICE, QP 46 )        592 bits [Y 38.3482 dB    U 42.9347 dB    V 43.5626 dB] [ET     9 ] [L0 26 24 ] [L1 28 26 ]
+POC   30 TId: 3 ( B-SLICE, QP 45 )        576 bits [Y 38.3151 dB    U 42.9094 dB    V 43.5974 dB] [ET     8 ] [L0 28 24 ] [L1 28 24 ]
+POC   29 TId: 4 ( B-SLICE, QP 46 )        368 bits [Y 38.4870 dB    U 42.9430 dB    V 43.5987 dB] [ET     9 ] [L0 28 24 ] [L1 30 28 ]
+POC   31 TId: 4 ( B-SLICE, QP 46 )        456 bits [Y 38.3729 dB    U 42.8278 dB    V 43.5845 dB] [ET     8 ] [L0 30 28 ] [L1 30 28 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       32    a     138.6750   41.1312   45.6740   46.8081   41.1841
+
+ finished @ Sun Dec 29 23:25:07 2019
+ Total Time:      589.660 sec. [user]      590.487 sec. [elapsed]

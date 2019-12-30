@@ -6,6 +6,5 @@ NEXT TOOL CFG: LFNST:1 MMVD:1 Affine:1 AffineType:1 PROF:1 SubPuMvp:1+0 DualITre
 FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(intra) 4(inter) ISPFast:0 FastLFNST:0 AMaxBT:1 E0023FastEnc:1 ContentBasedFastQtbt:0 UseNonLinearAlfLuma:1 UseNonLinearAlfChroma:1 MaxNumAlfAlternativesChroma:8 FastMIP:0 FastLocalDualTree:1 NumSplitThreads:1 NumWppThreads:1+0 EnsureWppBitEqual:0 RPR:0
 
 
- started @ Mon Dec 30 12:55:18 2019
-POC    0 TId: 0 ( I-SLICE, QP 34 )     145960 bits [Y 37.7494 dB    U 42.6060 dB    V 42.9615 dB] [ET   121 ] [L0 ] [L1 ]
-POC   16 TId: 0 ( B-SLICE, QP 38 )      67040 bits [Y 37.1570 dB    U 42.0385 dB    V 42.1562 dB] [ET   488 ] [L0 0 ] [L1 0 ]
+ started @ Mon Dec 30 13:03:06 2019
+POC    0 TId: 0 ( I-SLICE, QP 29 )     266600 bits [Y 39.1605 dB    U 44.1741 dB    V 45.2043 dB] [ET   225 ] [L0 ] [L1 ]

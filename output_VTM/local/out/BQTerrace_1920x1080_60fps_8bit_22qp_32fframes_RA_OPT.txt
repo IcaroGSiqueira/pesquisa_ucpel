@@ -10,3 +10,7 @@ FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(in
 POC    0 TId: 0 ( I-SLICE, QP 19 )    3674792 bits [Y 45.9016 dB    U 44.9286 dB    V 46.1430 dB] [ET   590 ] [L0 ] [L1 ]
 POC   16 TId: 0 ( B-SLICE, QP 23 )    1832600 bits [Y 42.0586 dB    U 43.0237 dB    V 45.0520 dB] [ET   847 ] [L0 0 ] [L1 0 ]
 POC    8 TId: 1 ( B-SLICE, QP 23 )    1681800 bits [Y 42.0041 dB    U 43.0223 dB    V 45.0136 dB] [ET   967 ] [L0 0 16 ] [L1 16 0 ]
+POC    4 TId: 2 ( B-SLICE, QP 26 )     839432 bits [Y 39.1379 dB    U 42.7240 dB    V 44.9533 dB] [ET  1017 ] [L0 0 8 ] [L1 8 16 ]
+POC    2 TId: 3 ( B-SLICE, QP 27 )     545720 bits [Y 38.3343 dB    U 42.8399 dB    V 45.0357 dB] [ET   837 ] [L0 0 4 ] [L1 4 8 ]
+POC    1 TId: 4 ( B-SLICE, QP 29 )     179928 bits [Y 37.0033 dB    U 42.9302 dB    V 45.0897 dB] [ET   452 ] [L0 0 2 ] [L1 2 4 ]
+POC    3 TId: 4 ( B-SLICE, QP 29 )     186856 bits [Y 36.9540 dB    U 42.7821 dB    V 44.9919 dB] [ET   466 ] [L0 2 0 ] [L1 4 8 ]

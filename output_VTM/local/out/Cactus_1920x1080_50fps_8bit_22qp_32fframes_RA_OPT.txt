@@ -6,13 +6,5 @@ NEXT TOOL CFG: LFNST:1 MMVD:1 Affine:1 AffineType:1 PROF:1 SubPuMvp:1+0 DualITre
 FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(intra) 4(inter) ISPFast:0 FastLFNST:0 AMaxBT:1 E0023FastEnc:1 ContentBasedFastQtbt:0 UseNonLinearAlfLuma:1 UseNonLinearAlfChroma:1 MaxNumAlfAlternativesChroma:8 FastMIP:0 FastLocalDualTree:1 NumSplitThreads:1 NumWppThreads:1+0 EnsureWppBitEqual:0 RPR:0
 
 
- started @ Sun Dec 29 23:25:13 2019
-POC    0 TId: 0 ( I-SLICE, QP 19 )    2389584 bits [Y 47.4228 dB    U 47.9203 dB    V 48.5522 dB] [ET   797 ] [L0 ] [L1 ]
-POC   16 TId: 0 ( B-SLICE, QP 23 )     781336 bits [Y 45.1953 dB    U 46.4021 dB    V 47.0626 dB] [ET  1109 ] [L0 0 ] [L1 0 ]
-POC    8 TId: 1 ( B-SLICE, QP 23 )     472208 bits [Y 44.7582 dB    U 46.2763 dB    V 46.8478 dB] [ET   889 ] [L0 0 16 ] [L1 16 0 ]
-POC    4 TId: 2 ( B-SLICE, QP 26 )     304984 bits [Y 43.8083 dB    U 45.7918 dB    V 46.1370 dB] [ET   586 ] [L0 0 8 ] [L1 8 16 ]
-POC    2 TId: 3 ( B-SLICE, QP 27 )     193912 bits [Y 43.5646 dB    U 45.8509 dB    V 46.1272 dB] [ET   402 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 4 ( B-SLICE, QP 29 )      79096 bits [Y 44.9634 dB    U 46.5087 dB    V 46.4924 dB] [ET   148 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 4 ( B-SLICE, QP 29 )     103760 bits [Y 42.6789 dB    U 45.3760 dB    V 45.5191 dB] [ET   242 ] [L0 2 0 ] [L1 4 8 ]
-POC    6 TId: 3 ( B-SLICE, QP 27 )     235136 bits [Y 43.2389 dB    U 45.2660 dB    V 45.6751 dB] [ET   536 ] [L0 4 0 ] [L1 8 16 ]
-POC    5 TId: 4 ( B-SLICE, QP 29 )     148704 bits [Y 42.4028 dB    U 44.7722 dB    V 45.1333 dB] [ET   351 ] [L0 4 0 ] [L1 6 8 ]
+ started @ Mon Dec 30 00:21:22 2019
+POC    0 TId: 0 ( I-SLICE, QP 19 )    3463624 bits [Y 44.3420 dB    U 43.8274 dB    V 45.6234 dB] [ET   996 ] [L0 ] [L1 ]

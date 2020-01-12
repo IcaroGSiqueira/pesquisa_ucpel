@@ -67,6 +67,8 @@ else:
 	simd = "--SIMD=SCALAR"
 	if gprof == 0:
 		bina = "EncoderAppStatic_std"
+		
+
 		inf = "noOPT"
 	else:
 		bina = "EncoderAppStaticd_gprof"
@@ -130,7 +132,7 @@ for conf in confs:
 
 			if gprof == 1:
 				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --InputBitDepth=%s %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,b,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
-				linha2 = "mv %s/%s/gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,shpath,homepath,outpath,nome,info)
+				linha2 = "mv gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,outpath,nome,info)
 				linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
 				linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
 
@@ -190,7 +192,12 @@ if threads != 1:
 
 	for x in range(threads):
 
-		file2 = open("%s/%s/%d_%s"%(homepath,shpath,x+1,filename),"w")
+		try:
+			os.system("mkdir %s/%s/script%d"%(homepath,shpath,x+1))
+		except:
+			pass
+
+		file2 = open("%s/%s/script%d/%d_%s"%(homepath,shpath,x+1,x+1,filename),"w")
 		i = x*nqp
 		j=0
 

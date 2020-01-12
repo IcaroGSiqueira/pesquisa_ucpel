@@ -6,21 +6,3 @@ NEXT TOOL CFG: LFNST:1 MMVD:1 Affine:1 AffineType:1 PROF:1 SubPuMvp:1+0 DualITre
 FAST TOOL CFG: LCTUFast:1 FastMrg:1 PBIntraFast:1 IMV4PelFast:1 MTSMaxCand: 3(intra) 4(inter) ISPFast:0 FastLFNST:0 AMaxBT:1 E0023FastEnc:1 ContentBasedFastQtbt:0 UseNonLinearAlfLuma:1 UseNonLinearAlfChroma:1 MaxNumAlfAlternativesChroma:8 FastMIP:0 FastLocalDualTree:1 NumSplitThreads:1 NumWppThreads:1+0 EnsureWppBitEqual:0 RPR:0
 
 
- started @ Sat Jan  4 21:12:24 2020
-POC    0 TId: 0 ( I-SLICE, QP 19 )    3463624 bits [Y 44.3420 dB    U 43.8274 dB    V 45.6234 dB] [ET 12712 ] [L0 ] [L1 ]
-POC   16 TId: 0 ( B-SLICE, QP 23 )    1289056 bits [Y 40.2983 dB    U 41.4104 dB    V 44.2153 dB] [ET 18924 ] [L0 0 ] [L1 0 ]
-POC    8 TId: 1 ( B-SLICE, QP 23 )    1098312 bits [Y 40.2795 dB    U 41.4659 dB    V 44.2196 dB] [ET 20789 ] [L0 0 16 ] [L1 16 0 ]
-POC    4 TId: 2 ( B-SLICE, QP 26 )     280376 bits [Y 38.6705 dB    U 40.1509 dB    V 43.9916 dB] [ET 10702 ] [L0 0 8 ] [L1 8 16 ]
-POC    2 TId: 3 ( B-SLICE, QP 27 )     149672 bits [Y 38.4412 dB    U 39.9750 dB    V 44.1377 dB] [ET  6800 ] [L0 0 4 ] [L1 4 8 ]
-POC    1 TId: 4 ( B-SLICE, QP 29 )      50824 bits [Y 38.2344 dB    U 39.8817 dB    V 44.2275 dB] [ET  2833 ] [L0 0 2 ] [L1 2 4 ]
-POC    3 TId: 4 ( B-SLICE, QP 29 )      42792 bits [Y 38.1851 dB    U 39.8834 dB    V 43.9749 dB] [ET  2538 ] [L0 2 0 ] [L1 4 8 ]
-POC    6 TId: 3 ( B-SLICE, QP 27 )     152128 bits [Y 38.3601 dB    U 39.8831 dB    V 43.7779 dB] [ET  6975 ] [L0 4 0 ] [L1 8 16 ]
-POC    5 TId: 4 ( B-SLICE, QP 29 )      35800 bits [Y 38.1327 dB    U 39.8301 dB    V 43.8420 dB] [ET  2211 ] [L0 4 0 ] [L1 6 8 ]
-POC    7 TId: 4 ( B-SLICE, QP 29 )      32448 bits [Y 38.1214 dB    U 39.7531 dB    V 43.8224 dB] [ET  1936 ] [L0 6 4 ] [L1 8 16 ]
-POC   12 TId: 2 ( B-SLICE, QP 26 )     290272 bits [Y 38.6559 dB    U 40.0934 dB    V 43.9042 dB] [ET 10284 ] [L0 8 0 ] [L1 16 8 ]
-POC   10 TId: 3 ( B-SLICE, QP 27 )     145472 bits [Y 38.4054 dB    U 39.8996 dB    V 43.8478 dB] [ET  6836 ] [L0 8 0 ] [L1 12 16 ]
-POC    9 TId: 4 ( B-SLICE, QP 29 )      40024 bits [Y 38.1810 dB    U 39.8039 dB    V 43.8700 dB] [ET  2287 ] [L0 8 0 ] [L1 10 12 ]
-POC   11 TId: 4 ( B-SLICE, QP 29 )      40696 bits [Y 38.1614 dB    U 39.8124 dB    V 43.7781 dB] [ET  2336 ] [L0 10 8 ] [L1 12 16 ]
-POC   14 TId: 3 ( B-SLICE, QP 27 )     156680 bits [Y 38.3616 dB    U 39.8466 dB    V 43.7798 dB] [ET  6671 ] [L0 12 8 ] [L1 16 12 ]
-POC   13 TId: 4 ( B-SLICE, QP 29 )      43640 bits [Y 38.1316 dB    U 39.7873 dB    V 43.7595 dB] [ET  2475 ] [L0 12 8 ] [L1 14 16 ]
-POC   15 TId: 4 ( B-SLICE, QP 29 )      49392 bits [Y 38.1148 dB    U 39.7784 dB    V 43.7333 dB] [ET  2536 ] [L0 14 12 ] [L1 16 14 ]

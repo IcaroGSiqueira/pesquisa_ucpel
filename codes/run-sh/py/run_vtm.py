@@ -14,10 +14,10 @@ qps = [22,27,32,37]
 
 confs = ["encoder_randomaccess_vtm.cfg"]
 
-OPT = 1 # optimizacoes ligadas = 1
+OPT = 0 # optimizacoes ligadas = 1
 gprof = 1
 
-threads = 6 # numero de processos em parelelo
+threads = 3 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"
@@ -25,7 +25,7 @@ gitscript = "git_upl"
 shpath = "pesquisa_ucpel/codes/run-sh/vtm"
 filename = "run_vtm.sh"
 
-yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","Campfire_3840x2160_30fps_8bit_420.yuv"] #gprofiling
+yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv"]#,"Campfire_3840x2160_30fps_8bit_420.yuv"] #gprofiling
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 

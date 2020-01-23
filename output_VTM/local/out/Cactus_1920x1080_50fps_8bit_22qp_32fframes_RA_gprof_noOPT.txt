@@ -23,3 +23,6 @@ POC    9 TId: 4 ( B-SLICE, QP 29 )      40024 bits [Y 38.1810 dB    U 39.8039 dB
 POC   11 TId: 4 ( B-SLICE, QP 29 )      40696 bits [Y 38.1614 dB    U 39.8124 dB    V 43.7781 dB] [ET  3049 ] [L0 10 8 ] [L1 12 16 ]
 POC   14 TId: 3 ( B-SLICE, QP 27 )     156680 bits [Y 38.3616 dB    U 39.8466 dB    V 43.7798 dB] [ET  8139 ] [L0 12 8 ] [L1 16 12 ]
 POC   13 TId: 4 ( B-SLICE, QP 29 )      43640 bits [Y 38.1316 dB    U 39.7873 dB    V 43.7595 dB] [ET  3222 ] [L0 12 8 ] [L1 14 16 ]
+POC   15 TId: 4 ( B-SLICE, QP 29 )      49392 bits [Y 38.1148 dB    U 39.7784 dB    V 43.7333 dB] [ET  3239 ] [L0 14 12 ] [L1 16 14 ]
+POC   24 TId: 1 ( B-SLICE, QP 23 )    1168896 bits [Y 40.2697 dB    U 41.4283 dB    V 44.2031 dB] [ET 15622 ] [L0 16 8 ] [L1 16 8 ]
+POC   20 TId: 2 ( B-SLICE, QP 26 )     320304 bits [Y 38.6350 dB    U 40.0485 dB    V 43.7331 dB] [ET 12441 ] [L0 16 8 ] [L1 24 16 ]

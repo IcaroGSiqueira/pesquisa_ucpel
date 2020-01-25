@@ -29,3 +29,19 @@ POC   20 TId: 2 ( B-SLICE, QP 26 )    3103328 bits [Y 40.9276 dB    U 42.6614 dB
 POC   18 TId: 3 ( B-SLICE, QP 27 )    2437888 bits [Y 40.2663 dB    U 42.0009 dB    V 41.8576 dB] [ET  3170 ] [L0 16 8 ] [L1 20 24 ]
 POC   17 TId: 4 ( B-SLICE, QP 29 )    1370328 bits [Y 38.9420 dB    U 40.8015 dB    V 41.3362 dB] [ET  2554 ] [L0 16 18 ] [L1 18 20 ]
 POC   19 TId: 4 ( B-SLICE, QP 29 )    1357944 bits [Y 38.8469 dB    U 40.7511 dB    V 41.3587 dB] [ET  2610 ] [L0 18 16 ] [L1 20 24 ]
+POC   22 TId: 3 ( B-SLICE, QP 27 )    2436688 bits [Y 40.1234 dB    U 42.1339 dB    V 41.7932 dB] [ET  3186 ] [L0 20 16 ] [L1 24 20 ]
+POC   21 TId: 4 ( B-SLICE, QP 29 )    1475856 bits [Y 38.5209 dB    U 40.7941 dB    V 41.2288 dB] [ET  2882 ] [L0 20 16 ] [L1 22 24 ]
+POC   23 TId: 4 ( B-SLICE, QP 29 )    1349480 bits [Y 38.8733 dB    U 41.0458 dB    V 41.2527 dB] [ET  2342 ] [L0 22 20 ] [L1 24 22 ]
+POC   28 TId: 2 ( B-SLICE, QP 26 )    3277008 bits [Y 40.5926 dB    U 42.3560 dB    V 42.2633 dB] [ET  3628 ] [L0 24 16 ] [L1 24 16 ]
+POC   26 TId: 3 ( B-SLICE, QP 27 )    2599424 bits [Y 39.8074 dB    U 41.8224 dB    V 41.9144 dB] [ET  3393 ] [L0 24 16 ] [L1 28 24 ]
+POC   25 TId: 4 ( B-SLICE, QP 29 )    1297480 bits [Y 38.3588 dB    U 40.9173 dB    V 41.4488 dB] [ET  2795 ] [L0 24 16 ] [L1 26 28 ]
+POC   27 TId: 4 ( B-SLICE, QP 29 )    1235600 bits [Y 38.1884 dB    U 40.5647 dB    V 41.5194 dB] [ET  2820 ] [L0 26 24 ] [L1 28 26 ]
+POC   30 TId: 3 ( B-SLICE, QP 27 )    2479168 bits [Y 39.9505 dB    U 41.7250 dB    V 42.0930 dB] [ET  3029 ] [L0 28 24 ] [L1 28 24 ]
+POC   29 TId: 4 ( B-SLICE, QP 29 )    1227688 bits [Y 38.2450 dB    U 40.5739 dB    V 41.5687 dB] [ET  2753 ] [L0 28 24 ] [L1 30 28 ]
+POC   31 TId: 4 ( B-SLICE, QP 29 )    1241184 bits [Y 38.3077 dB    U 40.6210 dB    V 41.5737 dB] [ET  2538 ] [L0 30 28 ] [L1 30 28 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       32    a   67503.9825   40.0585   41.9650   42.1620   40.3618
+
+ finished @ Fri Jan 24 23:40:29 2020
+ Total Time:    99630.162 sec. [user]    99670.016 sec. [elapsed]

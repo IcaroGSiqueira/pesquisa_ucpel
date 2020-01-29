@@ -1,1 +1,0 @@
-/usr/bin/g++   -fopenmp -O3 -DNDEBUG    CMakeFiles/parcat.dir/parcat.cpp.o  -o ../../../bin/umake/gcc-7.4/x86_64/release/parcat -pthread 

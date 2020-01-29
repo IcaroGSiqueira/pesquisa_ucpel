@@ -2,13 +2,11 @@
 /CppApplication_1/dist/
 /CppApplication_2/build/
 /CppApplication_2/dist/
-/aom_1.0/nbbuild/*
-/aom_1.0/build/*
-/aom_1.0_noSIMD/nbbuild/*
-/aom_1.0_noSIMD/build/*
 /codes/run-sh/*/rec.yuv
 /codes/run-sh/hm/rec.yuv
 /codes/run-sh/vtm/rec.yuv
+/codes/run-sh/vtm/*/rec.yuv
+/codes/run-sh/aom/rec.yuv
 /codes/run-sh/rec.yuv
 rec.yuv
 /rec.yuv

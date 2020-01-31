@@ -1,10 +1,17 @@
 import os
+from datetime import datetime
+
+dateTimeObj = datetime.now()
+timeObj = dateTimeObj.time()
+time = "%s.%s.%s"%(timeObj.hour, timeObj.minute, timeObj.second)
 # import glob
 # import pandas as pd
 
 pathin = "/home/icaro/pesquisa_ucpel/output_VTM/local/traces"
 #pathin = "/home/icaro/testesHEVC/gprof"
 files = sorted(os.listdir("%s"%pathin))
+
+os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces/parsed_traces_%s"%time)
 
 os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces")
 
@@ -28,14 +35,14 @@ for file in files:
         test = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTRA.csv"%nome,"r")
     except:
         out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTRA.csv"%nome,"a")
-        linha = "YUV, POC, QP, X, Y, WxH, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"
+        linha = "YUV, POC, QP, X, Y, W, H, WxH, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"
         #print >> out, linha
         out.write(linha)
     try:
         test = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTER.csv"%nome,"r")
     except:
         out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTER.csv"%nome,"a")
-        linha = "YUV, POC, QP, X, Y, WxH, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"
+        linha = "YUV, POC, QP, X, Y, W, H, WxH, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"
         #print >> out, linha
         out.write(linha)
 
@@ -60,7 +67,7 @@ for file in files:
     lines = prof.readlines()
     line=i=0
 
-    PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
+    PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = QP_Real = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
 
     x = y = wxh = w = h = linha = "---"
 
@@ -74,7 +81,14 @@ for file in files:
         if "#" in line:
             continue
         dummy1,dummy,x,y,w,h,linha,value = line.split(';')
+        value = value.split("\n")
+        Depth = value[0]
         wxh = w + "x" + h
+        X = x
+        Y = y
+        WxH = wxh
+        W = w
+        H = h
 
     i=i-1
     while line != lines[-1]:
@@ -83,7 +97,7 @@ for file in files:
         if "#" in line:
             continue
 
-        X = Y = WxH = W = H = value = value0 = value1 = value2 = value3 = value4 = value5 = "---"
+        value = value0 = value1 = value2 = value3 = value4 = value5 = "---"
 
         try:
             #print(line)
@@ -169,24 +183,47 @@ for file in files:
 
                         
         if ((x != X) or (Y != y) or (W != w) or (H != h)):
+##CONTAR TAMANHOS DE PARTIcaO SE NaO FOR CBF_CB OU CBF_CR
+            w = float(w)
+            h = float(h)
 
-            linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(nome, poc, qp, X, Y, WxH, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma)
+            Normalized = (w*h)/(128*128)
+
+            lin = "%s,%s,%s,%s,%s,%s,%s,%s,%f,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(nome, poc, qp, x, y, w, h, wxh, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma)
             #print >> out, linha
-            out.write(linha)
+            out.write(lin)
 
             x = X
             y = Y
             w = W
             h = H
+            wxh = WxH
 
-            X = Y = W = H = PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
+            X = Y = W = H = PredMode = Depth = QT_Depth = BT_Depth = MT_Depth = QP_Real = ChromaQPAdj = BlockQP = SplitSeries = TransQuantBypassFlag = TransformSkipFlag_Y = BDPCM = TileIdx = IndependentSliceIdx = LFNSTIdx = JointCbCr = CompAlphaCb = CompAlphaCr = RDPCM_Y = RDPCM_Cb = RDPCM_Cr = Luma_IntraMode = Chroma_IntraMode = MultiRefIdx = MIPFlag = ISPMode = SkipFlag = RootCbf = SbtIdx = SbtPos = Cbf_Y = Cbf_Cb = Cbf_Cr = IMVMode = InterDir = MergeFlag = RegularMergeFlag = MergeIdx = MergeType = MVPIdxL0 = MVPIdxL1 = MVL0 = MVL1 = MVDL0 = MVDL1 = MotionBufL0 = MotionBufL1 = RefIdxL0 = RefIdxL1 = AffineFlag = AffineMVL0 = AffineMVL1 = AffineType = MMVDSkipFlag = MMVDMergeFlag = MMVDMergeIdx = MHIntraFlag = SMVDFlag = TrianglePartitioning = TriangleMVL0 = TriangleMVL1 = GBIIndex = Depth_Chroma = QT_Depth_Chroma = BT_Depth_Chroma = MT_Depth_Chroma = ChromaQPAdj_Chroma = QP_Chroma = SplitSeries_Chroma = TransQuantBypassFlag_Chroma = '---'
+            #Depth = value
 
-        if linha == "PredMode":
-            PredMode = value
-            continue
+            if linha == "Depth":
+            	Depth = value
+            	continue
+
+            if linha == "Cbf_Y":
+                Cbf_Y = value
+                continue
+
+            if linha == "Cbf_Cb":
+                Cbf_Cb = value
+                continue
+
+            if linha == "Cbf_Cr":
+                Cbf_Cr = value
+                continue
 
         if linha == "Depth":
             Depth = value
+            continue
+
+        if linha == "PredMode":
+            PredMode = value
             continue
 
         if linha == "QT_Depth":
@@ -199,6 +236,10 @@ for file in files:
 
         if linha == "MT_Depth":
             MT_Depth = value
+            continue
+
+        if linha == "QP":
+            QP_Real = value
             continue
 
         if linha == "ChromaQPAdj":

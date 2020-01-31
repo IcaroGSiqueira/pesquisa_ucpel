@@ -11,9 +11,11 @@ pathin = "/home/icaro/pesquisa_ucpel/output_VTM/local/traces"
 #pathin = "/home/icaro/testesHEVC/gprof"
 files = sorted(os.listdir("%s"%pathin))
 
-os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces/parsed_traces_%s"%time)
+os.system("mkdir /home/icaro/pesquisa_ucpel/output_VTM/local/bk_parsed_traces")
 
-os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/BK_parsed_traces")
+os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/bk_parsed_traces/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/bk_parsed_traces/parsed_traces_%s"%time)
+
+os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces /home/icaro/pesquisa_ucpel/output_VTM/local/bk_parsed_traces")
 
 os.system("mkdir /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces")
 

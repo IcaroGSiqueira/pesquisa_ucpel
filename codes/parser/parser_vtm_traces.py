@@ -20,9 +20,12 @@ os.system("mv /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces /home/ic
 os.system("mkdir /home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces")
 
 for file in files:
+    if "~" in file:
+        continue
+
     #print file
     print(file)
-    
+        
     vid,pix,fr,b,qp,fl,conf,opt,poc = file.split("_")
     b = b.strip("bit")
     fr = fr.strip("fps")
@@ -37,8 +40,7 @@ for file in files:
         test = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTRA.csv"%nome,"r")
     except:
         out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_traces/trace_%s_INTRA.csv"%nome,"a")
-        linha = "YUV, POC, QP, X, Y, W, H, WxH, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"
-        
+        linha = "YUV, POC, QP, X, Y, W, H, WxH, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma\n"   
         #print >> out, linha
         out.write(linha)
     try:
@@ -130,7 +132,20 @@ for file in files:
                     Y,WHlinha = YWHlinha.split(")")
                     WH,linhav = WHlinha.split("]")
                     #W,H = WH.split("x")
-                    dummy,WxH = WH.split("[")
+                    #dummy,WxH = WH.split("[")
+                    #print(WxH)
+                    #W,H = WxH.split("x")
+                    #print(W,H)
+
+                    Y = y
+                    X = x
+
+                    W = str(w)
+                    H = str(h)
+                    WxH = W + "x" + H
+                    W = w
+                    H = h
+
                     linhav = linhav.strip(" ")
                     linha,value0 = linhav.split("={")
                     value3,dummy = value3.split("}")
@@ -158,20 +173,33 @@ for file in files:
                         value2 = int(value2[0])
                         value3 = value3.split(" ")
                         value3 = int(value3[1])
-                        X = X.split(" ")
-                        X = int(X[0])
-                        Y = Y.split(" ")
-                        Y = int(Y[1])
 
-                        W = value0-X
-                        H = value3-Y
-                        if((W<=0) or (H<=0)):
-                            W = value2-X
-                            H = value1-Y
+                        #X = X.split(" ")
+                        #X = int(X[0])
+                        #Y = Y.split(" ")
+                        #Y = int(Y[1])
 
-                        W = str(W)
-                        H = str(H)
+                        X = x
+                        Y = y
+
+                        # print("0 3",value0,value3)
+                        # print("X Y",X,Y)
+                        # W = value0-X
+                        # H = value3-Y
+                        # if((W<=0) or (H<=0)):
+                        #     print("2 1",value2,value1)
+                        #     W = value2-X
+                        #     H = value1-Y
+                        #     if((W<=0) or (H<=0)):
+                        #         W = value2-X
+                        #         H = value1-Y
+                        # print(w,h)
+
+                        W = str(w)
+                        H = str(h)
                         WxH = W + "x" + H
+                        W = w
+                        H =h
 
                         #value = value0+";"+value1+";"+value2+";"+value3+";"+value4+";"+value5
                         value = value4+";"+value5
@@ -186,10 +214,10 @@ for file in files:
 
                         
         if ((x != X) or (Y != y) or (W != w) or (H != h)):
-            w = float(w)
-            h = float(h)
+            ww = float(w)
+            hh = float(h)
 
-            Normalized = (w*h)/(128*128)
+            Normalized = (ww*hh)/(128*128)
 
             lin = "%s,%s,%s,%s,%s,%s,%s,%s,%f,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(nome, poc, qp, x, y, w, h, wxh, Normalized, PredMode, Depth, QT_Depth, BT_Depth, MT_Depth, QP_Real, ChromaQPAdj, BlockQP, SplitSeries, TransQuantBypassFlag, TransformSkipFlag_Y, BDPCM, TileIdx, IndependentSliceIdx, LFNSTIdx, JointCbCr, CompAlphaCb, CompAlphaCr, RDPCM_Y, RDPCM_Cb, RDPCM_Cr, Luma_IntraMode, Chroma_IntraMode, MultiRefIdx, MIPFlag, ISPMode, SkipFlag, RootCbf, SbtIdx, SbtPos, Cbf_Y, Cbf_Cb, Cbf_Cr, IMVMode, InterDir, MergeFlag, RegularMergeFlag, MergeIdx, MergeType, MVPIdxL0, MVPIdxL1, MVL0, MVL1, MVDL0, MVDL1, MotionBufL0, MotionBufL1, RefIdxL0, RefIdxL1, AffineFlag, AffineMVL0, AffineMVL1, AffineType, MMVDSkipFlag, MMVDMergeFlag, MMVDMergeIdx, MHIntraFlag, SMVDFlag, TrianglePartitioning, TriangleMVL0, TriangleMVL1, GBIIndex, Depth_Chroma, QT_Depth_Chroma, BT_Depth_Chroma, MT_Depth_Chroma, ChromaQPAdj_Chroma, QP_Chroma, SplitSeries_Chroma, TransQuantBypassFlag_Chroma)
             #print >> out, linha

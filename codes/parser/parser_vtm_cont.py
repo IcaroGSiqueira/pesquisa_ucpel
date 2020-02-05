@@ -23,7 +23,7 @@ try:
     test = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_cont/cont_vtm-partitions.csv","r")
 except:
     out2 = open("/home/icaro/pesquisa_ucpel/output_VTM/local/parsed_cont/cont_vtm-partitions.csv","a")
-    linhaf = "YUV,QP,128x128,128x64,64x128,64x64,64x48,64x32,64x24,64x16,64x12,64x8,64x4,64x2,48x64,48x32,48x16,48x8,48x4,32x64,32x48,32x32,32x24,32x16,32x12,32x8,32x4,32x2,24x64,24x32,24x16,24x8,24x4,16x64,16x48,16x32,16x24,16x16,16x12,16x8,16x4,16x2,12x64,12x32,12x16,12x8,12x4,8x64,8x48,8x32,8x24,8x16,8x12,8x8,8x4,8x2,4x64,4x48,4x32,4x24,4x16,4x12,4x8,4x4,4x2,2x64,2x32,2x16,2x8,2x4,zeros,resto,chroma\n"
+    linhaf = "YUV,OPT,QP,128x128,128x64,64x128,64x64,64x48,64x32,64x24,64x16,64x12,64x8,64x4,64x2,48x64,48x32,48x16,48x8,48x4,32x64,32x48,32x32,32x24,32x16,32x12,32x8,32x4,32x2,24x64,24x32,24x16,24x8,24x4,16x64,16x48,16x32,16x24,16x16,16x12,16x8,16x4,16x2,12x64,12x32,12x16,12x8,12x4,8x64,8x48,8x32,8x24,8x16,8x12,8x8,8x4,8x2,4x64,4x48,4x32,4x24,4x16,4x12,4x8,4x4,4x2,2x64,2x32,2x16,2x8,2x4,zeros,resto,chroma\n"
 
     out2.write(linhaf)
 
@@ -90,7 +90,9 @@ for file in files:
 
         if((qp != QP) or (vid != VID)):
 
-            lin2 = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(VID,QP,p128x128,p128x64,p64x128,p64x64,p64x48,p64x32,p64x24,p64x16,p64x12,p64x8,p64x4,p64x2,p48x64,p48x32,p48x16,p48x8,p48x4,p32x64,p32x48,p32x32,p32x24,p32x16,p32x12,p32x8,p32x4,p32x2,p24x64,p24x32,p24x16,p24x8,p24x4,p16x64,p16x48,p16x32,p16x24,p16x16,p16x12,p16x8,p16x4,p16x2,p12x64,p12x32,p12x16,p12x8,p12x4,p8x64,p8x48,p8x32,p8x24,p8x16,p8x12,p8x8,p8x4,p8x2,p4x64,p4x48,p4x32,p4x24,p4x16,p4x12,p4x8,p4x4,p4x2,p2x64,p2x32,p2x16,p2x8,p2x4,zero,resto,chroma)
+            VID,OPT = VID.split("_")
+
+            lin2 = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(VID,OPT,QP,p128x128,p128x64,p64x128,p64x64,p64x48,p64x32,p64x24,p64x16,p64x12,p64x8,p64x4,p64x2,p48x64,p48x32,p48x16,p48x8,p48x4,p32x64,p32x48,p32x32,p32x24,p32x16,p32x12,p32x8,p32x4,p32x2,p24x64,p24x32,p24x16,p24x8,p24x4,p16x64,p16x48,p16x32,p16x24,p16x16,p16x12,p16x8,p16x4,p16x2,p12x64,p12x32,p12x16,p12x8,p12x4,p8x64,p8x48,p8x32,p8x24,p8x16,p8x12,p8x8,p8x4,p8x2,p4x64,p4x48,p4x32,p4x24,p4x16,p4x12,p4x8,p4x4,p4x2,p2x64,p2x32,p2x16,p2x8,p2x4,zero,resto,chroma)
 
             out2.write(lin2)
             print(lin2)
@@ -100,7 +102,7 @@ for file in files:
             QP = qp
             VID = vid
 
-        if ((Cbf_Cb == "---") and (Cbf_Cr == "---")):# and (ChromaQPAdj != 1) and (Chroma_IntraMode == "---") and ((Depth_Chroma == 0)) or ((Depth_Chroma == "---")) and ((QT_Depth_Chroma == 0) or (QT_Depth_Chroma == "---")) and ((MT_Depth_Chroma == 0) or (MT_Depth_Chroma == "---")) and ((BT_Depth_Chroma == "---") or (BT_Depth_Chroma == 0)) and ((QP_Chroma == "---") or (QP_Chroma == 0)) and ((SplitSeries_Chroma == 0) or (SplitSeries_Chroma == "---")) and ((TransQuantBypassFlag_Chroma == 0) or (TransQuantBypassFlag_Chroma == "---")) and ((ChromaQPAdj_Chroma == 0) or (ChromaQPAdj_Chroma == "---"))):
+        if (((Cbf_Y == 1) or (Cbf_Y == "---")) and ((Cbf_Cb == "---") or (Cbf_Cb == 0) or (Cbf_Cb == "0")) and ((Cbf_Cr == "0") or (Cbf_Cr == "---") or (Cbf_Cr == 0)) and ((ChromaQPAdj == 0) or (ChromaQPAdj == "0") or (ChromaQPAdj == "---")) and ((Chroma_IntraMode == "---") or (Chroma_IntraMode == 0) or (Chroma_IntraMode == "0")) and ((Depth_Chroma == "0") or (Depth_Chroma == 0) or (Depth_Chroma == "---")) and ((QT_Depth_Chroma == 0) or (QT_Depth_Chroma == "---") or (QT_Depth_Chroma == "0")) and ((MT_Depth_Chroma == "0") or (MT_Depth_Chroma == 0) or (MT_Depth_Chroma == "---")) and ((BT_Depth_Chroma == "---") or (BT_Depth_Chroma == 0) or (BT_Depth_Chroma == "0")) and ((QP_Chroma == "---") or (QP_Chroma == 0) or (QP_Chroma == "0")) and ((SplitSeries_Chroma == "0") or (SplitSeries_Chroma == 0) or (SplitSeries_Chroma == "---")) and ((TransQuantBypassFlag_Chroma == "0\n") or (TransQuantBypassFlag_Chroma == 0) or (TransQuantBypassFlag_Chroma == "---\n")) and ((ChromaQPAdj_Chroma == "0") or (ChromaQPAdj_Chroma == 0) or (ChromaQPAdj_Chroma == "---"))):
 
             part = wxh
             if part == "128x128":
@@ -246,7 +248,7 @@ for file in files:
         else:
             chroma+=1
 
-lin2 = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(VID,QP,p128x128,p128x64,p64x128,p64x64,p64x48,p64x32,p64x24,p64x16,p64x12,p64x8,p64x4,p64x2,p48x64,p48x32,p48x16,p48x8,p48x4,p32x64,p32x48,p32x32,p32x24,p32x16,p32x12,p32x8,p32x4,p32x2,p24x64,p24x32,p24x16,p24x8,p24x4,p16x64,p16x48,p16x32,p16x24,p16x16,p16x12,p16x8,p16x4,p16x2,p12x64,p12x32,p12x16,p12x8,p12x4,p8x64,p8x48,p8x32,p8x24,p8x16,p8x12,p8x8,p8x4,p8x2,p4x64,p4x48,p4x32,p4x24,p4x16,p4x12,p4x8,p4x4,p4x2,p2x64,p2x32,p2x16,p2x8,p2x4,zero,resto,chroma)
+lin2 = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(VID,OPT,QP,p128x128,p128x64,p64x128,p64x64,p64x48,p64x32,p64x24,p64x16,p64x12,p64x8,p64x4,p64x2,p48x64,p48x32,p48x16,p48x8,p48x4,p32x64,p32x48,p32x32,p32x24,p32x16,p32x12,p32x8,p32x4,p32x2,p24x64,p24x32,p24x16,p24x8,p24x4,p16x64,p16x48,p16x32,p16x24,p16x16,p16x12,p16x8,p16x4,p16x2,p12x64,p12x32,p12x16,p12x8,p12x4,p8x64,p8x48,p8x32,p8x24,p8x16,p8x12,p8x8,p8x4,p8x2,p4x64,p4x48,p4x32,p4x24,p4x16,p4x12,p4x8,p4x4,p4x2,p2x64,p2x32,p2x16,p2x8,p2x4,zero,resto,chroma)
 
 out2.write(lin2)
 print(lin2)

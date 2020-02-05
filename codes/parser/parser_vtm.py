@@ -1,26 +1,46 @@
 import os
 
-pathin = "/grellert/testesVVC/out"
-out = open("/home/grellert/testesVVC/vtm-noSIMD.csv","w")
+#OPT = 0 # optimizacoes ligadas = 1
+
+pathin = "/home/icaro/pesquisa_ucpel/output_VTM/local/out"
+out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/vtm-brpsnr.csv","w")
+#out = open("/home/icaro/output_VTM/local/vtm-noSIMD.csv","w")
 #out = open("/home/grellert/testesVVC/vtm-SIMD.csv","w")
-yuvs = sorted(os.listdir("/home/%s"%pathin))
+yuvs = sorted(os.listdir("%s"%pathin))
+
+linha = "YUV,SETTING,QP,OPT,Y-PSNR,U-PSNR,V-PSNR,YUV-PSNR,BITRATE,TOTAL TIME"
+print >> out, linha
 
 for yuv in yuvs:
-	if "vtmSIMD" in yuv:
+	if "gprof" in yuv:
+	#if "vtmSIMD" in yuv:
 	#if "vtmSIMD" not in yuv:
 		continue
-	file = open("/home%s/%s"%(pathin,yuv),"r")
+
+	file = open("%s/%s"%(pathin,yuv),"r")
 	lines = file.readlines()
-	line = lines[-5]
-	a,time = line.split(":")
-	s,time,q = time.split("]")
-	t,s = time.split("sec")
+	line = lines[-1]
+	dummy,t = line.split(":")
+	dummy,t,dummy0 = t.split("]")
+	t,dummy = t.split("sec")
 	t = t.strip(" ")
-	line = lines[-8]
-	f,r = line.split("a")
+	line = lines[-4]
+	fl,r = line.split("a")
 	r = r.strip(" ")
 	br,y,u,v,yuvv = r.split("   ")
 	yuvv = yuvv[:-1]
-	linha = "%s,%s,%s,%s,%s,%s,%s"%(yuv,y,u,v,yuvv,br,t)
+
+	print(yuv)
+
+	vid,pix,fr,bit,qp,fl,conf,opt = yuv.split("_")
+	bit = bit.strip("bit")
+	fr = fr.strip("fps")
+	fl = fl.strip("fframes")
+	qp = qp.strip("qp")
+	opt = opt.strip(".txt")
+	nome = vid+"_"+pix+"_"+fr+"fps_"+bit+"bit"
+	sett = fl+"framelimt_"+conf
+
+	linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"%(nome,sett,qp,opt,y,u,v,yuvv,br,t)
 	print >> out, linha
 	out.close

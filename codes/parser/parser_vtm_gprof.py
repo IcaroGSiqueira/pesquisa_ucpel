@@ -1,15 +1,16 @@
 import os
 import re
 
-pathin = "/home/icaro/testesVVC/gprof"
+pathin = "/home/icaro/pesquisa_ucpel/output_VTM/local/gprof"
 #pathin = "/home/icaro/testesHEVC/gprof"
 #out = open("/home/icaro/testesHEVC/gprof.csv","w")
-out = open("/home/icaro/testesVVC/vtm_gprof.csv","w")
+out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/vtm_gprof.csv","w")
 files = sorted(os.listdir("%s"%pathin))
 
 #linha = "YUV,I.Quant,FME-Interp.,FME-S.,I.Transf,Transf,ENTPY,Bio,AMVP,IME-S.,Merge,Filter,Affine,Quant,INT-S.,MC,SUM,TOTAL,%"
-linha = "YUV,FME-Interp.,FME-S.,Bio,IME-S.,Affine,I.Transf,Transf,I.Quant,Quant,Filter,INT-S.,ENTPY,AMVP,T/IT,ME,Q/IQ,MC,Merge,FME,SUM,TOTAL,%"
-print >> out, linha
+linha = "YUV,SETTINGS,QP,OPT,FME-Interp.,FME-S.,Bio,IME-S.,Affine,I.Transf,Transf,I.Quant,Quant,Filter,INT-S.,ENTPY,AMVP,T/IT,ME,Q/IQ,MC,Merge,FME,SUM,TOTAL,%\n"
+#print >> out, linha
+out.write(linha)
 
 for file in files:
 	#if "SIMD" in file:
@@ -38,7 +39,7 @@ for file in files:
 	T=0
 	i=0
 
-	print file
+	#print file
 
 	yuv = file.strip(".txt")
 	yuv = yuv.strip(".yuv")
@@ -62,7 +63,7 @@ for file in files:
 				p1,selff,called = pt1
 				called = float(called)
 				TOTAL = called
-				print TOTAL
+				print(TOTAL)
 
 		linha = re.match(r'\[\d+\][ \d \.]+InterSearch::xPatternSearch',line)
 		if linha != None:
@@ -265,21 +266,45 @@ for file in files:
 			called = float(called)
 			IQ = IQ + selff + called
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xT',line)
+		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::transformNxN',line)
 		if linha != None:
 			pt1 = re.findall(r'\d*\.\d*',line)
 			p1,selff,called = pt1
 			selff = float(selff)
 			called = float(called)
 			T = T + selff + called
+			j=i
+			TempMC=0
+			while "---" not in line:
+				j+=1
+				line = lines[j]
+				if "TrQuant::xQuant" in line:
+					pt1 = re.findall(r'\d*\.\d*',line)
+					selff,called = pt1
+					selff = float(selff)
+					called = float(called)
+					TempMC = TempMC + selff + called
+			T = T - TempMC
 
-		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::xIT',line)
+		linha = re.match(r'\[\d+\][ \d \.]+TrQuant::invTransformNxN',line)
 		if linha != None:
 			pt1 = re.findall(r'\d*\.\d*',line)
 			p1,selff,called = pt1
 			selff = float(selff)
 			called = float(called)
 			IT = IT + selff + called
+			j=i
+			TempMC=0
+			while "---" not in line:
+				j+=1
+				line = lines[j]
+				if "TrQuant::xDeQuant" in line:
+					pt1 = re.findall(r'\d*\.\d*',line)
+					selff,called = pt1
+					selff = float(selff)
+					called = float(called)
+					TempMC = TempMC + selff + called
+			IT = IT - TempMC
 
 		linha = re.match(r'\[\d+\][ \d \.]+InterPrediction::applyBiOptFlow',line)
 		if linha != None:
@@ -321,8 +346,20 @@ for file in files:
 	FME = FMES + FMEINT
 	ME = Bio + IMES + Affine
 
-	linha = "%s,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf"%(yuv,FMEINT,FMES,Bio,IMES,Affine,IT,T,IQ,Q,FLT,INTS,ENTPY,AMVP,TIT,ME,QIQ,MC,MRG,FME,SOMA,TOTAL,PORC)
-	print >> out, linha
+	print(yuv)
+
+	vid,pix,fr,bit,qp,fl,conf,dummy,opt = yuv.split("_")
+	bit = bit.strip("bit")
+	fr = fr.strip("fps")
+	fl = fl.strip("fframes")
+	qp = qp.strip("qp")
+	opt = opt.strip(".txt")
+	nome = vid+"_"+pix+"_"+fr+"fps_"+bit+"bit"
+	sett = fl+"framelimt_"+conf
+
+	linha = "%s,%s,%s,%s,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf\n"%(nome,sett,qp,opt,FMEINT,FMES,Bio,IMES,Affine,IT,T,IQ,Q,FLT,INTS,ENTPY,AMVP,TIT,ME,QIQ,MC,MRG,FME,SOMA,TOTAL,PORC)
+	#print >> out, linha
+	out.write(linha)
 	out.close
 
 #linha = "Average,%s,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f"%(yuv,FMEINT,INTS,AMVP,IMES,FMES,FLT,MRG,IQ,IT,MC,Q,T,SOMA,TOTAL,PORC)

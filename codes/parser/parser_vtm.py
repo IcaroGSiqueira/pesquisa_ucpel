@@ -21,6 +21,7 @@ for yuv in yuvs:
 	lines = file.readlines()
 	line = lines[-1]
 	dummy,t = line.split(":")
+	print(t)
 	dummy,t,dummy0 = t.split("]")
 	t,dummy = t.split("sec")
 	t = t.strip(" ")

@@ -14,10 +14,10 @@ qps = [22,27,32,37]
 
 confs = ["encoder_randomaccess_vtm.cfg"]
 
-OPT = 0 # optimizacoes ligadas = 1
+OPT = 1 # optimizacoes ligadas = 1
 gprof = 0
 
-threads = 4 # numero de processos em parelelo
+threads = 7 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"

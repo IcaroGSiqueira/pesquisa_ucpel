@@ -14,10 +14,10 @@ qps = [22,27,32,37]
 
 confs = ["encoder_randomaccess_vtm.cfg"]
 
-OPT = 0 # optimizacoes ligadas = 1
-gprof = 0
+OPT = 1 # optimizacoes ligadas = 1
+gprof = 1
 
-threads = 7 # numero de processos em parelelo
+threads = 4 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"
@@ -25,7 +25,7 @@ gitscript = "git_upl"
 shpath = "pesquisa_ucpel/codes/run-sh/vtm"
 filename = "run_vtm.sh"
 
-#yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv"]#,"Campfire_3840x2160_30fps_8bit_420.yuv"] #gprofiling
+yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"] #gprofiling
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 
@@ -35,7 +35,7 @@ filename = "run_vtm.sh"
 #yuvs = ["Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"] 	#ClasseB
 #yuvs = ["PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] 																										#ClasseA
 
-yuvs = ["BlowingBubbles_416x240_50fps_8bit_420.yuv","BQSquare_416x240_60fps_8bit_420.yuv","BasketballPass_416x240_50fps_8bit_420.yuv","RaceHorses_416x240_30fps_8bit_420.yuv","RaceHorses_832x480_30fps_8bit_420.yuv","BasketballDrill_832x480_50fps_8bit_420.yuv","BQMall_832x480_60fps_8bit_420.yuv","PartyScene_832x480_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","SlideEditing_1280x720_30fps_8bit_420.yuv","BasketballDrive_1920x1080_50fps_8bit_420.yuv","BQTerrace_1920x1080_60fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv","MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"]#,"Tango2_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"]#,"FoodMarket4_3840x2160_60fps_10bit_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv"]	#VVC
+#yuvs = ["BlowingBubbles_416x240_50fps_8bit_420.yuv","BQSquare_416x240_60fps_8bit_420.yuv","BasketballPass_416x240_50fps_8bit_420.yuv","RaceHorses_416x240_30fps_8bit_420.yuv","RaceHorses_832x480_30fps_8bit_420.yuv","BasketballDrill_832x480_50fps_8bit_420.yuv","BQMall_832x480_60fps_8bit_420.yuv","PartyScene_832x480_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","SlideEditing_1280x720_30fps_8bit_420.yuv","BasketballDrive_1920x1080_50fps_8bit_420.yuv","BQTerrace_1920x1080_60fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv","MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"]#,"Tango2_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"]#,"FoodMarket4_3840x2160_60fps_10bit_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv"]	#VVC
 
 if server == 1:	
 	homepath = "/home/grellert"

@@ -15,9 +15,9 @@ qps = [22,27,32,37]
 confs = ["encoder_randomaccess_vtm.cfg"]
 
 OPT = 1 # optimizacoes ligadas = 1
-gprof = 1
+gprof = 0
 
-threads = 4 # numero de processos em parelelo
+threads = 7 # numero de processos em parelelo
 
 gitpath = "pesquisa_ucpel"
 gitscript = "git_upl"
@@ -25,7 +25,7 @@ gitscript = "git_upl"
 shpath = "pesquisa_ucpel/codes/run-sh/vtm"
 filename = "run_vtm.sh"
 
-yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"] #gprofiling
+#yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"] #gprofiling
 
 #yuvs = os.listdir("/home/icaro/origCfP")
 
@@ -35,7 +35,7 @@ yuvs = ["BasketballPass_416x240_50fps_8bit_420.yuv","BasketballDrillText_832x480
 #yuvs = ["Tennis_1920x1080_24.yuv","ParkScene_1920x1080_24.yuv","BasketballDrive_1920x1080_50.yuv","Kimono_1920x1080_24.yuv","BQTerrace_1920x1080_60.yuv","Cactus_1920x1080_50.yuv"] 	#ClasseB
 #yuvs = ["PeopleOnStreet_2560x1600_30_crop.yuv","Traffic_2560x1600_30_crop.yuv"] 																										#ClasseA
 
-#yuvs = ["BlowingBubbles_416x240_50fps_8bit_420.yuv","BQSquare_416x240_60fps_8bit_420.yuv","BasketballPass_416x240_50fps_8bit_420.yuv","RaceHorses_416x240_30fps_8bit_420.yuv","RaceHorses_832x480_30fps_8bit_420.yuv","BasketballDrill_832x480_50fps_8bit_420.yuv","BQMall_832x480_60fps_8bit_420.yuv","PartyScene_832x480_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","SlideEditing_1280x720_30fps_8bit_420.yuv","BasketballDrive_1920x1080_50fps_8bit_420.yuv","BQTerrace_1920x1080_60fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv","MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"]#,"Tango2_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"]#,"FoodMarket4_3840x2160_60fps_10bit_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv"]	#VVC
+yuvs = ["BlowingBubbles_416x240_50fps_8bit_420.yuv","BQSquare_416x240_60fps_8bit_420.yuv","BasketballPass_416x240_50fps_8bit_420.yuv","RaceHorses_416x240_30fps_8bit_420.yuv","RaceHorses_832x480_30fps_8bit_420.yuv","BasketballDrill_832x480_50fps_8bit_420.yuv","BQMall_832x480_60fps_8bit_420.yuv","PartyScene_832x480_50fps_8bit_420.yuv","BasketballDrillText_832x480_50fps_8bit_420.yuv","SlideShow_1280x720_20fps_8bit_420.yuv","SlideEditing_1280x720_30fps_8bit_420.yuv","BasketballDrive_1920x1080_50fps_8bit_420.yuv","BQTerrace_1920x1080_60fps_8bit_420.yuv","Cactus_1920x1080_50fps_8bit_420.yuv","ArenaOfValor_1920x1080_60_8bit_420.yuv"]#,"MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"]#,"Tango2_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"]#,"FoodMarket4_3840x2160_60fps_10bit_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv"]	#VVC
 
 if server == 1:	
 	homepath = "/home/grellert"
@@ -58,7 +58,8 @@ else:
 if OPT == 1:
 	simd = "--SIMD=AVX2"
 	if gprof == 0:
-		bina = "EncoderAppStatic_std"
+		#bina = "EncoderAppStatic_std"
+		bina = "EncoderAppStatic"
 		inf = "OPT"
 	else:
 		bina = "EncoderAppStaticd_gprof"
@@ -66,9 +67,8 @@ if OPT == 1:
 else:
 	simd = "--SIMD=SCALAR"
 	if gprof == 0:
-		bina = "EncoderAppStatic_std"
-		
-
+		#bina = "EncoderAppStatic_std"
+		bina = "EncoderAppStatic"
 		inf = "noOPT"
 	else:
 		bina = "EncoderAppStaticd_gprof"
@@ -131,7 +131,7 @@ for conf in confs:
 			#qp = map(float,qp) !!--end-usage=q!!--AVALIAR
 
 			if gprof == 1:
-				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --InputBitDepth=%s %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,b,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
+				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --InputBitDepth=%s %s --BitstreamFile=\"%s/%s/bin4taps/%s_%s.bin\" > %s/%s/out4taps/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,b,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
 				linha2 = "mv gmon.out %s/%s/gmon/gmon_%s_%s.out"%(homepath,outpath,nome,info)
 				linha3 = "gprof %s/%s/%s %s/%s/gmon/gmon_%s_%s.out > %s/%s/gprof/%s_%s.txt"%(homepath,binpath,bina,homepath,outpath,nome,info,homepath,outpath,nome,info)
 				linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
@@ -149,28 +149,28 @@ for conf in confs:
 					#		print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				except:
 					if gitpull == 1:
-						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						linhag = "sh %s/%s/%s.sh"%(homepath,gitpath,gitscript)
 						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4 + " && " + linhag
 					else:
 						print >> file, linha + " && " + linha2 + " && " + linha3 + " && " + linha4
 				
 			else:
-				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --InputBitDepth=%s %s --BitstreamFile=\"%s/%s/bin/%s_%s.bin\" > %s/%s/out/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,b,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
+				linha = "%s/%s/%s -c %s/%s/%s --InputFile=\"%s/%s\" -fr %s --SourceWidth=%s --SourceHeight=%s -q %s -f %s --InputBitDepth=%s %s --BitstreamFile=\"%s/%s/bin4taps/%s_%s.bin\" > %s/%s/out4taps/%s_%s.txt"%(homepath,binpath,bina,homepath,confpath,conf,yuvpath,yuv,fr,w,h,qp,f,b,simd,homepath,outpath,nome,info,homepath,outpath,nome,info)
 				linha4 =  "echo \"%s_%s DONE!\""%(nome,info)
 
 				try:
-					test = open("%s/%s/out/%s_%s.txt"%(homepath,outpath,nome,info),"r")
+					test = open("%s/%s/out4taps/%s_%s.txt"%(homepath,outpath,nome,info),"r")
 					tlines = test.readlines()
 					tline = tlines[-1]
 					if "Total Time" not in tline:
 						if gitpull == 1:
-							linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+							linhag = "sh %s/%s/%s.sh"%(homepath,gitpath,gitscript)
 							print >> file, linha + " && " + linha4 + " && " + linhag
 						else:
 							print >> file, linha + " && " + linha4
 				except:
 					if gitpull == 1:
-						linhag = "cd %s/%s && sh %s.sh"%(homepath,gitpath,gitscript)
+						linhag = "sh %s/%s/%s.sh"%(homepath,gitpath,gitscript)
 						print >> file, linha + " && " + linhag + " && " + linha4
 					else:
 						print >> file, linha + " && " + linha4

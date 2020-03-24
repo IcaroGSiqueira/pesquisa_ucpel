@@ -8,8 +8,9 @@ out = open("/home/icaro/pesquisa_ucpel/output_VTM/local/vtm-brpsnr.csv","w")
 #out = open("/home/grellert/testesVVC/vtm-SIMD.csv","w")
 yuvs = sorted(os.listdir("%s"%pathin))
 
-linha = "YUV,SETTING,QP,OPT,Y-PSNR,U-PSNR,V-PSNR,YUV-PSNR,BITRATE,TOTAL TIME"
-print >> out, linha
+linha = "YUV,SETTING,QP,OPT,Y-PSNR,U-PSNR,V-PSNR,YUV-PSNR,BITRATE,TOTAL TIME\n"
+#print >> out, linha
+out.write(linha)
 
 for yuv in yuvs:
 	if "gprof" in yuv:
@@ -42,6 +43,6 @@ for yuv in yuvs:
 	nome = vid+"_"+pix+"_"+fr+"fps_"+bit+"bit"
 	sett = fl+"framelimt_"+conf
 
-	linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"%(nome,sett,qp,opt,y,u,v,yuvv,br,t)
-	print >> out, linha
+	linha = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(nome,sett,qp,opt,y,u,v,yuvv,br,t)
+	out.write(linha)
 	out.close

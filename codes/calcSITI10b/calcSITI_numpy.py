@@ -5,6 +5,11 @@ import numpy as np
 from scipy import ndimage
 import matplotlib.pyplot as plt 
 
+<<<<<<< HEAD
+=======
+numf=32
+
+>>>>>>> 9c9ee880d789350f9aa16392af415335cc823436
 def sobel(frame):
 	sobelFrame = []
 	frame = frame.astype(np.int16)
@@ -62,10 +67,18 @@ def getYFrame(video,w,h, bit10 = False):
 # --- M A I N ------------------------------------------------
 
 
+<<<<<<< HEAD
 yuv_dir = '/home/icaro/Videos'
 videos = os.listdir(yuv_dir)
 outFile_all = open('SITI_all.csv','w')
 print('video;max(SI);max(TI);mean(SI);mean(TI)', file = outFile_all)
+=======
+yuv_dir = '/home/icaro/origCfP/'
+videos = os.listdir(yuv_dir)
+outFile_all = open('SITI_all.csv','w')
+#print('video;max(SI);max(TI);mean(SI);mean(TI)', file = outFile_all)
+outFile_all.write('video;max(SI);max(TI);mean(SI);mean(TI)\n')
+>>>>>>> 9c9ee880d789350f9aa16392af415335cc823436
 
 videos = ["MarketPlace_1920x1080_60fps_10bit_420.yuv","RitualDance_1920x1080_60fps_10bit_420.yuv","Campfire_3840x2160_30fps_10bit_420.yuv"]#,"Tango2_3840x2160_60fps_10bit_420.yuv","DaylightRoad2_3840x2160_60fps_10bit_420.yuv","ParkRunning3_3840x2160_50fps_10bit_420.yuv"]#,"FoodMarket4_3840x2160_60fps_10bit_420.yuv","CatRobot_3840x2160_60fps_10bit_420.yuv"] 
 
@@ -74,7 +87,11 @@ for v in videos:
 
 	print("Video: "+ v)
 	
+<<<<<<< HEAD
 	video = open(os.path.join(yuv_dir, v),'rb')
+=======
+	video = open('/home/icaro/origCfP/' + v,'rb')
+>>>>>>> 9c9ee880d789350f9aa16392af415335cc823436
 	w = int((v.split('_')[1]).split('x')[0])
 	h =  int((v.split('_')[1]).split('x')[1])
 	outFile = open(v.split('_')[0]+'.csv','w')
@@ -95,10 +112,16 @@ for v in videos:
 		if frameIdx % 10 == 0:
 			print("\tFrame #:",frameIdx)
 		frameIdx += 1
+<<<<<<< HEAD
+=======
+		if frameIdx > numf:
+			break
+>>>>>>> 9c9ee880d789350f9aa16392af415335cc823436
 	video.close()
 	vetSI = np.array(vetSI)
 	vetTI = np.array(vetTI)
 
+<<<<<<< HEAD
 	print( '%s;SI;TI' % (v),file=outFile)
 	for si, ti in zip(vetSI,vetTI):
 		print( ';%f;%f' % (si,ti),file=outFile)
@@ -106,5 +129,20 @@ for v in videos:
 	print ('MAX;%f;%f' % ( vetSI.max(),vetTI.max()), file = outFile)
 	print ('MEAN;%f;%f' % ( vetSI.mean(),vetTI.mean()),file = outFile)
 	print ('%s;%f;%f;%f;%f' % (v, vetSI.max(),vetTI.max(),vetSI.mean(),vetTI.mean()), file = outFile_all)
+=======
+	#print( '%s;SI;TI' % (v),file=outFile)
+	outFile.write('%s;SI;TI\n' % (v))
+
+	for si, ti in zip(vetSI,vetTI):
+		#print( ';%f;%f' % (si,ti),file=outFile)
+		outFile.write(';%f;%f\n' % (si,ti))
+
+	#print ('MAX;%f;%f' % ( vetSI.max(),vetTI.max()), file = outFile)
+	outFile.write('MAX;%f;%f\n' % ( vetSI.max(),vetTI.max()))
+	#print ('MEAN;%f;%f' % ( vetSI.mean(),vetTI.mean()),file = outFile)
+	outFile.write('MEAN;%f;%f\n' % ( vetSI.mean(),vetTI.mean()))
+	#print ('%s;%f;%f;%f;%f' % (v, vetSI.max(),vetTI.max(),vetSI.mean(),vetTI.mean()), file = outFile_all)
+	outFile_all.write('%s;%f;%f;%f;%f\n' % (v, vetSI.max(),vetTI.max(),vetSI.mean(),vetTI.mean()))
+>>>>>>> 9c9ee880d789350f9aa16392af415335cc823436
 	outFile.close()
 outFile_all.close()
